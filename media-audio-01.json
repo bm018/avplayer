@@ -1,0 +1,26 @@
+{
+    "_sortierArray": [1],
+    "_defaultQuality": ["auto", 1, 2, 0, 3],
+    "rbbtitle": "Audio 01 - redaktioneller Titel des Medienobjekts",
+    "rbbhandle": "/content/rbb/rbb/av/audio01",
+    "_type": "audio",
+    "_isLive": false,
+    "_dvrEnabled": false,
+    "_geoblocked": false,
+    "_duration": 3804,
+    "_audioImage": "/content/dam/rbb/ref/tvsendungen/10721828415.jpg.jpg/rendition=cq5dam.web.1280.1280.jpeg/size=470x264.jpg",
+    "_mediaArray": [{
+        "_plugin": 1,
+        "_mediaStreamArray": [{
+            "_stream": "https://rbbmediapmdp-a.akamaihd.net/content/d90d1b83-bc00-42c8-b787-34ca86d295da_956637ab-0179-4682-8e33-0da12d0a4d01.mp3",
+            "_termid": "3.2.9.5.1",
+            "_server": "",
+            "_quality": 1
+        }, {
+            "_stream": "http://rbbmediapmdp-a.akamaihd.net/content/d90d1b83-bc00-42c8-b787-34ca86d295da_c3f7aab4-4a97-407c-bdcc-f14f0e115684.mp3",
+            "_termid": "3.3.9.5.1",
+            "_server": "",
+            "_quality": 1
+        }]
+    }]
+}
