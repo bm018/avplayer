@@ -22,7 +22,9 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^2.0.0",
     "jshint": "^2.9.5",
+    "es6-promise": "^4.1.1",
     "postcss-scss": "^0.4.0",
+    "gulp-minify-css": "^1.2.4",
     "readline-sync": "^1.4.7",
     "browser-sync": "^2.18.5"
   }

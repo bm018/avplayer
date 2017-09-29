@@ -1,2 +1,5 @@
 #ignore node modules
 src/node_modules
+
+#ignore dist, because it is built with gulp
+dist/
