@@ -12,7 +12,7 @@
     "_mediaArray": [{
         "_plugin": 1,
         "_mediaStreamArray": [{
-            "_stream": "https://rbbmediapmdp-a.akamaihd.net/content/d90d1b83-bc00-42c8-b787-34ca86d295da_956637ab-0179-4682-8e33-0da12d0a4d01.mp3",
+            "_stream": "/files/audio-dummy_02.mp3",
             "_termid": "3.2.9.5.1",
             "_server": "",
             "_quality": 1
