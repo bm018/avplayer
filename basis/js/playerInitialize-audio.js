@@ -1,5 +1,9 @@
 define("playerInitialize-audio", [], function() {
 
+    var loadScripts = function() {
+        $.getScript("./src/dist/js/audio.min.js");
+    };
+
     var playerInitialize = function(dom_element, options) {
         this.$dom_element = $(dom_element);
         this.options = options;
@@ -16,32 +20,33 @@ define("playerInitialize-audio", [], function() {
                 mediaData = [],
                 mediaSteamData = [],
                 mediaSrc = null,
-                audioBtn = '<a class="audio-btn" title="Audio abspielen"></a>',
+                audioBtn = '<a class="audio-btn" title="Audio abspielen" tabindex=0></a>',
                 eventName = (window.touch) ? 'touchstart' : 'click';
 
 
             // get audio src from media.json
             // call the function createAudio() on click/touch on the play button
             $.getJSON(mediaJsonData, function(data) {
-              items = data,
+                items = data,
 
-                $.each(items, function( k, v ) {
-                    if(k === '_mediaArray') {
-                        mediaData = v;
-                        $.each(mediaData[0], function( k, v ) {
-                            if(k === '_mediaStreamArray') {
-                                mediaSteamData = v;
-                                mediaSrc = mediaSteamData[0]._stream;
-                                if(mediaSrc !== null) {
-                                    $(that).append(audioBtn);
-                                    $(that).find('.audio-btn').on(eventName, function() {
-                                        $this.createAudio($(that), mediaSrc);
-                                    });
+                    $.each(items, function(k, v) {
+                        if (k === '_mediaArray') {
+                            mediaData = v;
+                            $.each(mediaData[0], function(k, v) {
+                                if (k === '_mediaStreamArray') {
+                                    mediaSteamData = v;
+                                    mediaSrc = mediaSteamData[0]._stream;
+                                    if (mediaSrc !== null) {
+                                        $(that).append(audioBtn);
+                                        $(that).find('.audio-btn').on(eventName, function() {
+                                            $this.createAudio($(that), mediaSrc);
+                                            return false;
+                                        });
+                                    }
                                 }
-                            }
-                        });
-                    }
-                });
+                            });
+                        }
+                    });
             });
         },
 
@@ -63,7 +68,7 @@ define("playerInitialize-audio", [], function() {
             // start the audio
             // if another audio is running, stop it
             // hide the play button because the audio is already running
-            if ( $('.audioplayer-playing').length ) {
+            if ($('.audioplayer-playing').length) {
                 $('.audioplayer-playing').find('.audioplayer-playpause a').click();
             }
             $(elm).find('.audioplayer-playpause a').click();
@@ -71,6 +76,8 @@ define("playerInitialize-audio", [], function() {
             $(elm).find('.audio-btn').hide();
         }
     };
+
+    loadScripts();
 
     jsb.registerHandler('playerInitialize-audio', playerInitialize);
 
