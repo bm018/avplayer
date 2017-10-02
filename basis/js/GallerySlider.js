@@ -219,6 +219,7 @@ define("GallerySlider", ["Slider"], function(Slider) {
         onSliderIndexChanged: function(index, states) {
             this.index = index;
             this.updateTeaserContent();
+            this.stopPlayers();
 
             jsb.fireEvent('Gallery::INDEX_CHANGED', {
                 gallery_id: this.options.thumb_list_id ? this.options.id : null,
@@ -254,6 +255,10 @@ define("GallerySlider", ["Slider"], function(Slider) {
             }
             this.play_icons.attr('tabindex', -1);
             $('.play_icon_layer', this.items[this.index]).attr('tabindex', 0);
+        },
+
+        stopPlayers: function() {
+            this.dom_element.find('.audioplayer-playing .audioplayer-playpause a').click();
         },
 
         calculateTeaserHeight: function() {
