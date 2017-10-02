@@ -16,13 +16,13 @@ define("playerInitialize-audio", [], function() {
             var that = this.$dom_element[0],
                 $this = this,
                 mediaJsonData = this.options.media,
+                analyticsData = this.options.analytics,
                 items = null,
                 mediaData = [],
                 mediaSteamData = [],
                 mediaSrc = null,
                 audioBtn = '<a class="audio-btn" title="Audio abspielen" tabindex=0></a>',
                 eventName = (window.touch) ? 'touchstart' : 'click';
-
 
             // get audio src from media.json
             // call the function createAudio() on click/touch on the play button
@@ -40,6 +40,7 @@ define("playerInitialize-audio", [], function() {
                                         $(that).append(audioBtn);
                                         $(that).find('.audio-btn').on(eventName, function() {
                                             $this.createAudio($(that), mediaSrc);
+                                            $this.sendAnalyticsData(analyticsData);
                                             return false;
                                         });
                                     }
@@ -74,6 +75,10 @@ define("playerInitialize-audio", [], function() {
             $(elm).find('.audioplayer-playpause a').click();
 
             $(elm).find('.audio-btn').hide();
+        },
+
+        sendAnalyticsData: function(data) {
+            if (window.callAnalytics) callAnalytics('pi', 'player', 'initialize ' + data.rbbhandle + ' ' + data.rbbtitle);
         }
     };
 
