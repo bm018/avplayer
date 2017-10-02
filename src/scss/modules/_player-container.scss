@@ -1,0 +1,9 @@
+.player {
+    .layoutaudio_ohne_bild & {
+        background: $noPictPlayerBackground;
+        height: $noPictPlayBtnSize;
+        margin: $noPictPlayerMarginTop 0 0;
+        padding: $noPictPlayerPadding 0;
+        position: relative;
+    }
+}

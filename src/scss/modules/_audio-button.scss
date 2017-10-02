@@ -1,21 +1,34 @@
 .audio-btn {
-  background-color: transparent;
-  cursor: pointer;
-  z-index: 10;
-  &:hover, &:focus, &:active {
-    outline: none;
-  }
-
-  .manualteaserpicture & {
     border-radius: 50%;
-    border: 2px solid white;
-    height: 60px;
+    color: $playBtnIdle;
+    cursor: pointer;
     left: 50%;
     position: absolute;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
-    transition: all .3s ease .01s;
-    width: 60px;
-  }
+    z-index: 10;
+    &:hover,
+    &:focus,
+    &:active {
+        outline: none;
+        text-decoration: none;
+        color: $playBtnHover;
+    }
+    &::before {
+        content: '<';
+        font: normal $playBtnSize/1 'Icon-Font';
+        speak: none;
+        text-shadow: $playBtnShadow;
+    }
+    .manualteaserpicture & {
+        height: $playBtnSize;
+        width: $playBtnSize;
+    }
+    .layoutaudio_ohne_bild & {
+        height: $noPictPlayBtnSize;
+        width: $noPictPlayBtnSize;
+    }
+    .layoutaudio_ohne_bild &::before {
+        font-size: $noPictPlayBtnSize;
+    }
 }
-
