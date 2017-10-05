@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--© 2012 Institut für Rundfunktechnik GmbH. -->
+<!-- v1.1 -->
+<!-- This sample corresponds to the proposal for an ARD Online Distribution EBU-TT Profil in the version 1.1  -->
+<tt:tt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:tt="http://www.w3.org/ns/ttml" xmlns:ebuttm="urn:ebu:tt:metadata" ttp:timeBase="media" xml:lang="de" ttp:cellResolution="50 30">
+	<tt:head>
+		<tt:metadata>
+			<ebuttm:documentMetadata>
+				<ebuttm:documentEbuttVersion>v1.0</ebuttm:documentEbuttVersion>
+			</ebuttm:documentMetadata>
+		</tt:metadata>
+		<tt:styling>
+			<tt:style xml:id="defaultStyle" tts:fontFamily="Verdana, Arial" tts:fontSize="160%" tts:lineHeight="125%"/>
+			<tt:style xml:id="textRed" tts:color="#ff0000" tts:backgroundColor="#000000c2" tts:fontSize="160%"/>
+			<tt:style xml:id="textGreen" tts:color="#00ff00" tts:backgroundColor="#000000c2" tts:fontSize="160%"/>
+			<tt:style xml:id="textYellow" tts:color="#ffff00" tts:backgroundColor="#000000c2" tts:fontSize="160%"/>
+			<tt:style xml:id="textBlue" tts:color="#0000ff" tts:backgroundColor="#ffffffc2" tts:fontSize="160%"/>
+			<tt:style xml:id="textMagenta" tts:color="#ff00ff" tts:backgroundColor="#000000c2" tts:fontSize="160%"/>
+			<tt:style xml:id="textCyan" tts:color="#00ffff" tts:backgroundColor="#000000c2" tts:fontSize="160%"/>
+			<tt:style xml:id="textWhite" tts:color="#ffffff" tts:backgroundColor="#000000c2" tts:fontSize="160%"/>
+			<tt:style xml:id="textBlack" tts:color="#000000" tts:backgroundColor="#ffffffc2" tts:fontSize="160%"/>
+            <tt:style xml:id="textBlueOnYellow" tts:color="#0000ff" tts:backgroundColor="#ffff00c2" tts:fontSize="160%"/>
+            <tt:style xml:id="textBlueOnWhite" tts:color="#0000ff" tts:backgroundColor="#ffffff" tts:fontSize="160%"/>
+            <tt:style xml:id="textBlackOnYellow" tts:color="#000000" tts:backgroundColor="#ffff00c2" tts:fontSize="160%"/>
+
+            <tt:style xml:id="textARDtext" tts:color="#ffffff" tts:backgroundColor="#000000c2" tts:fontSize="160%"/>
+
+            <tt:style xml:id="textCenter" tts:textAlign="center" />
+            <tt:style xml:id="textLeft" tts:textAlign="left"/>
+            <tt:style xml:id="textRight" tts:textAlign="right"/>
+
+
+			<tt:style xml:id="textCenter" tts:textAlign="center" />
+		</tt:styling>
+		<tt:layout>
+			<tt:region xml:id="bottom" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="after"/>
+            <tt:region xml:id="top" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="before"/>
+		</tt:layout>
+	</tt:head>
+	<tt:body>
+		<tt:div style="defaultStyle">
+			<tt:p xml:id="subtitle1" region="bottom" begin="00:00:00.000" end="00:00:02.120" style="textCenter">
+				<tt:span style="textWhite" backgroundColor="#ff00ff">weiß auf schwarz</tt:span>
+			</tt:p>
+			<tt:p xml:id="subtitle2" region="bottom" begin="00:00:02.280" end="00:00:04.280" style="textCenter">
+				<tt:span style="textYellow">gelb auf schwarz</tt:span>
+			</tt:p>
+			<tt:p xml:id="subtitle3" region="bottom" begin="00:00:04.440" end="00:00:06.560" style="textCenter">
+				<tt:span style="textGreen">grün auf schwarz</tt:span>
+			</tt:p>
+			<tt:p xml:id="subtitle4" region="bottom" begin="00:00:06.720" end="00:00:08.840" style="textCenter">
+				<tt:span style="textCyan">cyan auf schwarz</tt:span>
+			</tt:p>
+			<tt:p xml:id="subtitle5" region="bottom" begin="00:00:09.000" end="00:00:11.040" style="textCenter">
+				<tt:span style="textMagenta">magenta auf schwarz</tt:span>
+			</tt:p>
+			<tt:p xml:id="subtitle6" region="bottom" begin="00:00:11.200" end="00:00:13.080" style="textCenter">
+				<tt:span style="textRed">rot auf schwarz</tt:span>
+			</tt:p>
+			<tt:p xml:id="subtitle7" region="bottom" begin="00:00:13.240" end="00:00:15.080" style="textCenter">
+				<tt:span style="textBlueOnYellow">blau auf gelb</tt:span>
+			</tt:p>
+			<tt:p xml:id="subtitle8" region="bottom" begin="00:00:15.240" end="00:00:17.200" style="textCenter">
+				<tt:span style="textBlack">schwarz auf weiß</tt:span>
+			</tt:p>
+			<tt:p xml:id="subtitle9" region="bottom" begin="00:00:17.360" end="00:00:20.240" style="textCenter">
+				<tt:span style="textWhite" >weiß auf schwarz</tt:span>
+				<tt:br/>
+				<tt:span style="textBlueOnYellow">und blau auf gelb</tt:span>
+			</tt:p>
+			<tt:p xml:id="subtitle10" region="bottom" begin="00:00:20.400" end="00:00:23.000" style="textCenter">
+				<tt:span style="textWhite">in einer Zeile ein </tt:span>
+				<tt:span style="textRed">rotes</tt:span>
+				<tt:span style="textWhite"> Wort</tt:span>
+			</tt:p>
+			<tt:p xml:id="subtitle11" region="bottom" begin="00:00:23.160" end="00:00:26.800" style="textCenter">
+				<tt:span style="textBlackOnYellow">Ein </tt:span>
+				<tt:span style="textBlue">blaues</tt:span>
+				<tt:span style="textBlackOnYellow"> Wort mit gelbem Hintergrund.</tt:span>
+			</tt:p>
+			<tt:p xml:id="subtitle12" region="bottom" begin="00:00:26.960" end="00:00:29.200" style="textCenter">
+				<tt:span style="textBlueOnWhite">Ein blaues Wort auf weiß</tt:span>
+			</tt:p>
+			<tt:p xml:id="subtitle13" region="bottom" begin="00:00:29.360" end="00:00:31.360" style="textCenter">
+				<tt:span style="textWhite">weiß auf schwarz doppelte Zeilenhöhe</tt:span>
+			</tt:p>
+			<tt:p xml:id="subtitle14" region="bottom" begin="00:00:31.520" end="00:00:35.600" style="textCenter">
+				<tt:span style="textARDtext">weiß auf schwarz einfache Zeilehöhe</tt:span>
+			</tt:p>
+			<tt:p xml:id="subtitle15" region="bottom" begin="00:00:35.960" end="00:00:39.640" style="textCenter">
+				<tt:span style="textYellow">gelb auf schwarz</tt:span>
+			</tt:p>
+
+
+
+
+            <tt:p xml:id="subtitle16" region="bottom" begin="00:00:40.000" end="00:00:43.000" style="textLeft">
+                <tt:span style="textWhite">links einzeilig unten</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle17" region="bottom" begin="00:00:44.000" end="00:00:47.000" style="textCenter">
+                <tt:span style="textWhite">mittig einzeilig unten</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle18" region="bottom" begin="00:00:48.000" end="00:00:51.000" style="textRight">
+                <tt:span style="textWhite">rechts einzeilig unten</tt:span>
+            </tt:p>
+
+
+            <tt:p xml:id="subtitle19" region="top" begin="00:00:52.000" end="00:00:55.000" style="textLeft">
+                <tt:span style="textWhite">links einzeilig oben</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle20" region="top" begin="00:00:56.000" end="00:00:59.000" style="textCenter">
+                <tt:span style="textWhite">mittig einzeilig oben</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle21" region="top" begin="00:01:00.000" end="00:01:03.000" style="textRight">
+                <tt:span style="textWhite">rechts einzeilig oben</tt:span>
+            </tt:p>
+
+            <tt:p xml:id="subtitle22" region="bottom" begin="00:01:04.000" end="00:01:07.000" style="textLeft">
+                <tt:span style="textWhite">links</tt:span>
+                <tt:br/>
+                <tt:span style="textWhite">zweizeilig unten</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle23" region="bottom" begin="00:01:08.000" end="00:01:11.000" style="textCenter">
+                <tt:span style="textWhite">mittig</tt:span>
+                <tt:br/>
+                <tt:span style="textWhite">zweizeilig unten</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle24" region="bottom" begin="00:01:12.000" end="00:01:15.000" style="textRight">
+                <tt:span style="textWhite">rechts</tt:span>
+                <tt:br/>
+                <tt:span style="textWhite">zweizeilig unten</tt:span>
+            </tt:p>
+
+            <tt:p xml:id="subtitle25" region="top" begin="00:01:16.000" end="00:01:19.000" style="textLeft">
+                <tt:span style="textWhite">links</tt:span>
+                <tt:br/>
+                <tt:span style="textWhite">zweizeilig oben</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle26" region="top" begin="00:01:20.000" end="00:01:23.000" style="textCenter">
+                <tt:span style="textWhite">mittig</tt:span>
+                <tt:br/>
+                <tt:span style="textWhite">zweizeilig oben</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle27" region="top" begin="00:01:24.000" end="00:01:27.000" style="textRight">
+                <tt:span style="textWhite">rechts</tt:span>
+                <tt:br/>
+                <tt:span style="textWhite">zweizeilig oben</tt:span>
+            </tt:p>
+
+
+            <tt:p xml:id="subtitle28" region="bottom" begin="00:01:28.000" end="00:01:31.000" style="textCenter">
+                <tt:span style="textWhite">dreizeiliger</tt:span>
+                <tt:br/>
+                <tt:span style="textWhite">Untertitel</tt:span>
+                <tt:br/>
+                <tt:span style="textWhite">unten mittig</tt:span>
+            </tt:p>
+
+            <tt:p xml:id="subtitle29" region="bottom" begin="00:01:32.000" end="00:01:35.000" style="textCenter">
+                <tt:span style="textARDtext">35 "O"s müssen in eine Zeile passen</tt:span>
+                <tt:br/>
+                <tt:span style="textARDtext">OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO</tt:span>
+            </tt:p>
+
+
+		</tt:div>
+	</tt:body>
+</tt:tt>

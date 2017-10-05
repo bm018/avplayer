@@ -1,0 +1,43 @@
+{
+  "_representationArray": [
+    {
+      "_representationClass": "m"
+    }
+  ],
+  "_initialVolume": 1,
+  "_startTime": 0,
+  "_endTime": 0,
+  "_autosave": true,
+  "_autoplay": false,
+  "_baseUrl": "",
+  "_errorMessagesConfig": "",
+  "_showOptions": true,
+  "_showOptions_Plugins": true,
+  "_showOptions_Quality": true,
+  "_showColorSettings": true,
+  "_showEqualizer": true,
+  "_rememberCurrentTime": false,
+  "_forceControlBarVisible": true,
+  "_showSubtitelAtStart": true,
+  "_addons": [
+    "AddonATIPixel"
+  ],
+  "_pixelConfig": [
+    {
+      "tracker": "ATI",
+      "clipTitle": "clipTitle",
+      "mediaType": "mediaType",
+      "playerId": "playerId",
+      "mediaLevel2": "mediaLevel2",
+      "mediaLabel": "mediaLabel",
+      "mediaTheme1": "mediaTheme1",
+      "mediaTheme2": "mediaTheme2",
+      "mediaTheme3": "mediaTheme3",
+      "previousMedia": "previousMedia",
+      "refreshDuration": 10,
+      "duration": 1234,
+      "broadcastMode": "clip",
+      "webdomain": "localhost"
+    }
+  ]
+}

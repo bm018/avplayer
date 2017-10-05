@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <title>[ARD-Player]</title>
+
+    <!-- Basisklasse: Immer einbinden -->
+    <link rel="stylesheet" href="mandanten/ard/style/main.css" type="text/css"/>
+
+    <!-- Body-Setup: Helferklasse nur fuer Release-Ausspielung -->
+    <style>
+        html, body {
+            font-family: Verdana, Arial, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            padding-left: 4%;
+            padding-top: 2%;
+        }
+    </style>
+
+    <script type="text/javascript">
+        document.write("<meta http-equiv='X-UA-Compatible' content='IE=edge'/>");
+    </script>
+
+    <!-- ARD Player start -->
+    <!--Libs-->
+    <script src="base/js/libs/jquery-2.1.1.min.js"></script>
+    <script src="base/js/libs/jquery.tools-1.2.7.min.js"></script>
+    <script src="base/js/libs/jquery-ui-1.10.4.min.js"></script>
+    <script src="base/js/libs/swfobject.js"></script>
+    <script src="base/js/libs/mm.useractivity.js"></script>
+    <script src="base/js/libs/json2.js"></script>
+    <script src="base/js/libs/jquery.cookie.js"></script>
+    <script src="base/js/libs/shortcut.js"></script>
+    <script src="base/js/libs/bigscreen.min.js"></script>
+    <script src="base/js/libs/hls-0.7.11.light.min.js"></script>
+
+    <!-- Greensock -->
+    <script src="base/js/libs/TweenLite.min.js"></script>
+    <script src="base/js/libs/Draggable.min.js"></script>
+    <script src="base/js/libs/CSSPlugin.min.js"></script>
+
+    <!--Player-->
+    <script src="base/js/namespace.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/core/AbstractPlayerCtrl.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/core/AbstractCorePlugin.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/core/HtmlVideoCtrl.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/core/HtmlAudioCtrl.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/core/FlashPluginCtrl.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/core/PlaylistPlayer.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/core/Player.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/model/vo/PlayerConfiguration.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/model/vo/Media.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/model/vo/MediaCollection.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/model/vo/MediaStream.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/model/vo/Playlist.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/model/vo/PlaylistItem.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/model/VideoSources.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/model/PlayerModel.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/controller/KeyboardPlayerController.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/utils/GUID.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/utils/QueryParser.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/utils/DateUtils.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/utils/Cookie.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/utils/Html5MEFactory.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/model/GlobalModel.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/views/ViewController.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/views/ResponsiveImage.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/views/TimelineSlider.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/controller/ErrorController.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/controller/PlayerPixelController.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/business/GetPlayerModelCmd.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/business/GenerateFlashPluginCmd.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/business/InitPlayerCmd.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/business/GetPlayerConfigByQueryCmd.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/business/GetPlayerConfigByJsonCmd.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/business/GetPlaylistByJsonCmd.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/business/GetMediaCollectionByQueryCmd.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/business/GetMediaCollectionByJsonCmd.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/business/GenerateHTMLVideoCmd.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/business/GenerateHTMLAudioCmd.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/core/plugins.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/core/script.js"></script>
+
+    <!-- Plugin Untertitel -->
+    <script src="addons/untertitel/js/AddonUntertitel.js"></script>
+    <script src="addons/untertitel/js/controller/SubtitleController.js"></script>
+    <link rel="stylesheet" href="addons/untertitel/css/AddonUntertitel.css" media="all"/>
+
+    <!-- Plugin Debug
+    <script src="addons/debug/js/AddonDebug.js"></script>
+    <link rel="stylesheet" href="addons/debug/css/AddonDebug.css" media="all"/>
+    -->
+
+    <!-- ARD Player END -->
+
+</head>
+<body>
+
+<script>
+    (function ($) {
+
+        $(window).ready(function () {
+
+            var mc = new ardplayer.MediaCollection("video", true, ["auto", 0, 1, 2, 3]);
+            mc.addMedia(0);
+            mc.addMediaStream(0, "auto", "", "http://ndr_fs-lh.akamaihd.net/z/ndrfs_hh@119223/manifest.f4m", "akamai");
+
+            var mc2 = new ardplayer.MediaCollection("video", false, ["auto", 0, 1, 2, 3]);
+            mc2.addMedia(0);
+            mc2.addMediaStream(0, "auto", "", "http://clients.flexlab.de/gundl/ard/media/ard_test.mp4", "default");
+
+            var pc = new ardplayer.PlayerConfiguration();
+            pc.setBaseUrl("");
+            pc.setAutoPlay(true);
+            pc.setShowOptions(true);
+            pc.setShowOptions_Plugins(true);
+            pc.setShowOptions_Quality(true);
+            pc.setSolaAnalyticsEnabled(false);
+            pc.setShowEqualizer(true);
+
+            var playlist = new ardplayer.Playlist();
+            playlist.addPlaylistItem(pc, mc2, true);
+            playlist.addPlaylistItem(pc, mc2, false);
+            playlist.addPlaylistItem(pc, mc2, false);
+
+            var playlistJSON = "conf/playlist/playlist_min.json";
+
+            // Filterfunktionen
+            var filter_pc = function (pc) {
+                console.log("filter_pc", pc);
+                return pc;
+            };
+
+            var filter_mc = function (mc) {
+                console.log("filter_mc", mc);
+                return mc;
+            };
+
+            // Testfälle:
+            //var pp = new ardplayer.PlaylistPlayer("player00", playlistJSON + "404", filter_pc, filter_mc);
+            var pp = new ardplayer.PlaylistPlayer("player00", playlistJSON, filter_pc, filter_mc);
+            // var pp = new ardplayer.PlaylistPlayer("player00", playlist, filter_pc, filter_mc);
+
+            $(pp).bind(ardplayer.PlaylistPlayer.EVENT_NEXT_PLAYLIST_ITEM, function (event) {
+
+                /*
+                 Event Attribute:
+
+                 index: akt Index
+                 total: anz Items
+                 item: akt. Playlistitem
+                 player: akt. Playerinstanz
+                 */
+
+                $(event.player).on(ardplayer.PlayerPixelController.STREAM_LOAD, function (event) {
+                    console.log("STREAM_LOAD", event);
+
+                    // Beispiel - Zugriff auf die PlayerConfiguration
+                    console.log(
+                            event.target // Player
+                                    .model // PlayerModel
+                                    .playerConfig // PlayerConfiguration
+                                    .getPixelConfig()
+                    );
+                });
+
+                $(event.player).on(ardplayer.PlayerPixelController.SUPER_INITIAL_PLAY, function (event) {
+                    console.log("SUPER_INITIAL_PLAY", event);
+                });
+
+                $(event.player).on(ardplayer.PlayerPixelController.SUPER_REPLAY, function (event) {
+                    console.log("SUPER_REPLAY", event);
+                });
+
+
+                $(event.player).on(ardplayer.Player.EVENT_STOP_STREAM, function (event) {
+                    console.log("EVENT_STOP_STREAM", event);
+                });
+
+                $("#idx").text(event.index + 1);
+                $("#total").text(event.total);
+            });
+
+        });
+    })(ardplayer.jq);
+
+</script>
+
+
+<div style="width:512px; height: 288px">
+    <div id="player00" class="ardplayer"></div>
+    <div><span id="idx">#</span> / <span id="total">#</span></div>
+</div>
+
+</body>
+</html>

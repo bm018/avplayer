@@ -1,0 +1,61 @@
+{
+  "_type":"video",
+  "_isLive":false,
+  "_defaultQuality":["auto", 0, 1, 2, 3],
+  "_audioImage":{
+    "s":"base/img/posterframe-s.jpg",
+    "m":"mandanten/sport/img/posterframe-m.jpg",
+    "l":"mandanten/rbb/img/posterframe-l.jpg",
+    "xl":"base/img/posterframe-xl.jpg"
+  },
+  "_previewImage":{
+    "s":"base/img/posterframe-s.jpg",
+    "m":"mandanten/sport/img/posterframe-m.jpg",
+    "l":"mandanten/rbb/img/posterframe-l.jpg",
+    "xl":"base/img/posterframe-xl.jpg"
+  },
+  "_subtitleUrl":"test/untertiteldateien/ebu/ebu-tt-all.xml",
+  "_subtitleOffset":0,
+  "_mediaArray":[
+    {
+      "_plugin":1,
+      "_mediaStreamArray":[
+        {
+          "_quality":0,
+          "_server":"",
+          "_stream":[
+            "http://http-stream.rbb-online.de/rbb/ard_ref_clip/video/tmp_20100202_ard_ref_clip_MP4H264_l_16_9_960x544.mp4"
+          ],
+          "_cdn":""
+        },
+        {
+          "_quality":1,
+          "_server":"",
+          "_stream":[
+            "http://http-stream.rbb-online.de/rbb/ard_ref_clip/video/tmp_20100202_ard_ref_clip_MP4H264_l_16_9_960x544.mp4"
+          ],
+          "_cdn":""
+        },
+        {
+          "_quality":2,
+          "_server":"",
+          "_stream":[
+            "http://http-stream.rbb-online.de/rbb/ard_ref_clip/video/tmp_20100202_ard_ref_clip_MP4H264_l_16_9_960x544.mp4"
+          ],
+          "_cdn":""
+        },
+        {
+          "_quality":3,
+          "_server":"",
+          "_stream":[
+            "http://http-stream.rbb-online.de/rbb/ard_ref_clip/video/tmp_20100202_ard_ref_clip_MP4H264_l_16_9_960x544.mp4"
+          ],
+          "_cdn":"",
+          "_label":"*** highest",
+          "_description":"highest available quality"
+        }
+      ]
+    }
+  ],
+  "_sortierArray":[0, 1]
+}

@@ -1,0 +1,1491 @@
+﻿[{
+    "Nr": 1,
+    "LRA": "BR",
+    "TermID": 1.54,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://cdn-storage.br.de/MUJIuUOVBwQIbtCCBLzGiLC1uwQoNA4p_AZS/_-ZS/_AxP5-rd/303204a0-721e-4919-b438-f8b1112f3bc0_B.mp4"
+}, {
+    "Nr": 2,
+    "LRA": "BR",
+    "TermID": 1.65,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "ios",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://cdn-vod-ios.br.de/i/MUJIuUOVBwQIbtCCBLzGiLC1uwQoNA4p_AZS/_-ZS/_AxP5-rd/303204a0-721e-4919-b438-f8b1112f3bc0_,0,.mp4.csmil/master.m3u8"
+}, {
+    "Nr": 3,
+    "LRA": "BR",
+    "TermID": 1.58,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://cdn-storage.br.de/MUJIuUOVBwQIbtCCBLzGiLC1uwQoNA4p_AZS/_-ZS/_AxP5-rd/303204a0-721e-4919-b438-f8b1112f3bc0_C.mp4"
+}, {
+    "Nr": 4,
+    "LRA": "BR",
+    "TermID": 3.14,
+    "Live": "OnDemand",
+    "AV": "Audio",
+    "plugin": "flash",
+    "CDN": "akamai",
+    "Server": "edgefcs.net",
+    "Stream": "cp235320.edgefcs.net/ondemand/ rtmp://cp235320.edgefcs.net/ondemand/mp3:mir-live/MUJIuUOVBwQIb71S/bKOWBwQCuL9zsK1S/_2rc_H1S/_-9S/_AgP_AvP/de0a1585-a5ae-4911-8e03-e2ab87bc6b02_2"
+}, {
+    "Nr": 5,
+    "LRA": "BR",
+    "TermID": 3.4,
+    "Live": "OnDemand",
+    "AV": "Audio",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://cdn-storage.br.de/mir-live/MUJIuUOVBwQIb71S/bKOWBwQCuL9zsK1S/_2rc_H1S/_-9S/_AgP_AvP/de0a1585-a5ae-4911-8e03-e2ab87bc6b02_2.mp3"
+}, {
+    "Nr": 6,
+    "LRA": "BR",
+    "TermID": 1.83,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://cdn-storage.br.de/MUJIuUOVBwQIbtCCBLzGiLC1uwQoNA4p_AZS/_-ZS/_AxP5-rd/303204a0-721e-4919-b438-f8b1112f3bc0_0.mp4"
+}, {
+    "Nr": 7,
+    "LRA": "BR",
+    "TermID": 1.63,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "ios",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://cdn-vod-ios.br.de/i/MUJIuUOVBwQIbtCCBLzGiLC1uwQoNA4p_AZS/_-ZS/_AxP5-rd/303204a0-721e-4919-b438-f8b1112f3bc0_,B,.mp4.csmil/master.m3u8"
+}, {
+    "Nr": 8,
+    "LRA": "BR",
+    "TermID": 1.69,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "ios",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://cdn-vod-ios.br.de/i/MUJIuUOVBwQIbtCCBLzGiLC1uwQoNA4p_AZS/_-ZS/_AxP5-rd/303204a0-721e-4919-b438-f8b1112f3bc0_,C,.mp4.csmil/master.m3u8"
+}, {
+    "Nr": 9,
+    "LRA": "BR",
+    "TermID": 5.24,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "ios",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://cdn-vod-ios.br.de/i/MUJIuUOVBwQIbtCCBLzGiLC1uwQoNA4p_AZS/_-ZS/_AxP5-rd/303204a0-721e-4919-b438-f8b1112f3bc0_,0,A,B,C,.mp4.csmil/master.m3u8?__b__=900"
+}, {
+    "Nr": 10,
+    "LRA": "BR",
+    "TermID": 1.28,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://cdn-storage.br.de/MUJIuUOVBwQIbtCCBLzGiLC1uwQoNA4p_AZS/_-ZS/_AxP5-rd/111005_0010_REFERENZCLIP-ARD-MED--nicht-loeschendepubli.mp4"
+}, {
+    "Nr": 11,
+    "LRA": "BR",
+    "TermID": 2.14,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://cdn-storage.br.de/mir-live/MUJIuUOVBwQIb71S/iw11MXTPbXPS/_2rc_U1S/_AJS/_-rp_-kf/110128_2030_Wolfgang-Rojek-Geburtstage.mp4"
+}, {
+    "Nr": 12,
+    "LRA": "BR",
+    "TermID": 3.21,
+    "Live": "OnDemand",
+    "AV": "Audio",
+    "plugin": "ios",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://cdn-vod-ios.br.de/i/mir-live/MUJIuUOVBwQIb71S/bKOWBwQCuL9zsK1S/_2rc_H1S/_-9S/_AgP_AvP/de0a1585-a5ae-4911-8e03-e2ab87bc6b02_,2,.mp4.csmil/master.m3u8"
+}, {
+    "Nr": 13,
+    "LRA": "BR",
+    "TermID": 3.19,
+    "Live": "OnDemand",
+    "AV": "Audio",
+    "plugin": "ios",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://cdn-vod-ios.br.de/i/mir-live/MUJIuUOVBwQIb71S/bKOWBwQCuL9zsK1S/_2rc_H1S/_-9S/_AgP_AvP/de0a1585-a5ae-4911-8e03-e2ab87bc6b02_,1,.mp4.csmil/master.m3u8"
+}, {
+    "Nr": 14,
+    "LRA": "BR",
+    "TermID": 6.1,
+    "Live": "OnDemand",
+    "AV": "Audio",
+    "plugin": "ios",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://cdn-vod-ios.br.de/i/mir-live/MUJIuUOVBwQIb71S/bKOWBwQCuL9zsK1S/_2rc_H1S/_-9S/_AgP_AvP/de0a1585-a5ae-4911-8e03-e2ab87bc6b02_,1,2,3,.mp4.csmil/master.m3u8"
+}, {
+    "Nr": 15,
+    "LRA": "BR",
+    "TermID": 3.10,
+    "Live": "Live",
+    "AV": "Audio",
+    "plugin": "html5",
+    "CDN": "icecast",
+    "Server": "",
+    "Stream": "http://streams.br-online.de/b5aktuell_2.m3u"
+}, {
+    "Nr": 16,
+    "LRA": "BR",
+    "TermID": 5.82,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "flash",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://cdn-vod-hds.br.de/z/MUJIuUOVBwQIbtCCBLzGiLC1uwQoNA4p_AZS/_-ZS/_AxP5-rd/303204a0-721e-4919-b438-f8b1112f3bc0_,0,A,B,E,C,.mp4.csmil/manifest.f4m"
+}, {
+    "Nr": 17,
+    "LRA": "BR",
+    "TermID": 1.61,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://cdn-storage.br.de/MUJIuUOVBwQIbtCCBLzGiLC1uwQoNA4p_AZS/_-ZS/_AxP5-rd/303204a0-721e-4919-b438-f8b1112f3bc0_E.mp4"
+}, {
+    "Nr": 18,
+    "LRA": "BR",
+    "TermID": 1.35,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://cdn-storage.br.de/MUJIuUOVBwQIbtCCBLzGiLC1uwQoNA4p_AZS/_-ZS/_AxP5-rd/303204a0-721e-4919-b438-f8b1112f3bc0_X.mp4"
+}, {
+    "Nr": 19,
+    "LRA": "BR",
+    "TermID": 5.12,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "ios",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://cdn-vod-ios.br.de/i/MUJIuUOVBwQIbtCCBLzGiLC1uwQoNA4p_AZS/_-ZS/_AxP5-rd/303204a0-721e-4919-b438-f8b1112f3bc0_,0,A,B,.mp4.csmil/master.m3u8?__b__=200"
+}, {
+    "Nr": 20,
+    "LRA": "BR",
+    "TermID": 5.85,
+    "Live": "Live",
+    "AV": "Video",
+    "plugin": "flash",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://livestreams.br.de/z/bfssued_germany@119890/manifest.f4m"
+}, {
+    "Nr": 21,
+    "LRA": "BR",
+    "TermID": 5.43,
+    "Live": "Live",
+    "AV": "Video",
+    "plugin": "ios",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://livestreams.br.de/i/bfssued_germany@119890/master.m3u8"
+}, {
+    "Nr": 22,
+    "LRA": "BR",
+    "TermID": 1.56,
+    "Live": "Live",
+    "AV": "Video",
+    "plugin": "symbian-rtsp,android-rtsp",
+    "CDN": "default",
+    "Server": "rtsp://livestreams-rtsp.br.de",
+    "Stream": "rtsp://livestreams-rtsp.br.de/live/bfssued_germany_3"
+}, {
+    "Nr": 23,
+    "LRA": "BR",
+    "TermID": 1.47,
+    "Live": "Live",
+    "AV": "Video",
+    "plugin": "symbian-rtsp,android-rtsp",
+    "CDN": "default",
+    "Server": "rtsp://livestreams-rtsp.br.de",
+    "Stream": "rtsp://livestreams-rtsp.br.de/live/bfssued_germany_4"
+}, {
+    "Nr": 24,
+    "LRA": "BR",
+    "TermID": 1.49,
+    "Live": "Live",
+    "AV": "Video",
+    "plugin": "symbian-rtsp,android-rtsp",
+    "CDN": "default",
+    "Server": "rtsp://livestreams-rtsp.br.de",
+    "Stream": "rtsp://livestreams-rtsp.br.de/live/bfssued_germany_6"
+}, {
+    "Nr": 25,
+    "LRA": "HR",
+    "TermID": 1.58,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://www.hr.gl-systemhaus.de/mp4/ARDmediathek/ard-referenzclip/referenzclip_webl_ard.mp4"
+}, {
+    "Nr": 26,
+    "LRA": "HR",
+    "TermID": 1.83,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://www.hr.gl-systemhaus.de/mp4/ARDmediathek/ard-referenzclip/referenzclip_webs_ard.mp4"
+}, {
+    "Nr": 27,
+    "LRA": "HR",
+    "TermID": 1.54,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://www.hr.gl-systemhaus.de/mp4/ARDmediathek/ard-referenzclip/referenzclip_ard.mp4"
+}, {
+    "Nr": 28,
+    "LRA": "HR",
+    "TermID": 3.3,
+    "Live": "OnDemand",
+    "AV": "Audio",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://mp3.podcast.hr-online.de/mp3/podcast/hr4_mittelhessen/hr4_mittelhessen_20140114_7.mp3"
+}, {
+    "Nr": 29,
+    "LRA": "MDR",
+    "TermID": 1.24,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "flash",
+    "CDN": "akamai",
+    "Server": "edgefcs.net",
+    "Stream": "cp229098.edgefcs.net/ondemand rtmp://cp229098.edgefcs.net/ondemand/mp4:mp4dyn/FCMS-8615ba06-bd05-40a8-9c48-3398452f507f-e9ebd6e42ce1.mp4"
+}, {
+    "Nr": 30,
+    "LRA": "MDR",
+    "TermID": 1.54,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://ondemand.mdr.de/mp4dyn/FCMS-8615ba06-bd05-40a8-9c48-3398452f507f-e9ebd6e42ce1.mp4"
+}, {
+    "Nr": 31,
+    "LRA": "MDR",
+    "TermID": 1.20,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "flash",
+    "CDN": "akamai",
+    "Server": "edgefcs.net",
+    "Stream": "cp229098.edgefcs.net/ondemand rtmp://cp229098.edgefcs.net/ondemand/mp4:mp4dyn/FCMS-8615ba06-bd05-40a8-9c48-3398452f507f-c7cca1d51b4b.mp4"
+}, {
+    "Nr": 32,
+    "LRA": "MDR",
+    "TermID": 1.83,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://ondemand.mdr.de/mp4dyn/FCMS-8615ba06-bd05-40a8-9c48-3398452f507f-9ece3f9b571f.mp4"
+}, {
+    "Nr": 33,
+    "LRA": "MDR",
+    "TermID": 1.61,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://ondemand.mdr.de/mp4dyn/FCMS-8615ba06-bd05-40a8-9c48-3398452f507f-02faac9018d3.mp4"
+}, {
+    "Nr": 34,
+    "LRA": "MDR",
+    "TermID": 1.58,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://ondemand.mdr.de/mp4dyn/FCMS-8615ba06-bd05-40a8-9c48-3398452f507f-c7cca1d51b4b.mp4"
+}, {
+    "Nr": 35,
+    "LRA": "MDR",
+    "TermID": 5.32,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "ios",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://mdr_online_hls-vh.akamaihd.net/i/mp4dyn/VOID8615ba06-bd05-40a8-9c48-3398452f507f.smil/master.m3u8"
+}, {
+    "Nr": 36,
+    "LRA": "MDR",
+    "TermID": 3.13,
+    "Live": "Live",
+    "AV": "Audio",
+    "plugin": "flash",
+    "CDN": "akamai",
+    "Server": "edgefcs.net",
+    "Stream": "cp229098.edgefcs.net/ondemand rtmp://cp229098.edgefcs.net/ondemand/mp4:mp4audiomobil/FCMS-4a5bb9e4-0e15-4fbf-af25-c0cf39bdad5b-7d759df22b78.mp4"
+}, {
+    "Nr": 37,
+    "LRA": "MDR",
+    "TermID": 3.14,
+    "Live": "OnDemand",
+    "AV": "Audio",
+    "plugin": "flash",
+    "CDN": "akamai",
+    "Server": "edgefcs.net",
+    "Stream": "cp229098.edgefcs.net/ondemand rtmp://cp229098.edgefcs.net/ondemand/mp3:mp3/FCMS-4a5bb9e4-0e15-4fbf-af25-c0cf39bdad5b-69c30f9eac0b"
+}, {
+    "Nr": 38,
+    "LRA": "MDR",
+    "TermID": 1.31,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://ondemand.mdr.de/mp4weblplus/FCMS-8615ba06-bd05-40a8-9c48-3398452f507f-9dd5e151287b.mp4"
+}, {
+    "Nr": 39,
+    "LRA": "MDR",
+    "TermID": 3.10,
+    "Live": "Live",
+    "AV": "Audio",
+    "plugin": "html5",
+    "CDN": "icecast",
+    "Server": "",
+    "Stream": "http://avw.mdr.de/livestreams/mdr1_radio_sachsen_live_128.m3u"
+}, {
+    "Nr": 40,
+    "LRA": "MDR",
+    "TermID": 3.12,
+    "Live": "Live",
+    "AV": "Audio",
+    "plugin": "html5",
+    "CDN": "icecast",
+    "Server": "",
+    "Stream": "http://avw.mdr.de/livestreams/mdr1_radio_sachsen_live_128.m3u"
+}, {
+    "Nr": 41,
+    "LRA": "MDR",
+    "TermID": 1.23,
+    "Live": "Live",
+    "AV": "Video",
+    "plugin": "flash",
+    "CDN": "default",
+    "Server": "mdr-tv-sachsenlivefs.fplive.net",
+    "Stream": "mdr-tv-sachsenlivefs.fplive.net/mdr-tv-sachsenlive-live/ rtmp://mdr-tv-sachsenlivefs.fplive.net/mdr-tv-sachsenlive-live/stream_livetvmdrsachsen_de_576"
+}, {
+    "Nr": 42,
+    "LRA": "MDR",
+    "TermID": 5.33,
+    "Live": "Live",
+    "AV": "Video",
+    "plugin": "ios",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://mdr_sachsen_hls-lh.akamaihd.net/i/livetvmdrsachsen_de@106902/master.m3u8"
+}, {
+    "Nr": 43,
+    "LRA": "RadioBremen",
+    "TermID": 1.28,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://httpmedia.radiobremen.de/ard-referenzclips/081044/081044_283832_vodcast.mp4"
+}, {
+    "Nr": 44,
+    "LRA": "RadioBremen",
+    "TermID": 1.27,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "flash",
+    "CDN": "default",
+    "Server": "fc-ondemand.radiobremen.de",
+    "Stream": "rtmpt://fc-ondemand.radiobremen.de/a792/e6/ard-referenzclips/081044/mp4:081044_283838_256.mp4"
+}, {
+    "Nr": 45,
+    "LRA": "RadioBremen",
+    "TermID": 1.83,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://httpmedia.radiobremen.de/ard-referenzclips/081044/081044_283838_256.mp4"
+}, {
+    "Nr": 46,
+    "LRA": "RadioBremen",
+    "TermID": 1.24,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "flash",
+    "CDN": "default",
+    "Server": "fc-ondemand.radiobremen.de",
+    "Stream": "rtmpt://fc-ondemand.radiobremen.de/a792/e6/ard-referenzclips/081044/mp4:081044_283839_512.mp4"
+}, {
+    "Nr": 47,
+    "LRA": "RadioBremen",
+    "TermID": 1.54,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://httpmedia.radiobremen.de/ard-referenzclips/081044/081044_283839_512.mp4"
+}, {
+    "Nr": 48,
+    "LRA": "RadioBremen",
+    "TermID": 5.10,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "ios",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://hls-ondemand.radiobremen.de/i/,ard-referenzclips/081044/081044_283839_512,ard-referenzclips/081044/081044_283832_vodcast,ard-referenzclips/081044/081044_283838_256,.mp4.csmil/master.m3u8"
+}, {
+    "Nr": 49,
+    "LRA": "RadioBremen",
+    "TermID": 1.33,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://httpmedia.radiobremen.de/ard-referenzclips/081044/081044_283862_hbbtv.mp4"
+}, {
+    "Nr": 50,
+    "LRA": "RadioBremen",
+    "TermID": 1.20,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "flash",
+    "CDN": "default",
+    "Server": "fc-ondemand.radiobremen.de",
+    "Stream": "rtmpt://fc-ondemand.radiobremen.de/a792/e6/ard-referenzclips/081044/mp4:081044_283868_960.mp4"
+}, {
+    "Nr": 51,
+    "LRA": "RadioBremen",
+    "TermID": 1.58,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://httpmedia.radiobremen.de/ard-referenzclips/081044/081044_283868_960.mp4"
+}, {
+    "Nr": 52,
+    "LRA": "RadioBremen",
+    "TermID": 5.28,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "ios",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://hls-ondemand.radiobremen.de/i/,ard-referenzclips/081044/081044_283868_960,ard-referenzclips/081044/081044_283839_512,ard-referenzclips/081044/081044_283832_vodcast,ard-referenzclips/081044/081044_283838_256,.mp4.csmil/master.m3u8"
+}, {
+    "Nr": 53,
+    "LRA": "RBB",
+    "TermID": 1.20,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "flash",
+    "CDN": "akamai",
+    "Server": "ondemand.rbb-online.de",
+    "Stream": "ondemand.rbb-online.de/ondemand/ rtmp://ondemand.rbb-online.de/ondemand/mp4:rbb/ard_ref_clip/video/ard_ref_clip/video/tmp_20100202_ard_ref_clip_MP4H264_l_16_9_960x544.mp4"
+}, {
+    "Nr": 54,
+    "LRA": "RBB",
+    "TermID": 1.24,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "flash",
+    "CDN": "akamai",
+    "Server": "ondemand.rbb-online.de",
+    "Stream": "ondemand.rbb-online.de/ondemand/ rtmp://ondemand.rbb-online.de/ondemand/mp4:rbb/ard_ref_clip/video/tmp_20100202_ard_ref_clip_MP4H264_m_16_9_512x288.mp4"
+}, {
+    "Nr": 55,
+    "LRA": "RBB",
+    "TermID": 1.27,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "flash",
+    "CDN": "akamai",
+    "Server": "ondemand.rbb-online.de",
+    "Stream": "ondemand.rbb-online.de/ondemand/ rtmp://ondemand.rbb-online.de/ondemand/mp4:rbb/ard_ref_clip/video/ard_ref_clip/video/ard_ref_clip/video/tmp_20100202_ard_ref_clip_MP4H264_s_16_9_256x144.mp4"
+}, {
+    "Nr": 56,
+    "LRA": "RBB",
+    "TermID": 1.28,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://download.rbb-online.de/ard_ref_clip/video/tmp_20100202_ard_ref_clip_MP4H264_m_16_9_512x288.mp4"
+}, {
+    "Nr": 57,
+    "LRA": "RBB",
+    "TermID": 2.14,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://download.rbb-online.de/ard_ref_clip/video/tmp_20100202_ard_ref_clip_MP4H264_m_16_9_512x288.mp4"
+}, {
+    "Nr": 58,
+    "LRA": "RBB",
+    "TermID": 90.3,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://multistream.rbb-online.de/rbb/ard_ref_clip/video/tmp_20100202_ard_ref_clip_MP4H264_m_16_9_512x288.mp4"
+}, {
+    "Nr": 59,
+    "LRA": "RBB",
+    "TermID": 1.83,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://http-stream.rbb-online.de/rbb/ard_ref_clip/video/tmp_20100202_ard_ref_clip_MP4H264_s_16_9_256x144.mp4"
+}, {
+    "Nr": 60,
+    "LRA": "RBB",
+    "TermID": 1.54,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://http-stream.rbb-online.de/rbb/ard_ref_clip/video/tmp_20100202_ard_ref_clip_MP4H264_m_16_9_512x288.mp4"
+}, {
+    "Nr": 61,
+    "LRA": "RBB",
+    "TermID": 1.58,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://http-stream.rbb-online.de/rbb/ard_ref_clip/video/tmp_20100202_ard_ref_clip_MP4H264_l_16_9_960x544.mp4"
+}, {
+    "Nr": 62,
+    "LRA": "RBB",
+    "TermID": 3.4,
+    "Live": "OnDemand",
+    "AV": "Audio",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://http-stream.rbb-online.de/rbb/ard_ref_clip/audio/referenz_daccord.mp3"
+}, {
+    "Nr": 63,
+    "LRA": "RBB",
+    "TermID": 3.6,
+    "Live": "OnDemand",
+    "AV": "Audio",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://http-stream.rbb-online.de/rbb/ard_ref_clip/audio/22050_48_aufgegabelt_8650.mp3"
+}, {
+    "Nr": 64,
+    "LRA": "RBB",
+    "TermID": 3.3,
+    "Live": "OnDemand",
+    "AV": "Audio",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://download.rbb-online.de/ard_ref_clip/audio/referenz_hf.mp3"
+}, {
+    "Nr": 65,
+    "LRA": "RBB",
+    "TermID": 3.7,
+    "Live": "OnDemand",
+    "AV": "Audio",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://download.rbb-online.de/ard_ref_clip/audio/32000_64_aufgegabelt_8650.mp3"
+}, {
+    "Nr": 66,
+    "LRA": "RBB",
+    "TermID": 3.10,
+    "Live": "Live",
+    "AV": "Audio",
+    "plugin": "html5",
+    "CDN": "icecast",
+    "Server": "",
+    "Stream": "http://www.fritz.de/live.m3u"
+}, {
+    "Nr": 67,
+    "LRA": "RBB",
+    "TermID": 3.12,
+    "Live": "Live",
+    "AV": "Audio",
+    "plugin": "html5",
+    "CDN": "icecast",
+    "Server": "",
+    "Stream": "http://www.fritz.de/live_s.m3u"
+}, {
+    "Nr": 68,
+    "LRA": "RBB",
+    "TermID": 5.23,
+    "Live": "Live",
+    "AV": "Video",
+    "plugin": "ios",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://rbb_live-lh.akamaihd.net/i/rbb_berlin@108248/master.m3u8"
+}, {
+    "Nr": 69,
+    "LRA": "WDR",
+    "TermID": 1.12,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "flash",
+    "CDN": "limelight",
+    "Server": "llnwd.net",
+    "Stream": "gffstream.fcod.llnwd.net/a792/e2/ rtmp://gffstream.fcod.llnwd.net/a792/e2/ard-testfiles/20090126_ard_ref_clip_termid_1_12.flv"
+}, {
+    "Nr": 70,
+    "LRA": "WDR",
+    "TermID": 1.16,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "flash",
+    "CDN": "limelight",
+    "Server": "llnwd.net",
+    "Stream": "gffstream.fcod.llnwd.net/a792/e2/ rtmp://gffstream.fcod.llnwd.net/a792/e2/ard-testfiles/20090126_ard_ref_clip_termid_1_16.flv"
+}, {
+    "Nr": 71,
+    "LRA": "WDR",
+    "TermID": 1.20,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "flash",
+    "CDN": "limelight",
+    "Server": "llnwd.net",
+    "Stream": "gffstream.fcod.llnwd.net/a792/e2/ rtmp://gffstream.fcod.llnwd.net/a792/e2/mp4:CMS2010/mdbabnahme/ondemand/weltweit/fsk0/18/182497/182497_1774420.mp4"
+}, {
+    "Nr": 72,
+    "LRA": "WDR",
+    "TermID": 1.24,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "flash",
+    "CDN": "limelight",
+    "Server": "llnwd.net",
+    "Stream": "gffstream.fcod.llnwd.net/a792/e2/ rtmp://gffstream.fcod.llnwd.net/a792/e2/mp4:CMS2010/mdbabnahme/ondemand/weltweit/fsk0/18/182497/182497_1774421.mp4"
+}, {
+    "Nr": 73,
+    "LRA": "WDR",
+    "TermID": 1.27,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "flash",
+    "CDN": "limelight",
+    "Server": "llnwd.net",
+    "Stream": "gffstream.fcod.llnwd.net/a792/e2/ rtmp://gffstream.fcod.llnwd.net/a792/e2/mp4:ard-testfiles/20090126_ard_ref_clip_termid_1.27.mp4"
+}, {
+    "Nr": 74,
+    "LRA": "WDR",
+    "TermID": 1.28,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://http-ras.wdr.de/ard-testfiles/20090126_ard_ref_clip_termid_1_28.mp4"
+}, {
+    "Nr": 75,
+    "LRA": "WDR",
+    "TermID": 1.29,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://http-ras.wdr.de/ard-testfiles/20090126_ard_ref_clip_termid_1_29.mp4"
+}, {
+    "Nr": 76,
+    "LRA": "WDR",
+    "TermID": 1.31,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://hbbtv-ww.wdr.de/medstda/fsk0/18/182497/182497_1774424.mp4"
+}, {
+    "Nr": 77,
+    "LRA": "WDR",
+    "TermID": 1.33,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://hbbtv-ww.wdr.de/medstda/fsk0/18/182497/182497_1774425.mp4"
+}, {
+    "Nr": 78,
+    "LRA": "WDR",
+    "TermID": 1.35,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://ondemand-ww.wdr.de/medstda/fsk0/18/182497/182497_1774426.mp4"
+}, {
+    "Nr": 79,
+    "LRA": "WDR",
+    "TermID": 1.37,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://ondemand-ww.wdr.de/medstda/fsk0/18/182497/182497_1774427.mp4"
+}, {
+    "Nr": 80,
+    "LRA": "WDR",
+    "TermID": 1.39,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://http-ras.wdr.de/ard-testfiles/20090126_ard_ref_clip_termid_1_39.mp4"
+}, {
+    "Nr": 81,
+    "LRA": "WDR",
+    "TermID": 1.54,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://ondemand-ww.wdr.de/medstda/fsk0/18/182497/182497_1774421.mp4"
+}, {
+    "Nr": 82,
+    "LRA": "WDR",
+    "TermID": 1.58,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://ondemand-ww.wdr.de/medstda/fsk0/18/182497/182497_1774420.mp4"
+}, {
+    "Nr": 83,
+    "LRA": "WDR",
+    "TermID": 1.63,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "ios",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://wdr_ipv_od_test-vh.akamaihd.net/i/ardclips/,1_63,.mp4.csmil/master.m3u8"
+}, {
+    "Nr": 84,
+    "LRA": "WDR",
+    "TermID": 1.71,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "ios",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://wdr_ipv_od_test-vh.akamaihd.net/i/ardclips/,1_71,.mp4.csmil/master.m3u8"
+}, {
+    "Nr": 85,
+    "LRA": "WDR",
+    "TermID": 1.83,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://http-ras.wdr.de/ard-testfiles/20090126_ard_ref_clip_termid_1_83.mp4"
+}, {
+    "Nr": 86,
+    "LRA": "WDR",
+    "TermID": 1.88,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://http-ras.wdr.de/ard-testfiles/20090126_ard_ref_clip_termid_1_88.mp4"
+}, {
+    "Nr": 87,
+    "LRA": "WDR",
+    "TermID": 2.14,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://http-ras.wdr.de/ard-testfiles/20090126_ard_ref_clip_termid_2_14.mp4"
+}, {
+    "Nr": 88,
+    "LRA": "WDR",
+    "TermID": 5.20,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "ios",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://wdr_ipv_od_test-vh.akamaihd.net/i/ardclips/,1_71,1_67,1_65,.mp4.csmil/master.m3u8"
+}, {
+    "Nr": 89,
+    "LRA": "WDR",
+    "TermID": 5.26,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "ios",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://wdr_ipv_od_test-vh.akamaihd.net/i/ardclips/,1_69,1_63,1_67,.mp4.csmil/master.m3u8"
+}, {
+    "Nr": 90,
+    "LRA": "WDR",
+    "TermID": 5.43,
+    "Live": "Live",
+    "AV": "Video",
+    "plugin": "ios",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://wdr_ipv_od_test-vh.akamaihd.net/i/ardclips/,1_59,1_55,1_57,1_48,1_52,1_50,.mp4.csmil/master.m3u8"
+}, {
+    "Nr": 91,
+    "LRA": "WDR",
+    "TermID": 5.80,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "flash",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://adaptiv.wdr.de/z/medstda/ww/fsk0/18/182497/,182497_1774420,182497_1774421,182497_1774426,182497_1774427,.mp4.csmil/manifest.f4m"
+}, {
+    "Nr": 92,
+    "LRA": "WDR",
+    "TermID": 3.3,
+    "Live": "OnDemand",
+    "AV": "Audio",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://ondemand-ww.wdr.de/medstda/fsk0/18/182498/182498_1774428.mp3"
+}, {
+    "Nr": 93,
+    "LRA": "WDR",
+    "TermID": 3.4,
+    "Live": "OnDemand",
+    "AV": "Audio",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://ondemand-ww.wdr.de/medstda/fsk0/18/182498/182498_1774429.mp3"
+}, {
+    "Nr": 94,
+    "LRA": "WDR",
+    "TermID": 3.10,
+    "Live": "Live",
+    "AV": "Audio",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://wdr-mp3-m-wdr2-koeln.akacast.akamaistream.net/7/812/119456/v1/gnl.akacast.akamaistream.net/wdr-mp3-m-wdr2-koeln"
+}, {
+    "Nr": 95,
+    "LRA": "Das Erste",
+    "TermID": 2.14,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://www4.daserste.de/referenzTVA/format171228.mp4"
+}, {
+    "Nr": 96,
+    "LRA": "Das Erste",
+    "TermID": 1.20,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "flash",
+    "CDN": "akamai",
+    "Server": "vod.daserste.de",
+    "Stream": "vod.daserste.de/ardfs/ rtmp://vod.daserste.de/ardfs/mp4:videoportal/mediathek/Video+Test/c_80000/87197/format301976.mp4?sen=Video+Test&amp;clip=Folge+1838+Der+L%C3%BCge+auf+der+Spur&amp;for=Web-L"
+}, {
+    "Nr": 97,
+    "LRA": "Das Erste",
+    "TermID": 1.24,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "flash",
+    "CDN": "akamai",
+    "Server": "vod.daserste.de",
+    "Stream": "vod.daserste.de/ardfs/ rtmp://vod.daserste.de/ardfs/mp4:videoportal/mediathek/Video+Test/c_80000/87197/format301973.mp4?sen=Video+Test&amp;clip=Folge+1838+Der+L%C3%BCge+auf+der+Spur&amp;for=Web-M"
+}, {
+    "Nr": 98,
+    "LRA": "Das Erste",
+    "TermID": 1.27,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "flash",
+    "CDN": "akamai",
+    "Server": "vod.daserste.de",
+    "Stream": "vod.daserste.de/ardfs/ rtmp://vod.daserste.de/ardfs/mp4:videoportal/mediathek/Video+Test/c_80000/87197/format301974.mp4?sen=Video+Test&amp;clip=Folge+1838+Der+L%C3%BCge+auf+der+Spur&amp;for=Web-S"
+}, {
+    "Nr": 99,
+    "LRA": "Das Erste",
+    "TermID": 1.31,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://hbbtv-videos-ard.daserste.de/videoportal/Film/c_80000/87197/format301977.mp4?sen=Video+Test&amp;clip=Folge+1838+Der+L%C3%BCge+auf+der+Spur&amp;for=Video-16%3A9-Web+L%2B-H264%2C+Audio-Stereo-AAC"
+}, {
+    "Nr": 100,
+    "LRA": "Das Erste",
+    "TermID": 1.61,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://mvideos.daserste.de/videoportal/Film/c_80000/87197/format450386.mp4"
+}, {
+    "Nr": 101,
+    "LRA": "Das Erste",
+    "TermID": 1.58,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://mvideos.daserste.de/videoportal/Film/c_80000/87197/format301976.mp4"
+}, {
+    "Nr": 102,
+    "LRA": "Das Erste",
+    "TermID": 1.54,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://mvideos.daserste.de/videoportal/Film/c_80000/87197/format301973.mp4"
+}, {
+    "Nr": 103,
+    "LRA": "Das Erste",
+    "TermID": 5.32,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "ios",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://hls.daserste.de/i/videoportal/Film/c_80000/87197/ios.smil/master.m3u8"
+}, {
+    "Nr": 104,
+    "LRA": "Das Erste",
+    "TermID": 1.83,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://mvideos.daserste.de/videoportal/Film/c_80000/87197/format301974.mp4"
+}, {
+    "Nr": 105,
+    "LRA": "Das Erste",
+    "TermID": 1.28,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://download.daserste.de/videoportal/Film/c_80000/87197/format301975.mp4"
+}, {
+    "Nr": 106,
+    "LRA": "Tagesschau24",
+    "TermID": 1.83,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://media.tagesschau.de/video/2012/1226/TV-20121226-2049-5401.webs.h264.mp4"
+}, {
+    "Nr": 107,
+    "LRA": "Tagesschau24",
+    "TermID": 1.28,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://media.tagesschau.de/video/2014/0206/TV-20140206-2055-1101.websm.h264.mp4"
+}, {
+    "Nr": 108,
+    "LRA": "Tagesschau24",
+    "TermID": 90.3,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://media.tagesschau.de/video/2014/0206/TV-20140206-2055-1101.webm.h264.mp4"
+}, {
+    "Nr": 109,
+    "LRA": "Tagesschau24",
+    "TermID": 1.54,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://media.tagesschau.de/video/2012/1226/TV-20121226-2049-5401.webm.h264.mp4"
+}, {
+    "Nr": 110,
+    "LRA": "Tagesschau24",
+    "TermID": 1.61,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://media.tagesschau.de/video/2014/0206/TV-20140206-2055-1101.webml.h264.mp4"
+}, {
+    "Nr": 111,
+    "LRA": "Tagesschau24",
+    "TermID": 90.4,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://media.tagesschau.de/video/2012/1226/TV-20121226-2049-5401.webl.h264.mp4"
+}, {
+    "Nr": 112,
+    "LRA": "Tagesschau24",
+    "TermID": 1.58,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://media.tagesschau.de/video/2012/1226/TV-20121226-2049-5401.webl.h264.mp4"
+}, {
+    "Nr": 113,
+    "LRA": "Tagesschau24",
+    "TermID": 2.14,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://media.tagesschau.de/video/2012/1226/TV-20121226-2049-5401.h264.mp4"
+}, {
+    "Nr": 114,
+    "LRA": "Tagesschau24",
+    "TermID": 3.7,
+    "Live": "OnDemand",
+    "AV": "Audio",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://media.tagesschau.de/audio/2012/1226/TV-20121226-2049-5401.mp3"
+}, {
+    "Nr": 115,
+    "LRA": "Tagesschau24",
+    "TermID": 1.12,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "flash",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://media.tagesschau.de/flashvideo/2009/0131/TV-20090131-2032-5001.hi.flv"
+}, {
+    "Nr": 116,
+    "LRA": "Tagesschau24",
+    "TermID": 1.16,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "flash",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://media.tagesschau.de/flashvideo/2009/0131/TV-20090131-2032-5001.t.flv"
+}, {
+    "Nr": 117,
+    "LRA": "Tagesschau24",
+    "TermID": 3.3,
+    "Live": "OnDemand",
+    "AV": "Audio",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://media.tagesschau.de/audio/2009/0131/TV-20090131-2032-5001.mp3"
+}, {
+    "Nr": 118,
+    "LRA": "Tagesschau24",
+    "TermID": 5.85,
+    "Live": "Live",
+    "AV": "Video",
+    "plugin": "flash",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://tagesschau-lh.akamaihd.net/z/tagesschau_1@119231/manifest.f4m?b=832,1328,1664,3712"
+}, {
+    "Nr": 119,
+    "LRA": "Tagesschau24",
+    "TermID": 5.32,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "ios",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://hls.tagesschau.de/i/video/2014/0206/TV-20140206-2055-1101.,webs,websm,webm,webml,webl,.h264.mp4.csmil/master.m3u8"
+}, {
+    "Nr": 120,
+    "LRA": "Tagesschau24",
+    "TermID": 5.33,
+    "Live": "Live",
+    "AV": "Video",
+    "plugin": "ios",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://tagesschau-lh.akamaihd.net/i/tagesschau_1@119231/master.m3u8?b=224,384,832,1328,1664"
+}, {
+    "Nr": 121,
+    "LRA": "SR",
+    "TermID": 1.27,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "flash",
+    "CDN": "akamai",
+    "Server": "edgefcs.net",
+    "Stream": "cp229766.edgefcs.net/ondemand/ rtmp://cp229766.edgefcs.net/ondemand/MP4:sr/referenzclip/20140430_ard_ref_clip_S.mp4"
+}, {
+    "Nr": 122,
+    "LRA": "SR",
+    "TermID": 1.24,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "flash",
+    "CDN": "akamai",
+    "Server": "edgefcs.net",
+    "Stream": "cp229766.edgefcs.net/ondemand/ rtmp://cp229766.edgefcs.net/ondemand/MP4:sr/referenzclip/20140430_ard_ref_clip_M.mp4"
+}, {
+    "Nr": 123,
+    "LRA": "SR",
+    "TermID": 1.20,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "flash",
+    "CDN": "akamai",
+    "Server": "edgefcs.net",
+    "Stream": "cp229766.edgefcs.net/ondemand/ rtmp://cp229766.edgefcs.net/ondemand/MP4:sr/referenzclip/20140430_ard_ref_clip_L.mp4"
+}, {
+    "Nr": 124,
+    "LRA": "SR",
+    "TermID": 1.65,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "ios",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://sr_hls_od-vh.akamaihd.net/i/referenzclip/20140430_ard_ref_clip_,S,.mp4.csmil/master.m3u8"
+}, {
+    "Nr": 125,
+    "LRA": "SR",
+    "TermID": 1.67,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "ios",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://sr_hls_od-vh.akamaihd.net/i/referenzclip/20140430_ard_ref_clip_,K,.mp4.csmil/master.m3u8"
+}, {
+    "Nr": 126,
+    "LRA": "SR",
+    "TermID": 1.63,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "ios",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://sr_hls_od-vh.akamaihd.net/i/referenzclip/20140430_ard_ref_clip_,M,.mp4.csmil/master.m3u8"
+}, {
+    "Nr": 127,
+    "LRA": "SR",
+    "TermID": 1.69,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "ios",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://sr_hls_od-vh.akamaihd.net/i/referenzclip/20140430_ard_ref_clip_,L,.mp4.csmil/master.m3u8"
+}, {
+    "Nr": 128,
+    "LRA": "SR",
+    "TermID": 1.83,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://mediastorage01.sr-online.de/Video/referenzclip/20140430_ard_ref_clip_S.mp4"
+}, {
+    "Nr": 129,
+    "LRA": "SR",
+    "TermID": 1.54,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://mediastorage01.sr-online.de/Video/referenzclip/20140430_ard_ref_clip_M.mp4"
+}, {
+    "Nr": 130,
+    "LRA": "SR",
+    "TermID": 1.58,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://mediastorage01.sr-online.de/Video/referenzclip/20140430_ard_ref_clip_L.mp4"
+}, {
+    "Nr": 131,
+    "LRA": "SR",
+    "TermID": 5.24,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "ios",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://sr_hls_od-vh.akamaihd.net/i/referenzclip/20140430_ard_ref_clip_,M,L,K,S,.mp4.csmil/master.m3u8"
+}, {
+    "Nr": 132,
+    "LRA": "SR",
+    "TermID": 3.4,
+    "Live": "OnDemand",
+    "AV": "Audio",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://mediastorage01.sr-online.de/Audio/referenzclip/20130130_ard_ref_clip_audio_M.mp3"
+}, {
+    "Nr": 133,
+    "LRA": "SR",
+    "TermID": 3.10,
+    "Live": "Live",
+    "AV": "Audio",
+    "plugin": "html5",
+    "CDN": "icecast",
+    "Server": "",
+    "Stream": "http://streaming01.sr-online.de/sr1_1.m3u"
+}, {
+    "Nr": 134,
+    "LRA": "SR",
+    "TermID": 3.12,
+    "Live": "Live",
+    "AV": "Audio",
+    "plugin": "html5",
+    "CDN": "icecast",
+    "Server": "",
+    "Stream": "http://streaming01.sr-online.de/sr1_2.m3u"
+}, {
+    "Nr": 135,
+    "LRA": "SR",
+    "TermID": 3.3,
+    "Live": "OnDemand",
+    "AV": "Audio",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://mediastorage01.sr-online.de/Audio/referenzclip/20130130_ard_ref_clip_audio_M.mp3"
+}, {
+    "Nr": 136,
+    "LRA": "SWR",
+    "TermID": 3.3,
+    "Live": "OnDemand",
+    "AV": "Audio",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://mp3-download.swr.de/ard-referenzclip/audio-stereo-hq.19244s.mp3"
+}, {
+    "Nr": 137,
+    "LRA": "SWR",
+    "TermID": 3.14,
+    "Live": "OnDemand",
+    "AV": "Audio",
+    "plugin": "flash",
+    "CDN": "akamai",
+    "Server": "fm-ondemand.swr.de",
+    "Stream": "fm-ondemand.swr.de/ondemand/ rtmp://fm-ondemand.swr.de/ondemand/ard-referenzclip/audio-stereo-hq.12844s.mp3"
+}, {
+    "Nr": 138,
+    "LRA": "SWR",
+    "TermID": 3.4,
+    "Live": "OnDemand",
+    "AV": "Audio",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://pd-ondemand.swr.de/ard-referenzclip/audio-stereo-hq.12844s.mp3"
+}, {
+    "Nr": 139,
+    "LRA": "SWR",
+    "TermID": 3.16,
+    "Live": "OnDemand",
+    "AV": "Audio",
+    "plugin": "flash",
+    "CDN": "akamai",
+    "Server": "fm-ondemand.swr.de",
+    "Stream": "fm-ondemand.swr.de/ondemand/ rtmp://fm-ondemand.swr.de/ondemand/ard-referenzclip/audio-mono.5644m.mp3"
+}, {
+    "Nr": 140,
+    "LRA": "SWR",
+    "TermID": 3.6,
+    "Live": "OnDemand",
+    "AV": "Audio",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://pd-ondemand.swr.de/ard-referenzclip/audio-mono.5644m.mp3"
+}, {
+    "Nr": 141,
+    "LRA": "SWR",
+    "TermID": 3.7,
+    "Live": "OnDemand",
+    "AV": "Audio",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://mp3-download.swr.de/ard-referenzclip/audio-mono.6444m.mp3"
+}, {
+    "Nr": 142,
+    "LRA": "SWR",
+    "TermID": 1.20,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "flash",
+    "CDN": "akamai",
+    "Server": "fm-ondemand.swr.de",
+    "Stream": "fm-ondemand.swr.de/ondemand/ rtmp://fm-ondemand.swr.de/ondemand/ard-referenzclip/video-16-zu-9.l.mp4"
+}, {
+    "Nr": 143,
+    "LRA": "SWR",
+    "TermID": 5.24,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "ios",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://ios-ondemand.swr.de/i/ard-referenzclip/video-16-zu-9.,l,m,s,.mp4.csmil/master.m3u8"
+}, {
+    "Nr": 144,
+    "LRA": "SWR",
+    "TermID": 1.58,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://pd-ondemand.swr.de/ard-referenzclip/video-16-zu-9.l.mp4"
+}, {
+    "Nr": 145,
+    "LRA": "SWR",
+    "TermID": 1.24,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "flash",
+    "CDN": "akamai",
+    "Server": "fm-ondemand.swr.de",
+    "Stream": "fm-ondemand.swr.de/ondemand/ rtmp://fm-ondemand.swr.de/ondemand/ard-referenzclip/video-16-zu-9.m.mp4"
+}, {
+    "Nr": 146,
+    "LRA": "SWR",
+    "TermID": 1.54,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://pd-ondemand.swr.de/ard-referenzclip/video-16-zu-9.m.mp4"
+}, {
+    "Nr": 147,
+    "LRA": "SWR",
+    "TermID": 1.28,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://mp4-download.swr.de/ard-referenzclip/video-16-zu-9.m.mp4"
+}, {
+    "Nr": 148,
+    "LRA": "SWR",
+    "TermID": 90.4,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://hbbtv-ondemand.swr.de/ard-referenzclip/video-16-zu-9.hbbtv_l.mp4"
+}, {
+    "Nr": 149,
+    "LRA": "SWR",
+    "TermID": 1.83,
+    "Live": "OnDemand",
+    "AV": "Video",
+    "plugin": "html5",
+    "CDN": "default",
+    "Server": "",
+    "Stream": "http://pd-ondemand.swr.de/ard-referenzclip/video-16-zu-9.s.mp4"
+}]

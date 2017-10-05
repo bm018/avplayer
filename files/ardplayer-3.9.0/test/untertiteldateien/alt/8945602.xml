@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--*** XML Subtitle File for Flash Player ***-->
+
+<!--*** Created by FAB Subtitler 2012-01-31 ***-->
+<tt xml:lang="de" xmlns="http://www.w3.org/2006/10/ttaf1" xmlns:tts="http://www.w3.org/2006/10/ttaf1#styling" xmlns:ttp="http://www.w3.org/2006/10/ttaf1parameter" ttp:frameRate="25">
+	<head>
+		<metadata xmlns:ttm="http://www.w3.org/2006/10/ttaf1#metadata">
+			<ttm:title></ttm:title>
+		</metadata>
+		<styling>
+			<style id="s1" tts:fontFamily="Verdana" tts:fontSize="18px" tts:color="#999999"/>
+			<style id="s2" tts:backgroundColor="white" tts:fontFamily="Arial" tts:fontSize="18px" />
+			<style id="s3" tts:color="lime" tts:fontFamily="Arial" tts:fontSize="28px" />
+			<style id="s4" tts:color="yellow" tts:fontFamily="Arial" tts:fontSize="28px" />
+			<style id="s5" tts:color="aqua" tts:fontFamily="Arial" tts:fontSize="28px" />
+			<style id="s6" tts:backgroundColor="white" tts:color="blue" tts:fontFamily="Arial" tts:fontSize="28px" />
+			<style id="s7" tts:color="blue" tts:fontFamily="Arial" tts:fontSize="28px" />
+		</styling>
+		
+	</head>
+	<body style="s1" >
+		<div xml:lang="de">
+			<p id="subtitle1" begin="10:00:00.000" end="10:00:19.240" tts:textAlign="left" style="s2"><span tts:color="blue">hr hr hr </span><span tts:backgroundColor="red" tts:color="yellow" /><span tts:backgroundColor="blue">UNTERTITEL </span><span tts:color="blue">hr hr hr</span></p>
+			<p id="subtitle2" begin="10:00:25.080" end="10:00:32.880" tts:textAlign="center" style="s2"><span tts:color="blue">hr hr hr </span><span tts:backgroundColor="red" tts:color="yellow" /><span tts:backgroundColor="blue">UNTERTITEL </span><span tts:color="blue">hr hr hr</span></p>
+			<p id="subtitle3" begin="10:01:40.960" end="10:01:43.800" tts:textAlign="center"  style="s1">Und jetzt ?<br />Werners Frau.</p>
+			<p id="subtitle4" begin="10:01:44.560" end="10:01:59.400" tts:textAlign="left" tts:color="#9999FF" style="s1">Seiner Frau passiert nichts.<br />Das ist Bedingung.          </p>
+			<p id="subtitle5" begin="10:02:01.280" end="10:02:05.080" tts:textAlign="center" style="s1">Sie hat keine Ahnung.        <br />Werner hat ihr nichts gesagt.</p>
+			<p id="subtitle6" begin="10:02:06.840" end="10:02:12.000" tts:textAlign="left" style="s1">Bitte ! Sie k&#x00f6;nnen sicher sein.<br />Wir kennen die Protokolle. Weiter !</p>
+			<p id="subtitle7" begin="10:02:25.160" end="10:02:28.120" tts:textAlign="left" style="s3">Machen Sie mal den rechten Arm frei.                 <br /></p>
+			<p id="subtitle8" begin="10:02:28.920" end="10:02:31.560" tts:textAlign="center" style="s4">Felix Murot</p>
+			<p id="subtitle9" begin="10:02:31.960" end="10:02:34.880" tts:textAlign="left" style="s5">Magda W&#x00e4;chter</p>
+			<p id="subtitle10" begin="10:02:35.280" end="10:02:37.400" tts:textAlign="right" style="s3">Bemering</p>
+			<p id="subtitle11" begin="10:02:37.760" end="10:02:40.200" tts:textAlign="left" style="s1">Dr. Herkenrath</p>
+			<p id="subtitle12" begin="10:02:40.640" end="10:02:42.720" tts:textAlign="right" style="s1">Gernot Ulm</p>
+			<p id="subtitle13" begin="10:02:43.080" end="10:02:45.360" tts:textAlign="center" style="s1">Dietrich</p>
+			<p id="subtitle14" begin="10:02:45.760" end="10:02:48.040" tts:textAlign="right" style="s1">Karsten Streuer</p>
+			<p id="subtitle15" begin="10:02:48.400" end="10:02:50.480" tts:textAlign="center" style="s1">B&#x00f6;lk</p>
+			<p id="subtitle16" begin="10:02:50.840" end="10:02:53.120" tts:textAlign="center" style="s1">Peter</p>
+			<p id="subtitle17" begin="10:02:53.480" end="10:02:56.120" tts:textAlign="left" style="s1">Bemerings Mutter</p>
+			<p id="subtitle18" begin="10:03:11.000" end="10:03:14.800" tts:textAlign="left" style="s5">Einmal hier durch.                                   <br />Die Augen bleiben zu.                                </p>
+			<p id="subtitle19" begin="10:03:15.280" end="10:03:20.120" tts:textAlign="left" style="s4">Ich muss los. Karsten wartet.                         <br /><span tts:color="aqua">Sie haben Urlaub. Erholen Sie sich.             <br /></span></p>
+			<p id="subtitle20" begin="10:03:20.480" end="10:03:24.360" tts:textAlign="center" style="s4">Wirklich, ich habe...    <br /><span tts:color="aqua">Die Arme hoch, mein Gott.</span></p>
+			<p id="subtitle21" begin="10:03:24.760" end="10:03:29.720" tts:textAlign="left" style="s4">Seit wann k&#x00f6;nnen Sie stricken ?<br /><span tts:color="aqua">Seit ich mir das Rauchen abgew&#x00f6;hne.</span></p>
+			<p id="subtitle22" begin="10:03:32.000" end="10:03:35.920" tts:textAlign="left" style="s4">Ich bin immer wieder erstaunt &#x00fc;ber<br />Ihre vielseitigen F&#x00e4;higkeiten.    </p>
+			<p id="subtitle23" begin="10:03:36.360" end="10:03:39.560" tts:textAlign="center" style="s5">Ihr Erstaunen erstaunt mich.<br /><span tts:color="yellow">Da staunen Sie, was ?   </span></p>
+			<p id="subtitle24" begin="10:03:40.000" end="10:03:44.120" tts:textAlign="center" style="s4">Sie haben sich viel vorgenommen.<br /><span tts:color="aqua">Sie denken, Sie erleben es nicht.</span></p>
+			</div>
+	</body>
+</tt>

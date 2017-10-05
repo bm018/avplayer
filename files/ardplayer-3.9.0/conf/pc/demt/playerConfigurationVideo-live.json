@@ -1,0 +1,6 @@
+{
+    "_baseUrl":"../../player/",
+    "_baseAssetUrl":"../../player/base/",
+    "_showColorSettings":false,
+    "_addons":["AddonUntertitel"]
+}

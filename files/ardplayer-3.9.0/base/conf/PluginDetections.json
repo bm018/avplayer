@@ -1,0 +1,10 @@
+{"cases": [
+    {
+        "tests": ["Android ((4.0.([0-9]))|([4-9].[1-9])|([5-9]))", "PPC Mac OS X 10(_|.)([4]|[5])"],
+        "message": "Dieser Clip kann auf Ihrem Betriebssystem nicht abgespielt werden."
+    },
+    {
+        "tests": ["iPhone", "iPad", "iPod", "Windows Phone", "PLAYSTATION", "PlayStation", "HbbTV", "CE-HTML"],
+        "message": "Dieser Clip kann auf Ihrem Betriebssystem nicht abgespielt werden."
+    }
+], "defaultMessage": "Um den Clip abspielen zu k&ouml;nnen, ben&ouml;tigen Sie das Flash-Plug-in ab Version 10.2. Dieses k&ouml;nnen Sie <a href=\"http://get.adobe.com/de/flashplayer/\" onclick=\"window.open(this.href); return false;\">hier</a> kostenlos herunterladen."}

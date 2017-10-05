@@ -1,0 +1,39 @@
+
+{
+  "_mediaArray" : [ {
+    "_plugin" : 0,
+    "_mediaStreamArray" : [ {
+      "_quality" : 1,
+      "_server" : "",
+      "_stream" : "http://adaptiv.wdr.de/z/medstdp/ww/fsk0/39/397818/,397818_3977282,397818_3977280,397818_3977283,.mp4.csmil/manifest.f4m" ,
+      "_cdn" : "akamai"
+    }, {
+      "_quality" : 2,
+      "_server" : "",
+      "_stream" : "http://adaptiv.wdr.de/z/medstdp/ww/fsk0/39/397818/,397818_3977282,397818_3977280,397818_3977283,.mp4.csmil/manifest.f4m" ,
+      "_cdn" : "akamai"
+    } ]
+  }, {
+    "_plugin" : 1,
+    "_mediaStreamArray" : [ {
+      "_quality" : 1,
+      "_server" : "",
+      "_stream" : [ "http://adaptiv.wdr.de/i/medstdp/ww/fsk0/39/397818/,397818_3977282,397818_3977280,.mp4.csmil/master.m3u8", "http://ondemand-ww.wdr.de/medstdp/fsk0/39/397818/397818_3977282.mp4", "http://wdr.vo.llnwd.net/e1/CMS2010/mdb/ondemand/weltweit/fsk0/39/397818/397818_3977283.mp4" ]
+    }, {
+      "_quality" : 2,
+      "_server" : "",
+      "_stream" : [ "http://adaptiv.wdr.de/i/medstdp/ww/fsk0/39/397818/,397818_3977282,397818_3977280,.mp4.csmil/master.m3u8" ]
+    } ]
+  } ],
+  "_defaultQuality" : 1,
+  "_type" : "video",
+  "_isLive" : false,
+  "_dvrEnabled" : false,
+  "_previewImage" : "http://www.sportschau.de/fussball/bundesliga3/spieltag/leipzigfan100_v-TeaserAufmacher.jpg",
+  "_subtitleUrl" : "",
+  "_subtitleOffset" : 0,
+  "_download" : "alert",
+  "_podcast" : "alert",
+  "_pluginArray" : [ false, false, false ],
+  "_sortierArray" : [ 0, 1 ]
+}

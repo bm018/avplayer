@@ -1,0 +1,138 @@
+@charset "utf-8"; 
+ /* Anpassung DasErste */
+
+.livePlayer .ardplayer-viewport .ardplayer-controlbar .ardplayer-controlbar-controls button.hover {
+    background-color: #fa7c87;
+    /* Fallback Color */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fa7c87), to(#db5063));
+    /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, #fa7c87, #db5063);
+    /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image: -moz-linear-gradient(top, #fa7c87, #db5063);
+    /* FF3.6 */
+    background-image: -ms-linear-gradient(top, #fa7c87, #db5063);
+    /* IE10 */
+    background-image: -o-linear-gradient(top, #fa7c87, #db5063);
+    /* Opera 11.10+ */
+    background-image: linear-gradient(top, #fa7c87, #db5063);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#fa7c87', EndColorStr='#db5063'); }
+
+.livePlayer .ardplayer-viewport .ardplayer-controlbar .ardplayer-controlbar-controls .ardplayer-player-funktion .ardplayer-btn-subtitle.toggle {
+    background-color: #fa7c87;
+    /* Fallback Color */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fa7c87), to(#db5063));
+    /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, #fa7c87, #db5063);
+    /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image: -moz-linear-gradient(top, #fa7c87, #db5063);
+    /* FF3.6 */
+    background-image: -ms-linear-gradient(top, #fa7c87, #db5063);
+    /* IE10 */
+    background-image: -o-linear-gradient(top, #fa7c87, #db5063);
+    /* Opera 11.10+ */
+    background-image: linear-gradient(top, #fa7c87, #db5063);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#fa7c87', EndColorStr='#db5063'); }
+
+.livePlayer .ardplayer-controlbar-slider-bg-watched{
+    background: #fe6770;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZhN2M4NyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkYjUwNjMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #fe6770 0%, #fe6770 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fe6770), color-stop(100%,#fe6770)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #fe6770 0%,#fe6770 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #fe6770 0%,#fe6770 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #fe6770 0%,#fe6770 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #fe6770 0%,#fe6770 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe6770', endColorstr='#fe6770',GradientType=0 ); /* IE6-8 */
+}
+
+.livePlayer .ardplayer-controlbar-slider-bg-buffer{
+    background: #c6c4c5;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZhN2M4NyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkYjUwNjMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #c6c4c5 0%, #c6c4c5 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c6c4c5), color-stop(100%,#c6c4c5)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #c6c4c5 0%,#c6c4c5 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #c6c4c5 0%,#c6c4c5 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #c6c4c5 0%,#c6c4c5 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #c6c4c5 0%,#c6c4c5 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c6c4c5', endColorstr='#c6c4c5',GradientType=0 ); /* IE6-8 */
+}
+
+.livePlayer .ardplayer-viewport .ardplayer-controlbar .ardplayer-controlbar-slider .ardplayer-controlbar-slider-handle.dvr-left {
+    background-color: #fa7c87;
+    /* Fallback Color */
+    background-image: url("../../../base/img/dvr_left.svg");
+    background-image: url("../../../base/img/dvr_left.svg"), -webkit-gradient(linear, left top, left bottom, from(#fa7c87), to(#db5063));
+    /* Saf4+, Chrome */
+    background-image: url("../../../base/img/dvr_left.svg"), -webkit-linear-gradient(top, #fa7c87, #db5063);
+    /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image: url("../../../base/img/dvr_left.svg"), -moz-linear-gradient(top, #fa7c87, #db5063);
+    /* FF3.6 */
+    background-image: url("../../../base/img/dvr_left.svg"), -ms-linear-gradient(top, #fa7c87, #db5063);
+    /* IE10 */
+    background-image: url("../../../base/img/dvr_left.svg"), -o-linear-gradient(top, #fa7c87, #db5063);
+    /* Opera 11.10+ */
+    background-image: url("../../../base/img/dvr_left.svg"), linear-gradient(top, #fa7c87, #db5063); }
+.livePlayer .ardplayer-viewport .ardplayer-controlbar .ardplayer-controlbar-slider .ardplayer-controlbar-slider-handle.dvr-middle {
+    background-color: #16b4b7;
+    /* Fallback Color */
+    background-image: url("../../../base/img/dvr_middle.svg");
+    background-image: url("../../../base/img/dvr_middle.svg"), -webkit-gradient(linear, left top, left bottom, from(#fa7c87), to(#db5063));
+    /* Saf4+, Chrome */
+    background-image: url("../../../base/img/dvr_middle.svg"), -webkit-linear-gradient(top, #fa7c87, #db5063);
+    /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image: url("../../../base/img/dvr_middle.svg"), -moz-linear-gradient(top, #fa7c87, #db5063);
+    /* FF3.6 */
+    background-image: url("../../../base/img/dvr_middle.svg"), -ms-linear-gradient(top, #fa7c87, #db5063);
+    /* IE10 */
+    background-image: url("../../../base/img/dvr_middle.svg"), -o-linear-gradient(top, #fa7c87, #db5063);
+    /* Opera 11.10+ */
+    background-image: url("../../../base/img/dvr_middle.svg"), linear-gradient(top, #fa7c87, #db5063); }
+.livePlayer .ardplayer-viewport .ardplayer-controlbar .ardplayer-controlbar-slider .ardplayer-controlbar-slider-handle.dvr-right {
+    background-color: #fa7c87;
+    /* Fallback Color */
+    background-image: url("../../../base/img/dvr_right.svg");
+    background-image: url("../../../base/img/dvr_right.svg"), -webkit-gradient(linear, left top, left bottom, from(#fa7c87), to(#db5063));
+    /* Saf4+, Chrome */
+    background-image: url("../../../base/img/dvr_right.svg"), -webkit-linear-gradient(top, #fa7c87, #db5063);
+    /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image: url("../../../base/img/dvr_right.svg"), -moz-linear-gradient(top, #fa7c87, #db5063);
+    /* FF3.6 */
+    background-image: url("../../../base/img/dvr_right.svg"), -ms-linear-gradient(top, #fa7c87, #db5063);
+    /* IE10 */
+    background-image: url("../../../base/img/dvr_right.svg"), -o-linear-gradient(top, #fa7c87, #db5063);
+    /* Opera 11.10+ */
+    background-image: url("../../../base/img/dvr_right.svg"), linear-gradient(top, #fa7c87, #db5063); }
+
+.livePlayer .ardplayer-viewport .ardplayer-controlbar .ardplayer-controlbar-controls .ardplayer-player-funktion .ardplayer-sound-container .ardplayer-sound-slider {
+    background: rgba(20, 50, 90, 0.9) url("../img/sound-live.svg");  }
+
+.livePlayer .ardplayer-viewport .ardplayer-optioncontrols li.selected a {
+    background-color: #fa7c87;
+    /* Fallback Color */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fa7c87), to(#db5063));
+    /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, #fa7c87, #db5063);
+    /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image: -moz-linear-gradient(top, #fa7c87, #db5063);
+    /* FF3.6 */
+    background-image: -ms-linear-gradient(top, #fa7c87, #db5063);
+    /* IE10 */
+    background-image: -o-linear-gradient(top, #fa7c87, #db5063);
+    /* Opera 11.10+ */
+    background-image: linear-gradient(top, #fa7c87, #db5063);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#fa7c87', EndColorStr='#db5063'); }
+.livePlayer .ardplayer-viewport .ardplayer-optioncontrols li a.hover {
+    background-color: #fa7c87;
+    /* Fallback Color */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fa7c87), to(#db5063));
+    /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, #fa7c87, #db5063);
+    /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image: -moz-linear-gradient(top, #fa7c87, #db5063);
+    /* FF3.6 */
+    background-image: -ms-linear-gradient(top, #fa7c87, #db5063);
+    /* IE10 */
+    background-image: -o-linear-gradient(top, #fa7c87, #db5063);
+    /* Opera 11.10+ */
+    background-image: linear-gradient(top, #fa7c87, #db5063);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#fa7c87', EndColorStr='#db5063'); }

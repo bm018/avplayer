@@ -1,0 +1,88 @@
+[
+    {
+        "_preroll": true,
+        "_pc": "conf/pc/pc_min.json",
+        "_mc": "conf/mc/mc_video01.json"
+    },
+    {
+        "_preroll": true,
+        "_pc": {
+            "_representationArray": [
+                {
+                    "_representationClass": "m"
+                }
+            ]
+        },
+        "_mc": {
+            "_mediaArray": [
+                {
+                    "_plugin": 0,
+                    "_mediaStreamArray": [
+                        {
+                            "_quality": 1,
+                            "_server": "",
+                            "_stream": "http://ndr_fs-lh.akamaihd.net/z/ndrfs_hh@119223/manifest.f4m",
+                            "_cdn": "akamai"
+                        }
+                    ]
+                }
+            ],
+            "_defaultQuality": ["auto",0,1,2],
+            "_type": "video",
+            "_isLive": true,
+            "_dvrEnabled": true,
+            "_previewImage": "http://www.sportschau.de/fussball/bundesliga3/spieltag/leipzigfan100_v-TeaserAufmacher.jpg",
+            "_subtitleUrl": "",
+            "_subtitleOffset": 0,
+            "_download": "alert",
+            "_podcast": "alert",
+            "_pluginArray": [ false, false, false ],
+            "_sortierArray": [ 0, 1 ]
+        }
+    },
+    {
+        "_preroll": true,
+        "_pc": "conf/pc/pc_min.json",
+        "_mc": "conf/mc/mc_test2.json"
+    },
+    {
+        "_preroll": true,
+        "_pc": {
+            "_representationArray": [
+                {
+                    "_representationClass": "m"
+                }
+            ]
+        },
+        "_mc": {
+            "_mediaArray": [
+                {
+                    "_plugin": 0,
+                    "_mediaStreamArray": [
+                        {
+                            "_quality": 1,
+                            "_server": "",
+                            "_stream": "http://ndr_fs-lh.akamaihd.net/z/ndrfs_hh@119223/manifest.f4m",
+                            "_cdn": "akamai"
+                        }
+                    ]
+                }
+            ],
+            "_defaultQuality": ["auto",0,1,2],
+            "_type": "video",
+            "_isLive": true,
+            "_dvrEnabled": true,
+            "_previewImage": "http://www.sportschau.de/fussball/bundesliga3/spieltag/leipzigfan100_v-TeaserAufmacher.jpg",
+            "_subtitleUrl": "",
+            "_subtitleOffset": 0,
+            "_download": "alert",
+            "_podcast": "alert",
+            "_pluginArray": [ false, false, false ],
+            "_sortierArray": [ 0, 1 ]
+        }
+    },
+    {
+        "_pc": "conf/pc/pc_min.json",
+        "_mc": "conf/mc/mc_test2.json"
+    }
+]

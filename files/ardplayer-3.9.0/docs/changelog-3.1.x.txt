@@ -1,0 +1,550 @@
+CHANGELOG / ARD Player
+
+16.04.12 / Version 3.1.0
+    - Übergabe initialer Stand zur Integration in die Sportschau
+        -> index.min.html - Player unter Verwendung der komprimierten JS
+        -> index.max.html - Player unter Verwendung der unkomprimierten JS
+
+23.04.12 / Version 3.1.1
+    - Behobene Tickets in dieser Version:
+        #1309 WindowsMediaPlayer wird nicht richtig initialisiert.
+        #1308 HTML-Player - per Doppelklick zum Vollbild
+        #1322 In Chrome, FireFox und Safari ist die Steuerbar im Flash Fullschreenmodus noch nicht richtig gestylt
+        #1320 In Safari und FireFox (MAC) ist die Schrift zu groß und der Zeilenabstand zu gering ...
+        #1319 Fullscreenhinweis in Chrome (Mac) wird in einer Serifenschrift angezeigt.
+        #1317 Flash Vollbild - Clip erneut abspielen/Wechsel in Browser-Modus
+        #1306 Flash Vollbild - Steuerelemente nach Bedarf
+        #1283 Hinweistext Vollscreenmodus
+        #1274 Wird der Player auf Pause gestellt soll das Clipbild angezeigt werden
+        #1273 Buttons für Clipgrößen S, M, L und XL sollen nicht über CSS ein - und ausgeblendet werden
+        #1279 Anzeige Buffering
+        #1280 slidecontrol
+
+    - Erweiterungen
+        - Conviva Integration
+          Aufruf erfolgt über CDN "conviva" mit Referenz auf eine Konfiguration
+          in der "conviva-config.xml". Bsp.: "ref:euro".
+
+    - Geänderte Dateien:
+        /css/01player.css
+        /css/03dev.css
+        /css/compressed.css
+        /js/com/netTrek/gundl/ardplayer/business/GenerateFlashPluginCMD.js
+        /js/com/netTrek/gundl/ardplayer/controller/IVWController.js
+        /js/com/netTrek/gundl/ardplayer/core/AbstractPlayerCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/FlashPluginCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/HtmlAudioCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/HtmlVideoCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/WmpCtrl.js
+        /js/com/netTrek/gundl/ardplayer/model/vo/PlayerConfiguration.js
+        /js/com/netTrek/gundl/ardplayer/model/GlobalModel.js
+        /js/com/netTrek/gundl/ardplayer/views/ViewController.js
+        /js/compressed.js
+        /plugins/flash/conf/config.xml
+        /plugins/flash/conf/conviva-config.xml
+        /plugins/flash/conf/skin.css
+        /plugins/flash/osmf/ConvivaStarterPlugin.swf
+        /plugins/flash/osmf/IcecastPlugin.swf
+        /plugins/flash/osmf/SMILPlugin.swf
+        /plugins/flash/osmf/SMPTETTPlugin.swf
+        /plugins/flash/PluginFlash.swf
+        /index.html
+        /index.min.html
+        /index_ap.html
+
+26.04.12 / Version 3.1.2
+    - Behobene Tickets in dieser Version:
+        #1359 Angabe eines BasePath
+        #1369 Flash Vollbild - UT/ Laustärke-Btn Reihenfolge vertauscht
+        #1366 Steuerleiste Live-Modus
+        #1368 setNoSubtitelAtStart() ohne Funktion
+        #1365 Untertitel-Plugin HTML-Player - Hintergrund
+        #1360 HTML-Player - Vollbild-Modus nicht erreichbar im IE
+        #1353 Untertitel-Plugin Flash-Player
+        #1351 Untertitel-Plugin HTML-Player
+
+        #-    Startframe Anzeige beim Erreichen des letzten Frames
+        #-    Conviva-Starterplugin erweitert, Disposement optimiert
+
+    - Erweiterungen:
+        - BasePath
+            Die PlayerConfiguration besitzt nun die Möglichkeit einer optionalen Eigenschaft "setBaseUrl":
+            //pc.setBaseUrl("/resources/");
+            //pc.setBaseUrl("test/");
+            pc.setBaseUrl("");
+
+            Hierüber kann definiert werden, von welchem Pfade der Flashplayer seine Assets laden soll. Die
+            Url wird als Platzhalter in allen Flash-Spezifischen Konfigurationen eingebaut.
+            Bsp.:  <plugin id="smilPlugin"><![CDATA[#baseUrl#plugins/flash/osmf/SMILPlugin.swf]]></plugin>
+
+    - Geänderte Dateien:
+        /css/01player.css
+        /css/02player-fixme.css
+        /css/03dev.css
+        /css/compressed.css
+        /js/com/netTrek/gundl/ardplayer/business/GenerateFlashPluginCMD.js
+        /js/com/netTrek/gundl/ardplayer/business/GenerateWmpCMD.js
+        /js/com/netTrek/gundl/ardplayer/business/GetMediaCollectionByJsonCMD.js
+        /js/com/netTrek/gundl/ardplayer/controller/TrackController.js
+        /js/com/netTrek/gundl/ardplayer/core/AbstractPlayerCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/FlashPluginCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/HtmlVideoCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/Player.js
+        /js/com/netTrek/gundl/ardplayer/core/plugins.js
+        /js/com/netTrek/gundl/ardplayer/core/WmpCtrl.js
+        /js/com/netTrek/gundl/ardplayer/model/vo/PlayerConfiguration.js
+        /js/com/netTrek/gundl/ardplayer/views/ViewController.js
+        /js/compressed.js
+        /plugins/flash/conf/config.xml
+        /plugins/flash/conf/conviva-config.xml
+        /plugins/flash/conf/skin.css
+        /plugins/flash/osmf/ConvivaStarterPlugin.swf
+        /plugins/flash/osmf/IcecastPlugin.swf
+        /plugins/flash/osmf/SMILPlugin.swf
+        /plugins/flash/osmf/SMPTETTPlugin.swf
+        /plugins/flash/ardplayer-flex-osmf_1.6.1.20120131.swf
+        /plugins/flash/framework_4.5.1.21328.swf
+        /plugins/flash/mx_4.5.1.21328.swf
+        /plugins/flash/PluginFlash.swf
+        /plugins/flash/sparkskins_4.5.1.21328.swf
+        /plugins/flash/spark_4.5.1.21328.swf
+        /plugins/flash/textLayout_2.0.0.232.swf
+        /index.html
+        /index_config.html
+
+02.05.12 / Version 3.1.3
+    - Behobene Tickets in dieser Version:
+        #1364 Untertitel-Plugin Flash-Player - span-Darstellung
+        #1345 M3U-Eintrag in der MediaCollection
+        !#1329 Player öffnet sich nicht im Layer (Skinning noch offen)
+        #1377 Anzeige bei Initialisierung des Players (Bitte Lade-Animation u schwarzes Bild statt Posterframe)
+        #1374 Wird der AudioClip gestopp bzw. pausiert, so soll die Eualizeranimation ausgetasucht werden.
+        #1365 Untertitel-Plugin HTML-Player - Hintergrund
+        #1360 HTML-Player - Vollbild-Modus nicht erreichbar im IE
+        #1352 Untertitel-Plugin Flash-Player
+        #1351 Untertitel-Plugin Flash-Player
+        #1310 Equalizer animiertes Gif
+
+    - Erweiterungen:
+
+
+    - Geänderte Dateien:
+        /css/01player.css
+        /css/02player-fixme.css
+        /css/compressed.css
+        /img/BufferingIndikator-1280x720.gif
+        /img/BufferingIndikator-256x144.gif
+        /img/BufferingIndikator-512x288.gif
+        /img/BufferingIndikator-960x540.gif
+        /img/soundaddon_256x144.gif
+        /img/soundaddon_256x144_off.gif
+        /img/soundaddon_512x199.gif
+        /img/soundaddon_512x199_off.gif
+        /img/soundaddon_512x288.gif
+        /img/soundaddon_512x288_off.gif
+        /js/com/netTrek/gundl/ardplayer/business/GetMediaCollectionByJsonCMD.js
+        /js/com/netTrek/gundl/ardplayer/business/GetPlayerConfigByJsonCMD.js
+        /js/com/netTrek/gundl/ardplayer/controller/TrackController.js
+        /js/com/netTrek/gundl/ardplayer/core/AbstractPlayerCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/FlashPluginCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/HtmlVideoCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/Player.js
+        /js/com/netTrek/gundl/ardplayer/model/vo/MediaCollection.js
+        /js/com/netTrek/gundl/ardplayer/model/vo/PlayerConfiguration.js
+        /js/com/netTrek/gundl/ardplayer/model/GlobalModel.js
+        /js/com/netTrek/gundl/ardplayer/model/PlayerModel.js
+        /js/com/netTrek/gundl/ardplayer/utils/Cookie.js
+        /js/com/netTrek/gundl/ardplayer/views/ViewController.js
+        /js/libs/jquery.simplemodal-1.4.2.js
+        /js/compressed.js
+        /plugins/flash/conf/conviva-config.xml
+        /plugins/flash/conf/skin.css
+        /plugins/flash/osmf/ConvivaStarterPlugin.swf
+        /plugins/flash/osmf/IcecastPlugin.swf
+        /plugins/flash/osmf/SMILPlugin.swf
+        /plugins/flash/osmf/SMPTETTPlugin.swf
+        /plugins/flash/ardplayer-flex-osmf_1.6.0.20110908.swf
+        /plugins/flash/PluginFlash.swf
+
+04.05.12 / Version 3.1.4
+    - Behobene Tickets in dieser Version:
+        #1314 Höhe der Einstellungsleiste (unterhalb des Players) ist im aktivierten und nicht aktivierten Zustand nicht identisch
+        #1328 eine Bufferinganimation für alle Playergrößen
+        #1333 Größenausprägungen
+        #1331 UT-Btn wird nach Aktivierung nicht als "aktiv" angezeigt
+        #1323 Wird am Clipende der "erneut abspielen" Button angezeigt soll zusätzlich das Startbild angezeigt werden
+        #1325 WEB-S Play-Pause Button sitzt nicht mittig
+        #1276 Optimierung der Spritedatei
+        #1329 Player öffnet sich nicht im Layer
+        #1290 Fullscreen-Hinweis html
+        #1324 Die Buttons sollen sich rechtsbündig ausrichten
+        #1376 Untertitel-Plugin HTML-Player - Anzeige in unsichtbaren Bereich verschoben - keine UTs erkennbar
+        #1388 Volume-Slider springt beim ersten Mouse-Over im webseitenintegrierten Betrieb
+        #1360 HTML-Player - Vollbild-Modus nicht erreichbar im IE
+        #1378 Steuerleiste soll beim Audio-Player immer sichtbar sein (im Play-Modus)
+        #1377 Anzeige bei Initialisierung des Players (Bitte Lade-Animation u schwarzes Bild statt Posterframe)
+        #1366 Steuerleiste Live-Modus
+
+    - Anmerkungen:
+
+        1) Audio
+        Für die Audio-Ausprägungen 256x44 und 512x55 müssen zusätzlich zur Haupt-CSS (compressed.css oder 01player.css)
+        angepasste Skin-Dateien mit gleichem Namen eingebunden werden:
+            - audio-256x44.css
+            - audio-512x55.css
+        Eine exemplarische Einbindung liegt im Git im Ordner test/ mit entsprechenden Präfix audio-*.html.
+
+    - Geänderte Dateien:
+        /css/01player.css
+        /css/02buttoncontrol.css
+        /css/02player-fixme.css
+        /css/03dev.css
+        /css/audio-256x44.css
+        /css/audio-512x55.css
+        /css/compressed.css
+        /img/10186014-bild-s16x9.png
+        /img/495258-bild-s16x9.png
+        /img/7927900-bild-s16x9.png
+        /img/audio-image.png
+        /img/bg-modal.png
+        /img/bg-untertitelhinweis.png
+        /img/buffering.gif
+        /img/playagain-512x199.png
+        /img/playagain_hover-512x199.png
+        /img/player_controls.png
+        /img/postercontrol-512x199.png
+        /js/com/netTrek/gundl/ardplayer/controller/IVWController.js
+        /js/com/netTrek/gundl/ardplayer/core/AbstractPlayerCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/FlashPluginCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/HtmlAudioCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/HtmlVideoCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/Player.js
+        /js/com/netTrek/gundl/ardplayer/core/WmpCtrl.js
+        /js/com/netTrek/gundl/ardplayer/model/vo/PlayerConfiguration.js
+        /js/com/netTrek/gundl/ardplayer/views/ViewController.js
+        /js/compressed.js
+        /plugins/flash/conf/config.xml
+        /plugins/flash/conf/conviva-config.xml
+        /plugins/flash/conf/skin.css
+        /plugins/flash/osmf/ConvivaStarterPlugin.swf
+        /plugins/flash/osmf/IcecastPlugin.swf
+        /plugins/flash/osmf/SMILPlugin.swf
+        /plugins/flash/osmf/SMPTETTPlugin.swf
+        /plugins/flash/PluginFlash.swf
+        /index.html
+
+08.05.12 / Version 3.1.5
+    - Erweiterungen:
+        1) Player um Playlisten erweitert
+        2) Fehlerkorrektur Abspielverhalten WMP
+        3) Fehlerabfang fehlender Slash in Pfaddefinition für Flash
+        4) Fehlerkorrektur IE8 Lautstärkenslider
+
+    - Geänderte Dateien:
+        /css/audio-256x44.css
+        /css/audio-512x55.css
+        /js/com/netTrek/gundl/ardplayer/business/GetMediaCollectionByJsonCMD.js
+        /js/com/netTrek/gundl/ardplayer/controller/TrackController.js
+        /js/com/netTrek/gundl/ardplayer/core/AbstractPlayerCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/FlashPluginCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/HtmlAudioCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/HtmlVideoCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/Player.js
+        /js/com/netTrek/gundl/ardplayer/core/WmpCtrl.js
+        /js/com/netTrek/gundl/ardplayer/model/vo/MediaCollection.js
+        /js/com/netTrek/gundl/ardplayer/model/vo/PlayerConfiguration.js
+        /js/com/netTrek/gundl/ardplayer/model/GlobalModel.js
+        /js/com/netTrek/gundl/ardplayer/model/PlayerModel.js
+        /js/com/netTrek/gundl/ardplayer/views/ViewController.js
+        /js/libs/jquery-1.6.2.js
+        /js/compressed.js
+        /plugins/flash/osmf/IcecastPlugin.swf
+        /plugins/flash/osmf/SMILPlugin.swf
+        /plugins/flash/osmf/SMPTETTPlugin.swf
+        /plugins/flash/PluginFlash.swf
+        /index.html
+        /index_playlist.html
+        /index_playlist.min.html
+
+10.05.12 / Version 3.1.6
+    - Behobene Tickets in dieser Version:
+        #1373 Controllbar aus Viewport auslagern
+        #1380 Audio-Player - Stoppt oder Pausiert man einen Audio-Clip, so muss die animierte Equalizer Grafik gegen die stehnde Equalizer Grafik ausgetauscht werden
+        #1379 Audio-Player - zentrierte Anzeige des Audio-Images und Equalizer-Bildes
+        #1293 Vollbildmodus HTML5
+        #1412 IE - WMP - kein Qualitätswechsel möglich
+        #1411 Live-Player im Overlay hat OnDemand-Btns
+        #1315 HTML Fullscreen / Safari
+        #1408 Einbau des Parameters showEqualizer(true/false)
+        #1399 Es ist gewünscht, dass der Selektor für das Anhängen des Overlay parameterisierbar ist.
+
+    - Erweiterungen:
+
+        Die Player-Konfiguration wurde um die Funktion "setModalTarget" erweitert, bei dem ein JQuery-String für #1399 definiert werden kann.
+
+    - Geänderte Dateien:
+        /css/01player.css
+        /css/compressed.css
+        /js/com/netTrek/gundl/ardplayer/business/GeneratHTMLAudioCMD.js
+        /js/com/netTrek/gundl/ardplayer/business/GenerateHTMLVideoCMD.js
+        /js/com/netTrek/gundl/ardplayer/business/InitPlayerCMD.js
+        /js/com/netTrek/gundl/ardplayer/controller/TrackController.js
+        /js/com/netTrek/gundl/ardplayer/core/AbstractPlayerCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/FlashPluginCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/HtmlAudioCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/HtmlVideoCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/Player.js
+        /js/com/netTrek/gundl/ardplayer/core/script.js
+        /js/com/netTrek/gundl/ardplayer/core/WmpCtrl.js
+        /js/com/netTrek/gundl/ardplayer/model/vo/MediaCollection.js
+        /js/com/netTrek/gundl/ardplayer/model/vo/PlayerConfiguration.js
+        /js/com/netTrek/gundl/ardplayer/model/GlobalModel.js
+        /js/com/netTrek/gundl/ardplayer/model/PlayerModel.js
+        /js/com/netTrek/gundl/ardplayer/utils/Cookie.js
+        /js/com/netTrek/gundl/ardplayer/views/ViewController.js
+        /js/compressed.js
+        /plugins/flash/osmf/IcecastPlugin.swf
+        /plugins/flash/osmf/SMILPlugin.swf
+        /plugins/flash/osmf/SMPTETTPlugin.swf
+        /plugins/flash/osmf/WDRQoSPlugIn.swf
+        /plugins/flash/PluginFlash.swf
+        /CHANGELOG.txt
+        /index.html
+        /index_ap.html
+        /index_config.html
+        /index_playlist.html
+        /index_playlist.min.html
+
+11.05.12 / Version 3.1.7
+    - Behobene Tickets in dieser Version:
+        #1419 Wenn ein Clip lädt, wird kein schwarzer Bildschirm mit drehender Eins angezeigt, sondern ein schwarzer Kasten im linken unteren Bildrand.
+        #1416 Untertitel-Button wird immer angezeigt
+        #1413 Einbau des WDR-QOS-Plugin
+
+    - Geänderte Dateien:
+        /css/01player.css
+        /css/compressed.css
+        /js/com/netTrek/gundl/ardplayer/business/GenerateFlashPluginCMD.js
+        /js/com/netTrek/gundl/ardplayer/controller/ErrorController.js
+        /js/com/netTrek/gundl/ardplayer/controller/TrackController.js
+        /js/com/netTrek/gundl/ardplayer/core/AbstractPlayerCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/FlashPluginCtrl.js
+        /js/com/netTrek/gundl/ardplayer/model/vo/PlayerConfiguration.js
+        /js/com/netTrek/gundl/ardplayer/views/ViewController.js
+        /js/compressed.js
+        /plugins/flash/conf/config.xml
+        /plugins/flash/osmf/IcecastPlugin.swf
+        /plugins/flash/osmf/SMILPlugin.swf
+        /plugins/flash/osmf/SMPTETTPlugin.swf
+        /plugins/flash/osmf/WDRQoSPlugIn.swf
+        /plugins/flash/ardplayer-flex-osmf_1.6.0.20110908.swf
+        /plugins/flash/PluginFlash.swf
+        /index.html
+        
+14.05.12 / Version 3.1.8
+    - Erweiterungen
+        - In Rücksprache mit Herrn Panster wurde die Ladelogik für Plugins nochmals auf Fehlerabfragen optimiert, sowie
+        das AkamaiAdvancedStreaming Plugin in Version 2.7 lokal hinterlegt. Dies sollte die Probleme beheben, bei denen es sporadisch
+        zu einem schwarzen Standbild kam.
+        - Versionsnummer auf 3.1.8 erhöht
+
+    - Geänderte Dateien:
+        /js/com/netTrek/gundl/ardplayer/business/GenerateFlashPluginCMD.js
+        /js/compressed.js
+        /plugins/flash/conf/config.xml
+        /plugins/flash/osmf/AkamaiAdvancedStreamingPlugin-2.7-osmf1.6.swf
+        /plugins/flash/osmf/IcecastPlugin.swf
+        /plugins/flash/osmf/SMILPlugin.swf
+        /plugins/flash/osmf/SMPTETTPlugin.swf
+        /plugins/flash/osmf/WDRQoSPlugIn.swf
+        /plugins/flash/ardplayer-flex-osmf_1.6.0.20110908.swf
+        /plugins/flash/PluginFlash.swf
+
+15.05.12 / Version 3.1.9
+    - Behobene Tickets in dieser Version:
+        #1426 Radio-Livestream startet nach Pause nicht live, sondern ab Zeitpunkt der Initialisierung
+
+    - Erweiterungen
+        - Abgleich mit CSS-Anpassungen in Absprache mit Herrn Herkenrath (separat, nicht im Ticketsystem).
+        - Versionsnummer auf 3.1.9 erhöht
+
+    - Geänderte Dateien:
+        /css/01player.css
+        /css/02buttoncontrol.css
+        /css/03dev.css
+        /css/compressed.css
+        /img/player_controls.png
+        /js/com/netTrek/gundl/ardplayer/business/GenerateFlashPluginCMD.js
+        /js/com/netTrek/gundl/ardplayer/views/ViewController.js
+        /js/compressed.js
+        /plugins/flash/osmf/IcecastPlugin.swf
+        /plugins/flash/osmf/SMILPlugin.swf
+        /plugins/flash/osmf/SMPTETTPlugin.swf
+        /plugins/flash/PluginFlash.swf
+
+25.05.12 / Version 3.1.10
+    - Behobene Tickets in dieser Version:
+        #1447 Audio-Player Flash - Beim Erreichen des Clipendes wird "Erneut Abspielen" nicht angezeigt und EQ zappelt weiter
+        #1437 ARD Änderung an Zulieferung: JavaScript -> AbstractPlayerCtrl.js
+        #1419 Wenn ein Clip lädt, wird kein schwarzer Bildschirm mit drehender Eins angezeigt, sondern ein schwarzer Kasten im linken unteren Bildrand.
+        #1437 ARD Änderung an Zulieferung: JavaScript -> AbstractPlayerCtrl.js
+        #1465 Wird der Wechsel in den Vollbildmodus abgebrochen, verschwindet die Steuerleiste komplett
+        #1467 Vollbild im Conviva-Modus nicht per Doppelklick erreichbar
+        #1470 Mauszeiger blendet sich im Flash-Vollbild nicht aus
+        #1478 Bitte Flash-Plugin für Android-Plattformen aktivieren
+        #1469 Beim Stoppen des Clips wird nicht das Preview-Image angezeigt.
+        #1461 (nicht) korrektes Fehlermeldungsverhalten bei Plugins - Fehlermeldungen in den Viewport legen?
+
+    - Erweiterungen
+        - Zoom-Funktionalität implementiert
+        - Dokumentation erweitert
+        - Errorhandler unterscheidet zwischen kritischen, und wichtigen Meldungen
+
+    - Geänderte Dateien:
+        /css/01player.css
+        /css/02player-fixme.css
+        /css/compressed.css
+        /img/player_controls.png
+        /img/player_steuerbar_bg2.png
+        /js/com/netTrek/gundl/ardplayer/business/GenerateFlashPluginCMD.js
+        /js/com/netTrek/gundl/ardplayer/business/GenerateWmpCMD.js
+        /js/com/netTrek/gundl/ardplayer/business/GetMediaCollectionByJsonCMD.js
+        /js/com/netTrek/gundl/ardplayer/business/GetPlayerConfigByJsonCMD.js
+        /js/com/netTrek/gundl/ardplayer/business/GetPlayerConfigByQueryCMD.js
+        /js/com/netTrek/gundl/ardplayer/business/InitPlayerCMD.js
+        /js/com/netTrek/gundl/ardplayer/controller/ErrorController.js
+        /js/com/netTrek/gundl/ardplayer/controller/IVWController.js
+        /js/com/netTrek/gundl/ardplayer/controller/TrackController.js
+        /js/com/netTrek/gundl/ardplayer/core/AbstractPlayerCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/FlashPluginCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/HtmlAudioCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/HtmlVideoCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/Player.js
+        /js/com/netTrek/gundl/ardplayer/core/plugins.js
+        /js/com/netTrek/gundl/ardplayer/core/WmpCtrl.js
+        /js/com/netTrek/gundl/ardplayer/model/vo/MediaCollection.js
+        /js/com/netTrek/gundl/ardplayer/model/vo/PlayerConfiguration.js
+        /js/com/netTrek/gundl/ardplayer/model/GlobalModel.js
+        /js/com/netTrek/gundl/ardplayer/model/PlayerModel.js
+        /js/com/netTrek/gundl/ardplayer/utils/Cookie.js
+        /js/com/netTrek/gundl/ardplayer/utils/QueryParser.js
+        /js/com/netTrek/gundl/ardplayer/views/ViewController.js
+        /js/compressed.js
+        /plugins/flash/osmf/IcecastPlugin.swf
+        /plugins/flash/osmf/SMILPlugin.swf
+        /plugins/flash/osmf/SMPTETTPlugin.swf
+        /plugins/flash/PluginFlash.swf
+        /index.html
+        /index_testcase_audio_live.html
+        /index_testcase_audio_vod.html
+        /index_testcase_video_live.html
+
+30.05.12 / Version 3.1.11
+    - Behobene Tickets in dieser Version:
+        #1461 (nicht) korrektes Fehlermeldungsverhalten bei Plugins - Fehlermeldungen in den Viewport legen?
+        #1396 Player versetzt sich eigenständig in den Play-Modus
+        – / Untertitel werden Instanzübergreifend und nicht pro Player aktualisiert
+
+    - Geänderte Dateien:
+        /css/01player.css
+        /css/02player-fixme.css
+        /css/compressed.css
+        /js/com/netTrek/gundl/ardplayer/business/GenerateFlashPluginCMD.js
+        /js/com/netTrek/gundl/ardplayer/controller/TrackController.js
+        /js/com/netTrek/gundl/ardplayer/core/AbstractPlayerCtrl.js
+        /js/com/netTrek/gundl/ardplayer/views/ViewController.js
+        /js/compressed.js
+        /plugins/flash/osmf/IcecastPlugin.swf
+        /plugins/flash/osmf/SMILPlugin.swf
+        /plugins/flash/osmf/SMPTETTPlugin.swf
+        /plugins/flash/PluginFlash.swf
+
+30.05.12 / Version 3.1.12
+    - Anpassungen:
+        - Wie telefonisch mit Herrn Berthold und Herrn Panster besprochen basiert diese Version auf de 3.1.11, besitzt allerdings die CSS-Datei der Version 3.1.9.
+        - Zusätzlich wurde telefonisch mit Herrn Beckhoff besprochen, dass eine fehlerhafte Untertitel-XML nicht als kritischer Fehler durchgereicht werden darf. Diese Anpassung ist ebenfalls enthalten.
+
+    - Geänderte Dateien:
+        /css/01player.css
+        /css/02player-fixme.css
+        /css/compressed.css
+        /js/com/netTrek/gundl/ardplayer/business/GenerateFlashPluginCMD.js
+        /js/com/netTrek/gundl/ardplayer/core/AbstractPlayerCtrl.js
+        /js/compressed.js
+
+25.06.12 / Version 3.1.13
+    - Zusammenführung der Versionszweige (vgl. separate Changelogs)
+        - 3.1.8.1 (vom 19.06.12), gemeinsame Basis: 3.1.8
+        - 3.1.9.2 (vom 20.06.12), gemeinsame Basis: 3.1.9
+    - Rückstellung auf Original-CSS aus Version 3.1.11
+    - #1545 Tastenkombinationen
+        - Javascript Bibliothek "shortcut.js" eingebunden. Vgl. hierzu index.html/index.min.html
+
+22.07.12 / Version 3.1.14
+	- #1654 Flash-Player: Bei Podcast Video wird teilweise im Vollbildmodus UT angezeigt aber nicht im Normalmodus
+	- #1764 Versions-Nr für Player im GlobalModel
+	- #1708 Größenexplosion bei Multiinstanzen
+	- #1680 Benutzerfreundliche Anzeige für Flex-Fehlermeldung 1001/2046
+	- #1679 Wenn Browser kein natives Vollbild darstellen kann, entfällt der Vollbild-Btn
+	- #1672 iPad 1: Player-Menüleiste nicht (korrekt) steuerbar, kein Vollbildmodus/kein Spulen möglich
+	- #1671 HTML-Title ändert sich beim Verlassen des Vollbildmodus in "#"
+	- #1654 Flash-Playe: Bei Podcast Video wird teilweise im Vollbildmodus UT angezeigt aber nicht im Normalmodus
+	- #1392 Untertitelung an/aus im Cookie speichern
+	- #1390 gesetzte Lautstärke in einem Cookie speichern
+	- #1686 css-Struktur NEU
+	- #1584 Bei Livestreams muss in der Playerbar eine Einblendung "Livestream" erscheinen.
+	- #1391 zusätzlich zu den bisherigen CSS Klassen auch immer einer Repräsentationsklasse mitdefinieren
+	
+	- Anmerkungen:
+			Die korrekte Verwendung der CSS je nach Einsatz ist zu beachten.
+			Alle Helfer- und Subklassen liegen in eigenen Ordnern und sind in
+			jedem HTML-Beispiel per Kommentar eingebunden:
+			
+			/css/player.css = Basisklassen, immer einzubinden
+			/css/Helferklassen/body.css = Nur für die Entwicklung
+			/css/Helferklassen/buttoncontrol.css = Für die Entwicklung und je nach individuellem Setup produktiv nutzbar
+			/css/Mediatheken/daserste-player.css = Nicht fertig, später nach diesem Raster als MT-Skinning nutzbar
+			/css/Audio/audio-512x55.css = Einzubinden in Audioplayer 512x55
+			/css/Audio/audio-512x199.css = Einzubinden in Audioplayer 512x199
+
+			Alle HTML-Beispiele liegen in /test
+		
+    - Geänderte Dateien:	
+        /css/Audio/audio-512x199.css
+        /css/Audio/audio-512x55.css
+        /css/Helferklassen/body.css
+        /css/Helferklassen/buttoncontrol.css
+        /css/Mediatheken/daserste-player.css
+        /css/compressed.css
+        /css/player.css
+        /img/kleinesAudioBild-webM.jpeg
+        /img/playagain.png
+        /img/playagain_hover.png
+        /img/postercontrol.png
+        /img/posterframe.png
+        /js/com/netTrek/gundl/ardplayer/business/GenerateFlashPluginCMD.js
+        /js/com/netTrek/gundl/ardplayer/controller/KeyboardPlayerController.js
+        /js/com/netTrek/gundl/ardplayer/core/AbstractPlayerCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/FlashPluginCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/HtmlAudioCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/HtmlVideoCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/Player.js
+        /js/com/netTrek/gundl/ardplayer/core/WmpCtrl.js
+        /js/com/netTrek/gundl/ardplayer/model/vo/MediaCollection.js
+        /js/com/netTrek/gundl/ardplayer/model/vo/PlayerConfiguration.js
+        /js/com/netTrek/gundl/ardplayer/model/vo/PlayerConfigurationRepresentation.js
+        /js/com/netTrek/gundl/ardplayer/model/GlobalModel.js
+        /js/com/netTrek/gundl/ardplayer/model/PlayerModel.js
+        /js/com/netTrek/gundl/ardplayer/utils/Cookie.js
+        /js/com/netTrek/gundl/ardplayer/views/ViewController.js
+        /js/libs/shortcut.js
+        /js/compressed.js
+        /plugins/flash/conf/config.xml
+        /plugins/flash/conf/conviva-config.xml
+        /plugins/flash/osmf/AkamaiAdvancedStreamingPlugin-2.8-osmf1.6.swf
+        /plugins/flash/osmf/ConvivaStarterPlugin.swf
+        /plugins/flash/osmf/IcecastPlugin.swf
+        /plugins/flash/osmf/SMILPlugin.swf
+        /plugins/flash/osmf/SMPTETTPlugin.swf
+        /plugins/flash/osmf/WDRQoSPlugIn.swf
+        /plugins/flash/PluginFlash.swf

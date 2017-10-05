@@ -1,0 +1,122 @@
+{
+	"_type": "video",
+	"_isLive": false,
+	"_defaultQuality": [ "auto", 2, 3, 1, 0],
+	"_audioImage": {
+		"s": "base/img/posterframe-s.jpg",
+		"m": "mandanten/sport/img/posterframe-m.jpg",
+		"l": "mandanten/rbb/img/posterframe-l.jpg",
+		"xl": "base/img/posterframe-xl.jpg"
+	},
+	"_previewImage": {
+		"s": "base/img/posterframe-s.jpg",
+		"m": "mandanten/sport/img/posterframe-m.jpg",
+		"l": "mandanten/rbb/img/posterframe-l.jpg",
+		"xl": "base/img/posterframe-xl.jpg"
+	},
+	"_subtitleUrl": "test/untertiteldateien/ebu/ebu-tt-all.xml",
+	"_subtitleOffset": 0,
+	"_mediaArray": [
+
+		{
+			"_plugin": 0,
+			"_mediaStreamArray": [
+				{
+					"flashUrl": false,
+					"valid": true,
+					"_quality": "auto",
+					"_server": "",
+					"_cdn": "akamai",
+					"_stream": "http://hds.ndr.de/z/ndr/2014/0501/TV-20140501-0020-5142.,hq,hi,.mp4.csmil/manifest.f4m"
+				},
+				{
+					"flashUrl": false,
+					"valid": true,
+					"_quality": 0,
+					"_server": "",
+					"_cdn": "default",
+					"_stream": "http://media.ndr.de/progressive/2014/0501/TV-20140501-0020-5142.lo.mp4"
+				},
+				{
+					"flashUrl": true,
+					"valid": true,
+					"_quality": 1,
+					"_server": "rtmpt://cp160844.edgefcs.net/ondemand",
+					"_cdn": "akamai",
+					"_stream": "mp4:ndr/2014/0501/TV-20140501-0020-5142.hi.mp4"
+				},
+				{
+					"flashUrl": true,
+					"valid": true,
+					"_quality": 2,
+					"_server": "rtmpt://cp160844.edgefcs.net/ondemand",
+					"_cdn": "akamai",
+					"_stream": "mp4:ndr/2014/0501/TV-20140501-0020-5142.hq.mp4"
+				}
+			]
+		},
+		{
+			"_plugin": 1,
+			"_mediaStreamArray": [
+				{
+					"flashUrl": false,
+					"valid": true,
+					"_quality": 0,
+					"_server": "",
+					"_cdn": "default",
+					"_stream": "http://media.ndr.de/progressive/2014/0501/TV-20140501-0020-5142.lo.mp4"
+				},
+				{
+					"flashUrl": false,
+					"valid": true,
+					"_quality": 1,
+					"_server": "",
+					"_cdn": "default",
+					"_stream": "http://media.ndr.de/progressive/2014/0501/TV-20140501-0020-5142.hi.mp4"
+				},
+				{
+					"flashUrl": false,
+					"valid": true,
+					"_quality": 3,
+					"_server": "",
+					"_cdn": "default",
+					"_stream": "http://media.ndr.de/progressive/2014/0501/TV-20140501-0020-5142.hq.mp4"
+				}
+			]
+		}
+
+	],
+	"_sortierArray": [0, 1],
+	"_chapters": {
+		"_chapterSpriteImage": "../webapp/test/sprungmarken/mc_sprungmarken_fd.jpg",
+		"_chapterSpriteColumns": 3,
+		"_chapterArray": [
+			{
+				"_chapterTime": 185,
+				"_chapterTitle": "Das ist Kapitel 1 bei 185 Sekunden (00:03:05)",
+				"_chapterImg": "http://placehold.it/400x250#xybh=10,10,200,200"
+			},
+			{
+				"_chapterTime": 1270,
+				"_chapterTitle": "Das ist Kapitel 2 bei 1270 Sekunden (00:21:10)",
+				"_chapterImg": "http://placehold.it/128x75"
+			},
+			{
+				"_chapterTime": 2558,
+				"_chapterTitle": "Das ist Kapitel 3 bei 2558 Sekunden (00:42:38)",
+				"_chapterImg": "http://placehold.it/150x88"
+			},
+			{
+				"_chapterTime": 3705,
+				"_chapterTitle": "Das ist Kapitel 4 bei 3705 Sekunden (01:01:45)",
+				"_chapterImg": "un.defined"
+
+			},
+			{
+				"_chapterTime": 3950,
+				"_chapterTitle": "Das ist Kapitel 5 bei 3950 Sekunden (01:05:50)"
+			}
+		]
+
+	}
+}

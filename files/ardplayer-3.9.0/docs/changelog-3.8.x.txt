@@ -1,0 +1,180 @@
+14.07.2016 / Version 3.8.0
+
+    - Bearbeitete Tickets (https://pm.nettrek.de/versions/488)
+        Feature #10235: Plug-in HLS.js soll in ARD Player integriert werden / Livestreams sollen auch ohne Flash abgespielt werden können
+
+    - Geänderte Dateien:
+        /base/js/com/netTrek/gundl/ardplayer/core/HtmlVideoCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/core/Player.js
+        /base/js/com/netTrek/gundl/ardplayer/model/vo/MediaCollection.js
+        /base/js/com/netTrek/gundl/ardplayer/model/vo/MediaStream.js
+        /base/js/com/netTrek/gundl/ardplayer/model/GlobalModel.js
+        /base/js/com/netTrek/gundl/ardplayer/views/ViewController.js
+        /base/js/libs/hls-79b1fa9.min.js
+        /js/base.min.js
+        /index.html
+        /index.min.html
+        /index_agf.php
+        /index_ap.php
+        /index_ati.html
+        /index_config.php
+        /index_dvr.php
+        /index_ebu.php
+        /index_error.php
+        /index_hls_live.html
+        /index_hls_vod.html
+        /index_json.html
+        /index_live_ut.html
+        /index_mclabel.html
+        /index_pixel.php
+        /index_playlist.html
+        /index_playlist_html5.html
+        /index_sola.php
+        /index_sola_object.php
+        /index_sprungmarken.html
+        /index_sprungmarken.php
+        /index_sprungmarken_json.html
+        /index_stream.php
+        /index_stream_list.php
+
+26.08.2016 / Version 3.8.1
+
+    - Bearbeitete Tickets (https://pm.nettrek.de/versions/491)
+        #10378 - Fehlerhafte URL's bei Qualitätsbuttons auf Fehlerseite
+        #10235 - Plug-in HLS.js soll in ARD Player integriert werden / Livestreams sollen auch ohne Flash abgespielt werden können
+
+    - Geänderte Dateien:
+        /base/js/com/netTrek/gundl/ardplayer/core/HtmlVideoCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/views/ViewController.js
+
+09.09.2016 / Version 3.8.2
+
+    - Bearbeitete Tickets (https://pm.nettrek.de/versions/491)
+        #10235 - Plug-in HLS.js soll in ARD Player integriert werden / Livestreams sollen auch ohne Flash abgespielt werden können
+
+    - Geänderte Dateien:
+        /base/js/com/netTrek/gundl/ardplayer/core/HtmlVideoCtrl.js
+
+16.09.2016 / Version 3.8.3
+
+    - Bearbeitete Tickets (https://pm.nettrek.de/versions/491)
+        Feedback #10276 - Player soll auch als Fallback Flash verwenden
+        Feedback #10554 - Keine Pufferanzeige bei VoD- oder AoD-Clips
+        Fehler   #10552 - Nach Wechsel aus dem Vollbildmodus blendet sich die Steuerleiste nicht aus
+
+    - Geänderte Dateien:
+        /base/js/com/netTrek/gundl/ardplayer/views/ViewController.js
+
+01.11.2016 / Version 3.8.4
+
+    - Update des HLS Plugins
+    - Quality Label in "sehr hohe" umbenannt zur Vorbereitung von Full HD
+    - Attribute des "Format-Cookie" in lastUsedPlug-in umbenannt wegen Umstellung auf HTML first
+    - Fehlertexte in Error_Playback angepasst
+
+    - Geänderte Dateien:
+        /base/js/com/netTrek/gundl/ardplayer/utils/Cookie.js
+        /base/js/com/netTrek/gundl/ardplayer/model/GlobalModel.js
+        /base/js/com/netTrek/gundl/ardplayer/model/vo/MediaCollection.js
+        /base/conf/ErrorMessages.json
+        /base/js/libs/hls-79b1fa9.min.js
+
+07.12.2016 / Version 3.8.5
+
+    - Bearbeitete Tickets (https://pm.nettrek.de/versions/491)
+        Fehler #10487 - Audio spielt nicht von der Stelle, an der der Schieberegler losgelasen wurde, weiter
+        Fehler #10560 - #iOS #player Interaktion mit anderen Playern lässt Video von vorne starten
+        Fehler #10551 - Abspielen/ Pausieren: Clip startet nach Pausieren von vorne
+        Wartung #10826 - Dateigröße der SVGs im Player-Projekt reduzieren
+        Wartung #10855 - Posterframe Audio XS (DasErste) hinzugefügt
+        Wartung #10893 - Refactoring: Laden der ErrorMessages.json mit getBaseUrl() anstatt getBaseAssetUrl()
+        Feature #10822 - Versions-Label im Player anzeigen
+
+    - Geänderte Dateien:
+        /base/img/audio_min.svg
+        /base/img/audio_off.svg
+        /base/img/audio_on.svg
+        /base/img/barrierefrei.svg
+        /base/img/dvr.svg
+        /base/img/dvr_left.svg
+        /base/img/dvr_middle.svg
+        /base/img/dvr_right.svg
+        /base/img/facebook.svg
+        /base/img/fullscreen_off.svg
+        /base/img/fullscreen_on.svg
+        /base/img/google.svg
+        /base/img/icon.svg
+        /base/img/mail.svg
+        /base/img/mouseover.svg
+        /base/img/pause.svg
+        /base/img/play.svg
+        /base/img/popup.svg
+        /base/img/reload.svg
+        /base/img/settings.svg
+        /base/img/share.svg
+        /base/img/sound_range.svg
+        /base/img/twitter.svg
+        /base/img/ut.svg
+        /base/img/vsetting.svg
+        /base/js/com/netTrek/gundl/ardplayer/controller/ErrorController.js
+        /base/js/com/netTrek/gundl/ardplayer/controller/KeyboardPlayerController.js
+        /base/js/com/netTrek/gundl/ardplayer/core/AbstractPlayerCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/core/HtmlVideoCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/core/Player.js
+        /base/js/com/netTrek/gundl/ardplayer/model/GlobalModel.js
+        /base/js/com/netTrek/gundl/ardplayer/views/TimelineSlider.js
+        /base/js/com/netTrek/gundl/ardplayer/views/ViewController.js
+        /js/base.min.js
+        /mandanten/ard/style/main.css
+        /mandanten/daserste/img/posterframe-xs.jpg
+
+08.02.2017 / Version 3.8.6
+
+    - Bearbeitete Tickets (https://pm.nettrek.de/versions/491)
+        #11007 - Versionslabel bei Mandanten anpassen
+        #11195 - Fehler im mobilen Player: Vor- und Zurückspringen funktioniert nicht
+        #11221 - Beim Pausieren (VoD) bleibt der Player nicht beim aktuellen Frame
+        #10814 - Livestreams und On-Demand-Clips werden im HTTPS-Kontext nicht abgespielt
+        #11222 - Beim Swipen über ein laufendes Video wird das Video pausiert
+        #11266 - UX: Settings sollen sich bei Klick außerhalb des Players schließen
+
+    - Geänderte Dateien:
+        /base/js/com/netTrek/gundl/ardplayer/core/HtmlVideoCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/model/GlobalModel.js
+        /base/js/com/netTrek/gundl/ardplayer/views/TimelineSlider.js
+        /base/js/com/netTrek/gundl/ardplayer/views/ViewController.js
+        /js/base.min.js
+        /mandanten/ard/style/main.css
+        /mandanten/daserste/style/main.css
+        /mandanten/einsfestival/style/main.css
+        /mandanten/rbb/style/main.css
+        /mandanten/sport/style/main.css
+        /mandanten/sr/style/main.css
+        
+07.04.2017 / Version 3.8.7
+
+    - Bearbeitete Tickets (https://pm.nettrek.de/versions/491)
+        #11295 - CSS: schwarzer Balken unterhalb der Playerleiste - eliminiert
+        #11296 - Beim Wechsel des Plugins von Flash auf HTML startet Clip von vorne
+        #11007 - HOTFIX Versionlabel: if-Abfrage nach hostname auf Wirk
+        #11336 - Shortcuts für Lautstärke bei Chrome nicht funktional: STRG+N zu STRG+V geändert
+        #11007 - CSS: Versionslabel bei Mandanten anpassen: Anpassung für Portalseite (lra.ard.de/ardplayer)
+        #11266 - UX: Settings sollen sich bei Klick außerhalb des Players schließen
+        #11267 - CSS: Grafische Darstellung der Lautstärkeanzeige verzerrt
+        #????? - hls.js updated to 0.7.5
+
+    - Geänderte Dateien:
+        /base/flash/PluginFlash.swf
+        /base/img/sound_range.png
+        /base/js/com/netTrek/gundl/ardplayer/controller/KeyboardPlayerController.js
+        /base/js/com/netTrek/gundl/ardplayer/core/FlashPluginCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/core/HtmlVideoCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/views/ViewController.js
+        /base/js/libs/hls-79b1fa9.min.js
+        /js/base.min.js
+        /mandanten/ard/style/main.css
+        /mandanten/daserste/style/main.css
+        /mandanten/rbb/style/main.css
+        /mandanten/sport/style/main.css
+        /mandanten/sr/style/main.css
+

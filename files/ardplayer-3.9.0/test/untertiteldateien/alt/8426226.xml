@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--*** XML Subtitle File for Flash Player ***-->
+
+<!--*** Created by FAB Subtitler 2012-01-31 ***-->
+<tt xml:lang="de" xmlns="http://www.w3.org/2006/10/ttaf1" xmlns:tts="http://www.w3.org/2006/10/ttaf1#styling" xmlns:ttp="http://www.w3.org/2006/10/ttaf1parameter" ttp:frameRate="25">
+	<head>
+		<styling>
+			<style id="s1" tts:fontFamily="Arial" tts:fontSize="28px" />
+			<style id="s2" tts:backgroundColor="white" tts:color="blue" tts:fontFamily="Arial" tts:fontSize="28px" />
+		</styling>
+		<!--layout>
+			<region id="subtitleArea" style="s1" tts:origin="56px;32px" tts:extent="608px;512px" tts:textAlign="after" />
+		</layout-->
+	</head>
+	<body style="s1">
+		<div xml:lang="de">
+			<p id="subtitle1" begin="10:00:01.000" end="10:00:14.680" tts:textAlign="center" style="s1">Blicken Sie noch durch,<br />wenn es um den Euro geht?</p>
+			<p id="subtitle2" begin="10:00:14.960" end="10:00:20.320" tts:textAlign="center" style="s1">Wie umfangreich waren eigentlich die<br />Rettungspakete, die geschn&#x00fc;rt wurden.  </p>
+			<p id="subtitle3" begin="10:00:20.560" end="10:00:23.360" tts:textAlign="center" style="s1">Ich wei&#x00df; nur:<br />Sie sind immer gr&#x00f6;&#x00df;er geworden.</p>
+			<p id="subtitle4" begin="10:00:23.640" end="10:00:28.000" tts:textAlign="center" style="s1">Da wird immer mehr Geld eingesetzt,<br />um den Finanzmarkt zu beruhigen. </p>
+			<p id="subtitle5" begin="10:00:28.240" end="10:00:32.840" tts:textAlign="center" style="s1">Doch die Nachrichten der letzten Tage<br />sind alles andere als beruhigend.</p>
+			<p id="subtitle6" begin="10:00:33.080" end="10:00:37.480" tts:textAlign="center" style="s1">Die Sorge um die Zukunft des Euro<br />und der W&#x00e4;hrungsunion bleibt.</p>
+			<p id="subtitle7" begin="10:00:37.720" end="10:00:43.080" tts:textAlign="center" style="s1">Die meisten Menschen haben es schwer,<br />die Zusammenh&#x00e4;nge zu verstehen.</p>
+			<p id="subtitle8" begin="10:00:43.320" end="10:00:45.120" tts:textAlign="center" style="s1">Aber vielleicht noch schlimmer:</p>
+			<p id="subtitle9" begin="10:00:45.400" end="10:00:48.480" tts:textAlign="center" style="s1">Ich wei&#x00df; nicht, ob diejenigen<br />wirklich durchschauen,</p>
+			<p id="subtitle10" begin="10:00:48.760" end="10:00:53.000" tts:textAlign="center" style="s1">die es von sich behaupten und in<br />den Regierungen verantwortlich sind.</p>
+			<p id="subtitle11" begin="10:00:53.280" end="10:00:56.160" tts:textAlign="center" style="s1">Und so w&#x00e4;chst bei vielen<br />die Unsicherheit weiter.</p>
+			<p id="subtitle12" begin="10:00:56.400" end="10:01:01.520" tts:textAlign="center" style="s1">Da ist die Sorge um das eigene<br />Sparbuch, die Absicherung f&#x00fc;rs Alter.</p>
+			<p id="subtitle13" begin="10:01:01.760" end="10:01:04.440" tts:textAlign="center" style="s1">Und f&#x00fc;r mich geh&#x00f6;rt <br />dazu auch die Frage:</p>
+			<p id="subtitle14" begin="10:01:04.680" end="10:01:09.400" tts:textAlign="center" style="s1">K&#x00f6;nnen k&#x00fc;nftige Generationen<br />die Schulden, noch abtragen?</p>
+			<p id="subtitle15" begin="10:01:09.640" end="10:01:11.720" tts:textAlign="center" style="s1">Ich beobachte in diesen Tagen:</p>
+			<p id="subtitle16" begin="10:01:11.960" end="10:01:16.360" tts:textAlign="center" style="s1">Menschen gehen mit der erlebten <br />Unsicherheit unterschiedlich um.</p>
+			<p id="subtitle17" begin="10:01:16.600" end="10:01:21.080" tts:textAlign="center" style="s1">Manche bleiben trotz allem gelassen.<br />Sie leben weiter wie bisher.</p>
+			<p id="subtitle18" begin="10:01:21.320" end="10:01:25.360" tts:textAlign="center" style="s1">Und vielleicht hoffen sie: So<br />schlimm wird es schon nicht kommen.</p>
+			<p id="subtitle19" begin="10:01:25.600" end="10:01:27.400" tts:textAlign="center" style="s1">Andere sind nicht so gelassen.</p>
+			<p id="subtitle20" begin="10:01:27.680" end="10:01:31.720" tts:textAlign="center" style="s1">Sie sp&#x00fc;ren ihre Ohnmacht gegen&#x00fc;ber<br />einem Wirtschaftssystem, das sie</p>
+			<p id="subtitle21" begin="10:01:32.000" end="10:01:35.400" tts:textAlign="center" style="s1">nicht durchschauen k&#x00f6;nnen.<br />&#x00c4;ngste entstehen dann.</p>
+			<p id="subtitle22" begin="10:01:35.680" end="10:01:41.240" tts:textAlign="center" style="s1">Und wer wollte beurteilen, wo sie <br />berechtigt, wo sie &#x00fc;bertrieben sind?</p>
+			<p id="subtitle23" begin="10:01:41.520" end="10:01:46.360" tts:textAlign="center" style="s1">Mit &#x00c4;ngsten umzugehen,<br />die meinen Lebensentwurf bedrohen,</p>
+			<p id="subtitle24" begin="10:01:46.640" end="10:01:49.600" tts:textAlign="center" style="s1">geh&#x00f6;rt sicher zu<br />den gr&#x00f6;&#x00df;ten Herausforderungen.</p>
+			<p id="subtitle25" begin="10:01:49.880" end="10:01:52.960" tts:textAlign="center" style="s1">Und auch als Pfarrer<br />habe ich da kein Patentrezept.</p>
+			<p id="subtitle26" begin="10:01:53.240" end="10:01:56.760" tts:textAlign="center" style="s1">Ich wei&#x00df; aber:<br />Angst kann Menschen l&#x00e4;hmen.</p>
+			<p id="subtitle27" begin="10:01:57.040" end="10:01:59.240" tts:textAlign="center" style="s1">Sie sehen dann nur noch die Gefahren.</p>
+			<p id="subtitle28" begin="10:01:59.520" end="10:02:03.400" tts:textAlign="center" style="s1">Nat&#x00fc;rlich: Nie zuvor hatten wir <br />Menschen so viele M&#x00f6;glichkeiten,</p>
+			<p id="subtitle29" begin="10:02:03.680" end="10:02:06.600" tts:textAlign="center" style="s1">uns gegen die Risiken<br />des Lebens abzusichern.</p>
+			<p id="subtitle30" begin="10:02:06.840" end="10:02:10.760" tts:textAlign="center" style="s1">Doch gegen &#x00c4;ngste helfen<br />nur selten Argumente. </p>
+			<p id="subtitle31" begin="10:02:11.040" end="10:02:13.720" tts:textAlign="center" style="s1">Sie lassen sich nicht<br />einfach ausschalten. </p>
+			<p id="subtitle32" begin="10:02:13.960" end="10:02:17.960" tts:textAlign="center" style="s1">Stattdessen m&#x00fc;ssten wir nach Wegen<br />suchen, mit ihnen umzugehen.</p>
+			<p id="subtitle33" begin="10:02:18.240" end="10:02:22.800" tts:textAlign="center" style="s1">Mir selbst hilft in den Erfahrungen<br />der Unsicherheit der Blick auf das,</p>
+			<p id="subtitle34" begin="10:02:23.080" end="10:02:25.320" tts:textAlign="center" style="s1">was schon einmal getragen hat.</p>
+			<p id="subtitle35" begin="10:02:25.600" end="10:02:28.440" tts:textAlign="center" style="s1">Es kann st&#x00e4;rken, sich an<br />die pers&#x00f6;nlichen und</p>
+			<p id="subtitle36" begin="10:02:28.720" end="10:02:32.000" tts:textAlign="center" style="s1">die gemeinsamen Grundlagen<br />zu erinnern.</p>
+			<p id="subtitle37" begin="10:02:32.280" end="10:02:36.720" tts:textAlign="center" style="s1">F&#x00fc;r unsere Gesellschaft haben uns die<br />M&#x00fc;tter und V&#x00e4;ter des Grundgesetzes</p>
+			<p id="subtitle38" begin="10:02:37.000" end="10:02:41.040" tts:textAlign="center" style="s1">dazu mit der Sozialen Marktwirtschaft<br />eine Grundlage gegeben.</p>
+			<p id="subtitle39" begin="10:02:41.320" end="10:02:44.960" tts:textAlign="center" style="s1">Sie ist mehr, als nur<br />die Logik des &quot;Immer mehr&quot;.</p>
+			<p id="subtitle40" begin="10:02:45.240" end="10:02:49.000" tts:textAlign="center" style="s1">Sie baut auf den Grunds&#x00e4;tzen<br />der katholischen Soziallehre auf.</p>
+			<p id="subtitle41" begin="10:02:49.280" end="10:02:53.080" tts:textAlign="center" style="s1">Die fordert, dass Eigentum<br />gerade nicht nur zu Profit f&#x00fc;hrt,</p>
+			<p id="subtitle42" begin="10:02:53.320" end="10:02:56.240" tts:textAlign="center" style="s1">sondern auch Verantwortung bedeutet.</p>
+			<p id="subtitle43" begin="10:02:56.520" end="10:03:00.160" tts:textAlign="center" style="s1">Vielleicht braucht es<br />h&#x00e4;ufiger die Erinnerung daran.</p>
+			<p id="subtitle44" begin="10:03:00.400" end="10:03:04.800" tts:textAlign="center" style="s1">Es ist eine starke Grundlage,<br />auf die wir da aufbauen k&#x00f6;nnen!</p>
+			<p id="subtitle45" begin="10:03:05.040" end="10:03:10.080" tts:textAlign="center" style="s1">Pers&#x00f6;nlich ist f&#x00fc;r mich die Suche <br />nach Sicherheiten unmittelbar auch</p>
+			<p id="subtitle46" begin="10:03:10.320" end="10:03:12.520" tts:textAlign="center" style="s1">verbunden mit dem Blick auf Gott.</p>
+			<p id="subtitle47" begin="10:03:12.800" end="10:03:17.080" tts:textAlign="center" style="s1">Das Buch der Psalmen formuliert<br />das sehr griffig und konkret:</p>
+			<p id="subtitle48" begin="10:03:17.360" end="10:03:21.480" tts:textAlign="center" style="s1">&quot;Du, Gott, bist mein Fels,<br />meine Burg.&quot; (Psalm 31,4a)</p>
+			<p id="subtitle49" begin="10:03:21.720" end="10:03:26.520" tts:textAlign="center" style="s1">Wer so sprechen kann, kommt<br />nicht so leicht ins Wanken.</p>
+			<p id="subtitle50" begin="10:03:26.800" end="10:03:30.440" tts:textAlign="center" style="s1">Allerdings: Wer so betet,<br />muss sich auch fragen lassen,</p>
+			<p id="subtitle51" begin="10:03:30.720" end="10:03:33.600" tts:textAlign="center" style="s1">ob er es sich nicht zu leicht macht.</p>
+			<p id="subtitle52" begin="10:03:33.880" end="10:03:38.000" tts:textAlign="center" style="s1">Er muss sich vorwerfen lassen,<br />die Gefahren nicht ernst zu nehmen.</p>
+			<p id="subtitle53" begin="10:03:38.240" end="10:03:42.960" tts:textAlign="center" style="s1">Ich meine, dass christlicher<br />Glaube genau hierin stark ist.</p>
+			<p id="subtitle54" begin="10:03:43.240" end="10:03:45.520" tts:textAlign="center" style="s1">Und im besten Sinne st&#x00e4;rkt:</p>
+			<p id="subtitle55" begin="10:03:45.800" end="10:03:51.640" tts:textAlign="center" style="s1">Er f&#x00fc;hrt Menschen keineswegs dazu,<br />die Augen vor Risiken zu verschlie&#x00df;en</p>
+			<p id="subtitle56" begin="10:03:51.880" end="10:03:55.240" tts:textAlign="center" style="s1">Doch er nimmt ihnen <br />ihre l&#x00e4;hmende Wirkung.</p>
+			<p id="subtitle57" begin="10:03:55.480" end="10:04:00.160" tts:textAlign="center" style="s1">Diesen Fels, diesen Blick auf<br />das, was wirklich tr&#x00e4;gt,</p>
+			<p id="subtitle58" begin="10:04:00.440" end="10:04:03.320" tts:textAlign="center" style="s1">w&#x00fc;nsche ich uns in den<br />Unsicherheiten, die </p>
+			<p id="subtitle59" begin="10:04:03.560" end="10:04:07.800" tts:textAlign="center" style="s1">angesichts von besorgniserregenden<br />Nachrichten entstehen k&#x00f6;nnen.</p>
+			<p id="subtitle60" begin="10:04:08.040" end="10:04:10.400" tts:textAlign="center" style="s1">Und einen gesegneten Sonntag.</p>
+			<p id="subtitle61" begin="10:04:11.960" end="10:04:14.440" tts:textAlign="center" style="s2">Copyright Untertitel: NDR 2011</p>
+		</div>
+	</body>
+</tt>

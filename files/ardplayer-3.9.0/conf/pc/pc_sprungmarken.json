@@ -1,0 +1,22 @@
+{"_representationArray":[
+    {
+        "_representationClass":"m"
+    }
+],
+    "_initialVolume":0,
+    "_startTime":0,
+    "_endTime":0,
+    "_autosave":true,
+    "_autoplay":true,
+    "_baseUrl":"",
+    "_showOptions":true,
+    "_showOptions_Plugins":true,
+    "_showOptions_Quality":true,
+    "_showColorSettings":false,
+    "_showEqualizer":false,
+    "_rememberCurrentTime":false,
+    "_forceControlBarVisible":true,
+    "_showSubtitelAtStart":false,
+	"_chaptersEnabled" : true,
+    "_addons":["AddonSprungmarken"]
+}

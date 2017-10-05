@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <!-- Basisklasse: Immer einbinden -->
+    <link rel="stylesheet" href="mandanten/ard/style/main.css" type="text/css"/>
+
+    <!-- Body-Setup: Helferklasse nur fuer Release-Ausspielung -->
+    <style>
+        html, body {
+            font-family: Verdana, Arial, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            padding-left: 4%;
+            padding-top: 2%;
+        }
+    </style>
+
+    <meta name="description" content=""/>
+    <meta name="author" content="netTrek"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+    <link rel="shortcut icon" href="/favicon.ico"/>
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+
+    <!-- ARD Player start -->
+    <!--Libs-->
+    <script src="base/js/libs/jquery-2.1.1.min.js"></script>
+    <script src="base/js/libs/jquery.tools-1.2.7.min.js"></script>
+    <script src="base/js/libs/jquery-ui-1.10.4.min.js"></script>
+    <script src="base/js/libs/swfobject.js"></script>
+    <script src="base/js/libs/mm.useractivity.js"></script>
+    <script src="base/js/libs/json2.js"></script>
+    <script src="base/js/libs/jquery.cookie.js"></script>
+    <script src="base/js/libs/shortcut.js"></script>
+    <script src="base/js/libs/bigscreen.min.js"></script>
+    <script src="base/js/libs/hls-0.7.11.light.min.js"></script>
+
+    <!-- Greensock -->
+    <script src="base/js/libs/TweenLite.min.js"></script>
+    <script src="base/js/libs/Draggable.min.js"></script>
+    <script src="base/js/libs/CSSPlugin.min.js"></script>
+
+	<script src="js/base.min.js"></script>
+
+    <!-- Addons -->
+	<script src="js/addons.min.js"></script>
+
+    <!-- Addons -->
+    <link rel="stylesheet" href="addons/debug/css/AddonDebug.css" type="text/css"/>
+    <link rel="stylesheet" href="addons/untertitel/css/AddonUntertitel.css" type="text/css"/>
+    <link rel="stylesheet" href="addons/sprungmarken/css/AddonSprungmarken.css" type="text/css"/>
+
+</head>
+<body>
+
+<script>
+    (function ($) {
+
+        $(window).ready(function () {
+
+            var mc = new ardplayer.MediaCollection("video", true, 1);
+
+            mc.setDVREnabled(true);
+
+            mc.setSortierung(0, 1);
+
+            mc.setDownloadClickFunction(function () {
+                alert("say hello Download");
+            });
+
+            mc.setPreviewImage("base/img/posterframe-m.jpg");
+            mc.setAudioImage("base/img/posterframe-m.jpg");
+
+            mc.addMedia(0);
+
+            //mc.addMediaStream(0, 0, "http://zdf_hds_de-f.akamaihd.net/z/de10_v1@87012/manifest.f4m", "", "akamai");
+            mc.addMediaStream(0, 1, "http://zdf_hds_de-f.akamaihd.net/z/de10_v1@87012/manifest.f4m", "", "akamai");
+            //mc.addMediaStream(0, 2, "http://zdf_hds_de-f.akamaihd.net/z/de10_v1@87012/manifest.f4m", "", "akamai");
+            //mc.addMediaStream(0, 3, "http://zdf_hds_de-f.akamaihd.net/z/de10_v1@87012/manifest.f4m", "", "akamai");
+
+            //WDR-24/7-Livestream mit ...Timeshift?!
+            //mc.addMediaStream(0, 1, "", "http://wdr_event1_geo-lh.akamaihd.net/z/wdrevent1_geogeblockt@112051/manifest.f4m?b", "akamai");
+
+            mc.addMedia(1);
+            mc.addMediaStream(1, 0, "",
+                    [
+                        "http://http-stream.rbb-online.de/rbb/ard_ref_clip/video/tmp_20100202_ard_ref_clip_MP4H264_m_16_9_512x288.mp4"
+                    ],
+                    "");
+            mc.addMediaStream(1, 1, "",
+                    [
+                        "http://http-stream.rbb-online.de/rbb/ard_ref_clip/video/tmp_20100202_ard_ref_clip_MP4H264_m_16_9_512x288.mp4"
+                    ],
+                    "");
+            mc.addMediaStream(1, 2, "",
+                    [
+                        "http://http-stream.rbb-online.de/rbb/ard_ref_clip/video/tmp_20100202_ard_ref_clip_MP4H264_m_16_9_512x288.mp4"
+                    ],
+                    "");
+            mc.addMediaStream(1, 3, "",
+                    [
+                        "http://http-stream.rbb-online.de/rbb/ard_ref_clip/video/tmp_20100202_ard_ref_clip_MP4H264_m_16_9_512x288.mp4"
+                    ],
+                    "");
+
+
+
+            var pc = new ardplayer.PlayerConfiguration();
+            //pc.setBaseUrl("/resources/");
+            //pc.setBaseUrl("test/");
+            pc.setBaseUrl("");
+
+            //schalter: size | ? | scale true false | rep
+            pc.setRepresentation(0, 256, 144, false, true, "m");
+
+
+
+            pc.setAutoPlay(false);
+            pc.setShowOptions(true);
+            pc.setShowOptions_Plugins(true);
+            pc.setShowOptions_Quality(true);
+
+
+            //pc.setAutoSave(false);
+            //pc.setStartStopTime(10, 30);
+            pc.setForceControlBarVisible(false);
+            pc.setInitialPlayhead(0);
+
+            pc.setSolaAnalyticsEnabled(true);
+            pc.setSolaAnalyticsConfig("conf/sola/sola.json");
+
+            pc.setShowEqualizer(true);
+
+
+            var p = new ardplayer.Player("programatischer-player00", pc, mc);
+        });
+    })(ardplayer.jq);
+</script>
+
+<div style="width:512px; height: 256px">
+    <div id="programatischer-player00"></div>
+</div>
+</body>
+</html>

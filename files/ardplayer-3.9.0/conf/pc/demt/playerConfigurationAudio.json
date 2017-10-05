@@ -1,0 +1,5 @@
+{
+    "_baseUrl":"../../player/",
+    "_baseAssetUrl":"../../player/base/",
+    "_forceControlBarVisible":true
+}

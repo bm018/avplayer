@@ -1,0 +1,52 @@
+{
+  "_type": "video",
+  "_isLive": true,
+  "_defaultQuality": [
+    "auto",
+    2,
+    3,
+    1,
+    0
+  ],
+  "_previewImage": "http://www.ardmediathek.de/image/00/21/52/09/32/-295433861/16x9/960",
+  "_subtitleOffset": 0,
+  "_mediaArray": [
+    {
+      "_plugin": 0,
+      "_mediaStreamArray": [
+        {
+          "_quality": "auto",
+          "_server": "",
+          "_cdn": "default",
+          "_stream": "http://static.ard.de/daserste_livestream/geo.smil"
+        }
+      ]
+    }
+  ],
+  "_alternativeMediaArray": [
+    {
+      "_type": [
+        "untertitel"
+      ],
+      "_mediaArray": [
+        {
+          "_plugin": 0,
+          "_mediaStreamArray": [
+            {
+              "_quality": "auto",
+              "_server": "",
+              "_cdn": "akamai",
+              "_stream": "http://live-ut-lh.daserste.de/z/daserste_ut_de@300832/manifest.f4m?hdcore"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_sortierArray": [
+    0
+  ],
+  "_duration": 0,
+  "_dvrEnabled": true,
+  "_geoblocked": true
+}

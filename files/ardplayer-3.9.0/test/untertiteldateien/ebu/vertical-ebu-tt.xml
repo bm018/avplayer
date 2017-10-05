@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--© 2012 Institut für Rundfunktechnik GmbH. -->
+<tt:tt ttp:timeBase="media" xml:lang="de" xmlns:tt="http://www.w3.org/ns/ttml" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xmlns:tts="http://www.w3.org/ns/ttml#styling" ttp:cellResolution="50 30" xmlns:ebuttm="urn:ebu:tt:metadata">
+	<tt:head>
+		<tt:metadata>
+			<ebuttm:documentMetadata>
+				<ebuttm:documentEbuttVersion>v1.0</ebuttm:documentEbuttVersion>
+			</ebuttm:documentMetadata>
+		</tt:metadata>
+		<tt:styling>
+			<tt:style xml:id="defaultStyle" tts:fontFamily="Verdana, Arial" tts:fontSize="1c" tts:lineHeight="normal"/>
+			<tt:style xml:id="textWhite" tts:color="#ffffff" tts:fontSize="2c"/>
+			<tt:style xml:id="textCenter" tts:textAlign="center" tts:backgroundColor="#000000c2"/>
+		</tt:styling>
+		<tt:layout>
+			<tt:region xml:id="top" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="before"/>
+			<tt:region xml:id="bottom" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="after"/>
+		</tt:layout>
+	</tt:head>
+	<tt:body>
+		<tt:div style="defaultStyle">
+			<tt:p xml:id="subtitle1" region="top" begin="00:00:00.000" end="00:00:02.400" style="textCenter">
+				<tt:span style="textWhite">einzeilig oben</tt:span>
+			</tt:p>
+			<tt:p xml:id="subtitle2" region="top" begin="00:00:02.560" end="00:00:04.840" style="textCenter">
+				<tt:span style="textWhite">zweizeilig</tt:span>
+				<tt:br/>
+				<tt:span style="textWhite">oben</tt:span>
+			</tt:p>
+			<tt:p xml:id="subtitle3" region="bottom" begin="00:00:05.000" end="00:00:07.200" style="textCenter">
+				<tt:span style="textWhite">einzeilig mittig</tt:span>
+			</tt:p>
+			<tt:p xml:id="subtitle4" region="top" begin="00:00:07.360" end="00:00:10.760" style="textCenter">
+				<tt:span style="textWhite">zweizeilig</tt:span>
+				<tt:br/>
+				<tt:span style="textWhite">mittig</tt:span>
+			</tt:p>
+			<tt:p xml:id="subtitle5" region="bottom" begin="00:00:10.920" end="00:00:14.080" style="textCenter">
+				<tt:span style="textWhite">einzeilig unten</tt:span>
+			</tt:p>
+			<tt:p xml:id="subtitle6" region="bottom" begin="00:00:14.240" end="00:00:17.400" style="textCenter">
+				<tt:span style="textWhite">zweizeilig</tt:span>
+				<tt:br/>
+				<tt:span style="textWhite">unten</tt:span>
+			</tt:p>
+			<tt:p xml:id="subtitle7" region="bottom" begin="00:00:17.560" end="00:00:21.360" style="textCenter">
+				<tt:span style="textWhite">dreizeiliger</tt:span>
+				<tt:br/>
+				<tt:span style="textWhite">Untertitel</tt:span>
+				<tt:br/>
+				<tt:span style="textWhite">unten</tt:span>
+			</tt:p>
+		</tt:div>
+	</tt:body>
+</tt:tt>

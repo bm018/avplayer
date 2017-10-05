@@ -1,0 +1,23 @@
+.ardplayer-viewport .class-debug {
+    background: none;
+    cursor: pointer;
+    float: left;
+    height: 46px;
+    width: 46px;
+    border-right: 1px solid #284e7e;
+
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.ardplayer-viewport .class-debug-selected {
+
+    background: url("../img/bg-debug.jpg");
+
+}
+
+.ardplayer-viewport .class-debug.hover {
+    background: url("../img/bg-debug.jpg");
+}
+

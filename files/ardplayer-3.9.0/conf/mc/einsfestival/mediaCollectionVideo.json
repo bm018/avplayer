@@ -1,0 +1,47 @@
+{
+    "_type":"video",
+    "_isLive":false,
+    "_defaultQuality":["auto",1,2,3,0],
+    "_previewImage":"../../images/tagesschau.jpg",
+    "_subtitleUrl":"",
+    "_subtitleOffset":0,
+    "_mediaArray":[
+        {
+            "_plugin":1,
+            "_mediaStreamArray":[
+                {
+                    "_quality":0,
+                    "_server":"",
+                    "_stream":[
+                        "http://ondemand-ww.wdr.de/medp/fsk0/100/1009927/1009927_11214372.mp4"
+                    ],
+                    "_cdn":""
+                },
+                {
+                    "_quality":1,
+                    "_server":"",
+                    "_stream":[
+                        "http://ondemand-ww.wdr.de/medp/fsk0/100/1009927/1009927_11214372.mp4"
+                    ],
+                    "_cdn":""
+                },
+                {
+                    "_quality":2,
+                    "_server":"",
+                    "_stream":[
+                        "http://ondemand-ww.wdr.de/medp/fsk0/100/1009927/1009927_11214372.mp4"
+                    ],
+                    "_cdn":""
+                },
+                {
+                    "_quality":3,
+                    "_server":"",
+                    "_stream":[
+                        "http://ondemand-ww.wdr.de/medp/fsk0/100/1009927/1009927_11214372.mp4"
+                    ],
+                    "_cdn":""
+                }
+            ]
+        }
+    ], "_sortierArray":[0,1]
+}

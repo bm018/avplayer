@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--*** XML Subtitle File for Flash Player ***-->
+
+<!--*** Created by FAB Subtitler 2012-01-31 ***-->
+<tt xml:lang="de" xmlns="http://www.w3.org/2006/10/ttaf1" xmlns:tts="http://www.w3.org/2006/10/ttaf1#styling" xmlns:ttp="http://www.w3.org/2006/10/ttaf1parameter" ttp:frameRate="25">
+  <head>
+    <styling>
+		<style id="s1" tts:fontFamily="Arial" tts:fontSize="22px" />
+		<style id="s2" tts:backgroundColor="white" tts:color="blue" tts:fontFamily="Arial" tts:fontSize="28px" />
+		<style id="s3" tts:color="lime" tts:fontFamily="Arial" tts:fontSize="28px" />
+    </styling>
+  </head>
+  <body>
+    <div xml:lang="de">
+      <p begin="10:00:00.800" end="10:00:11.000" tts:textAlign="center" tts:color="#A2FEFE" style="s1">Guckste  mit?  <br /><span tts:textAlign="left" tts:color="#FF0000">- Natürlich.  </span><br /><span tts:textAlign="right" tts:color="#00FF00"> Niemals-nicht-nein!!!  </span></p>
+      <p begin="10:00:11.000" end="10:00:12.500" tts:textAlign="center" tts:color="#A2FEFE">Sie auch.  </p>
+      <p begin="10:00:13.300" end="10:00:17.700" tts:textAlign="center" style="s2">Untertitel: WDR mediagroup digital  <br />GmbH im Auftrag des WDR  </p>
+      <p begin="10:00:18.000" end="10:00:41.300" tts:textAlign="center" tts:color="#A2FEFE">Herzlich willkommen bei Quarks &amp; Co.  </p>
+      </div>
+  </body>
+</tt>

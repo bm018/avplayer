@@ -1,0 +1,32 @@
+{
+  "_type": "video",
+  "_isLive": true,
+  "_defaultQuality": [
+    "auto",
+    1,
+    2,
+    3,
+    0
+  ],
+  "_previewImage": "http://www.ardmediathek.de/image/00/29/64/05/84/445341358/16x9/960",
+  "_subtitleOffset": 0,
+  "_mediaArray": [
+  {"_plugin":0,"_mediaStreamArray":[{"_quality":"auto","_server":"","_cdn":"akamai","_stream":"http://livestreams.br.de/z/bfsnord_germany@119898/manifest.f4m"}]},
+  {"_plugin":1,"_mediaStreamArray":[{"_quality":"auto","_server":"","_cdn":"akamai","_stream":"http://livestreams.br.de/i/bfsnord_germany@119898/master.m3u8"}]}
+],
+  "_alternativeMediaArray": [
+    {
+      "_type": ["untertitel"],
+      "_mediaArray": [
+        {"_plugin":0,"_mediaStreamArray":[{"_quality":"auto","_server":"","_cdn":"akamai","_stream":"http://ndr_fs-lh.akamaihd.net/z/ndrfs_hh@119223/manifest.f4m"}]},
+        {"_plugin":1,"_mediaStreamArray":[{"_quality":"auto","_server":"","_cdn":"akamai","_stream":"http://ndr_fs-lh.akamaihd.net/i/ndrfs_hh@119223/master.m3u8"}]}
+      ]
+    }
+  ],
+  "_sortierArray": [
+    1
+  ],
+  "_duration": 1197,
+  "_dvrEnabled": true,
+  "_geoblocked": false
+}

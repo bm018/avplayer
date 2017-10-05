@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+        xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.nettrek.gundl.ardplayer</groupId>
+        <artifactId>ardplayer-aggregator</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <name>ARD Player HTML Frontend</name>
+    <artifactId>ardplayer-html</artifactId>
+    <version>3.9.0</version>
+
+    <packaging>war</packaging>
+
+    <properties>
+        <wro4j.version>1.4.3</wro4j.version>
+        <maven.jetty.version>6.1.26</maven.jetty.version>
+    </properties>
+
+    <scm>
+        <developerConnection>scm:git:ssh://git@git.nettrek.biz/gundl-ard-project.git</developerConnection>
+    </scm>
+
+    <build>
+
+        <finalName>${project.artifactId}-${project.version}</finalName>
+
+        <plugins>
+
+            <!-- Web-Ressourcen optimieren (JS/CSS/…) -->
+
+            <!--
+            <plugin>
+                <groupId>org.jasig.maven</groupId>
+                <artifactId>sass-maven-plugin</artifactId>
+                <version>1.1.0</version>
+                <executions>
+                    <execution>
+                        <id>package</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>update-stylesheets</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <resources>
+                        <resource>
+                            <source>
+                                <directory>${basedir}/src/main/webapp/mandanten</directory>
+                                <includes>
+                                    <include>**/main.scss</include>
+                                </includes>
+                            </source>
+                            <relativeOutputDirectory>.</relativeOutputDirectory>
+                            <destination>${project.build.directory}/${project.build.finalName}/mandanten</destination>
+                        </resource>
+                    </resources>
+                </configuration>
+            </plugin>
+            -->
+
+            <!-- Base -->
+            <plugin>
+                <groupId>ro.isdc.wro4j</groupId>
+                <artifactId>wro4j-maven-plugin</artifactId>
+                <version>${wro4j.version}</version>
+
+                <executions>
+
+                    <!-- Mandant: ARD -->
+                    <execution>
+                        <id>compress-css-ardmediathek</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <targetGroups>main</targetGroups>
+                            <minimize>true</minimize>
+                            <contextFolder>${project.build.directory}/${project.build.finalName}/mandanten/ard/style/</contextFolder>
+                            <wroFile>${basedir}/src/main/webapp/WEB-INF/wro.xml</wroFile>
+                            <cssDestinationFolder>${project.build.directory}/${project.build.finalName}/mandanten/ard/style/</cssDestinationFolder>
+                            <wroManagerFactory>ro.isdc.wro.maven.plugin.manager.factory.ConfigurableWroManagerFactory</wroManagerFactory>
+                            <ignoreMissingResources>true</ignoreMissingResources>
+                        </configuration>
+                    </execution>
+
+                    <!-- Mandant: Das Erste -->
+                    <execution>
+                        <id>compress-css-daserste</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <targetGroups>main</targetGroups>
+                            <minimize>true</minimize>
+                            <contextFolder>${project.build.directory}/${project.build.finalName}/mandanten/daserste/style/</contextFolder>
+                            <wroFile>${basedir}/src/main/webapp/WEB-INF/wro.xml</wroFile>
+                            <cssDestinationFolder>${project.build.directory}/${project.build.finalName}/mandanten/daserste/style/</cssDestinationFolder>
+                            <wroManagerFactory>ro.isdc.wro.maven.plugin.manager.factory.ConfigurableWroManagerFactory</wroManagerFactory>
+                            <ignoreMissingResources>true</ignoreMissingResources>
+                        </configuration>
+                    </execution>
+
+                    <!-- Mandant: RBB -->
+                    <execution>
+                        <id>compress-css-rbb</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <targetGroups>main</targetGroups>
+                            <minimize>true</minimize>
+                            <contextFolder>${project.build.directory}/${project.build.finalName}/mandanten/rbb/style/</contextFolder>
+                            <wroFile>${basedir}/src/main/webapp/WEB-INF/wro.xml</wroFile>
+                            <cssDestinationFolder>${project.build.directory}/${project.build.finalName}/mandanten/rbb/style/</cssDestinationFolder>
+                            <wroManagerFactory>ro.isdc.wro.maven.plugin.manager.factory.ConfigurableWroManagerFactory</wroManagerFactory>
+                            <ignoreMissingResources>true</ignoreMissingResources>
+                        </configuration>
+                    </execution>
+
+                    <!-- Mandant: Sportschau -->
+                    <execution>
+                        <id>compress-css-sport</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <targetGroups>main</targetGroups>
+                            <minimize>true</minimize>
+                            <contextFolder>${project.build.directory}/${project.build.finalName}/mandanten/sport/style/</contextFolder>
+                            <wroFile>${basedir}/src/main/webapp/WEB-INF/wro.xml</wroFile>
+                            <cssDestinationFolder>${project.build.directory}/${project.build.finalName}/mandanten/sport/style/</cssDestinationFolder>
+                            <wroManagerFactory>ro.isdc.wro.maven.plugin.manager.factory.ConfigurableWroManagerFactory</wroManagerFactory>
+                            <ignoreMissingResources>true</ignoreMissingResources>
+                        </configuration>
+                    </execution>
+
+                    <!-- Mandant: SR -->
+                    <execution>
+                        <id>compress-css-sr</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <targetGroups>main</targetGroups>
+                            <minimize>true</minimize>
+                            <contextFolder>${project.build.directory}/${project.build.finalName}/mandanten/sr/style/</contextFolder>
+                            <wroFile>${basedir}/src/main/webapp/WEB-INF/wro.xml</wroFile>
+                            <cssDestinationFolder>${project.build.directory}/${project.build.finalName}/mandanten/sr/style/</cssDestinationFolder>
+                            <wroManagerFactory>ro.isdc.wro.maven.plugin.manager.factory.ConfigurableWroManagerFactory</wroManagerFactory>
+                            <ignoreMissingResources>true</ignoreMissingResources>
+                        </configuration>
+                    </execution>
+
+                    <!-- JS.. -->
+                    <execution>
+                        <id>compress-base</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <targetGroups>base.min</targetGroups>
+                            <minimize>true</minimize>
+                            <contextFolder>${basedir}/src/main/webapp/</contextFolder>
+                            <wroFile>${basedir}/src/main/webapp/WEB-INF/wro.xml</wroFile>
+                            <jsDestinationFolder>${project.build.directory}/${project.build.finalName}/js/
+                            </jsDestinationFolder>
+                            <wroManagerFactory>ro.isdc.wro.maven.plugin.manager.factory.ConfigurableWroManagerFactory
+                            </wroManagerFactory>
+                            <ignoreMissingResources>true</ignoreMissingResources>
+                        </configuration>
+                    </execution>
+
+                    <execution>
+                        <id>compress-addons</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <targetGroups>addons.min</targetGroups>
+                            <minimize>true</minimize>
+                            <contextFolder>${basedir}/src/main/webapp/</contextFolder>
+                            <wroFile>${basedir}/src/main/webapp/WEB-INF/wro.xml</wroFile>
+                            <jsDestinationFolder>${project.build.directory}/${project.build.finalName}/js/
+                            </jsDestinationFolder>
+                            <wroManagerFactory>ro.isdc.wro.maven.plugin.manager.factory.ConfigurableWroManagerFactory
+                            </wroManagerFactory>
+                            <ignoreMissingResources>true</ignoreMissingResources>
+                        </configuration>
+                    </execution>
+                </executions>
+
+            </plugin>
+
+            <!-- Signed SWF -->
+            <plugin>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>GenerateAkamaiPVHash</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <tasks>
+                                <exec executable="${project.build.directory}/../utils/hashswf-akamai-pv">
+                                    <arg value="${project.build.directory}/${project.build.finalName}/base/flash/PluginFlash.swf"/>
+                                    <arg value="${project.build.directory}/${project.build.finalName}/docs/Akamai-PV-Hash.txt"/>
+                                </exec>
+                            </tasks>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>com.google.code.maven-replacer-plugin</groupId>
+                <artifactId>replacer</artifactId>
+                <version>1.5.3</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>replace</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <includes>
+                        <include>${project.build.directory}/${project.build.finalName}/**/*.js</include>
+                    </includes>
+                    <regex>no</regex>
+                    <token>{{project.version}}</token>
+                    <value>${project.version}</value>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>CleanupTargetDir</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <tasks>
+                                <delete dir="${project.build.directory}/${project.build.finalName}/WEB-INF"
+                                        includeemptydirs="true"/>
+                                <delete dir="${project.build.directory}/${project.build.finalName}/META-INF"
+                                        includeemptydirs="true"/>
+                                <delete dir="${project.build.directory}/yuidoc-tmp"
+                                        includeemptydirs="true"/>
+                            </tasks>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Package WAR -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.6</version>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                    <!-- CR 16.04.12 - Offene Quellen sollen auch in Auslieferung enthalten sein -->
+                    <!--<warSourceExcludes>**/*.jar,**/com/**/*.js,**/css/*.css,**/flash/Plugin*.swf,**/flash/*.swz,**/flash/osmf/IcecastPlugin.swf,**/flash/osmf/SM*.swf</warSourceExcludes>
+
+                        mandanten/**/*.css,mandanten/**/*.css.map,**/*.scss,**/*.jar,base/flash/Plugin*.swf,base/flash/osmf/IcecastPlugin.swf,base/flash/osmf/SM*.swf,dev/**,WEB-INF/**,META-INF/**
+                    -->
+                    <warSourceExcludes>
+                        mandanten/**/*.css.map,**/*.scss,**/*.jar,dev/**,WEB-INF/**,META-INF/**
+                    </warSourceExcludes>
+
+                    <packagingExcludes>WEB-INF/**/*</packagingExcludes>
+                    <useCache>true</useCache>
+                </configuration>
+
+                <executions>
+                    <execution>
+                        <!-- First step is to disable the default-war build step. -->
+                        <id>default-war</id>
+                        <phase>none</phase>
+                    </execution>
+                    <execution>
+                        <!-- Second step is to create an exploded war. Done in prepare-package -->
+                        <id>war-exploded</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>exploded</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <!-- Last step is to make sure that the war is built in the package phase -->
+                        <id>custom-war</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>war</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>Rename WAR</id>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <tasks>
+                                <move
+                                        file="${project.build.directory}/${project.build.finalName}.war"
+                                        tofile="${project.build.directory}/${project.build.finalName}.zip"/>
+                            </tasks>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+
+        <resources>
+            <resource>
+                <directory>src/main/webapp</directory>
+
+                <includes>
+                    <include>**/*.js</include>
+                </includes>
+
+            </resource>
+        </resources>
+    </build>
+
+    <dependencies>
+        <!-- Copy JS optimizer -->
+        <dependency>
+            <groupId>ro.isdc.wro4j</groupId>
+            <artifactId>wro4j-extensions</artifactId>
+            <version>${wro4j.version}</version>
+        </dependency>
+
+        <!-- Copy testcases -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.9</version>
+        </dependency>
+
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <id>releases</id>
+            <name>Releases</name>
+            <url>https://oss.sonatype.org/content/repositories/releases</url>
+        </repository>
+        <repository>
+            <id>openqa</id>
+            <name>OpenQA Repository</name>
+            <url>http://nexus.openqa.org/content/repositories/releases/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+    </repositories>
+
+    <!-- MAVEN PLUGIN REPOSITORIES -->
+    <pluginRepositories>
+        <pluginRepository>
+            <id>ossrh</id>
+            <name>Sonatype OSS Repository</name>
+            <url>http://oss.sonatype.org/content/groups/public</url>
+            <layout>default</layout>
+        </pluginRepository>
+        <pluginRepository>
+            <id>codehaus-snapshot-repository</id>
+            <url>http://snapshots.repository.codehaus.org/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </pluginRepository>
+    </pluginRepositories>
+
+</project>

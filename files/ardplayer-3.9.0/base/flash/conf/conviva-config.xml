@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<conviva>
+	<!--<customerId>c3.GL-Test</customerId> -->
+	<customerId>c3.GL-WDR</customerId>
+	<serviceUrl>http://livepass.conviva.com/</serviceUrl>
+	<pluginUrl>http://livepassdl.conviva.com/OSMF/ConvivaOSMFPlugin_OSMF1_6_FP10_1.swf?customerName=${customerId}
+	</pluginUrl>
+	<!-- Reference in player: conviva:#setup.@id# -->
+	<configuration id="wdr_euro" live="true">
+		<candidate id="AK-RTMP">
+			<host>rtmp://cp163901.live.edgefcs.net/live</host>
+<!--			<stream bitrate="314" width="256" height="144">wdr_euro_1@15802
+			</stream> -->
+			<stream bitrate="576" width="512" height="288">wdr_euro_2@15802
+			</stream>
+			<stream bitrate="832" width="640" height="360">wdr_euro_3@15802
+			</stream>
+			<stream bitrate="1128" width="640" height="360">wdr_euro_4@15802
+			</stream>
+			<stream bitrate="1664" width="960" height="544">wdr_euro_5@15802
+			</stream>
+			<stream bitrate="3128" width="1280" height="720">wdr_euro_6@15802
+			</stream>
+		</candidate>
+		<candidate id="LL-RTMP">
+			<host>rtmp://wdr.fc.llnwd.net/wdr</host>
+<!--			<stream bitrate="314" width="256" height="144">wdr_euro_1
+            </stream> -->
+			<stream bitrate="576" width="512" height="288">wdr_euro_2
+            </stream>
+			<stream bitrate="832" width="640" height="360">wdr_euro_3
+            </stream>
+			<stream bitrate="1128" width="640" height="360">wdr_euro_4
+            </stream>
+			<stream bitrate="1664" width="960" height="544">wdr_euro_5
+            </stream>
+			<stream bitrate="3128" width="1280" height="720">wdr_euro_6
+			</stream>
+		</candidate>
+		<tags>
+			<tag key="policy">RTMP</tag>
+			<tag key="context">wdr_euro</tag>
+		</tags>
+		<failover ref="wdr_euro-failover"/>
+	</configuration>
+	<configuration id="wdr_euro-failover" live="true">
+		<candidate id="AK-HDS">
+			<host>http://wdr_euro2012-f.akamaihd.net/z/wdr_euro2012v3@26557/manifest.f4m?hdcore
+			</host>
+		</candidate>
+		<tags>
+			<tag key="policy">HDS</tag>
+			<tag key="context">wdr_euro</tag>
+		</tags>
+	</configuration>
+	<configuration id="wdr_euro_parallel" live="true" precision="false">
+		<candidate id="AK-HDS">
+			<host>http://wdr_euro2012-f.akamaihd.net/z/wdr_euro2012v1@9760/manifest.f4m?hdcore
+			</host>
+		</candidate>
+		<tags>
+			<tag key="policy">HDS</tag>
+			<tag key="context">wdr_euro_parallel</tag>
+			<tag key="startWithHDS">true</tag>
+		</tags>
+	</configuration>
+</conviva>

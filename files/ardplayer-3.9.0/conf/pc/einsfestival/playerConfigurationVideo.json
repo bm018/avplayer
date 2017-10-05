@@ -1,0 +1,10 @@
+{
+    "_baseUrl":"../../player/",
+    "_baseAssetUrl":"../../player/base/",
+    "_addons":["AddonUntertitel","AddonLiveUntertitel"],
+    "_autoplay":"FORCE",
+    "_pixelConfig":[
+                        {"tracker": "AGF", "clipUrl": "http://ondemand-ww.wdr.de/medp/fsk0/100/1009927/1009927_11214372.mp4", "clipType": "content", "agfMetadata": "<uurl>http://mediathek-tua.ard.de/ard/servlet/tv/-/-/MDR-Fernsehen/Video?documentId=18591302&bcastId=7545348</uurl><length>1793</length><title>Millionen in die Röhre</title><nol_c0>p0,0</nol_c0><nol_c5>p5,ARD Mediathek</nol_c5><nol_c7>p7,crid://mdr.de/beitrag/cms/44be1390-2cfa-414e-b8a2-2bcffe0597e7</nol_c7><nol_c8>p8,1793</nol_c8><nol_c9>p9,Exakt - die Story_Millionen in die Röhre_11.12.2013 08:45</nol_c9><nol_c10>p10,MDR Fernsehen</nol_c10><nol_c12>p12,Content</nol_c12><nol_c18>p18,0</nol_c18><nol_c19>p19,MITTELDEUTSCHER RUNDFUNK</nol_c19>", "debugLevel": 999},
+                        {"tracker": "ATI", "x3": "video", "x5": "MDR", "x6": "MDR+Fernsehen", "x7": "Exakt+-+die+Story", "x8": "1", "x9": "MITTELDEUTSCHER+RUNDFUNK", "x10": "1", "clipUrl": "http://ondemand-ww.wdr.de/medp/fsk0/100/1009927/1009927_11214372.mp4"}
+                   ]
+}

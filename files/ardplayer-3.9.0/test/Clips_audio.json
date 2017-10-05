@@ -1,0 +1,202 @@
+[
+    {
+        "Nr": 1,
+        "TermID": 7,
+        "AV": "a",
+        "plugin": "flash",
+        "Live": "Live",
+        "CDN": "icecast",
+        "Server": null,
+        "Stream": "http://br-mp3-bayern3-m.akacast.akamaistream.net/7/442/142692/v1/gnl.akacast.akamaistream.net/br_mp3_bayern3_m"
+    },
+    {
+        "Nr": 2,
+        "TermID": 7,
+        "AV": "a",
+        "plugin": "flash",
+        "Live": "Live",
+        "CDN": "icecast",
+        "Server": null,
+        "Stream": "http://gffstream.ic.llnwd.net/stream/gffstream_next_mp3"
+    },
+    {
+        "Nr": 3,
+        "TermID": 7,
+        "AV": "a",
+        "plugin": "flash",
+        "Live": "Live",
+        "CDN": "icecast",
+        "Server": null,
+        "Stream": "http://gffstream.ic.llnwd.net/stream/gffstream_mp3_w56a"
+    },
+    {
+        "Nr": 4,
+        "TermID": 7,
+        "AV": "a",
+        "plugin": "flash",
+        "Live": "Live",
+        "CDN": "icecast",
+        "Server": null,
+        "Stream": "http://swr-mp3-m-contra.akacast.akamaistream.net/7/173/137140/v1/gnl.akacast.akamaistream.net/swr-mp3-m-contra"
+    },
+    {
+        "Nr": 5,
+        "TermID": 7,
+        "AV": "a",
+        "plugin": "flash",
+        "Live": "Live",
+        "CDN": "icecast",
+        "Server": null,
+        "Stream": "http://www.deutschlandradio.de/streaming/dlf.m3u"
+    },
+    {
+        "Nr": 6,
+        "TermID": 7,
+        "AV": "a",
+        "plugin": "flash",
+        "Live": "Live",
+        "CDN": "icecast",
+        "Server": null,
+        "Stream": "http://www.deutschlandradio.de/streaming/dkultur.m3u"
+    },
+    {
+        "Nr": 7,
+        "TermID": 7,
+        "AV": "a",
+        "plugin": "flash",
+        "Live": "Live",
+        "CDN": "icecast",
+        "Server": null,
+        "Stream": "http://www.deutschlandradio.de/streaming/dradiowissen.m3u"
+    },
+    {
+        "Nr": 8,
+        "TermID": 7,
+        "AV": "a",
+        "plugin": "html5",
+        "Live": "OnDemand",
+        "CDN": "default",
+        "Server": null,
+        "Stream": "http://pcast.sr-online.de/play/sr2-andruck/2014-04-29_andruck_podcast_20140428.mp3"
+    },
+    {
+        "Nr": 9,
+        "TermID": 7,
+        "AV": "a",
+        "plugin": "flash",
+        "Live": "OnDemand",
+        "CDN": "default",
+        "Server": null,
+        "Stream": "http://mp3-download.ard.de/radio/radiotatort/2014_podcast_totentanz.mp3"
+    },
+    {
+        "Nr": 10,
+        "TermID": 7,
+        "AV": "a",
+        "plugin": "html5",
+        "Live": "OnDemand",
+        "CDN": "default",
+        "Server": null,
+        "Stream": "http://cdn-storage.br.de/iLCpbHJGNL9zu6i6NL97bmWH_-bG/_-9S/5-4P5Agf/140425_1030_BAYERN-3-am-Vormittag_Kinderleicht-kochen-panierter-Spargel.mp3"
+    },
+    {
+        "Nr": 11,
+        "TermID": 9,
+        "AV": "a",
+        "plugin": "flash",
+        "Live": "Live",
+        "CDN": "icecast",
+        "Server": null,
+        "Stream": "http://br-mp3-bayern3-m.akacast.akamaistream.net/7/442/142692/v1/gnl.akacast.akamaistream.net/br_mp3_bayern3_m"
+    },
+    {
+        "Nr": 12,
+        "TermID": 9,
+        "AV": "a",
+        "plugin": "flash",
+        "Live": "Live",
+        "CDN": "icecast",
+        "Server": null,
+        "Stream": "http://gffstream.ic.llnwd.net/stream/gffstream_next_mp3"
+    },
+    {
+        "Nr": 13,
+        "TermID": 9,
+        "AV": "a",
+        "plugin": "flash",
+        "Live": "Live",
+        "CDN": "icecast",
+        "Server": null,
+        "Stream": "http://gffstream.ic.llnwd.net/stream/gffstream_mp3_w56a"
+    },
+    {
+        "Nr": 14,
+        "TermID": 9,
+        "AV": "a",
+        "plugin": "flash",
+        "Live": "Live",
+        "CDN": "icecast",
+        "Server": null,
+        "Stream": "http://swr-mp3-m-contra.akacast.akamaistream.net/7/173/137140/v1/gnl.akacast.akamaistream.net/swr-mp3-m-contra"
+    },
+    {
+        "Nr": 15,
+        "TermID": 9,
+        "AV": "a",
+        "plugin": "flash",
+        "Live": "Live",
+        "CDN": "icecast",
+        "Server": null,
+        "Stream": "http://www.deutschlandradio.de/streaming/dlf.m3u"
+    },
+    {
+        "Nr": 16,
+        "TermID": 9,
+        "AV": "a",
+        "plugin": "flash",
+        "Live": "Live",
+        "CDN": "icecast",
+        "Server": null,
+        "Stream": "http://www.deutschlandradio.de/streaming/dkultur.m3u"
+    },
+    {
+        "Nr": 17,
+        "TermID": 9,
+        "AV": "a",
+        "plugin": "flash",
+        "Live": "Live",
+        "CDN": "icecast",
+        "Server": null,
+        "Stream": "http://www.deutschlandradio.de/streaming/dradiowissen.m3u"
+    },
+    {
+        "Nr": 18,
+        "TermID": 9,
+        "AV": "a",
+        "plugin": "html5",
+        "Live": "OnDemand",
+        "CDN": "default",
+        "Server": null,
+        "Stream": "http://pcast.sr-online.de/play/sr2-andruck/2014-04-29_andruck_podcast_20140428.mp3"
+    },
+    {
+        "Nr": 19,
+        "TermID": 9,
+        "AV": "a",
+        "plugin": "html5",
+        "Live": "OnDemand",
+        "CDN": "icecast",
+        "Server": null,
+        "Stream": "http://mp3-download.ard.de/radio/radiotatort/2014_podcast_totentanz.mp3"
+    },
+    {
+        "Nr": 20,
+        "TermID": 9,
+        "AV": "a",
+        "plugin": "html5",
+        "Live": "OnDemand",
+        "CDN": "default",
+        "Server": null,
+        "Stream": "http://cdn-storage.br.de/iLCpbHJGNL9zu6i6NL97bmWH_-bG/_-9S/5-4P5Agf/140425_1030_BAYERN-3-am-Vormittag_Kinderleicht-kochen-panierter-Spargel.mp3"
+    }
+]

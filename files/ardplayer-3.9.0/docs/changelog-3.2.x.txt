@@ -1,0 +1,421 @@
+CHANGELOG / ARD Player
+
+17.08.12 / Version 3.2.1 RC
+	- Bearbeitete Tickets:
+	    #1937 Flash-Player/Browser: 1. UT-Tag nach Player-Stop über Preview-Image sichtbar
+	    #1935 Timeslider/ Browser: Abspielkopf bleibt stehen
+	    #1933 Fehler im ViewController
+	    #1932 CSS M-Audio Leerzeichen entfernen
+	    #1906 Flash-Vollbild: Tastensteuerung funktioniert nur teilweise
+	    #1903 Flash- Vollbild: Untertitelung deaktiviert sich automatisch
+	    #1902 Flash-Player / Video: Aktive Untertitelung aus Website wird nicht mit in den Vollbildmodus übernommen
+	    #1726 js/com/netTrek/grundl/ardplayer/views/ViewController.js: Kleinere Designfixes für das Overlay und eine Kommentarzeile gelöscht
+	    #1545 Tastenkombinationen
+	    #1488 Untertitel nicht mehr "aktiv" bei wechsel in Overlay
+	    #1463 Aktuelle Zeitposition wird nicht mehr beim „Scrollen“/Mouseover Steuerleiste angezeigt
+	    #1462 Fehlende Optionsbar bei WMV auf XP/IE8
+	    #1461 (nicht) korrektes Fehlermeldungsverhalten bei Plugins - Fehlermeldungen in den Viewport legen?
+	    #1447 Audio-Player Flash - Beim Erreichen des Clipendes wird "Erneut Abspielen" nicht angezeigt und EQ zappelt weiter
+	    #1427 WEB-L und WEB-XL OVERLAY deckt noch nicht alle Elemente ab und wird noch nicht exakt positioniert
+	    #1409 Tabbarkeit des Players - Barrierefreiheit
+	    #1393 Pixelung von UT anschalten, "erneut abspielen" und 1. Klick auf Play-Btn
+
+    - Geänderte Dateien:
+        /css/player-ie7.css
+        /css/player-ie8.css
+        /css/player.css
+        /js/com/netTrek/gundl/ardplayer/controller/KeyboardPlayerController.js
+        /js/com/netTrek/gundl/ardplayer/core/AbstractPlayerCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/FlashPluginCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/HtmlVideoCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/Player.js
+        /js/com/netTrek/gundl/ardplayer/core/WmpCtrl.js
+        /js/com/netTrek/gundl/ardplayer/model/GlobalModel.js
+        /js/com/netTrek/gundl/ardplayer/views/ViewController.js
+        /js/compressed.js
+        /plugins/flash/osmf/IcecastPlugin.swf
+        /plugins/flash/osmf/SMILPlugin.swf
+        /plugins/flash/osmf/SMPTETTPlugin.swf
+        /plugins/flash/PluginFlash.swf
+
+31.08.12 / Version 3.2.2 RC
+	- Bearbeitete Tickets:
+        #1985	Steuerbar Flash-Vollbild
+        #1984	Pfadanpassung für Preview-Image
+        #1979	Audio-Livestream lässt sich nach Pause nicht abspielen
+        #1976	HTML5 Audio-Player: Audio-Image verdeckt Vorschaubild
+        #1972	Flash Player startet nicht richtig nach Rückkehr zur Seite
+        #1969	Im IE9 wird kein Player angezeigt - Nach Abfrage von WMP, obwohl kein WMP-Stream übergeben wird
+        #1968	Viewport-Verschiebung bei Stop durch Tab im Opera 11.61
+        #1964	Flash Streams unter Linux/Ubuntu mit aktuellem Flash (für Linux) nicht mehr abspielbar  - Jetzt auch unter Win7 im Chrome 21.0.1180.83
+        #1961	Schaltfläche des Vorschaubildes wird von ausgeblendeter Controlbar überlagert - dort ist kein Klick zum Starten des Players möglich
+        #1960	Flash-Player: Flex-Fehlermeldung 2032
+        #1959	Player findet nach Cookie-Speicherung nicht das richtige Plugin
+        #1958	Target _blank nicht HTML5 valide
+        #1957	Flash: Vollbildhinweis hängt im Flash /Video-Live zu weit oben
+        #1956	Kapselung des Players
+        #1955	Flash-Vollbild: Steuerbuttons sitzen im Flash-Vollbild nicht mittig
+        #1951	Flash-Player / Audio: Keine Zeitanzeige bei RTMP-OD-Stream
+        #1949	Video: Untertitel im Browsermodus: Untertiteltext ist auch transparent
+        #1948	Video: Untertitel im Browsermodus: Untertiteltext ist auch transparent
+        #1938	Flash-Vollbild: bei Einzeliger Untertitelung ist der obere Rand zu dünn
+        #1936	Maus wird teilweise nicht auf dem Viewport angezeigt.
+        #1672	iPad 1: Player-Menüleiste nicht (korrekt) steuerbar, kein Vollbildmodus/kein Spulen möglich
+        #1492	Neues Vehalten des Players im Pause-, bzw. Stop-Modus: die Playerleiste bleibt stehen - es wird kein zusätzlicher Play-Button angezeigt
+        #1461	(nicht) korrektes Fehlermeldungsverhalten bei Plugins - Fehlermeldungen in den Viewport legen?
+        #1447	Audio-Player Flash - Beim Erreichen des Clipendes wird "Erneut Abspielen" nicht angezeigt und EQ zappelt weiter
+        #1410	Anzeige von Alt-Texten Bedienelementen - Barrierefreiheit/Screenreaderfähigkeit
+        #1409	Tabbarkeit des Players - Barrierefreiheit
+        #1290	Fullscreen-Hinweis html
+
+    - Geänderte Dateien:
+        /css/player.css
+        /js/com/netTrek/gundl/ardplayer/business/GenerateFlashPluginCMD.js
+        /js/com/netTrek/gundl/ardplayer/business/GenerateHTMLAudioCMD.js
+        /js/com/netTrek/gundl/ardplayer/business/GenerateWmpCMD.js
+        /js/com/netTrek/gundl/ardplayer/business/GenerateHTMLVideoCMD.js
+        /js/com/netTrek/gundl/ardplayer/business/InitPlayerCMD.js
+        /js/com/netTrek/gundl/ardplayer/controller/ErrorController.js
+        /js/com/netTrek/gundl/ardplayer/core/AbstractPlayerCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/FlashPluginCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/HtmlVideoCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/Player.js
+        /js/com/netTrek/gundl/ardplayer/model/vo/PlayerConfiguration.js
+        /js/com/netTrek/gundl/ardplayer/model/GlobalModel.js
+        /js/com/netTrek/gundl/ardplayer/views/ViewController.js
+        /js/compressed.js
+        /plugins/flash/conf/skin.css
+        /plugins/flash/osmf/IcecastPlugin.swf
+        /plugins/flash/osmf/SMILPlugin.swf
+        /plugins/flash/osmf/SMPTETTPlugin.swf
+        /plugins/flash/PluginFlash.swf
+
+07.09.12 / Version 3.2.3 RC
+	- Bearbeitete Tickets (https://pm.nettrek.de/versions/130)
+        #2022	iPad 1: Start-/Stop-Verzögerung nach Touch
+        #2019	Vearbeitung von CSS in finalSkin.css
+        #2014	iOS-Format m3u8 muss im HTML5-Player mit dem richtigen type gerendert werden
+        #2011	Poster in L-Modus zu klein
+        #2008	Abspielkopf springt hin und her bei Klick in die Timeline
+        #2007	Flash: Beim Wechsel der Qualitätsstufe von/auf L werden die Bildeinstellungen (Farbe, Helligkeit, Kontrast) nicht übernommen
+        #2006	Flash-Timeline im Browsermodus im oberen Teil des Viewports unsichtbar und klickbar
+        #1961	Schaltfläche des Vorschaubildes wird von ausgeblendeter Controlbar überlagert - dort ist kein Klick zum Starten des Players möglich
+        #1948	Video: Untertitel im Browsermodus: Untertiteltext ist auch transparent
+        #1461	(nicht) korrektes Fehlermeldungsverhalten bei Plugins - Fehlermeldungen in den Viewport legen?
+
+    - Geänderte Dateien:
+        /css/player.css
+        /js/com/netTrek/gundl/ardplayer/business/GenerateHTMLVideoCMD.js
+        /js/com/netTrek/gundl/ardplayer/controller/ErrorController.js
+        /js/com/netTrek/gundl/ardplayer/controller/IVWController.js
+        /js/com/netTrek/gundl/ardplayer/controller/KeyboardPlayerController.js
+        /js/com/netTrek/gundl/ardplayer/controller/TrackController.js
+        /js/com/netTrek/gundl/ardplayer/core/AbstractPlayerCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/FlashPluginCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/HtmlAudioCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/HtmlVideoCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/Player.js
+        /js/com/netTrek/gundl/ardplayer/core/plugins.js
+        /js/com/netTrek/gundl/ardplayer/core/script.js
+        /js/com/netTrek/gundl/ardplayer/model/GlobalModel.js
+        /js/com/netTrek/gundl/ardplayer/model/PlayerModel.js
+        /js/com/netTrek/gundl/ardplayer/utils/Cookie.js
+        /js/com/netTrek/gundl/ardplayer/utils/QueryParser.js
+        /js/com/netTrek/gundl/ardplayer/views/ViewController.js
+        /js/compressed.js
+        /plugins/flash/osmf/IcecastPlugin.swf
+        /plugins/flash/osmf/SMILPlugin.swf
+        /plugins/flash/osmf/SMPTETTPlugin.swf
+        /plugins/flash/PluginFlash.swf
+
+20.09.12 / Version 3.2.4 RC
+	- Bearbeitete Tickets (https://pm.nettrek.de/versions/131)
+        #2048	Hintergrundfarbe für Flashfilm in skin.css definieren
+        #2046	Im Flash-Vollbildmodus fehlen die Alternativtexte
+        #2039	CSS zu 3.2.4 RC
+        #2037	Falsche Plug-in Meldung
+        #2030	HTML5-Player: Video wird tw. in Chrome nicht geladen
+        #2024	IE9 Flash-Fehlermeldung trotz vorhandenem WindowsMedia-Stream
+        #2021	Flash Streams unter Linux/Ubuntu mit aktuellem Flash (für Linux) nicht mehr abspielbar
+        #1954	automatische Berechnung des top-Wertes beim Overlay
+        #1951	Flash-Player / Audio: Keine Zeitanzeige bei RTMP-OD-Stream
+
+    - Geänderte Dateien:
+        /css/body.css
+        /css/player-ie7.css
+        /css/player-ie8.css
+        /css/player.css
+        /js/com/netTrek/gundl/ardplayer/business/GenerateHTMLVideoCMD.js
+        /js/com/netTrek/gundl/ardplayer/business/InitPlayerCMD.js
+        /js/com/netTrek/gundl/ardplayer/core/HtmlVideoCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/Player.js
+        /js/com/netTrek/gundl/ardplayer/model/GlobalModel.js
+        /js/com/netTrek/gundl/ardplayer/views/ViewController.js
+        /js/compressed.js
+        /plugins/flash/osmf/IcecastPlugin.swf
+        /plugins/flash/osmf/SMILPlugin.swf
+        /plugins/flash/osmf/SMPTETTPlugin.swf
+        /plugins/flash/PluginFlash.swf
+
+05.10.12 / Version 3.2.5 RC
+	- Bearbeitete Tickets (https://pm.nettrek.de/versions/133)
+        #1951	Flash-Player / Audio: Keine Zeitanzeige bei RTMP-OD-Stream
+        #2061	Nachziehen der Doku
+        #2079	ansprechender Fehlerhinweis bei OSMF-Error gewünscht
+
+    - Geänderte Dateien:
+        /docs/ARD-Player-Technische Dokumentation-1.1.pdf
+        /js/com/netTrek/gundl/ardplayer/controller/ErrorController.js
+        /js/com/netTrek/gundl/ardplayer/model/GlobalModel.js
+        /js/com/netTrek/gundl/ardplayer/views/ViewController.js
+        /plugins/flash/osmf/IcecastPlugin.swf
+        /plugins/flash/osmf/SMILPlugin.swf
+        /plugins/flash/osmf/SMPTETTPlugin.swf
+        /plugins/flash/PluginFlash.swf
+
+
+24.10.12 / Version 3.2.6 RC
+	- Bearbeitete Tickets (https://pm.nettrek.de/versions/135)
+        Fehler #2096: Fehler wenn nur WMP konfiguriert wird
+        Fehler #2109: Problem unter IE8/9 -- App startet nicht sauber
+        Fehler #2133: Fehler beim Wechsel in den L-Modus bei Livestreams
+        Fehler #2134: Disposement im GlobalModel
+
+    - Geänderte Dateien:
+        /js/com/netTrek/gundl/ardplayer/business/InitPlayerCMD.js
+        /js/com/netTrek/gundl/ardplayer/model/GlobalModel.js
+        /js/com/netTrek/gundl/ardplayer/model/PlayerModel.js
+        /js/com/netTrek/gundl/ardplayer/views/ViewController.js
+        /js/compressed.js
+        /plugins/flash/osmf/IcecastPlugin.swf
+        /plugins/flash/osmf/SMILPlugin.swf
+        /plugins/flash/osmf/SMPTETTPlugin.swf
+        /plugins/flash/PluginFlash.swf
+
+07.11.12 / Version 3.2.7 RC
+	- Bearbeitete Tickets (https://pm.nettrek.de/versions/138)
+		Fehler #2140: Fehlermeldung bei Multiinstanzen im falschen Viewport
+		Fehler #2143: Vorschaubild erscheint unter Audio-Image bei Pausiertem Live-Stream
+		Fehler #2145: Plug-in Meldung wird im IE8 unter Windows 7 64 Bit nicht angezeigt
+		Fehler #2148: Web S funktioniert im HMTL5-Player nicht
+
+    - Geänderte Dateien:
+        /js/com/netTrek/gundl/ardplayer/model/GlobalModel.js
+		/js/com/netTrek/gundl/ardplayer/business/InitPlayerCMD.js
+		/js/com/netTrek/gundl/ardplayer/core/AbstractPlayerCtrl.js
+		/js/com/netTrek/gundl/ardplayer/core/FlashPluginCtrl.js
+		/js/com/netTrek/gundl/ardplayer/core/HtmlVideoCtrl.js
+		/js/com/netTrek/gundl/ardplayer/core/Player.js
+		/js/com/netTrek/gundl/ardplayer/core/WmpCtrl.js
+		/js/compressed.js
+		/plugins/flash/osmf/IcecastPlugin.swf
+		/plugins/flash/osmf/SMILPlugin.swf
+		/plugins/flash/osmf/SMPTETTPlugin.swf
+		/plugins/flash/PluginFlash.swf
+
+20.11.12 / Version 3.2.8 RC
+	- Bearbeitete Tickets (https://pm.nettrek.de/versions/139)
+        Feature #2064: kein Ton mehr
+        Fehler #2140: Fehlermeldung bei Multiinstanzen im falschen Viewport
+        Fehler #2143: Vorschaubild erscheint unter Audio-Image bei Pausiertem Live-Stream
+        Fehler #2148: Web S funktioniert im HMTL5-Player nicht
+        Fehler #2202: mute-Status wird nicht bei Lautstärkeveränderung aufgehoben
+        Unterstützung #1960: Flash-Player: Fehlermeldung 2032
+        Unterstützung #2141: Kein EQ im web-S vorhanden
+        Unterstützung #2142: Fehlstart Audio-Live-Player bei Multiinstanzen
+        Unterstützung #2203: Nachtragungen in der Entwicklerdoku
+
+    - Geänderte Dateien:
+        /css/player.css
+        /docs/ARD-Player-Technische Dokumentation-1.2.pdf
+        /img/poster-player-xs-live.jpg
+        /img/poster-player-xs-od.jpg
+        /img/soundaddon_256x144.gif
+        /js/com/netTrek/gundl/ardplayer/controller/ErrorController.js
+        /js/com/netTrek/gundl/ardplayer/core/AbstractPlayerCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/FlashPluginCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/HtmlAudioCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/HtmlVideoCtrl.js
+        /js/com/netTrek/gundl/ardplayer/model/GlobalModel.js
+        /js/com/netTrek/gundl/ardplayer/views/ViewController.js
+        /js/compressed.js
+        /plugins/flash/osmf/IcecastPlugin.swf
+        /plugins/flash/osmf/SMILPlugin.swf
+        /plugins/flash/osmf/SMPTETTPlugin.swf
+        /plugins/flash/PluginFlash.swf
+
+27.11.12 / Version 3.2.8.1 Hotfix
+	- Bearbeitete Tickets (https://pm.nettrek.de/versions/164)
+        Fehler #2148: Web S funktioniert im HMTL5-Player nicht
+
+    - Geänderte Dateien:
+        /js/com/netTrek/gundl/ardplayer/core/HtmlVideoCtrl.js
+
+09.01.13 / Version 3.2.9
+	- Bearbeitete Tickets (https://pm.nettrek.de/versions/162)
+        Feature #2064: kein Ton mehr
+        Feature #2256: Angepasstes Tab-Verhalten nach Meeting vom 22.11.12
+        Fehler #2242: Falsche Farbinterpretation bei Flash-Untertitelung (VB)
+        Wartung #2232: CSS-Kapselung 2 - Klassenpräfix
+
+    - Geänderte Dateien:
+        /css/player-ie7.css
+        /css/player-ie8.css
+        /css/player.css
+        /js/com/netTrek/gundl/ardplayer/business/GenerateWmpCMD.js
+        /js/com/netTrek/gundl/ardplayer/core/AbstractPlayerCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/plugins.js
+        /js/com/netTrek/gundl/ardplayer/core/WmpCtrl.js
+        /js/com/netTrek/gundl/ardplayer/model/GlobalModel.js
+        /js/com/netTrek/gundl/ardplayer/views/ViewController.js
+        /js/compressed.js
+        /mandanten/sport/css/sportschau-player.css
+        /mandanten/sport/img/postercontrol-s.png
+        /plugins/flash/osmf/IcecastPlugin.swf
+        /plugins/flash/osmf/SMILPlugin.swf
+        /plugins/flash/osmf/SMPTETTPlugin.swf
+        /plugins/flash/PluginFlash.swf
+
+22.01.13 / Version 3.2.10
+	- Bearbeitete Tickets (https://pm.nettrek.de/versions/163)
+        Fehler #1968: Viewport-Verschiebung bei Stop durch Tab im Opera 11.61
+        Fehler #2470: Kleines Audio-Image zu groß - EQ komplett verdeckt
+        Wartung #2363: Erweiterung Doku um geworfene Events
+        Wartung #2364: Binding für Initialisierung und Fehlermeldung
+        Wartung #2518: Entfernen von einer oder aller Player-Instanzen
+
+    - Geänderte Dateien:
+        /css/player.css
+        /docs/ARD-Player-Technische Dokumentation-1.4.pdf
+        /js/com/netTrek/gundl/ardplayer/controller/ErrorController.js
+        /js/com/netTrek/gundl/ardplayer/core/AbstractPlayerCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/FlashPluginCtrl.js
+        /js/com/netTrek/gundl/ardplayer/core/Player.js
+        /js/com/netTrek/gundl/ardplayer/core/plugins.js
+        /js/com/netTrek/gundl/ardplayer/model/vo/PlayerConfiguration.js
+        /js/com/netTrek/gundl/ardplayer/views/ViewController.js
+        /js/compressed.js
+        /plugins/flash/osmf/IcecastPlugin.swf
+        /plugins/flash/osmf/SMILPlugin.swf
+        /plugins/flash/osmf/SMPTETTPlugin.swf
+        /plugins/flash/PluginFlash.swf
+
+
+22.02.13 / Version 3.2.11
+	- Bearbeitete Tickets (https://pm.nettrek.de/versions/180)
+        Feature #2253: Falsche Plug-in Meldung bei Windows Phone
+        Feature #2256: Angepasstes Tab-Verhalten nach Meeting vom 22.11.12
+        Wartung #2517: Aufteilung des Players in Kern und Addons
+        Wartung #2623: AUTOPLAY für die zuletzt hinzugefügte Instanz [autoplay(force)]
+
+    - Geänderte Dateien:
+
+    !!
+        Aufgrund der umfangreichen Umstrukturierung (#2517) sollten alle Dateireferenzierungen
+        erneut geprüft werden, und sind daher nicht separat gelistet.
+    !!
+
+08.03.13 / Version 3.2.12
+	- Bearbeitete Tickets (https://pm.nettrek.de/versions/182)
+        Fehler #2685: Hand für mouse-over über ganzem Bildeinstellungs-Layer
+        Fehler #2686: Flash-Menüs bleiben bei Klick auf den Viewport stehen
+        Fehler #2687: Bei Mouse-over über die Buttons des Vollbildmodus-Layers (Flash-Menü) erscheint nicht die Hand, sondern der Pfeil
+        Fehler #2688: Flash-Menüs liegen tw. übereinander
+        Fehler #2689: Nach verlassen der Flash-Vollbildmodus per ESC-Taste, verschwindet die Playerleiste im Web-Player unwiderruflich
+        Fehler #2693: Intensivprüfung nach Sonderzeichen UTF8
+        Fehler #2697: Flash-Vollbild: Lautstärke-Button-Symbol inkonsistent zu Ton an/aus
+        Fehler #2698: Steuerleiste fährt nach Klick auf "Einstellungen" nicht wieder hoch
+        Wartung #2221: Mehrere Source-URLs für HTML5 Knoten mitgeben
+        Wartung #2663: JSON-Parameter true statt AUTOPLAY
+        Wartung #2750: Styling für ARD-Relaunch
+
+    - Geänderte Dateien:
+        /addons/untertitel/js/AddonUntertitel.js
+        /base/conf/ErrorMessages.json
+        /base/conf/PluginDetections.json
+        /base/css/player-ie7.css
+        /base/css/player-ie8.css
+        /base/css/player.css
+        /base/flash/**/*
+        /base/js/com/netTrek/gundl/ardplayer/core/AbstractCorePlugin.js
+        /base/js/com/netTrek/gundl/ardplayer/core/AbstractPlayerCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/core/FlashPluginCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/core/HtmlAudioCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/core/HtmlVideoCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/core/Player.js
+        /base/js/com/netTrek/gundl/ardplayer/core/plugins.js
+        /base/js/com/netTrek/gundl/ardplayer/core/script.js
+        /base/js/com/netTrek/gundl/ardplayer/core/WmpCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/model/vo/Media.js
+        /base/js/com/netTrek/gundl/ardplayer/model/vo/MediaCollection.js
+        /base/js/com/netTrek/gundl/ardplayer/model/vo/MediaStream.js
+        /base/js/com/netTrek/gundl/ardplayer/model/vo/PlayerConfiguration.js
+        /base/js/com/netTrek/gundl/ardplayer/model/vo/PlayerConfigurationRepresentation.js
+        /base/js/com/netTrek/gundl/ardplayer/model/GlobalModel.js
+        /base/js/com/netTrek/gundl/ardplayer/model/PlayerModel.js
+        /base/js/com/netTrek/gundl/ardplayer/model/VideoSources.js
+        /base/js/com/netTrek/gundl/ardplayer/views/ViewController.js
+        /mandanten/sport/img/poster-player-xs-live.jpg
+        /mandanten/sport/img/poster-player-xs-od.jpg
+        /mandanten/sport/img/postercontrol-s.png
+        /docs/ARD-Player-Technische Dokumentation-1.5.pdf
+        /docs/changelog-3.2.x.txt
+
+13.03.13 / Version 3.2.12.1
+	- Bearbeitete Tickets (https://pm.nettrek.de/versions/188)
+       Wartung #2779: _autoplay als JSON-Parameter "FORCE"
+
+    - Geänderte Dateien:
+        /base/js/com/netTrek/gundl/ardplayer/model/vo/PlayerConfiguration.js
+        /base/js/com/netTrek/gundl/ardplayer/core/Player.js
+
+13.03.13 / Version 3.2.12.2
+	- Bearbeitete Tickets (https://pm.nettrek.de/versions/191)
+        Fehler #2693: Intensivprüfung nach Sonderzeichen UTF8
+        Fehler #2776: HTML5-Player, Web L: Bei Betätigen der Leertaste spingt der Player an den Clipanfang
+        Fehler #2800: Controlbar springt bei Klick
+        Fehler #2810: Fehlendes Semikolon am Ende der Shortcut.js
+        Fehler #2811: HTML-ToolTip wird im IE8 nicht angezeigt
+
+    - Geänderte Dateien:
+        /base/conf/ErrorMessages.json
+        /base/js/com/netTrek/gundl/ardplayer/core/AbstractPlayerCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/core/FlashPluginCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/model/vo/PlayerConfiguration.js
+        /base/js/com/netTrek/gundl/ardplayer/model/GlobalModel.js
+        /base/js/com/netTrek/gundl/ardplayer/views/ViewController.js
+        /base/js/libs/shortcut.js
+        /js/base.min.js
+        /docs/changelog-3.2.x.txt
+
+03.04.13 / Version 3.2.13
+	- Bearbeitete Tickets (https://pm.nettrek.de/versions/183)
+        Feature #2224: JSON-Parameter außerhalb der URL mitgeben
+        Feature #2821: 404 bei ErrorMessages.json im Overlay
+        Fehler #2832: 404-Abfrage bei falscher Untertitel-Datei
+        Wartung #2750: Styling für ARD-Relaunch
+        Wartung #2777: Bitte Doku nachtragen --- playerConfiguration.setSkinPathAndFileName("")
+        Wartung #2780: Abgleich und Angleichen JSON-Parameter mit Settern im JS (MediaColletion und PlayerConfiguration)
+        Wartung #2781: GetPlayerConfigByJsonCmd und GetMediaCollectionByJsonCmd Aufruf ErrorController
+        Wartung #2818: Entfernen der Repräsentationsgrößen aus dem Sound-Addon
+        Wartung #2820: HTML5-Player - Safari - kein Video im Overlay / Vollbild beschnitten
+        Wartung #2878: Übernahme neuer Redaktioneller Text f. Flash Vollbild
+
+    - Geänderte Dateien:
+        /addons/untertitel/css/AddonUntertitel.css
+        /base/flash/osmf/ConvivaStarterPlugin.swf
+        /base/flash/osmf/IcecastPlugin.swf
+        /base/flash/osmf/SMILPlugin.swf
+        /base/flash/osmf/SMPTETTPlugin.swf
+        /base/flash/PluginFlash.swf
+        /base/js/com/netTrek/gundl/ardplayer/business/GetMediaCollectionByJsonCmd.js
+        /base/js/com/netTrek/gundl/ardplayer/business/GetPlayerConfigByJsonCmd.js
+        /base/js/com/netTrek/gundl/ardplayer/controller/ErrorController.js
+        /base/js/com/netTrek/gundl/ardplayer/core/Player.js
+        /base/js/com/netTrek/gundl/ardplayer/model/GlobalModel.js
+        /docs/ARD-Player-Technische Dokumentation-1.6.pdf
+        /js/base.min.js
+        /index_stream.html
+        /index_stream_list.html
+
+

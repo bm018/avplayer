@@ -1,0 +1,39 @@
+19.06.13 / Version 3.4.0
+
+    Neuer Versionsbranch nach Abschluss der Plugin-Architektur auf 3.3.x.
+
+	- Bearbeitete Tickets (https://pm.nettrek.de/versions/207)
+        Feature #3172: UT-Anzeige im Flash-Plugin fährt mit Steuerleiste nach oben
+        Feature #3173: Inbetriebnahme EBU-TT-Plugin
+        Feature #3198: OSMF Upgrade auf 2.0
+        Feature #3313: Eventlistener für Controlbar [für UT-Plugin]
+        Fehler #3353: Falsche Fehlermeldung auf mobilen Endgeräten
+        Wartung #2818: Entfernen der Repräsentationsgrößen aus dem Sound-Addon
+        Wartung #3016: Anpassung Flash UT-Plugin
+        Wartung #3365: Relaunch Ordner enthält nur Skins
+
+    - Geänderte Dateien:
+       /addons/ebu-tt/css/AddonEbuSubtitle.css
+       /addons/ebu-tt/js/controller/EbuSubtitleController.js
+       /addons/ebu-tt/js/AddonUntertitel_ebu_tt.js
+       /base/flash/conf/config.xml
+       /base/flash/osmf/cdn/akamai/AkamaiAdvancedStreamingPlugin-3.0.swf
+       /base/flash/osmf/cdn/conviva/ConvivaStarterPlugin.swf
+       /base/flash/osmf/ConvivaStarterPlugin.swf
+       /base/flash/osmf/IcecastPlugin.swf
+       /base/flash/osmf/SMILPlugin.swf
+       /base/flash/osmf/SMPTETTPlugin.swf
+       /base/flash/osmf/WDRQoSPlugIn.swf
+       /base/flash/PluginFlash.swf
+       /base/img/soundaddon.gif
+       /base/img/soundaddon_off.gif
+       /base/js/com/netTrek/gundl/ardplayer/controller/ErrorController.js
+       /base/js/com/netTrek/gundl/ardplayer/core/Player.js
+       /base/js/com/netTrek/gundl/ardplayer/model/vo/PlayerConfiguration.js
+       /base/js/com/netTrek/gundl/ardplayer/model/GlobalModel.js
+       /base/js/com/netTrek/gundl/ardplayer/views/ViewController.js
+       /js/addons.min.js
+       /js/base.min.js
+       /relaunch/conf/ErrorMessages.json
+       /relaunch/conf/PluginDetections.json
+       /relaunch/flash/css/skin-relaunch.css

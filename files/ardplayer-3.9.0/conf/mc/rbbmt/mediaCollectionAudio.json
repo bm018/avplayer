@@ -1,0 +1,38 @@
+{
+    "_type":"audio",
+    "_isLive":false,
+    "_defaultQuality":["auto",2,3,1,0],
+    "_previewImage":"../../player/base/img/posterframe-l.jpg",
+    "_audioImage":"../../player/mandanten/rbb/img/posterframe.jpg",
+    "_mediaArray":[
+        {
+            "_plugin":0,
+            "_mediaStreamArray":[
+                {
+                    "_quality":0,
+                    "_server":"",
+                    "_stream":"http://download.rbb-online.de/ard_ref_clip/audio/referenz_hf.mp3",
+                    "_cdn":"default"
+                },
+                {
+                    "_quality":1,
+                    "_server":"",
+                    "_stream":"http://download.rbb-online.de/ard_ref_clip/audio/referenz_hf.mp3",
+                    "_cdn":"default"
+                },
+                {
+                    "_quality":2,
+                    "_server":"",
+                    "_stream":"http://download.rbb-online.de/ard_ref_clip/audio/referenz_hf.mp3",
+                    "_cdn":"default"
+                },
+                {
+                    "_quality":3,
+                    "_server":"",
+                    "_stream":"http://download.rbb-online.de/ard_ref_clip/audio/referenz_hf.mp3",
+                    "_cdn":"default"
+                }
+            ]
+        }
+    ], "_sortierArray":[0]
+}

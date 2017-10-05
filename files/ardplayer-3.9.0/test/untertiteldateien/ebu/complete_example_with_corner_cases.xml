@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Profile: EBU-TT-D-Basic-DE -->
+<tt:tt xmlns:tt="http://www.w3.org/ns/ttml" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ebuttm="urn:ebu:tt:metadata" ttp:timeBase="media" ttp:cellResolution="50 30" xml:lang="de">
+	<tt:head>
+		<tt:metadata>
+			<ebuttm:documentMetadata>
+				<ebuttm:documentEbuttVersion>v1.0</ebuttm:documentEbuttVersion>
+			</ebuttm:documentMetadata>
+		</tt:metadata>
+		<tt:styling>
+			<tt:style xml:id="defaultStyle" tts:fontFamily="Verdana, Arial, Tiresias" tts:fontSize="160%" tts:lineHeight="125%"/>
+			<tt:style xml:id="textBlack" tts:color="#000000" tts:backgroundColor="#000000c2"/>
+			<tt:style xml:id="textRed" tts:color="#ff0000" tts:backgroundColor="#000000c2"/>
+			<tt:style xml:id="textGreen" tts:color="#00ff00" tts:backgroundColor="#000000c2"/>
+			<tt:style xml:id="textYellow" tts:color="#ffff00" tts:backgroundColor="#000000c2"/>
+			<tt:style xml:id="textBlue" tts:color="#0000ff" tts:backgroundColor="#000000c2"/>
+			<tt:style xml:id="textMagenta" tts:color="#ff00ff" tts:backgroundColor="#000000c2"/>
+			<tt:style xml:id="textCyan" tts:color="#00ffff" tts:backgroundColor="#000000c2"/>
+			<tt:style xml:id="textWhite" tts:color="#ffffff" tts:backgroundColor="#000000c2"/>
+			<tt:style xml:id="textCenter" tts:textAlign="center"/>
+			<tt:style xml:id="textLeft" tts:textAlign="left"/>
+			<tt:style xml:id="textRight" tts:textAlign="right"/>
+		</tt:styling>
+		<tt:layout>
+			<tt:region xml:id="top" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="before"/>
+			<tt:region xml:id="bottom" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="after"/>
+		</tt:layout>
+	</tt:head>
+	<tt:body>
+		<tt:div style="defaultStyle">
+			<tt:p xml:id="sub0" style="textCenter" region="bottom" begin="00:00:00.120" end="00:00:03.200">
+				<tt:span style="textWhite">FAB TELETEXT SUBTITLING</tt:span>
+				<tt:br/>
+				<tt:span style="textWhite">TEST FILE</tt:span>
+			</tt:p>
+			<tt:p xml:id="sub1" style="textCenter" region="bottom" begin="00:00:04.200" end="00:00:08.040">
+				<tt:span style="textWhite">This subtitle is centered</tt:span>
+				<tt:br/>
+				<tt:span style="textWhite">and bottom justified.</tt:span>
+			</tt:p>
+			<tt:p xml:id="sub2" style="textLeft" region="top" begin="00:00:09.040" end="00:00:12.280">
+				<tt:span style="textWhite">This subtitle is left</tt:span>
+				<tt:br/>
+				<tt:span style="textWhite">and top justified.</tt:span>
+			</tt:p>
+			<tt:p xml:id="sub3" style="textLeft" region="bottom" begin="00:00:13.280" end="00:00:19.160">
+				<tt:span style="textWhite">This subtitle is left and bottom</tt:span>
+				<tt:br/>
+				<tt:span style="textWhite">justified and contains</tt:span>
+				<tt:br/>
+				<tt:span style="textWhite">three lines of text.</tt:span>
+			</tt:p>
+			<tt:p xml:id="sub4" style="textRight" region="bottom" begin="00:00:20.280" end="00:00:24.880">
+				<tt:span style="textWhite">This subtitle is right justified</tt:span>
+				<tt:br/>
+				<tt:span style="textWhite">with two lines of text.</tt:span>
+			</tt:p>
+			<tt:p xml:id="sub5" style="textCenter" region="top" begin="00:00:25.880" end="00:00:29.800">
+				<tt:span style="textWhite">This subtitle is</tt:span>
+				<tt:br/>
+				<tt:span style="textWhite">freely positioned</tt:span>
+				<tt:br/>
+				<tt:span style="textWhite">on the screen.</tt:span>
+			</tt:p>
+			<tt:p xml:id="sub6" style="textCenter" region="bottom" begin="00:00:30.800" end="00:00:37.920">
+				<tt:span style="textWhite">First line is left justified.</tt:span>
+				<tt:br/>
+				<tt:span style="textWhite">Second line is centered.</tt:span>
+				<tt:br/>
+				<tt:span style="textWhite">Third line is right justified.</tt:span>
+			</tt:p>
+			<tt:p xml:id="sub7" style="textCenter" region="bottom" begin="00:00:38.920" end="00:00:46.560">
+				<tt:span style="textWhite">This subtitle contains all teletext</tt:span>
+				<tt:br/>
+				<tt:span style="textWhite">colors: WHITE</tt:span>
+				<tt:span style="textRed"> RED</tt:span>
+				<tt:span style="textGreen"> GREEN</tt:span>
+				<tt:span style="textBlue"> BLUE</tt:span>
+				<tt:span style="textYellow"> YELLOW</tt:span>
+				<tt:br/>
+				<tt:span style="textCyan">CYAN,</tt:span>
+				<tt:span style="textMagenta"> MAGENTA</tt:span>
+				<tt:span style="textWhite"> and</tt:span>
+				<tt:span style="textBlack"> BLACK.</tt:span>
+			</tt:p>
+			<tt:p xml:id="sub8" style="textCenter" region="bottom" begin="00:00:47.560" end="00:00:56.120">
+				<tt:span style="textWhite">This subtitle contains background</tt:span>
+				<tt:br/>
+				<tt:span style="textWhite">colors:</tt:span>
+				<tt:span style="textBlue"> BLUE ON WHITE,</tt:span>
+				<tt:span style="textBlack"> BLACK</tt:span>
+				<tt:br/>
+				<tt:span style="textBlack"> ON YELLOW,</tt:span>
+				<tt:span style="textRed"> RED ON WHITE,</tt:span>
+				<tt:br/>
+				<tt:span style="textWhite"> WHITE ON RED,</tt:span>
+				<tt:span style="textMagenta"> MAGENTA ON WHITE,</tt:span>
+			</tt:p>
+			<tt:p xml:id="sub9" style="textCenter" region="bottom" begin="00:00:57.120" end="00:01:02.640">
+				<tt:span style="textWhite">WHITE ON MAGENTA,</tt:span>
+				<tt:span style="textCyan"> CYAN ON BLUE,</tt:span>
+				<tt:br/>
+				<tt:span style="textGreen"> GREEN ON WHITE,</tt:span>
+				<tt:span style="textYellow"> YELLOW ON BLACK.</tt:span>
+			</tt:p>
+			<tt:p xml:id="sub10" style="textCenter" region="bottom" begin="00:01:03.640" end="00:01:12.880">
+				<tt:span style="textWhite">This is the first line of a</tt:span>
+				<tt:br/>
+				<tt:span style="textCyan">cumulative add-on subtitle with</tt:span>
+				<tt:br/>
+				<tt:span style="textMagenta">three lines of text.</tt:span>
+			</tt:p>
+			<tt:p xml:id="sub11" style="textCenter" region="bottom" begin="00:01:13.880" end="00:01:18.280">
+				<tt:span style="textWhite">This subtitle contains text in</tt:span>
+				<tt:br/>
+				<tt:span style="textWhite">single height.</tt:span>
+			</tt:p>
+			<tt:p xml:id="sub12" style="textCenter" region="bottom" begin="00:01:19.280" end="00:01:23.040">
+				<tt:span style="textGreen">This subtitle</tt:span>
+				<tt:span style="textYellow"> text for</tt:span>
+				<tt:br/>
+				<tt:span style="textGreen">contains</tt:span>
+				<tt:span style="textYellow"> two persons</tt:span>
+			</tt:p>
+			<tt:p xml:id="sub13" style="textCenter" region="bottom" begin="00:01:24.040" end="00:01:29.040">
+				<tt:span style="textWhite">This subtitle has a duration of 5 sec</tt:span>
+				<tt:br/>
+				<tt:span style="textWhite">but will only be displayed for 3 sec</tt:span>
+				<tt:br/>
+				<tt:span style="textWhite">because of timecode overlap.</tt:span>
+			</tt:p>
+			<tt:p xml:id="sub14" style="textCenter" region="bottom" begin="00:01:27.040" end="00:01:30.000">
+				<tt:span style="textWhite">This subtitle contains special</tt:span>
+				<tt:br/>
+				<tt:span style="textWhite">characters: ÄÖÜäöüß ÁÉÍÓÚáéíóú</tt:span>
+				<tt:br/>
+				<tt:span style="textWhite">ÀÈÌÒÙàèìòù Ññ ČĆŠŽÐčćšžđ</tt:span>
+			</tt:p>
+			<tt:p xml:id="sub15" style="textCenter" region="bottom" begin="00:01:31.000" end="00:01:36.320">
+				<tt:span style="textWhite">This subtitle is displayed over</tt:span>
+				<tt:br/>
+				<tt:span style="textWhite">midnight.</tt:span>
+			</tt:p>
+			<tt:p xml:id="sub16" style="textCenter" region="top" begin="00:01:38.320" end="00:01:42.000">
+				<tt:span style="textWhite">END OF TELETEXT SUBTITLING DEMO FILE</tt:span>
+			</tt:p>
+		</tt:div>
+	</tt:body>
+</tt:tt>

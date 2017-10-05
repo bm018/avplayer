@@ -1,0 +1,347 @@
+16.08.13 / Version 3.5.0
+
+	- Bearbeitete Tickets (https://pm.nettrek.de/versions/212)
+        Feature #3005: PVR-Timeshift-Funktion im Player
+        Feature #3198: OSMF Upgrade auf 2.0
+        Feature #3400: QS-Plugin Akamai Sola-Analytics
+        Feature #3468: Akamai ASS Plugin 3.1
+        Feature #3493: Analyzer/Equalizer wandert in die Steuerleiste
+        Feature #3494: Umzug des Relaunch-Ordners nach "base"
+        Feature #3526: Seekbar (Statusleiste) soll nicht aus dem View verschwinden, wenn die Steuerbar aus dem View fährt
+        Feature #3695: Neues EQ-Icon einfügen
+        Wartung #3016: Anpassung Flash UT-Plugin
+        Wartung #3128: Player-Tastensteuerung kollidiert mit Seitenlauf
+        Wartung #3365: Relaunch Ordner enthält nur Skins
+        Wartung #3501: Widerherstellung der Ebu TT Datei voriger Stand
+        Wartung #3662: ardplayer-handle schließt nicht bündig ab
+        Wartung #3663: Controlbar Relaunch nicht sichtbar in Kompatiblitätsansicht
+        Wartung #3699: keine Untertitelanzeige im IE9
+        Wartung #3703: Overlay-Anpassung für Redesign 3.5
+        Wartung #3714: HTML - Testdateien löschen
+        Fehler #3353: Falsche Fehlermeldung auf mobilen Endgeräten
+        Fehler #3420: OSMF2.0 Akamai-Plugin - pausierter Player startet wieder selbständig
+        Fehler #3435: iPad zeigt Flash-Fehlermeldung "Fehler beim Einbetten des Flashfilms."
+        Fehler #3659: Fehlermeldung blockiert Player bei geöffneten Firebug
+        Fehler #3696: EQ-Icon über Schriftzug "Livestream"
+
+    - Geänderte Dateien:
+        /addons/ebu-tt/css/AddonEbuSubtitle.css
+        /addons/ebu-tt/js/controller/EbuSubtitleController.js
+        /addons/ebu-tt/js/AddonUntertitel_ebu_tt.js
+        /addons/untertitel/css/AddonUntertitel.css
+        /base/conf/PluginDetections.json
+        /base/css/player-ie7.css
+        /base/css/player-ie8.css
+        /base/css/player.css
+        /base/flash/conf/config.xml
+        /base/flash/css/skin.css
+        /base/flash/osmf/cdn/akamai/AkamaiAdvancedStreamingPlugin-3.1.swf
+        /base/flash/osmf/IcecastPlugin.swf
+        /base/flash/osmf/SMILPlugin.swf
+        /base/flash/osmf/SMPTETTPlugin.swf
+        /base/flash/PluginFlash.swf
+        /base/img/bg-controlbox.png
+        /base/img/bg-fullscreenhinweis.png
+        /base/img/bg-untertitelhinweis.png
+        /base/img/playagain.png
+        /base/img/playagain_hover.png
+        /base/img/player_controls.png
+        /base/img/player_steuerbar_bg.png
+        /base/img/player_steuerbar_bg2.png
+        /base/img/postercontrol.png
+        /base/img/soundaddon.gif
+        /base/img/soundaddon_off.gif
+        /base/js/com/netTrek/gundl/ardplayer/business/GenerateFlashPluginCmd.js
+        /base/js/com/netTrek/gundl/ardplayer/business/GenerateHTMLVideoCmd.js
+        /base/js/com/netTrek/gundl/ardplayer/business/InitPlayerCmd.js
+        /base/js/com/netTrek/gundl/ardplayer/controller/KeyboardPlayerController.js
+        /base/js/com/netTrek/gundl/ardplayer/core/AbstractCorePlugin.js
+        /base/js/com/netTrek/gundl/ardplayer/core/AbstractPlayerCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/core/FlashPluginCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/core/HtmlVideoCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/core/Player.js
+        /base/js/com/netTrek/gundl/ardplayer/model/vo/MediaCollection.js
+        /base/js/com/netTrek/gundl/ardplayer/model/vo/PlayerConfiguration.js
+        /base/js/com/netTrek/gundl/ardplayer/model/GlobalModel.js
+        /base/js/com/netTrek/gundl/ardplayer/views/ViewController.js
+        /docs/ARD-Player-Technische Dokumentation-1.10.pdf
+        /js/addons.min.js
+        /js/base.min.js
+        /mandanten/rbb/css/player.css
+        /mandanten/rbb/flash/css/skin.css
+        /mandanten/rbb/img/bg-controlbox.png
+        /mandanten/rbb/img/bg-fullscreenhinweis.png
+        /mandanten/rbb/img/bg-modal.png
+        /mandanten/rbb/img/bg-untertitelhinweis.png
+        /mandanten/rbb/img/player_controls.png
+        /mandanten/rbb/img/player_steuerbar_bg2.png
+        /mandanten/sport/css/player.css
+        /mandanten/sport/flash/css/skin.css
+        /mandanten/sport/img/player_controls.png
+        /mandanten/sport/img/player_steuerbar_bg2.png
+        /index.html
+        /index.min.html
+        /index_ap.php
+        /index_ebu.php
+        /index_config.php
+        /index_stream.php
+        /index_stream_list.php
+
+04.09.13 / Version 3.5.1
+
+	- Bearbeitete Tickets (https://pm.nettrek.de/versions/215)
+        Feature #3173: [EBU-TT-Addon] Inbetriebnahme
+        Feature #3526: Seekbar (Statusleiste) soll nicht aus dem View verschwinden, wenn die Steuerbar aus dem View fährt
+        Feature #3760: [EBU-TT-Addon] Schriftskalierung nach Viewportgröße
+        Feature #3852: [Pilot-Untertitel-Addon] Anpassung Verhalten an EBU-TT-Addon
+        Fehler #1655: HTML Player: Vollbild-Problemchen bei Safari 5.1.2 unter Win7
+        Fehler #3735: [EBU-TT-Addon] Anpassung Fusspunkt für UT-Anzeige
+        Fehler #3744: Steuerleiste blendet sich im Opera nicht mehr aus
+        Fehler #3761: [DVR-Timeshift] Zeitleiste wird angezeigt, obwohl Service vom Server nicht unterstützt wird
+        Fehler #3794: "Erneut abspielen" nach Sprung in Clip noch sichtbar
+        Fehler #3803: [EBU-TT-Addon] UT-Status wird bei Wechsel zum Vollbild nicht beibehalten
+        Fehler #3804: Opera: Fehler beim Klicken auf den Lautstärke-Button. Wellen verschwinden nicht
+        Fehler #3807: Einstellungsleiste im Opera abgeschnitten
+        Fehler #3824: [DVR-Timeshift] Zeitlanzeige zählt nicht während des pausierten DVR-Livestreams hoch
+        Fehler #3851: [Pilot-Untertitel-Addon] jquery Fehlermeldung im FF
+        Wartung #3713: HTML5-Vollbildmodus ab FF23 aktivieren
+        Wartung #3788: Title-Text für "Erneut Abspielen"
+        Wartung #3791: Flash Steuerleiste bei Skalierung im Browser sichtbar
+        Wartung #3802: Vorlage Buttons für Title-Texte nicht aktuell / Text für Erneut abspielen fehlt
+        Wartung #3806: PODCAST-ABO-Button nicht tabbar
+        Wartung #3809: Nach Sprung im L oder XL-Modus wird Ton abgespielt, aber nur Drehende Eins angezeigt (Win7, IE 10, HTML5)
+        Wartung #3811: "Erneut-Abspielen"-Button wandert in die Steuerleiste
+        Wartung #3829: [iPad] Video beschleunigt beim erneuten Abspielen.
+
+    - Geänderte Dateien:
+        /addons/debug/css/AddonDebug.css
+        /addons/debug/img/bg-debug.jpg
+        /addons/ebu-tt/css/AddonEbuSubtitle.css
+        /addons/ebu-tt/js/AddonUntertitel_ebu_tt.js
+        /addons/untertitel/css/AddonUntertitel.css
+        /addons/untertitel/js/controller/SubtitleController.js
+        /addons/untertitel/js/AddonUntertitel.js
+        /base/css/player-ie7.css
+        /base/css/player.css
+        /base/flash/osmf/IcecastPlugin.swf
+        /base/flash/osmf/SMILPlugin.swf
+        /base/flash/osmf/SMPTETTPlugin.swf
+        /base/flash/PluginFlash.swf
+        /base/img/player_controls.png
+        /base/js/com/netTrek/gundl/ardplayer/core/FlashPluginCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/core/HtmlVideoCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/model/GlobalModel.js
+        /base/js/com/netTrek/gundl/ardplayer/views/ViewController.js
+        /js/addons.min.js
+        /js/base.min.js
+        /mandanten/rbb/css/player.css
+        /mandanten/rbb/img/player_controls.png
+        /mandanten/sport/css/player.css
+        /mandanten/sport/img/player_controls.png
+        /index.html
+        /index_ap.php
+        /index_config.php
+        /index_dvr.php
+        /index_ebu.php
+        /index_stream.php
+        /test_ut.html
+
+20.09.13 / Version 3.5.1.1
+
+	- Bearbeitete Tickets (https://pm.nettrek.de/versions/234)
+        Feature #3915: [Flash-Vollbild] Fortschrittsbalken nach Herunterfahren Steuerleiste nicht mehr sichtbar
+        Fehler #3916: [iOS] kein Vorschaubild nach Erreichen des Clip-Ende sichtbar
+        Fehler #3961: Livestream nicht verfügbar in "L"
+        Fehler #3965: Errorcontroller beim erneuten Aufruf des Overlays nicht gefunden
+        Fehler #3966: Flash-Vollbildmodus: keine Lautsärkeskala bei Stummschaltung
+        Wartung #3917: [iPad] kein Vollbild-Button mehr sichtbar
+        Wartung #3937: [DVR-Timeshift] bei Ondemand "zurück zu live"-Btn sichtbar
+        Wartung #3951: HTML5-Player im Chrome - Fehlermeldung bei Wechsel in WebS
+        Wartung #3985: Control-Bar blendet sich auf iPad nicht selbstständig aus
+
+    - Geänderte Dateien:
+        /addons/ebu-tt/css/AddonEbuSubtitle.css
+        /addons/ebu-tt/js/controller/EbuSubtitleController.js
+        /addons/ebu-tt/js/AddonUntertitel_ebu_tt.js
+        /addons/untertitel/js/controller/SubtitleController.js
+        /addons/untertitel/js/AddonUntertitel.js
+        /base/flash/css/skin.css
+        /base/flash/osmf/IcecastPlugin.swf
+        /base/flash/osmf/SMILPlugin.swf
+        /base/flash/osmf/SMPTETTPlugin.swf
+        /base/flash/PluginFlash.swf
+        /base/js/com/netTrek/gundl/ardplayer/controller/ErrorController.js
+        /base/js/com/netTrek/gundl/ardplayer/core/AbstractPlayerCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/core/HtmlVideoCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/core/Player.js
+        /base/js/com/netTrek/gundl/ardplayer/model/GlobalModel.js
+        /base/js/com/netTrek/gundl/ardplayer/views/ViewController.js
+        /docs/changelog-3.5.x.txt
+        /js/addons.min.js
+        /js/base.min.js
+        /index_stream.php
+
+
+20.09.13 / Version 3.5.1.2 Hotfix
+
+	- Bearbeitete Tickets (https://pm.nettrek.de/versions/242)
+        Fehler #3992: Kein CDN-Wechsel bei Qualitätswechsel
+
+    - Geänderte Dateien:
+        /base/flash/PluginFlash.swf
+
+23.10.13 / Version 3.5.2
+
+	- Bearbeitete Tickets (https://pm.nettrek.de/versions/239)
+        Fehler #3991: Zeitanzeige im Flash-Vollbildmodus
+        Fehler #4049: [Doku] bitte "seekTo" und "seekToAndPlay" nachtragen
+        Fehler #4106: [Doku] setModalTarget nachtragen
+        Wartung #3918: READY-Event wird unsauber geworfen
+        Wartung #3925: [DVR-Timeshift] angleichen Zeitleiste
+        Wartung #3952: Zeitanzeige (Tooltip) im Flash-Vollbild-Modus nicht stylebar
+        Wartung #3968: Stream spielt von Start bei Umschalten von M zu S
+        Wartung #4001: [iOS] kein Standbild bei m3u8-Streams
+        Wartung #4003: Dialog für Vollbild wird hinter neuem Untertitel-Format angezeigt
+        Wartung #4114: [Doku] playerConfiguration.setStartStopTime() Value nachtragen
+
+    - Geänderte Dateien:
+        /addons/ebu-tt/js/AddonUntertitel_ebu_tt.js
+        /base/css/player.css
+        /base/flash/css/skin.css
+        /base/flash/osmf/IcecastPlugin.swf
+        /base/flash/osmf/SMILPlugin.swf
+        /base/flash/osmf/SMPTETTPlugin.swf
+        /base/flash/PluginFlash.swf
+        /base/js/com/netTrek/gundl/ardplayer/controller/ErrorController.js
+        /base/js/com/netTrek/gundl/ardplayer/core/AbstractPlayerCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/core/FlashPluginCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/core/HtmlVideoCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/core/Player.js
+        /base/js/com/netTrek/gundl/ardplayer/model/GlobalModel.js
+        /base/js/com/netTrek/gundl/ardplayer/views/ViewController.js
+        /docs/ARD-Player-Technische Dokumentation-1.10.pdf
+        /js/addons.min.js
+        /js/base.min.js
+        /mandanten/rbb
+        /mandanten/rbb/css
+        /mandanten/rbb/css/player.css
+        /index.html
+        /index_ebu.php
+        /index_stream.php
+        /test_ut.html
+
+
+04.12.13 / Version 3.5.2.1 Hotfix
+
+	- Bearbeitete Tickets (https://pm.nettrek.de/versions/262)
+        Feature #4135: Aktualisierung Referenzclips und Stream-Testseite
+        Feature #4318: [SOLA] Flash-Cookie darf nicht gesetzt werden - viewerID
+        Fehler #4045: [EBU-TT-Addon] Align botton greift erst nach Hub Steuerleiste
+        Fehler #4233: Nach Lautstärkeveränderung fährt die Steuerleiste nicht mehr runter
+        Fehler #4282: Beim erreichen des Clips-Endes in Flash-Vollbild erscheint anschließend keine Steuerleiste
+        Wartung #4044: [PVR-Timeshift] bei Aktivierung keine Übernahme Lautstärke in Overlay
+        Wartung #4234: Kein SMIL-HDS im Player abspielbar
+        Wartung #4291: Apassung "kleines Audi-Image" an responsives Design
+        Wartung #4292: Akamai SOLA Analytics Loader aktualisieren
+
+    - Geänderte Dateien:
+        /base/css/player.css
+        /base/flash/osmf/IcecastPlugin.swf
+        /base/flash/osmf/SMILPlugin.swf
+        /base/flash/osmf/SMPTETTPlugin.swf
+        /base/flash/PluginFlash.swf
+        /base/img/kleinesAudioBild-webM.jpeg
+        /base/img/player_controls.png
+        /base/js/com/netTrek/gundl/ardplayer/core/AbstractPlayerCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/core/HtmlVideoCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/views/ViewController.js
+        /js/base.min.js
+        /mandanten/rbb/img/player_controls.png
+        /mandanten/sport/img/player_controls.png
+        /test/conf/pc01.json
+        /test/conf/sola.json
+        /test/untertiteldateien
+        /test/ReferenzClips.json
+        /index_ap.php
+        /index_config.php
+        /index_dvr.php
+        /index_ebu.php
+        /index_stream.php
+        /index_stream_list.php
+
+
+14.01.14 / Version 3.5.2.2 Hotfix
+
+	- Bearbeitete Tickets (https://pm.nettrek.de/versions/270)
+        Feature #4435: Kontextmenü bei Klick auf Viewport deaktivieren
+
+    - Geänderte Dateien:
+        /base/js/com/netTrek/gundl/ardplayer/business/GenerateHTMLVideoCmd.js
+        /base/js/com/netTrek/gundl/ardplayer/business/GenerateHTMLAudioCmd.js
+        /base/js/com/netTrek/gundl/ardplayer/model/GlobalModel.js
+        /js/base.min.js
+
+15.01.14 / Version 3.5.3
+
+    Bekannte Probleme / wichtiger Hinweis:
+
+    Im Rahmen des Tickets #4112 ist eine neue Qualitätsstufe hinzugekommen ("auto"). Die aktuelle Implementierung
+    setzt voraus, dass alle Plugins mit identischen Streamgrößen (S,M,L,XL,auto) konfiguriert werden müssen. Wird
+    hierauf nicht geachtet, kann es u.U. beim Plugin-Wechsel zu einem Fehler kommen ("Fehlerhafte Konfiguration der
+    MediaCollection"). Für das kommende Release 3.5.4 ist eine entsprechende Erweiterung geplant (#4229), die dieses
+    Problem löst.
+
+	- Bearbeitete Tickets (https://pm.nettrek.de/versions/243)
+        Feature #3984: Pixelung jeder Benutzerinteraktion - per JSON konfigurierbar
+        Feature #4004: Einstellungen und Qualitätsbuttons wandern in die Steuerleiste
+        Feature #4112: Erweiterung der Qualitätsstufen der MediaCollection
+        Wartung #4161: [iOS] Einstellungsleiste oberhalb des Players
+        Feature #4264: Entkopplung der Abhängigkeit von Qualitäts- und Repräsentationsgrößen
+        Feature #4268: Bronze-Farbverlauf für Mouse-Over
+        Wartung #4289: [Doku] Pixelung
+        Feature #4307: [Pixelung] Finetuning
+        Feature #4433: [Doku] ARD-Player-Dokumentation-Pixelung-0.3.pdf in Ordner "docs" in Release hinterlegen
+        Feature #4435: Kontextmenü bei Klick auf Viewport deaktivieren
+        Feature #4446: Unterstützung des Vollbildmodus vom IE11
+
+    - Geänderte Dateien:
+        /addons/ebu-tt/js/AddonUntertitel_ebu_tt.js
+        /addons/untertitel/js/AddonUntertitel.js
+        /base/css/player-ie7.css
+        /base/css/player-ie8.css
+        /base/css/player.css
+        /base/flash/osmf/IcecastPlugin.swf
+        /base/flash/osmf/SMILPlugin.swf
+        /base/flash/osmf/SMPTETTPlugin.swf
+        /base/flash/PluginFlash.swf
+        /base/js/com/netTrek/gundl/ardplayer/business/GenerateHTMLAudioCmd.js
+        /base/js/com/netTrek/gundl/ardplayer/business/GenerateHTMLVideoCmd.js
+        /base/js/com/netTrek/gundl/ardplayer/business/GetMediaCollectionByJsonCmd.js
+        /base/js/com/netTrek/gundl/ardplayer/controller/ErrorController.js
+        /base/js/com/netTrek/gundl/ardplayer/controller/KeyboardPlayerController.js
+        /base/js/com/netTrek/gundl/ardplayer/controller/PixelController.js
+        /base/js/com/netTrek/gundl/ardplayer/core/AbstractPlayerCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/core/FlashPluginCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/core/HtmlAudioCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/core/HtmlVideoCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/core/Player.js
+        /base/js/com/netTrek/gundl/ardplayer/core/WmpCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/model/vo/MediaCollection.js
+        /base/js/com/netTrek/gundl/ardplayer/model/vo/PlayerConfiguration.js
+        /base/js/com/netTrek/gundl/ardplayer/model/GlobalModel.js
+        /base/js/com/netTrek/gundl/ardplayer/views/ViewController.js
+        /docs/ARD-Player-Dokumentation-Pixelung-0.3.pdf
+        /docs/changelog-3.5.x.txt
+        /js/addons.min.js
+        /js/base.min.js
+        /mandanten/rbb/css/player.css
+        /mandanten/sport/css/player.css
+        /index.html
+        /index.min.html
+        /index_ap.php
+        /index_config.php
+        /index_dvr.php
+        /index_ebu.php
+        /index_pixel.php
+        /index_stream.php
+        /index_stream_list.php

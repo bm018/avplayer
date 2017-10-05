@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <title>[ARD-Player]</title>
+
+    <!-- Basisklasse: Immer einbinden -->
+    <link rel="stylesheet" href="mandanten/ard/style/main.css" type="text/css"/>
+
+    <!-- Body-Setup: Helferklasse nur fuer Release-Ausspielung -->
+    <style>
+        html, body {
+            font-family: Verdana, Arial, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            padding-left: 4%;
+            padding-top: 2%;
+        }
+    </style>
+
+    <script type="text/javascript">
+        document.write("<meta http-equiv='X-UA-Compatible' content='IE=edge'/>");
+    </script>
+
+    <!-- ARD Player start -->
+    <!--Libs-->
+	<script src="base/js/libs/jquery-2.1.1.min.js"></script>
+    <script src="base/js/libs/jquery.tools-1.2.7.min.js"></script>
+    <script src="base/js/libs/jquery-ui-1.10.4.min.js"></script>
+    <script src="base/js/libs/swfobject.js"></script>
+    <script src="base/js/libs/mm.useractivity.js"></script>
+    <script src="base/js/libs/json2.js"></script>
+    <script src="base/js/libs/jquery.cookie.js"></script>
+    <script src="base/js/libs/shortcut.js"></script>
+    <script src="base/js/libs/bigscreen.min.js"></script>
+    <script src="base/js/libs/hls-0.7.11.light.min.js"></script>
+
+    <!-- Greensock -->
+    <script src="base/js/libs/TweenLite.min.js"></script>
+    <script src="base/js/libs/Draggable.min.js"></script>
+    <script src="base/js/libs/CSSPlugin.min.js"></script>
+
+	<!--Player-->
+    <script src="base/js/namespace.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/core/AbstractPlayerCtrl.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/core/AbstractCorePlugin.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/core/HtmlVideoCtrl.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/core/HtmlAudioCtrl.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/core/FlashPluginCtrl.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/core/Player.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/model/vo/PlayerConfiguration.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/model/vo/Media.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/model/vo/MediaCollection.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/model/vo/MediaStream.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/model/VideoSources.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/model/PlayerModel.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/controller/KeyboardPlayerController.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/utils/GUID.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/utils/QueryParser.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/utils/DateUtils.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/utils/Cookie.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/utils/Html5MEFactory.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/model/GlobalModel.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/views/ViewController.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/views/ResponsiveImage.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/views/TimelineSlider.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/controller/ErrorController.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/controller/PlayerPixelController.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/business/GetPlayerModelCmd.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/business/GenerateFlashPluginCmd.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/business/InitPlayerCmd.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/business/GetPlayerConfigByQueryCmd.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/business/GetPlayerConfigByJsonCmd.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/business/GetMediaCollectionByQueryCmd.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/business/GetMediaCollectionByJsonCmd.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/business/GenerateHTMLVideoCmd.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/business/GenerateHTMLAudioCmd.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/core/plugins.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/core/script.js"></script>
+
+    <!-- Plugin Untertitel -->
+    <script src="addons/untertitel/js/AddonUntertitel.js"></script>
+    <script src="addons/untertitel/js/controller/SubtitleController.js"></script>
+    <link rel="stylesheet" href="addons/untertitel/css/AddonUntertitel.css" media="all"/>
+
+    <!-- Plugin LiveUntertitel -->
+    <script src="addons/live_untertitel/js/AddonLiveUntertitel.js"></script>
+
+    <!-- Plugin Debug
+    <script src="addons/debug/js/AddonDebug.js"></script>
+    <link rel="stylesheet" href="addons/debug/css/AddonDebug.css" media="all"/>
+    -->
+
+    <!-- ARD Player END -->
+
+</head>
+<body>
+
+<script>
+    (function ($) {
+
+		$(window).ready(function () {
+
+            //var mc = new MediaCollection("video", true, 1);
+			var mc = new ardplayer.MediaCollection("video", true, ["auto", 0, 1, 2, 3]);
+
+            mc.setDVREnabled(false);
+
+            mc.setSortierung(1,0);
+
+            mc.setPreviewImage("base/img/posterframe-m.jpg");
+            mc.setAudioImage("base/img/posterframe-m.jpg");
+
+            /*
+            mc.addMedia(0);
+            mc.addMediaStream(0, 0, "", "http://http-stream.rbb-online.de/rbb/ard_ref_clip/video/tmp_20100202_ard_ref_clip_MP4H264_s_16_9_256x144.mp4x", "default");
+            mc.addMediaStream(0, 2, "", "http://http-stream.rbb-online.de/rbb/ard_ref_clip/video/tmp_20100202_ard_ref_clip_MP4H264_l_16_9_960x544.mp4", "default");
+            mc.addMediaStream(0, 3, "", "http://http-stream.rbb-online.de/rbb/ard_ref_clip/video/tmp_20100202_ard_ref_clip_MP4H264_l_16_9_960x544.mp4", "default");
+            mc.addAlternativeMediaStream("untertitel", 0, 0, "", "http://http-stream.rbb-online.de/rbb/ard_ref_clip/video/tmp_20100202_ard_ref_clip_MP4H264_m_16_9_512x288.mp4", "akamai");
+            mc.addAlternativeMediaStream("untertitel", 0, "auto", "", "http://http-stream.rbb-online.de/rbb/ard_ref_clip/video/tmp_20100202_ard_ref_clip_MP4H264_m_16_9_512x288.mp4", "akamai");
+
+
+            mc.addMedia(1);
+            mc.addMediaStream(1, 0, "", ["http://hls.daserste.de/i/videoportal/Film/c_80000/87197/ios.smil/master.m3u8",
+                        "http://http-stream.rbb-online.de/rbb/ard_ref_clip/video/tmp_20100202_ard_ref_clip_MP4H264_s_16_9_256x144.mp4"],
+                    "");
+            mc.addMediaStream(1, 1, "", ["http://hls.daserste.de/i/videoportal/Film/c_80000/87197/ios.smil/master.m3u8",
+                        "http://http-stream.rbb-online.de/rbb/ard_ref_clip/video/tmp_20100202_ard_ref_clip_MP4H264_m_16_9_512x288.mp4"],
+                    "");
+            mc.addMediaStream(1, 2, "", ["http://hls.daserste.de/i/videoportal/Film/c_80000/87197/ios.smil/master.m3u8",
+                        "http://http-stream.rbb-online.de/rbb/ard_ref_clip/video/tmp_20100202_ard_ref_clip_MP4H264_l_16_9_960x544.mp4"],
+                    "");
+            mc.addAlternativeMediaStream("untertitel", 1, "auto", "", "http://media.tagesschau.de/video/2015/0719/TV-20150719-1855-3701.webs.h264.mp4", "");
+            */
+
+            //mc.setSubtitleUrl("test/untertiteldateien/alt/9405442b.xml", "");
+
+            var pc = new ardplayer.PlayerConfiguration();
+
+            pc.setBaseUrl("");
+
+            pc.setAutoPlay(true);
+
+            pc.setShowOptions(true);
+            pc.setShowOptions_Plugins(true);
+            pc.setShowOptions_Quality(true);
+
+            pc.setForceControlBarVisible(false);
+
+            pc.setAddons(
+                    "AddonUntertitel", "AddonLiveUntertitel"
+            );
+
+			//var p = new ardplayer.Player("player00", pc, mc);
+
+            // VOD Streams
+            //var p = new ardplayer.Player("player00", pc, "conf/mc/mc_alternative_ut_vodstreams.json");
+
+            // Livestreams
+            var p = new ardplayer.Player("player00", pc, "conf/mc/mc_alternative_ut_livestreams.json");
+
+		});
+    })(ardplayer.jq);
+
+</script>
+
+
+<div style="width:512px; height: 288px">
+    <div id="player00"></div>
+</div>
+
+</body>
+</html>

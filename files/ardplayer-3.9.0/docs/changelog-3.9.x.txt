@@ -1,0 +1,27 @@
+02.08.2017 / Version 3.9.0
+
+    - Bearbeitete Tickets (https://pm.nettrek.de/versions/488)
+        Feature #11829: Abspielen von Livestreams mit Timecode-Parametern im HTML-Modus
+        Feature #11504: Anpassung der Schnittstelle: JS-Schnittstelle durch JSON ablösen
+        Fehler  #11701: Abspielkopf bewegt sich bei Livestreams nicht mit
+
+    - Geänderte Dateien:
+        /addons/atipixel/js/AddonATIPixel.js
+        /addons/atipixel_smarttag/js/AddonATIPixel.js
+        /base/js/com/netTrek/gundl/ardplayer/controller/ErrorController.js
+        /base/js/com/netTrek/gundl/ardplayer/core/AbstractPlayerCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/core/FlashPluginCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/core/HtmlVideoCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/core/Player.js
+        /base/js/com/netTrek/gundl/ardplayer/model/vo/MediaCollection.js
+        /base/js/com/netTrek/gundl/ardplayer/model/vo/MediaStream.js
+        /base/js/com/netTrek/gundl/ardplayer/model/vo/PlayerConfiguration.js
+        /base/js/com/netTrek/gundl/ardplayer/model/GlobalModel.js
+        /base/js/com/netTrek/gundl/ardplayer/utils/Cookie.js
+        /base/js/com/netTrek/gundl/ardplayer/views/TimelineSlider.js
+        /base/js/com/netTrek/gundl/ardplayer/views/ViewController.js
+        /base/js/libs/hls-0.7.11.light.min.js
+        /js/addons.min.js
+        /js/base.min.js
+        /*.html
+        /*.php

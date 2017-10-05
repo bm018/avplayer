@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt:tt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ttp="http://www.w3.org/ns/ttml#parameter"
+       xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:tt="http://www.w3.org/ns/ttml"
+       xmlns:ebuttm="urn:ebu:tt:metadata" ttp:timeBase="media" xml:lang="de" ttp:cellResolution="50 30">
+    <tt:head>
+        <tt:metadata>
+            <ebuttm:documentMetadata>
+                <ebuttm:documentEbuttVersion>v1.0</ebuttm:documentEbuttVersion>
+            </ebuttm:documentMetadata>
+        </tt:metadata>
+        <tt:styling>
+            <tt:style xml:id="defaultStyle" tts:fontFamily="Verdana, Arial" tts:fontSize="100%"
+                      tts:lineHeight="normal"/>
+            <tt:style xml:id="textRed" tts:color="#ff0000" tts:backgroundColor="#000000c2" tts:fontSize="160%"/>
+            <tt:style xml:id="textGreen" tts:color="#00ff00" tts:backgroundColor="#000000c2" tts:fontSize="160%"/>
+            <tt:style xml:id="textYellow" tts:color="#ffff00" tts:backgroundColor="#000000c2" tts:fontSize="160%"/>
+            <tt:style xml:id="textBlue" tts:color="#0000ff" tts:backgroundColor="#000000c2" tts:fontSize="160%"/>
+            <tt:style xml:id="textMagenta" tts:color="#ff00ff" tts:backgroundColor="#000000c2" tts:fontSize="160%"/>
+            <tt:style xml:id="textCyan" tts:color="#00ffff" tts:backgroundColor="#000000c2" tts:fontSize="160%"/>
+            <tt:style xml:id="textWhite" tts:color="#ffffff" tts:backgroundColor="#000000c2" tts:fontSize="160%"/>
+            <tt:style xml:id="textBlack" tts:color="#000000" tts:backgroundColor="#000000c2" tts:fontSize="160%"/>
+            <tt:style xml:id="textCenter" tts:textAlign="center"/>
+        </tt:styling>
+        <tt:layout>
+            <tt:region xml:id="bottom" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="after"/>
+        </tt:layout>
+    </tt:head>
+    <tt:body>
+        <tt:div style="defaultStyle">
+            <tt:p xml:id="subtitle1" region="bottom" begin="00:00:02.940" end="00:00:05.100" style="textCenter">
+                <tt:span style="textBlue">Jetzt schauen wir uns</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">mal hier dieses Ding an,</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle2" region="bottom" begin="00:00:05.340" end="00:00:09.220" style="textCenter">
+                <tt:span style="textBlue">das hier wie ein fleißiges Tierchen</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">auf dem Tisch herumwuselt</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle3" region="bottom" begin="00:00:09.460" end="00:00:10.860" style="textCenter">
+                <tt:span style="textBlue">und sauber macht.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle4" region="bottom" begin="00:00:11.100" end="00:00:16.300" style="textCenter">
+                <tt:span style="textBlue">Ein Saugroboter, man könnte</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">auch sagen ein Putztraum, oder?</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle5" region="bottom" begin="00:00:16.540" end="00:00:19.260" style="textCenter">
+                <tt:span style="textBlue">Ich mach ihn mal</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">wieder aus, bevor er abstürzt.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle6" region="bottom" begin="00:00:20.860" end="00:00:22.700" style="textCenter">
+                <tt:span style="textBlue">Bloß würde man gerne wissen:</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle7" region="bottom" begin="00:00:22.940" end="00:00:25.460" style="textCenter">
+                <tt:span style="textBlue">Macht so</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">ein Elektrotierchen genauso sauber,</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle8" region="bottom" begin="00:00:25.700" end="00:00:28.500" style="textCenter">
+                <tt:span style="textBlue">wie ein herkömmlicher Staubsauger?</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle9" region="bottom" begin="00:00:28.740" end="00:00:33.300" style="textCenter">
+                <tt:span style="textBlue">Wie kommen die Saugroboter mit</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">Ecken, Kanten und Treppen zurecht?</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle10" region="bottom" begin="00:00:33.540" end="00:00:36.220" style="textCenter">
+                <tt:span style="textBlue">Können sie</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">was kaputt machen in der Wohnung?</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle11" region="bottom" begin="00:00:36.460" end="00:00:39.820" style="textCenter">
+                <tt:span style="textBlue">Marktcheck macht den Robotertest.</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">Wollmäuse, Haare und Dreck:</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle12" region="bottom" begin="00:00:40.060" end="00:00:44.740" style="textCenter">
+                <tt:span style="textBlue">Mit drei Kindern fällt bei Familie</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">Bank aus Stuttgart einiges an.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle13" region="bottom" begin="00:00:44.980" end="00:00:48.460" style="textCenter">
+                <tt:span style="textBlue">Staubsauger raus und saubermachen.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle14" region="bottom" begin="00:00:48.700" end="00:00:53.180" style="textCenter">
+                <tt:span style="textBlue">Meistens muss</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">Alexandra Bank ran. Viel Arbeit.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle15" region="bottom" begin="00:00:53.900" end="00:00:57.100" style="textCenter">
+                <tt:span style="textYellow">Jeden Tag</tt:span>
+                <tt:br/>
+                <tt:span style="textYellow">habe ich den einmal in der Hand.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle16" region="bottom" begin="00:00:57.340" end="00:01:01.140" style="textCenter">
+                <tt:span style="textYellow">V.a. hier unten im Essbereich</tt:span>
+                <tt:br/>
+                <tt:span style="textYellow">fällt immer mal wieder was runter.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle17" region="bottom" begin="00:01:01.380" end="00:01:03.020" style="textCenter">
+                <tt:span style="textYellow">Ich sauge also quasi täglich.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle18" region="bottom" begin="00:01:03.260" end="00:01:05.340" style="textCenter">
+                <tt:span style="textBlue">Aber das muss nicht sein,</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle19" region="bottom" begin="00:01:05.580" end="00:01:09.260" style="textCenter">
+                <tt:span style="textBlue">versprechen diese modernen</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">Haushaltshelden: Saug-Roboter.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle20" region="bottom" begin="00:01:09.500" end="00:01:12.300" style="textCenter">
+                <tt:span style="textBlue">Sie fahren allein</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">durch die Wohnung und saugen.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle21" region="bottom" begin="00:01:12.540" end="00:01:14.660" style="textCenter">
+                <tt:span style="textBlue">Aber funktioniert das wirklich?</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle22" region="bottom" begin="00:01:15.420" end="00:01:18.020" style="textCenter">
+                <tt:span style="textBlue">Wir testen drei aktuelle Modelle:</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle23" region="bottom" begin="00:01:18.260" end="00:01:23.020" style="textCenter">
+                <tt:span style="textBlue">Den Marktführer iRobot Roomba,</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">für ca. 515 Euro.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle24" region="bottom" begin="00:01:24.220" end="00:01:31.500" style="textCenter">
+                <tt:span style="textBlue">Den Herausforderer: Navibot von</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">Samsung, gekauft für ca. 450 Euro.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle25" region="bottom" begin="00:01:33.780" end="00:01:40.660" style="textCenter">
+                <tt:span style="textBlue">Und den Günstigen, ein Modell</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">der Firma Sichler für nur 130 Euro.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle26" region="bottom" begin="00:01:43.500" end="00:01:49.860" style="textCenter">
+                <tt:span style="textBlue">Alle drei testen wir bei Familie</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">Bank und im Labor des TÜV.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle27" region="bottom" begin="00:01:50.100" end="00:01:56.340" style="textCenter">
+                <tt:span style="textBlue">Wie alltagstauglich sind</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">die Roboter? Und putzen sie gut?</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle28" region="bottom" begin="00:01:56.580" end="00:01:58.020" style="textCenter">
+                <tt:span style="textBlue">Los geht's.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle29" region="bottom" begin="00:01:58.260" end="00:02:02.180" style="textCenter">
+                <tt:span style="textBlue">Florian und Alexandra Bank testen</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">die drei Sauger bei sich zu Hause.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle30" region="bottom" begin="00:02:02.420" end="00:02:05.900" style="textCenter">
+                <tt:span style="textBlue">Aber erstmal müssen sie</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">die Roboter zum Laufen bringen.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle31" region="bottom" begin="00:02:06.820" end="00:02:11.180" style="textCenter">
+                <tt:span style="textBlue">Beim Sichler und beim iRobot</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">ist die Handhabung kein Problem.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle32" region="bottom" begin="00:02:18.340" end="00:02:21.980" style="textCenter">
+                <tt:span style="textBlue">Der Samsung dagegen</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">ist ein bisschen komplizierter.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle33" region="bottom" begin="00:02:25.180" end="00:02:27.820" style="textCenter">
+                <tt:span style="textBlue">Aber auch er läuft</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">nach ein paar Minuten.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle34" region="bottom" begin="00:02:28.460" end="00:02:31.260" style="textCenter">
+                <tt:span style="textBlue">Die Sauger starten ihre Putztour.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle35" region="bottom" begin="00:02:34.540" end="00:02:37.620" style="textCenter">
+                <tt:span style="textBlue">Eins fällt selbst</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">Katze Maukei sofort auf:</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle36" region="bottom" begin="00:02:37.860" end="00:02:42.780" style="textCenter">
+                <tt:span style="textBlue">Die Roboter sind laut,</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">v.a. der günstigste von Sichler.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle37" region="bottom" begin="00:02:44.980" end="00:02:50.140" style="textCenter">
+                <tt:span style="textCyan">Beim Unterhalten merkt man schon,</tt:span>
+                <tt:br/>
+                <tt:span style="textCyan">dass man lauter werden muss.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle38" region="bottom" begin="00:02:50.380" end="00:02:55.900" style="textCenter">
+                <tt:span style="textYellow">Das ist ein Gerät, dass man im Raum</tt:span>
+                <tt:br/>
+                <tt:span style="textYellow">lassen kann, das alleine reinigt.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle39" region="bottom" begin="00:02:56.140" end="00:02:57.660" style="textCenter">
+                <tt:span style="textYellow">Man muss den Raum verlassen.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle40" region="bottom" begin="00:02:57.900" end="00:03:01.020" style="textCenter">
+                <tt:span style="textBlue">Aber wie groß sind</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">die Unterschiede bei der Lautstärke?</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle41" region="bottom" begin="00:03:01.260" end="00:03:03.060" style="textCenter">
+                <tt:span style="textBlue">Das testen wir mit dem TÜV.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle42" region="bottom" begin="00:03:04.260" end="00:03:07.300" style="textCenter">
+                <tt:span style="textBlue">Im Labor laufen</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">die drei Sauger im Standardmodus,</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle43" region="bottom" begin="00:03:07.540" end="00:03:11.140" style="textCenter">
+                <tt:span style="textBlue">werden von 10 hochempfindlichen</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">Mikrofonen aufgenommen.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle44" region="bottom" begin="00:03:14.820" end="00:03:17.180" style="textCenter">
+                <tt:span style="textBlue">Am leisesten</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">ist der Samsung-Sauger,</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle45" region="bottom" begin="00:03:17.420" end="00:03:21.260" style="textCenter">
+                <tt:span style="textBlue">am lautesten der Sichler.</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">Und zwar um ein Vielfaches.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle46" region="bottom" begin="00:03:24.500" end="00:03:29.900" style="textCenter">
+                <tt:span style="textGreen">Sie können 40 Geräte</tt:span>
+                <tt:br/>
+                <tt:span style="textGreen">der Firma Samsung laufen lassen,</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle47" region="bottom" begin="00:03:30.140" end="00:03:36.140" style="textCenter">
+                <tt:span style="textGreen">um auf die Lautstärke von einem</tt:span>
+                <tt:br/>
+                <tt:span style="textGreen">einzelnen Sichler-Gerät zu kommen.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle48" region="bottom" begin="00:03:36.380" end="00:03:37.620" style="textCenter">
+                <tt:span style="textBlue">Bei Familie Bank</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle49" region="bottom" begin="00:03:37.860" end="00:03:40.900" style="textCenter">
+                <tt:span style="textBlue">fahren die drei Sauger</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">kreuz und quer durchs Wohnzimmer.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle50" region="bottom" begin="00:03:41.140" end="00:03:43.700" style="textCenter">
+                <tt:span style="textBlue">Aber wie gut</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">ist ihre Orientierung?</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle51" region="bottom" begin="00:03:46.380" end="00:03:50.500" style="textCenter">
+                <tt:span style="textBlue">Der iRobot scheint beliebig</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">durch den Raum zu irren,</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle52" region="bottom" begin="00:03:50.740" end="00:03:55.340" style="textCenter">
+                <tt:span style="textBlue">während der Samsung das Wohnzimmer</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">Bahn für Bahn abfährt.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle53" region="bottom" begin="00:03:57.180" end="00:04:02.260" style="textCenter">
+                <tt:span style="textBlue">Doch am Unkoordiniertesten wirkt</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">auf die Banks der günstige Sichler.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle54" region="bottom" begin="00:04:04.060" end="00:04:06.660" style="textCenter">
+                <tt:span style="textCyan">Wahrscheinlich liegt es am Licht,</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle55" region="bottom" begin="00:04:06.900" end="00:04:09.060" style="textCenter">
+                <tt:span style="textCyan">dass er immer</tt:span>
+                <tt:br/>
+                <tt:span style="textCyan">wieder plötzlich zurückfährt,</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle56" region="bottom" begin="00:04:09.300" end="00:04:11.260" style="textCenter">
+                <tt:span style="textCyan">obwohl gar kein Gegenstand da ist.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle57" region="bottom" begin="00:04:11.500" end="00:04:15.900" style="textCenter">
+                <tt:span style="textCyan">Hier hinter war er schon zehn Mal</tt:span>
+                <tt:br/>
+                <tt:span style="textCyan">und hier noch überhaupt nicht.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle58" region="bottom" begin="00:04:16.140" end="00:04:19.900" style="textCenter">
+                <tt:span style="textBlue">Im Labor testen wir,</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">ob die Sauger wissen, was sie tun.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle59" region="bottom" begin="00:04:20.780" end="00:04:23.540" style="textCenter">
+                <tt:span style="textBlue">Tatsächlich:</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">Es steckt System dahinter.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle60" region="bottom" begin="00:04:23.900" end="00:04:27.620" style="textCenter">
+                <tt:span style="textBlue">Alle drei Sauger fahren nach</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">und nach den kompletten Bereich ab.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle61" region="bottom" begin="00:04:27.860" end="00:04:31.420" style="textCenter">
+                <tt:span style="textBlue">Der günstige Sichler braucht</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">dafür allerdings am längsten.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle62" region="bottom" begin="00:04:31.660" end="00:04:34.500" style="textCenter">
+                <tt:span style="textBlue">So gut klappt das im Wohnzimmer</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">von Familie Bank nicht.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle63" region="bottom" begin="00:04:34.740" end="00:04:36.700" style="textCenter">
+                <tt:span style="textBlue">Das Problem: Hindernisse.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle64" region="bottom" begin="00:04:36.940" end="00:04:41.020" style="textCenter">
+                <tt:span style="textBlue">Alle drei Roboter bleiben z.B.</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">an den Stühlen im Esszimmer hängen.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle65" region="bottom" begin="00:04:41.260" end="00:04:42.460" style="textCenter">
+                <tt:span style="textBlue">Ungeschickt.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle66" region="bottom" begin="00:04:47.060" end="00:04:49.340" style="textCenter">
+                <tt:span style="textBlue">Und wie sieht es an der Treppe aus?</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle67" region="bottom" begin="00:04:50.860" end="00:04:54.980" style="textCenter">
+                <tt:span style="textBlue">Um die beiden teuren Geräte</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">muss man sich keine Sorgen machen.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle68" region="bottom" begin="00:04:55.220" end="00:04:56.660" style="textCenter">
+                <tt:span style="textBlue">Sie bremsen rechtzeitig ab.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle69" region="bottom" begin="00:04:56.900" end="00:04:59.380" style="textCenter">
+                <tt:span style="textBlue">Beim Sichler</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">sieht das etwas anders aus.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle70" region="bottom" begin="00:04:59.620" end="00:05:00.140" style="textCenter">
+                <tt:span style="textYellow">Achtung!</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle71" region="bottom" begin="00:05:01.740" end="00:05:04.780" style="textCenter">
+                <tt:span style="textCyan">Wenn das jetzt hier passiert</tt:span>
+                <tt:br/>
+                <tt:span style="textCyan">wäre, wäre er unten gewesen.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle72" region="bottom" begin="00:05:05.020" end="00:05:07.660" style="textCenter">
+                <tt:span style="textYellow">Oh Mann, mein Herz</tt:span>
+                <tt:br/>
+                <tt:span style="textYellow">ist in die Hose gerutscht.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle73" region="bottom" begin="00:05:07.900" end="00:05:10.060" style="textCenter">
+                <tt:span style="textBlue">Eins wollen die Banks noch wissen:</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle74" region="bottom" begin="00:05:10.300" end="00:05:13.380" style="textCenter">
+                <tt:span style="textBlue">Schmeißen die Sauger</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">ihre Bodenvase um?</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle75" region="bottom" begin="00:05:17.460" end="00:05:19.220" style="textCenter">
+                <tt:span style="textBlue">Zuerst der Navibot von Samsung.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle76" region="bottom" begin="00:05:19.460" end="00:05:20.740" style="textCenter">
+                <tt:span style="textYellow">Oh, wow, brav!</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle77" region="bottom" begin="00:05:21.580" end="00:05:25.420" style="textCenter">
+                <tt:span style="textYellow">Du bist ja ein ganz Lieber,</tt:span>
+                <tt:br/>
+                <tt:span style="textYellow">machst meine Vase nicht kaputt.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle78" region="bottom" begin="00:05:25.660" end="00:05:30.420" style="textCenter">
+                <tt:span style="textBlue">Der iRobot dagegen</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">bremst zwar, aber touchiert.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle79" region="bottom" begin="00:05:32.420" end="00:05:39.380" style="textCenter">
+                <tt:span style="textBlue">Das günstigste Gerät von Sichler</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">rammt die Vase gleich zweimal.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle80" region="bottom" begin="00:05:40.500" end="00:05:43.580" style="textCenter">
+                <tt:span style="textYellow">Das würde auf jeden Fall</tt:span>
+                <tt:br/>
+                <tt:span style="textYellow">nicht in die engere Auswahl fallen.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle81" region="bottom" begin="00:05:43.820" end="00:05:45.940" style="textCenter">
+                <tt:span style="textCyan">Es ist eindeutig durchgefallen.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle82" region="bottom" begin="00:05:46.180" end="00:05:50.940" style="textCenter">
+                <tt:span style="textBlue">Bei der Orientierung immer</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">noch der beste: der Samsung Navibot.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle83" region="bottom" begin="00:05:51.180" end="00:05:52.740" style="textCenter">
+                <tt:span style="textBlue">Aber wer die Roboter</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle84" region="bottom" begin="00:05:52.980" end="00:05:55.620" style="textCenter">
+                <tt:span style="textBlue">unbeobachtet durch</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">die Wohnung fahren lassen will,</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle85" region="bottom" begin="00:05:55.860" end="00:05:58.860" style="textCenter">
+                <tt:span style="textBlue">sollte</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">Hindernisse lieber wegräumen.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle86" region="bottom" begin="00:05:59.100" end="00:06:03.220" style="textCenter">
+                <tt:span style="textBlue">Nun zur entscheidenden</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">Test-Kategorie: Der Saugleistung.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle87" region="bottom" begin="00:06:05.940" end="00:06:09.860" style="textCenter">
+                <tt:span style="textBlue">Alexandra Bank stellt die Roboter</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">vor eine besonders schwere Aufgabe.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle88" region="bottom" begin="00:06:10.100" end="00:06:12.420" style="textCenter">
+                <tt:span style="textYellow">In der Küche fällt ja</tt:span>
+                <tt:br/>
+                <tt:span style="textYellow">immer mal wieder was runter,</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle89" region="bottom" begin="00:06:12.660" end="00:06:16.300" style="textCenter">
+                <tt:span style="textYellow">wenn ich mit den Kindern koche, dann</tt:span>
+                <tt:br/>
+                <tt:span style="textYellow">soll er sowas aufsammeln können.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle90" region="bottom" begin="00:06:17.500" end="00:06:20.180" style="textCenter">
+                <tt:span style="textBlue">Zuerst der Sauger von Sichler.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle91" region="bottom" begin="00:06:24.860" end="00:06:27.900" style="textCenter">
+                <tt:span style="textCyan">Oh, oh! Na super!</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle92" region="bottom" begin="00:06:28.140" end="00:06:35.740" style="textCenter">
+                <tt:span style="textYellow">Der verteilt den Schmutz erstmal</tt:span>
+                <tt:br/>
+                <tt:span style="textYellow">schön, dann sammelt er es auf.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle93" region="bottom" begin="00:06:37.500" end="00:06:40.940" style="textCenter">
+                <tt:span style="textBlue">Als nächstes der iRobot,</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">auch nicht viel besser.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle94" region="bottom" begin="00:06:43.300" end="00:06:44.500" style="textCenter">
+                <tt:span style="textCyan">Da ist es besser,</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle95" region="bottom" begin="00:06:44.740" end="00:06:48.020" style="textCenter">
+                <tt:span style="textCyan">wenn ich kurz Schaufel und Besen</tt:span>
+                <tt:br/>
+                <tt:span style="textCyan">hole und das schnell wegmache.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle96" region="bottom" begin="00:06:48.260" end="00:06:50.740" style="textCenter">
+                <tt:span style="textBlue">Viel besser: Der Navibot.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle97" region="bottom" begin="00:06:50.980" end="00:06:56.380" style="textCenter">
+                <tt:span style="textYellow">Du bist ein ganz Braver,</tt:span>
+                <tt:br/>
+                <tt:span style="textYellow">du darfst bei uns wohnen.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle98" region="bottom" begin="00:06:57.660" end="00:07:01.700" style="textCenter">
+                <tt:span style="textBlue">Aber wie ist die Saugleistung</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">bei ganz normalem Staub?</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle99" region="bottom" begin="00:07:01.940" end="00:07:03.900" style="textCenter">
+                <tt:span style="textBlue">Das testen wir wieder im Labor.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle100" region="bottom" begin="00:07:04.140" end="00:07:06.020" style="textCenter">
+                <tt:span style="textBlue">Die TÜV-Ingeniere tragen dazu</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle101" region="bottom" begin="00:07:06.260" end="00:07:10.500" style="textCenter">
+                <tt:span style="textBlue">eine genau definierte Menge</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">Test-Staub auf Holzboden auf.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle102" region="bottom" begin="00:07:11.700" end="00:07:14.860" style="textCenter">
+                <tt:span style="textBlue">Dann müssen die drei Sauger</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">ran, auf höchster Stufe.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle103" region="bottom" begin="00:07:15.100" end="00:07:20.820" style="textCenter">
+                <tt:span style="textBlue">Das Ergebnis: Erstaunlich gut.</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">Alle drei sammeln mehr als 90% ein.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle104" region="bottom" begin="00:07:21.060" end="00:07:23.740" style="textCenter">
+                <tt:span style="textBlue">Der gleiche Test</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">nochmal auf Teppichboden.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle105" region="bottom" begin="00:07:23.980" end="00:07:27.020" style="textCenter">
+                <tt:span style="textBlue">Hier holen die Roboter</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">nur sehr wenig aus dem Stoff.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle106" region="bottom" begin="00:07:27.260" end="00:07:29.740" style="textCenter">
+                <tt:span style="textBlue">Viel weniger,</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">als normale Staubsauger.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle107" region="bottom" begin="00:07:31.740" end="00:07:34.300" style="textCenter">
+                <tt:span style="textBlue">Der iRobot</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">erwischt noch am meisten Staub.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle108" region="bottom" begin="00:07:34.540" end="00:07:37.460" style="textCenter">
+                <tt:span style="textBlue">Er putzt immerhin drei Mal</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">so gut wie der Sichler.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle109" region="bottom" begin="00:07:37.700" end="00:07:41.380" style="textCenter">
+                <tt:span style="textBlue">Insgesamt ist das Ergebnis</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">auf Teppich aber enttäuschend.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle110" region="bottom" begin="00:07:42.100" end="00:07:45.620" style="textCenter">
+                <tt:span style="textBlue">Zu guter Letzt</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">testen wir den Stromverbrauch.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle111" region="bottom" begin="00:07:48.140" end="00:07:51.980" style="textCenter">
+                <tt:span style="textBlue">Wir lassen die Sauger ohne Pause</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">fahren und vergleichen dann:</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle112" region="bottom" begin="00:07:52.220" end="00:07:54.820" style="textCenter">
+                <tt:span style="textBlue">Wie lange</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">halten die Akkus und wie viel Strom</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle113" region="bottom" begin="00:07:55.060" end="00:07:57.540" style="textCenter">
+                <tt:span style="textBlue">ziehen sie danach</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">in der Ladestation?</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle114" region="bottom" begin="00:07:57.780" end="00:07:59.460" style="textCenter">
+                <tt:span style="textYellow">Stromfresser sind sie alle nicht.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle115" region="bottom" begin="00:07:59.700" end="00:08:03.100" style="textCenter">
+                <tt:span style="textYellow">Es sind alles Akkugeräte,</tt:span>
+                <tt:br/>
+                <tt:span style="textYellow">die mit sehr wenig Strom auskommen.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle116" region="bottom" begin="00:08:03.340" end="00:08:06.220" style="textCenter">
+                <tt:span style="textYellow">Die Laufzeiten</tt:span>
+                <tt:br/>
+                <tt:span style="textYellow">sind sehr unterschiedlich.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle117" region="bottom" begin="00:08:06.460" end="00:08:08.620" style="textCenter">
+                <tt:span style="textBlue">Am kürzesten hält</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">der Akku des Sichler-Saugers,</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle118" region="bottom" begin="00:08:08.860" end="00:08:10.580" style="textCenter">
+                <tt:span style="textBlue">gerade mal 61 Min.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle119" region="bottom" begin="00:08:10.820" end="00:08:16.460" style="textCenter">
+                <tt:span style="textBlue">Der iRobot dagegen kann mehr als</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">doppelt so lang saugen: 135 Min.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle120" region="bottom" begin="00:08:17.780" end="00:08:21.180" style="textCenter">
+                <tt:span style="textBlue">Wer aber ist nun</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">wirklich ein Haushaltsheld?</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle121" region="bottom" begin="00:08:21.860" end="00:08:23.460" style="textCenter">
+                <tt:span style="textBlue">Unser Fazit:</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle122" region="bottom" begin="00:08:24.260" end="00:08:27.940" style="textCenter">
+                <tt:span style="textBlue">Verlierer</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">ist der günstige Sauger von Sichler.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle123" region="bottom" begin="00:08:28.180" end="00:08:31.180" style="textCenter">
+                <tt:span style="textBlue">Er reinigt am schlechtesten,</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">ist laut und unkoordiniert.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle124" region="bottom" begin="00:08:31.420" end="00:08:33.060" style="textCenter">
+                <tt:span style="textBlue">Platz zwei: Der Samsung Navibot.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle125" region="bottom" begin="00:08:33.300" end="00:08:35.220" style="textCenter">
+                <tt:span style="textBlue">Er navigiert gut,</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">ist der Leiseste,</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle126" region="bottom" begin="00:08:35.460" end="00:08:38.380" style="textCenter">
+                <tt:span style="textBlue">kann aber bei</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">der Saugleistung nicht überzeugen.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle127" region="bottom" begin="00:08:38.620" end="00:08:42.340" style="textCenter">
+                <tt:span style="textBlue">Testsieger ist der iRobot.</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">Mit 515 Euro der Teuerste.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle128" region="bottom" begin="00:08:42.580" end="00:08:46.180" style="textCenter">
+                <tt:span style="textBlue">Aber er saugt am Gründlichsten</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">und sein Akku hält am Längsten.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle129" region="bottom" begin="00:08:46.740" end="00:08:48.820" style="textCenter">
+                <tt:span style="textBlue">Für Familie Bank</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">ist allerdings klar:</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle130" region="bottom" begin="00:08:49.060" end="00:08:52.700" style="textCenter">
+                <tt:span style="textBlue">Keiner der drei Sauger wird</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">ihren alten ganz ersetzen können.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle131" region="bottom" begin="00:08:52.940" end="00:08:57.620" style="textCenter">
+                <tt:span style="textYellow">Eine Alternative ist es nicht,</tt:span>
+                <tt:br/>
+                <tt:span style="textYellow">aber eine nette Zusatzsache quasi.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle132" region="bottom" begin="00:08:57.860" end="00:09:00.260" style="textCenter">
+                <tt:span style="textYellow">Dass wenn ich nicht im Haus</tt:span>
+                <tt:br/>
+                <tt:span style="textYellow">bin, dass ich da einen anschalte,</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle133" region="bottom" begin="00:09:00.500" end="00:09:02.100" style="textCenter">
+                <tt:span style="textYellow">der da schonmal sauber macht.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle134" region="bottom" begin="00:09:02.340" end="00:09:04.620" style="textCenter">
+                <tt:span style="textYellow">Aber Staubsaugen</tt:span>
+                <tt:br/>
+                <tt:span style="textYellow">muss man ja trotzdem noch</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle135" region="bottom" begin="00:09:04.860" end="00:09:06.820" style="textCenter">
+                <tt:span style="textYellow">mit dem normalen Staubsauger.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle136" region="bottom" begin="00:09:08.500" end="00:09:13.240" style="textCenter">
+                <tt:span style="textBlue">Schade eigentlich.</tt:span>
+            </tt:p>
+        </tt:div>
+    </tt:body>
+</tt:tt>

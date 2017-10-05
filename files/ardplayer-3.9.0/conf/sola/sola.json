@@ -1,0 +1,14 @@
+{
+    "beacon": "http://ma140-r.analytics.edgesuite.net/config/beacon-4646.xml",
+    "csma": "http://79423.analytics.edgesuite.net/csma/plugin/csma.swf",
+    "jslib": "http://79423.analytics.edgesuite.net/html5/akamaihtml5-min.js",
+    "metadata": {
+        "viewerId": "",
+        "playerId": "ardplayer-v3.6.1",
+        "pageUrl": "lra.ard.de/ardplayer/abnahme/index.php",
+        "title": "Testseite ARD-Player",
+        "subCategory": "Tests",
+        "show": "Die Sendung mit dem Klaus",
+        "category": "Player-Kanal"
+    }
+}

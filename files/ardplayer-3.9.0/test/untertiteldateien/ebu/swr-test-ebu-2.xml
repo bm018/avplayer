@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt:tt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ttp="http://www.w3.org/ns/ttml#parameter"
+       xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:tt="http://www.w3.org/ns/ttml"
+       xmlns:ebuttm="urn:ebu:tt:metadata" ttp:timeBase="media" xml:lang="de" ttp:cellResolution="50 30">
+    <tt:head>
+        <tt:metadata>
+            <ebuttm:documentMetadata>
+                <ebuttm:documentEbuttVersion>v1.0</ebuttm:documentEbuttVersion>
+            </ebuttm:documentMetadata>
+        </tt:metadata>
+        <tt:styling>
+            <tt:style xml:id="defaultStyle" tts:fontFamily="Verdana, Arial" tts:fontSize="100%"
+                      tts:lineHeight="normal"/>
+            <tt:style xml:id="textRed" tts:color="#ff0000" tts:backgroundColor="#000000c2" tts:fontSize="160%"/>
+            <tt:style xml:id="textGreen" tts:color="#00ff00" tts:backgroundColor="#000000c2" tts:fontSize="160%"/>
+            <tt:style xml:id="textYellow" tts:color="#ffff00" tts:backgroundColor="#000000c2" tts:fontSize="160%"/>
+            <tt:style xml:id="textBlue" tts:color="#0000ff" tts:backgroundColor="#000000c2" tts:fontSize="160%"/>
+            <tt:style xml:id="textMagenta" tts:color="#ff00ff" tts:backgroundColor="#000000c2" tts:fontSize="160%"/>
+            <tt:style xml:id="textCyan" tts:color="#00ffff" tts:backgroundColor="#000000c2" tts:fontSize="160%"/>
+            <tt:style xml:id="textWhite" tts:color="#ffffff" tts:backgroundColor="#000000c2" tts:fontSize="160%"/>
+            <tt:style xml:id="textBlack" tts:color="#000000" tts:backgroundColor="#000000c2" tts:fontSize="160%"/>
+            <tt:style xml:id="textCenter" tts:textAlign="center"/>
+        </tt:styling>
+        <tt:layout>
+            <tt:region xml:id="bottom" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="after"/>
+        </tt:layout>
+    </tt:head>
+    <tt:body>
+        <tt:div style="defaultStyle">
+            <tt:p xml:id="subtitle1" region="bottom" begin="00:00:03.500" end="00:00:07.820" style="textCenter">
+                <tt:span style="textBlue">Das Rotweinglas steht auf dem</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">schönen, unbehandelten Holztisch.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle2" region="bottom" begin="00:00:08.060" end="00:00:10.940" style="textCenter">
+                <tt:span style="textBlue">Der Tisch</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">auf dem cremefarbenen neuen Teppich,</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle3" region="bottom" begin="00:00:11.180" end="00:00:13.460" style="textCenter">
+                <tt:span style="textBlue">auf dem auch das helle Sofa steht.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle4" region="bottom" begin="00:00:13.700" end="00:00:16.540" style="textCenter">
+                <tt:span style="textBlue">Dann sehe ich</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">das Rotweinglas fallen.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle5" region="bottom" begin="00:00:16.780" end="00:00:19.460" style="textCenter">
+                <tt:span style="textBlue">Leider genau so passiert,</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">und leider vor dieser Sendung,</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle6" region="bottom" begin="00:00:19.700" end="00:00:21.940" style="textCenter">
+                <tt:span style="textBlue">sonst hätte ich</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">besser gewusst, was zu tun ist,</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle7" region="bottom" begin="00:00:22.180" end="00:00:25.300" style="textCenter">
+                <tt:span style="textBlue">gegen solche</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">und andere Alltagsunfall-Flecken.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle8" region="bottom" begin="00:00:27.380" end="00:00:31.980" style="textCenter">
+                <tt:span style="textBlue">Wenn Rotwein,</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">Wachs, Schokolade im Spiel sind,</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle9" region="bottom" begin="00:00:32.220" end="00:00:39.020" style="textCenter">
+                <tt:span style="textBlue">wird aus einem Missgeschick</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">schnell eine Wohnzimmer-Katastrophe.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle10" region="bottom" begin="00:00:41.700" end="00:00:46.140" style="textCenter">
+                <tt:span style="textBlue">Aber diese Frau kann helfen:</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">SWR-Haushaltsexpertin Silvia Frank</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle11" region="bottom" begin="00:00:46.380" end="00:00:49.580" style="textCenter">
+                <tt:span style="textBlue">aus Karlsruhe</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">und ihre "Fleckenapotheke".</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle12" region="bottom" begin="00:00:49.820" end="00:00:53.020" style="textCenter">
+                <tt:span style="textYellow">Mit dem richtigen Mittel</tt:span>
+                <tt:br/>
+                <tt:span style="textYellow">und der richtigen Technik</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle13" region="bottom" begin="00:00:53.260" end="00:00:55.700" style="textCenter">
+                <tt:span style="textYellow">kriege ich fast jeden Fleck weg.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle14" region="bottom" begin="00:00:56.820" end="00:00:59.820" style="textCenter">
+                <tt:span style="textBlue">Die erste Herausforderung: Rotwein.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle15" region="bottom" begin="00:01:03.940" end="00:01:09.380" style="textCenter">
+                <tt:span style="textBlue">Ein launiger Abend</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">und seine Folgen.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle16" region="bottom" begin="00:01:26.820" end="00:01:29.620" style="textCenter">
+                <tt:span style="textBlue">Rotweinfleck auf dem Teppich:</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">Was macht man da?</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle17" region="bottom" begin="00:01:29.860" end="00:01:32.380" style="textCenter">
+                <tt:span style="textYellow">Den würde ich ausschneiden.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle18" region="bottom" begin="00:01:34.100" end="00:01:35.380" style="textCenter">
+                <tt:span style="textCyan">Gallseife.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle19" region="bottom" begin="00:01:35.620" end="00:01:36.860" style="textCenter">
+                <tt:span style="textGreen">Backpulver, glaube ich.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle20" region="bottom" begin="00:01:37.100" end="00:01:39.980" style="textCenter">
+                <tt:span style="textYellow">Scharf angucken, dann geht er weg.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle21" region="bottom" begin="00:01:40.220" end="00:01:42.540" style="textCenter">
+                <tt:span style="textCyan">Ich würde Salz drauf tun,</tt:span>
+                <tt:br/>
+                <tt:span style="textCyan">aber schnellstmöglich,</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle22" region="bottom" begin="00:01:42.780" end="00:01:43.780" style="textCenter">
+                <tt:span style="textCyan">bevor es eintrocknet.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle23" region="bottom" begin="00:01:44.020" end="00:01:45.140" style="textCenter">
+                <tt:span style="textBlue">Das Problem beim Rotwein:</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle24" region="bottom" begin="00:01:45.380" end="00:01:48.060" style="textCenter">
+                <tt:span style="textBlue">Darin stecken</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">viele Gerb- und Farbstoffe,</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle25" region="bottom" begin="00:01:48.300" end="00:01:50.180" style="textCenter">
+                <tt:span style="textBlue">die sich festsetzen im Teppich.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle26" region="bottom" begin="00:01:50.420" end="00:01:52.860" style="textCenter">
+                <tt:span style="textBlue">Silvia Frank rät:</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">ganz schnell aufsaugen.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle27" region="bottom" begin="00:01:53.100" end="00:01:59.900" style="textCenter">
+                <tt:span style="textYellow">Dann kommt mein Trick:</tt:span>
+                <tt:br/>
+                <tt:span style="textYellow">Ich nehme ein nasses Baumwolltuch,</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle28" region="bottom" begin="00:02:00.140" end="00:02:04.900" style="textCenter">
+                <tt:span style="textYellow">mit</tt:span>
+                <tt:br/>
+                <tt:span style="textYellow">destilliertem Wasser angefeuchtet.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle29" region="bottom" begin="00:02:05.140" end="00:02:16.500" style="textCenter">
+                <tt:span style="textYellow">Das lege ich drauf</tt:span>
+                <tt:br/>
+                <tt:span style="textYellow">und warte einfach.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle30" region="bottom" begin="00:02:16.740" end="00:02:19.420" style="textCenter">
+                <tt:span style="textBlue">Aha, warum destilliertes Wasser?</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle31" region="bottom" begin="00:02:19.660" end="00:02:23.820" style="textCenter">
+                <tt:span style="textYellow">Destilliertes Wasser</tt:span>
+                <tt:br/>
+                <tt:span style="textYellow">ist praktisch ein leeres Wasser.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle32" region="bottom" begin="00:02:24.060" end="00:02:27.460" style="textCenter">
+                <tt:span style="textYellow">Das ist richtig begierig,</tt:span>
+                <tt:br/>
+                <tt:span style="textYellow">den Schmutz aufzusaugen</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle33" region="bottom" begin="00:02:27.700" end="00:02:32.340" style="textCenter">
+                <tt:span style="textYellow">und beim Teppichboden wird</tt:span>
+                <tt:br/>
+                <tt:span style="textYellow">durch diese saugfähige Baumwolle</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle34" region="bottom" begin="00:02:32.580" end="00:02:35.300" style="textCenter">
+                <tt:span style="textYellow">der Fleck "hochgesaugt".</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle35" region="bottom" begin="00:02:35.540" end="00:02:38.780" style="textCenter">
+                <tt:span style="textBlue">Dann nur noch</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">das feuchte Handtuch über Nacht</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle36" region="bottom" begin="00:02:39.020" end="00:02:40.820" style="textCenter">
+                <tt:span style="textBlue">auf dem Fleck trocknen lassen.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle37" region="bottom" begin="00:02:41.060" end="00:02:45.100" style="textCenter">
+                <tt:span style="textYellow">Am nächsten Morgen</tt:span>
+                <tt:br/>
+                <tt:span style="textYellow">ist der Fleck weg.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle38" region="bottom" begin="00:02:45.460" end="00:02:47.820" style="textCenter">
+                <tt:span style="textBlue">Und tatsächlich!</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle39" region="bottom" begin="00:02:48.580" end="00:02:52.940" style="textCenter">
+                <tt:span style="textBlue">Ein anderes,</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">fieses Teppich-Problem: Kaugummi.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle40" region="bottom" begin="00:02:53.180" end="00:02:56.860" style="textCenter">
+                <tt:span style="textBlue">Auch hier kennt</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">Silvia Frank einen Trick.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle41" region="bottom" begin="00:02:57.100" end="00:03:01.340" style="textCenter">
+                <tt:span style="textYellow">Ich kühl den richtig</tt:span>
+                <tt:br/>
+                <tt:span style="textYellow">mit so einem Eis-Akku runter,</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle42" region="bottom" begin="00:03:01.580" end="00:03:06.100" style="textCenter">
+                <tt:span style="textYellow">dann wird die Masse, die ja</tt:span>
+                <tt:br/>
+                <tt:span style="textYellow">elastisch ist, hart und bröckelig.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle43" region="bottom" begin="00:03:06.340" end="00:03:09.980" style="textCenter">
+                <tt:span style="textBlue">So lässt sich der Kaugummi</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">viel leichter ablösen.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle44" region="bottom" begin="00:03:11.140" end="00:03:14.900" style="textCenter">
+                <tt:span style="textBlue">Der Rest ist Geduldsarbeit.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle45" region="bottom" begin="00:03:19.260" end="00:03:22.420" style="textCenter">
+                <tt:span style="textBlue">Unser nächstes Malheur:</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">Wachsflecken.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle46" region="bottom" begin="00:03:33.220" end="00:03:37.100" style="textCenter">
+                <tt:span style="textBlue">Hier auf dem Tisch</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">haben wir Kerzen angehabt,</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle47" region="bottom" begin="00:03:37.340" end="00:03:39.780" style="textCenter">
+                <tt:span style="textBlue">dann ist Wachs</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">runtergetropft auf den Holztisch.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle48" region="bottom" begin="00:03:40.020" end="00:03:41.340" style="textCenter">
+                <tt:span style="textBlue">Wie kriegen Sie sowas weg?</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle49" region="bottom" begin="00:03:41.580" end="00:03:43.740" style="textCenter">
+                <tt:span style="textCyan">Ich weiß, dass man</tt:span>
+                <tt:br/>
+                <tt:span style="textCyan">so was raus bügeln könnte,</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle50" region="bottom" begin="00:03:43.980" end="00:03:45.340" style="textCenter">
+                <tt:span style="textCyan">wenn es z.B. auf Textilien ist.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle51" region="bottom" begin="00:03:45.580" end="00:03:47.580" style="textCenter">
+                <tt:span style="textGreen">Naja, mit dem Bügeleisen</tt:span>
+                <tt:br/>
+                <tt:span style="textGreen">kann man da nicht ran.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle52" region="bottom" begin="00:03:47.820" end="00:03:49.140" style="textCenter">
+                <tt:span style="textYellow">Erstmal wegkratzen vielleicht.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle53" region="bottom" begin="00:03:49.380" end="00:03:52.220" style="textCenter">
+                <tt:span style="textCyan">Ich würde heißes Wasser nehmen</tt:span>
+                <tt:br/>
+                <tt:span style="textCyan">und würde es damit lösen.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle54" region="bottom" begin="00:03:52.460" end="00:03:54.060" style="textCenter">
+                <tt:span style="textBlue">Gar nicht mal schlecht!</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle55" region="bottom" begin="00:03:54.300" end="00:03:58.500" style="textCenter">
+                <tt:span style="textBlue">Aber Silvia Frank</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">hat noch einen einfacheren Trick.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle56" region="bottom" begin="00:03:58.740" end="00:04:01.500" style="textCenter">
+                <tt:span style="textYellow">Wachs wird ja so</tt:span>
+                <tt:br/>
+                <tt:span style="textYellow">ab 70 Grad wieder flüssig.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle57" region="bottom" begin="00:04:01.740" end="00:04:04.700" style="textCenter">
+                <tt:span style="textYellow">Das kann ich hier</tt:span>
+                <tt:br/>
+                <tt:span style="textYellow">ganz elegant machen.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle58" region="bottom" begin="00:04:05.900" end="00:04:08.140" style="textCenter">
+                <tt:span style="textYellow">Aber nur waagrecht föhnen.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle59" region="bottom" begin="00:04:08.380" end="00:04:12.940" style="textCenter">
+                <tt:span style="textBlue">Denn sonst könnte das Wachs</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">noch tiefer in die Poren einziehen.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle60" region="bottom" begin="00:04:13.220" end="00:04:14.340" style="textCenter">
+                <tt:span style="textBlue">Fertig!</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle61" region="bottom" begin="00:04:16.300" end="00:04:19.740" style="textCenter">
+                <tt:span style="textBlue">Unsere letzte Herausforderung:</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">Schokolade.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle62" region="bottom" begin="00:04:25.820" end="00:04:28.900" style="textCenter">
+                <tt:span style="textBlue">Eine leckere, süße Sünde,</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle63" region="bottom" begin="00:04:29.140" end="00:04:32.860" style="textCenter">
+                <tt:span style="textBlue">die es aber auch</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">auf der Couch in sich hat.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle64" region="bottom" begin="00:04:43.940" end="00:04:47.140" style="textCenter">
+                <tt:span style="textBlue">Wie würdest du hier</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">einen Schokofleck wegmachen?</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle65" region="bottom" begin="00:04:49.580" end="00:04:51.140" style="textCenter">
+                <tt:span style="textYellow">Mit Spülmittel oder so.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle66" region="bottom" begin="00:04:51.380" end="00:04:52.780" style="textCenter">
+                <tt:span style="textCyan">Mit Sprudel raus waschen.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle67" region="bottom" begin="00:04:53.020" end="00:04:55.820" style="textCenter">
+                <tt:span style="textGreen">Einen feuchten Lappen</tt:span>
+                <tt:br/>
+                <tt:span style="textGreen">erstmal nehmen und feucht probieren.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle68" region="bottom" begin="00:04:56.060" end="00:04:58.540" style="textCenter">
+                <tt:span style="textYellow">Da würde ich die Sofadecke</tt:span>
+                <tt:br/>
+                <tt:span style="textYellow">in den Mund nehmen</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle69" region="bottom" begin="00:04:58.780" end="00:05:00.940" style="textCenter">
+                <tt:span style="textYellow">und versuchen,</tt:span>
+                <tt:br/>
+                <tt:span style="textYellow">die Schokolade auszulutschen.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle70" region="bottom" begin="00:05:01.180" end="00:05:02.980" style="textCenter">
+                <tt:span style="textYellow">Weil da hab</tt:span>
+                <tt:br/>
+                <tt:span style="textYellow">ich wenigstens was davon.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle71" region="bottom" begin="00:05:03.220" end="00:05:05.740" style="textCenter">
+                <tt:span style="textBlue">Silvia Frank hat einen</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">besseren Tipp für Schokoflecken.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle72" region="bottom" begin="00:05:05.980" end="00:05:09.740" style="textCenter">
+                <tt:span style="textBlue">Das Grobe entfernt sie erstmal</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">wieder mit der Kühlmethode.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle73" region="bottom" begin="00:05:09.980" end="00:05:16.060" style="textCenter">
+                <tt:span style="textYellow">Nun kommt der eigentliche</tt:span>
+                <tt:br/>
+                <tt:span style="textYellow">Fleckenentferner, eine Gallseife.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle74" region="bottom" begin="00:05:16.300" end="00:05:22.860" style="textCenter">
+                <tt:span style="textYellow">Gallseife kann Fette gut</tt:span>
+                <tt:br/>
+                <tt:span style="textYellow">entfernen und kann auch Pigmente,</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle75" region="bottom" begin="00:05:23.100" end="00:05:27.580" style="textCenter">
+                <tt:span style="textYellow">also diese Kakao-Farbstoffe</tt:span>
+                <tt:br/>
+                <tt:span style="textYellow">gut entfernen.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle76" region="bottom" begin="00:05:27.820" end="00:05:29.940" style="textCenter">
+                <tt:span style="textBlue">Wichtig: Die Gallseife</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle77" region="bottom" begin="00:05:30.180" end="00:05:32.820" style="textCenter">
+                <tt:span style="textBlue">muss hinterher wieder</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">vollständig entfernt werden,</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle78" region="bottom" begin="00:05:33.060" end="00:05:35.180" style="textCenter">
+                <tt:span style="textBlue">sonst zieht sie neue Flecken an.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle79" region="bottom" begin="00:05:37.660" end="00:05:41.260" style="textCenter">
+                <tt:span style="textBlue">Am besten geht das mit</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">viel Wasser und einem Alles-Sauger.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle80" region="bottom" begin="00:05:41.500" end="00:05:44.460" style="textCenter">
+                <tt:span style="textYellow">Sieht gut aus,</tt:span>
+                <tt:br/>
+                <tt:span style="textYellow">wenn es ganz trocken ist.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle81" region="bottom" begin="00:05:46.020" end="00:05:51.700" style="textCenter">
+                <tt:span style="textBlue">Egal ob Rotwein,</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">Kaugummi oder Wachs:</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle82" region="bottom" begin="00:05:51.940" end="00:05:56.420" style="textCenter">
+                <tt:span style="textBlue">Mit den Tipps von Silvia Frank</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">sind Flecken keine Katastrophe mehr.</tt:span>
+            </tt:p>
+            <tt:p xml:id="subtitle83" region="bottom" begin="00:05:57.620" end="00:06:01.380" style="textCenter">
+                <tt:span style="textBlue">Silvia Frank hat ihr Pulver</tt:span>
+                <tt:br/>
+                <tt:span style="textBlue">noch längst nicht verschossen:</tt:span>
+            </tt:p>
+        </tt:div>
+    </tt:body>
+</tt:tt>

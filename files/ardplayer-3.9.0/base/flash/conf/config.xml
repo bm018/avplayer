@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+
+    <plugins>
+        <plugin id="akamaiPlugin">
+            <![CDATA[#baseUrl#base/flash/osmf/AkamaiAdvancedStreamingPlugin-3.9.swf]]></plugin>
+        <plugin id="limelightPlugin">
+            <![CDATA[#baseUrl#base/flash/osmf/LimelightStreamingPlugin.swf]]></plugin>
+        <plugin id="icecastPlugin"><![CDATA[#baseUrl#base/flash/osmf/IcecastPlugin.swf]]></plugin>
+        <plugin id="smilPlugin"><![CDATA[#baseUrl#base/flash/osmf/SMILPlugin.swf]]></plugin>
+        <plugin id="convivaStarterPlugin"><![CDATA[#baseUrl#base/flash/osmf/ConvivaStarterPlugin.swf]]></plugin>
+        <plugin id="flashlsPlugin"><![CDATA[#baseUrl#base/flash/osmf/HLSDynamicPlugin.swf]]></plugin>
+    </plugins>
+
+    <networks>
+
+        <cdn id="default">
+            <plugin ref="smilPlugin"/>
+        </cdn>
+
+        <cdn id="akamai">
+            <plugin ref="akamaiPlugin"/>
+
+            <metadata key="http://www.akamai.com/advancedstreamingplugin/1.0">
+                <metadata key="enableNetSessionDiscovery" value="false"/>
+                <metadata key="netSessionMode" value="never"/>
+            </metadata>
+        </cdn>
+
+        <cdn id="flashls">
+            <plugin ref="flashlsPlugin" />
+
+            <metadata key="debug" value="false" includeIn="resource" />
+            <metadata key="debug2" value="false" includeIn="resource"/>
+            <metadata key="minbufferlength" value="-1" includeIn="resource"/>
+            <metadata key="lowbufferlength" value="2" includeIn="resource"/>
+            <metadata key="maxbufferlength" value="60" includeIn="resource"/>
+            <metadata key="startfromlowestlevel" value="false" includeIn="resource"/>
+            <metadata key="seekfromlowestlevel" value="false" includeIn="resource"/>
+            <metadata key="live_flushurlcache" value="false" includeIn="resource"/>
+            <metadata key="seekmode" value="ACCURATE" includeIn="resource"/>
+            <metadata key="capleveltostage" value="false" includeIn="resource"/>
+            <metadata key="maxlevelcappingmode" value="downscale" includeIn="resource"/>
+        </cdn>
+
+        <cdn id="limelight">
+            <alias name="llnwd"/>
+            <alias name="llnw"/>
+
+            <plugin ref="smilPlugin"/>
+            <plugin ref="limelightPlugin"/>
+
+            <metadata key="com.limelight.video" includeIn="live">
+                <metadata key="llnwStreamType" value="LiveStream"/>
+            </metadata>
+
+            <metadata key="com.limelight.video" includeIn="vod">
+                <metadata key="llnwStreamType" value="Streaming"/>
+            </metadata>
+        </cdn>
+
+        <cdn id="icecast">
+            <plugin ref="icecastPlugin"/>
+
+            <metadata key="com.netTrek.gundl.cdn.Icecast" value="live"
+                      includeIn="all"/>
+        </cdn>
+
+        <cdn id="conviva">
+            <plugin ref="convivaStarterPlugin"/>
+            <plugin ref="akamaiPlugin"/>
+
+            <metadata key="com.netTrek.gundl.qos.ConvivaStarterPlugin"
+                      includeIn="resource">
+                <!--				<metadata key="config-path" value="#baseUrl#plugins/flash/conf/conviva-config.xml" -->
+                <!--					/> -->
+                <metadata key="config-path"
+                          value="http://metafiles.gl-systemhaus.de/wdr/euro2012/conviva-config.xml"/>
+            </metadata>
+        </cdn>
+    </networks>
+
+</config>

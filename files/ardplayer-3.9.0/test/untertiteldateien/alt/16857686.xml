@@ -1,0 +1,817 @@
+<tt xml:lang="de" xmlns="http://www.w3.org/2006/10/ttaf1" xmlns:tts="http://www.w3.org/2006/10/ttaf1#styling" xmlns:ttp="http://www.w3.org/2006/10/ttaf1parameter" ttp:frameRate="25">
+	<head>
+		<metadata xmlns:ttm="http://www.w3.org/2006/10/ttaf1#metadata">
+			<ttm:title></ttm:title>
+		</metadata>
+		<styling>
+			<style id="s1" tts:fontFamily="Arial" tts:fontSize="28px" />
+			<style id="s2" tts:backgroundColor="white" tts:fontFamily="Arial" tts:fontSize="28px" />
+			<style id="s3" tts:color="yellow" tts:fontFamily="Arial" tts:fontSize="28px" />
+			<style id="s4" tts:color="aqua" tts:fontFamily="Arial" tts:fontSize="28px" />
+			<style id="s5" tts:color="fuchsia" tts:fontFamily="Arial" tts:fontSize="28px" />
+			<style id="s6" tts:color="lime" tts:fontFamily="Arial" tts:fontSize="28px" />
+			<style id="s7" tts:backgroundColor="white" tts:color="blue" tts:fontFamily="Arial" tts:fontSize="28px" />
+			<style id="s8" tts:color="blue" tts:fontFamily="Arial" tts:fontSize="28px" />
+		</styling>
+		<!--layout>
+			<region id="subtitleArea" style="s1" tts:origin="56px;32px" tts:extent="608px;512px" tts:textAlign="after" />
+		</layout-->
+	</head>
+	<body style="s1" >
+		<div xml:lang="de">
+			<p id="subtitle1" begin="10:00:00.720" end="10:00:03.640" tts:textAlign="center" style="s2"><span tts:color="blue">vt vt vt </span><span tts:backgroundColor="blue">UNTERTITEL </span><span tts:color="blue">vt vt vt</span></p>
+			<p id="subtitle2" begin="10:00:04.840" end="10:00:10.080" tts:textAlign="center" style="s3">Commissario Guido Brunetti</p>
+			<p id="subtitle3" begin="10:00:16.920" end="10:00:19.920" tts:textAlign="center" style="s4">Paola, Brunettis Frau</p>
+			<p id="subtitle4" begin="10:00:21.440" end="10:00:25.880" tts:textAlign="center" style="s5">Patta, Brunettis Chef<br /><span tts:color="lime">Vianello, Brunettis Mitarbeiter</span></p>
+			<p id="subtitle5" begin="10:00:26.200" end="10:00:30.480" tts:textAlign="center" style="s1">Elettra Zorzi, Sekret&#x00e4;rin</p>
+			<p id="subtitle6" begin="10:01:45.000" end="10:01:50.200" tts:textAlign="left" style="s6">Meine Aufzeichnungen zur Geschichte<br />des Verbrechens in Venedig.</p>
+			<p id="subtitle7" begin="10:01:50.560" end="10:01:54.280" tts:textAlign="center" style="s6">Wir fangen mit einer<br />kleinen Ausstellung an:</p>
+			<p id="subtitle8" begin="10:01:54.600" end="10:01:57.600" tts:textAlign="left" style="s6">Tatwaffen, Beweisst&#x00fc;cke, Fotos ...</p>
+			<p id="subtitle9" begin="10:01:57.920" end="10:02:03.440" tts:textAlign="left" style="s6">Irgendwann wird ein Museum daraus.<br /><span tts:color="yellow">Interessiert das die Leute denn ?</span></p>
+			<p id="subtitle10" begin="10:02:03.720" end="10:02:08.920" tts:textAlign="left" style="s6">Klar. In London gibt es Touren zu<br />den Tatorten von Jack the Ripper.</p>
+			<p id="subtitle11" begin="10:02:09.200" end="10:02:12.680" tts:textAlign="center" style="s6">Verbrechen haben die<br />Menschen immer fasziniert.</p>
+			<p id="subtitle12" begin="10:02:13.280" end="10:02:20.960" tts:textAlign="center" style="s3">Was sagt der Chef zu Ihren Pl&#x00e4;nen ?<br /><span tts:color="lime">Er wei&#x00df; noch nichts davon.</span></p>
+			<p id="subtitle13" begin="10:02:23.280" end="10:02:27.680" tts:textAlign="center" style="s6">Gegr&#x00fc;ndet 1852 von<br />Alessandro Loredan.</p>
+			<p id="subtitle14" begin="10:02:27.960" end="10:02:31.080" tts:textAlign="center" style="s6">War der nicht<br />General unter Garibaldi ?</p>
+			<p id="subtitle15" begin="10:02:31.400" end="10:02:35.760" tts:textAlign="center" style="s1"><span tts:color="yellow">Das d&#x00fc;rfen Sie mich nicht fragen.<br /></span>Commissario Brunetti ?</p>
+			<p id="subtitle16" begin="10:02:38.120" end="10:02:42.200" tts:textAlign="center" style="s1">Sie werden erwartet.<br />Bitte folgen Sie mir.</p>
+			<p id="subtitle17" begin="10:02:55.320" end="10:03:00.440" tts:textAlign="center" style="s6">Alle sind fast noch Kinder.<br /><span tts:color="yellow">Das ist der Sinn der Sache.</span></p>
+			<p id="subtitle18" begin="10:03:00.720" end="10:03:03.720" tts:textAlign="left" style="s3">In dem Alter sind sie noch formbar.</p>
+			<p id="subtitle19" begin="10:03:05.320" end="10:03:10.760" tts:textAlign="center" style="s1"><span tts:color="yellow">Wie viele Sch&#x00fc;ler gibt es hier ?<br /></span>Man sagt hier Kadetten.</p>
+			<p id="subtitle20" begin="10:03:11.080" end="10:03:16.440" tts:textAlign="center" style="s1"><span tts:color="yellow">Die Akademie soll sehr beliebt sein.<br /></span>Die Aufnahmebedingungen sind streng.</p>
+			<p id="subtitle21" begin="10:03:16.760" end="10:03:20.040" tts:textAlign="center" style="s1">Es gibt Wartelisten.<br /><span tts:color="yellow">Und Geld spielt gar keine Rolle.</span></p>
+			<p id="subtitle22" begin="10:03:20.640" end="10:03:26.560" tts:textAlign="center" style="s1">Wir legen Wert auf Tradition.<br />Die kann man nicht kaufen.</p>
+			<p id="subtitle23" begin="10:03:28.320" end="10:03:32.680" tts:textAlign="center" style="s1">Kadett Filippi meldet den<br />Besuch von zwei Zivilisten.</p>
+			<p id="subtitle24" begin="10:03:32.960" end="10:03:34.960" tts:textAlign="center" style="s1">Danke, Kadett. R&#x00fc;hren !</p>
+			<p id="subtitle25" begin="10:03:35.280" end="10:03:39.240" tts:textAlign="left" style="s1">Commandante Toscano. Ich<br />leite die San Martino-Akademie.</p>
+			<p id="subtitle26" begin="10:03:39.560" end="10:03:44.200" tts:textAlign="center" style="s1"><span tts:color="yellow">Commissario Brunetti, Vianello.<br /></span>Wegtreten, Kadett !</p>
+			<p id="subtitle27" begin="10:03:44.760" end="10:03:48.000" tts:textAlign="center" style="s1">Bitte ! Gehen wir in mein B&#x00fc;ro.</p>
+			<p id="subtitle28" begin="10:03:48.760" end="10:03:52.240" tts:textAlign="left" style="s3">Wir m&#x00f6;chten erst den Toten sehen.</p>
+			<p id="subtitle29" begin="10:03:52.960" end="10:03:57.280" tts:textAlign="right" style="s1">Ja... Nat&#x00fc;rlich.</p>
+			<p id="subtitle30" begin="10:04:03.480" end="10:04:09.200" tts:textAlign="left" style="s1">Sehr bedauerlich. Das ist der erste<br />Selbstmord, seit ich hier Leiter bin.</p>
+			<p id="subtitle31" begin="10:04:09.520" end="10:04:13.880" tts:textAlign="center" style="s1"><span tts:color="yellow">Fanden Sie den Jungen ?<br /></span>Nein. Aber man rief mich sofort.</p>
+			<p id="subtitle32" begin="10:04:14.200" end="10:04:16.120" tts:textAlign="center" style="s1"><span tts:color="yellow">Wann ?<br /></span>Gegen 6 Uhr.</p>
+			<p id="subtitle33" begin="10:04:16.760" end="10:04:20.960" tts:textAlign="left" style="s6">Bei der Polizei ging der<br />Anruf erst gegen 6.30 Uhr ein.</p>
+			<p id="subtitle34" begin="10:04:21.360" end="10:04:28.280" tts:textAlign="right" style="s3">Wieso diese Verz&#x00f6;gerung bei<br />einem ungekl&#x00e4;rten Todesfall ?</p>
+			<p id="subtitle35" begin="10:04:28.600" end="10:04:31.560" tts:textAlign="center" style="s1">Was meinen Sie mit &quot;ungekl&#x00e4;rt&quot; ?</p>
+			<p id="subtitle36" begin="10:04:31.880" end="10:04:35.840" tts:textAlign="left" style="s6">Jeder Todesfall ist ungekl&#x00e4;rt,<br />bis die Todesursache feststeht.</p>
+			<p id="subtitle37" begin="10:04:36.280" end="10:04:39.280" tts:textAlign="center" style="s1">Der Kadett hat sich erh&#x00e4;ngt !</p>
+			<p id="subtitle38" begin="10:04:39.560" end="10:04:43.360" tts:textAlign="center" style="s1"><span tts:color="yellow">Hat er auch einen Namen ?<br /></span>Kadett Ernesto Moro.</p>
+			<p id="subtitle39" begin="10:04:43.680" end="10:04:47.560" tts:textAlign="right" style="s3">Ist er mit dem Politiker<br />Fernando Moro verwandt ?</p>
+			<p id="subtitle40" begin="10:04:48.840" end="10:04:51.840" tts:textAlign="center" style="s1">Er ist sein Sohn.</p>
+			<p id="subtitle41" begin="10:04:58.000" end="10:05:01.000" tts:textAlign="right" style="s3">Also warum die Verz&#x00f6;gerung ?</p>
+			<p id="subtitle42" begin="10:05:01.320" end="10:05:04.840" tts:textAlign="center" style="s1">Die Kadetten dachten,<br />ich rufe die Polizei.</p>
+			<p id="subtitle43" begin="10:05:05.160" end="10:05:11.000" tts:textAlign="left" style="s1">Ich dachte, sie h&#x00e4;tten&apos;s schon getan.<br /><span tts:color="yellow">Danach will ich Moros Zimmer sehen.</span></p>
+			<p id="subtitle44" begin="10:05:11.280" end="10:05:14.280" tts:textAlign="center" style="s1">Bei uns hei&#x00df;t es &quot;Stube&quot;.</p>
+			<p id="subtitle45" begin="10:05:24.400" end="10:05:26.400" tts:textAlign="center" style="s1">Ach, Guido !</p>
+			<p id="subtitle46" begin="10:05:28.320" end="10:05:32.080" tts:textAlign="center" style="s1">Er ist viel zu jung, um<br />sein Leben wegzuwerfen.</p>
+			<p id="subtitle47" begin="10:05:32.600" end="10:05:38.560" tts:textAlign="left" style="s1"><span tts:color="yellow">Hat jemand nachgeholfen ?<br /></span>Da m&#x00fc;ssen wir die Obduktion abwarten.</p>
+			<p id="subtitle48" begin="10:05:44.200" end="10:05:47.200" tts:textAlign="center" style="s3">Was ist das ?</p>
+			<p id="subtitle49" begin="10:05:47.920" end="10:05:52.520" tts:textAlign="center" style="s1">Spuren von seinen Schuhen.<br /><span tts:color="yellow">Ein Kampf ? Hat er sich gewehrt ?</span></p>
+			<p id="subtitle50" begin="10:05:52.880" end="10:05:58.600" tts:textAlign="left" style="s1">Nicht unbedingt. Jeder sucht im<br />Todeskampf instinktiv nach einem Halt.</p>
+			<p id="subtitle51" begin="10:05:59.120" end="10:06:01.120" tts:textAlign="center" style="s6">Commissario !</p>
+			<p id="subtitle52" begin="10:06:06.640" end="10:06:10.600" tts:textAlign="right" style="s3">Dr. Moro, ich bin<br />Commissario Brunetti.</p>
+			<p id="subtitle53" begin="10:06:58.520" end="10:07:03.400" tts:textAlign="center" style="s3">Wir fangen mit den Sch&#x00fc;lern an.<br /><span tts:color="lime">Es hei&#x00df;t Kadetten, Commissario.</span></p>
+			<p id="subtitle54" begin="10:07:03.760" end="10:07:06.200" tts:textAlign="center" style="s1"><span tts:color="yellow">Ciao.<br /></span>Ciao.</p>
+			<p id="subtitle55" begin="10:07:16.400" end="10:07:20.400" tts:textAlign="center" style="s3">Ich bin Commissario Brunetti.</p>
+			<p id="subtitle56" begin="10:07:21.120" end="10:07:27.760" tts:textAlign="left" style="s3">Das ist mein Mitarbeiter Vianello.<br />Sie wissen, warum wir hier sind.</p>
+			<p id="subtitle57" begin="10:07:28.520" end="10:07:31.680" tts:textAlign="center" style="s1">Achtung !<br />Guten Morgen, Kadetten.</p>
+			<p id="subtitle58" begin="10:07:32.400" end="10:07:35.400" tts:textAlign="center" style="s1">Guten Morgen, Commandante !</p>
+			<p id="subtitle59" begin="10:07:37.480" end="10:07:40.840" tts:textAlign="center" style="s3">Ich werde Ihnen<br />einige Fragen stellen.</p>
+			<p id="subtitle60" begin="10:07:41.520" end="10:07:44.480" tts:textAlign="center" style="s1">R&#x00fc;hren !</p>
+			<p id="subtitle61" begin="10:07:50.080" end="10:07:53.120" tts:textAlign="center" style="s3">Wer fand Ernesto Moro ?</p>
+			<p id="subtitle62" begin="10:07:53.760" end="10:07:55.760" tts:textAlign="center" style="s3">Ja, bitte !</p>
+			<p id="subtitle63" begin="10:07:57.560" end="10:07:59.920" tts:textAlign="center" style="s1">Kadett Caprese !</p>
+			<p id="subtitle64" begin="10:08:00.200" end="10:08:03.720" tts:textAlign="center" style="s1">Kadett Belcredi, Commandante !</p>
+			<p id="subtitle65" begin="10:08:04.400" end="10:08:07.600" tts:textAlign="center" style="s3">Wer von Ihnen ist Belcredi ?</p>
+			<p id="subtitle66" begin="10:08:08.400" end="10:08:11.760" tts:textAlign="center" style="s1">Es geht ihm nicht gut.<br />Er ist auf der Stube.</p>
+			<p id="subtitle67" begin="10:08:12.240" end="10:08:14.600" tts:textAlign="center" style="s1">Danke !</p>
+			<p id="subtitle68" begin="10:08:19.120" end="10:08:22.920" tts:textAlign="center" style="s3">Notieren Sie die Namen<br />der Kadetten, Vianello.</p>
+			<p id="subtitle69" begin="10:08:23.200" end="10:08:25.400" tts:textAlign="center" style="s6">Jawohl, Commissario !</p>
+			<p id="subtitle70" begin="10:08:25.760" end="10:08:28.680" tts:textAlign="center" style="s6">Wir sahen uns schon.<br />Wie war Ihr Name ?</p>
+			<p id="subtitle71" begin="10:08:29.400" end="10:08:32.320" tts:textAlign="center" style="s1">Kadett Filippi.<br /><span tts:color="lime">Kadett Filippi ...</span></p>
+			<p id="subtitle72" begin="10:08:33.480" end="10:08:36.040" tts:textAlign="center" style="s1"><span tts:color="lime">Und Ihr Name ?<br /></span>Kadett Caprese.</p>
+			<p id="subtitle73" begin="10:08:36.920" end="10:08:39.920" tts:textAlign="center" style="s1">Achtung !</p>
+			<p id="subtitle74" begin="10:08:44.400" end="10:08:48.360" tts:textAlign="left" style="s3">Erz&#x00e4;hlen Sie mir, wie Sie ihn fanden.</p>
+			<p id="subtitle75" begin="10:08:52.240" end="10:08:56.360" tts:textAlign="center" style="s1">Ich wurde wach.<br /><span tts:color="yellow">Durch ein Ger&#x00e4;usch ?</span></p>
+			<p id="subtitle76" begin="10:08:56.760" end="10:09:00.760" tts:textAlign="right" style="s1">Nein, einfach so.<br />Ich hatte Durst.</p>
+			<p id="subtitle77" begin="10:09:02.320" end="10:09:06.200" tts:textAlign="center" style="s3">Ich m&#x00f6;chte allein mit<br />Kadett Belcredi sprechen.</p>
+			<p id="subtitle78" begin="10:09:13.680" end="10:09:16.640" tts:textAlign="center" style="s7">Er knallt die T&#x00fc;r zu.</p>
+			<p id="subtitle79" begin="10:09:19.840" end="10:09:24.760" tts:textAlign="center" style="s1">Ich ging in den Waschraum.<br /><span tts:color="yellow">Ja ?</span></p>
+			<p id="subtitle80" begin="10:09:28.800" end="10:09:32.400" tts:textAlign="center" style="s1">Da fand ich ihn.</p>
+			<p id="subtitle81" begin="10:09:33.680" end="10:09:38.720" tts:textAlign="center" style="s1">Ernesto hing in der Dusche.</p>
+			<p id="subtitle82" begin="10:09:40.720" end="10:09:45.160" tts:textAlign="center" style="s3">Sahen Sie sonst jemanden im<br />Waschraum oder auf dem Flur ?</p>
+			<p id="subtitle83" begin="10:09:45.680" end="10:09:47.680" tts:textAlign="center" style="s1">Nein.</p>
+			<p id="subtitle84" begin="10:09:48.600" end="10:09:51.600" tts:textAlign="center" style="s3">Das war sein Bett ?</p>
+			<p id="subtitle85" begin="10:09:51.960" end="10:09:53.960" tts:textAlign="center" style="s1">Ja.</p>
+			<p id="subtitle86" begin="10:09:54.320" end="10:09:57.280" tts:textAlign="center" style="s1"><span tts:color="yellow">Wo schlafen Sie ?<br /></span>Da.</p>
+			<p id="subtitle87" begin="10:09:57.520" end="10:10:00.560" tts:textAlign="center" style="s1">Und da dr&#x00fc;ben Filippi und Caprese.</p>
+			<p id="subtitle88" begin="10:10:04.680" end="10:10:09.040" tts:textAlign="left" style="s3">Sie sind alle Zimmergenossen.<br />Da kennt man sich ja.</p>
+			<p id="subtitle89" begin="10:10:09.720" end="10:10:15.200" tts:textAlign="left" style="s3">Man wei&#x00df; einiges voneinander.<br />Hatte er Sorgen ? Streit ?</p>
+			<p id="subtitle90" begin="10:10:17.000" end="10:10:24.320" tts:textAlign="center" style="s1"><span tts:color="yellow">War er ein guter Sch&#x00fc;ler ?<br /></span>Er hatte gute Noten.</p>
+			<p id="subtitle91" begin="10:10:25.040" end="10:10:29.040" tts:textAlign="center" style="s3">Glauben Sie, dass er<br />an Selbstmord dachte ?</p>
+			<p id="subtitle92" begin="10:10:31.120" end="10:10:34.920" tts:textAlign="center" style="s1">Ich soll Kadett Belcredi<br />zur Pr&#x00fc;fung bringen.</p>
+			<p id="subtitle93" begin="10:10:35.200" end="10:10:39.640" tts:textAlign="center" style="s1"><span tts:color="yellow">Ich bin bald fertig.<br /></span>Eine externe Pr&#x00fc;fungskommission.</p>
+			<p id="subtitle94" begin="10:10:39.960" end="10:10:44.920" tts:textAlign="center" style="s1">Wir wollen dem jungen Mann<br />doch nicht die Zukunft verbauen.</p>
+			<p id="subtitle95" begin="10:10:49.320" end="10:10:54.480" tts:textAlign="left" style="s1">Er wird alle Ihre Fragen beantworten.<br />Darauf haben Sie mein Wort.</p>
+			<p id="subtitle96" begin="10:11:07.800" end="10:11:13.880" tts:textAlign="center" style="s1">Was soll das mit der Pr&#x00fc;fung ?<br />Die Pr&#x00fc;fung wurde abgesagt.</p>
+			<p id="subtitle97" begin="10:11:16.080" end="10:11:20.680" tts:textAlign="center" style="s1">Was wollte der Commissario von dir ?<br />Das kannst du dir doch denken.</p>
+			<p id="subtitle98" begin="10:11:24.560" end="10:11:29.040" tts:textAlign="center" style="s1">Was hast du ihm gesagt ?<br />Nichts. Ich wei&#x00df; doch gar nichts.</p>
+			<p id="subtitle99" begin="10:11:29.320" end="10:11:34.120" tts:textAlign="left" style="s1">Was hier passiert, ist unsere Sache !<br />Klar.</p>
+			<p id="subtitle100" begin="10:11:34.440" end="10:11:41.400" tts:textAlign="left" style="s1">Unsere Angelegenheiten<br />regeln wir hier unter uns !</p>
+			<p id="subtitle101" begin="10:11:47.760" end="10:11:52.600" tts:textAlign="center" style="s6">Glauben Sie an Selbstmord ?<br /><span tts:color="yellow">Was meinen Sie, Vianello ?</span></p>
+			<p id="subtitle102" begin="10:11:52.920" end="10:11:56.920" tts:textAlign="left" style="s6">Sehr gespr&#x00e4;chig ist<br />diese arrogante Bande nicht.</p>
+			<p id="subtitle103" begin="10:11:57.240" end="10:12:01.160" tts:textAlign="left" style="s6">Vielleicht wei&#x00df; Moro,<br />was mit seinem Sohn los ist.</p>
+			<p id="subtitle104" begin="10:12:01.520" end="10:12:05.240" tts:textAlign="center" style="s3">Aber ob er&apos;s uns sagt ?<br /><span tts:color="lime">Moment, Commissario !</span></p>
+			<p id="subtitle105" begin="10:12:09.760" end="10:12:14.560" tts:textAlign="left" style="s6">Den habe ich schon !<br />Der Fall Gambetti 1934.</p>
+			<p id="subtitle106" begin="10:12:15.400" end="10:12:19.600" tts:textAlign="center" style="s3">Was ist damit ?<br /><span tts:color="lime">Ein betr&#x00fc;gerischer Bauunternehmer.</span></p>
+			<p id="subtitle107" begin="10:12:19.920" end="10:12:24.600" tts:textAlign="center" style="s6">Er verschwand 1934 pl&#x00f6;tzlich,<br />angeblich nach Argentinien.</p>
+			<p id="subtitle108" begin="10:12:25.080" end="10:12:28.960" tts:textAlign="center" style="s6">28 Jahre sp&#x00e4;ter wurde<br />seine Leiche entdeckt.</p>
+			<p id="subtitle109" begin="10:12:29.320" end="10:12:33.160" tts:textAlign="left" style="s3">Aha. Und wo ?<br /><span tts:color="lime">Unter den Steinen der Anlegestelle.</span></p>
+			<p id="subtitle110" begin="10:12:33.800" end="10:12:36.400" tts:textAlign="center" style="s6">Da, wo Sie jetzt stehen.</p>
+			<p id="subtitle111" begin="10:12:58.520" end="10:13:01.520" tts:textAlign="center" style="s1">Kippe !</p>
+			<p id="subtitle112" begin="10:13:09.240" end="10:13:12.200" tts:textAlign="center" style="s1">Feuer !</p>
+			<p id="subtitle113" begin="10:13:24.000" end="10:13:27.000" tts:textAlign="center" style="s1">Da geht er hin.</p>
+			<p id="subtitle114" begin="10:13:49.760" end="10:13:55.640" tts:textAlign="center" style="s1">Guten Morgen, Commissario.<br /><span tts:color="yellow">Guten Morgen, Signorina Elettra.</span></p>
+			<p id="subtitle115" begin="10:13:56.440" end="10:14:01.800" tts:textAlign="center" style="s1"><span tts:color="yellow">Handeln Sie jetzt mit Zitronen ?<br /></span>Ein Bekannter inszenierte &quot;Lulu&quot;.</p>
+			<p id="subtitle116" begin="10:14:02.120" end="10:14:05.880" tts:textAlign="center" style="s1">Das geh&#x00f6;rte zum B&#x00fc;hnenbild.<br /><span tts:color="yellow">Bei &quot;Lulu&quot; geht&apos;s um Zitronen ?</span></p>
+			<p id="subtitle117" begin="10:14:06.480" end="10:14:12.400" tts:textAlign="left" style="s1">Nein. Aber bei ihm spielte das St&#x00fc;ck<br />auf Sizilien. Patta fragte nach Ihnen.</p>
+			<p id="subtitle118" begin="10:14:13.080" end="10:14:15.080" tts:textAlign="center" style="s3">Danke.</p>
+			<p id="subtitle119" begin="10:14:16.000" end="10:14:18.920" tts:textAlign="center" style="s8"><span tts:backgroundColor="white">Brunetti klopft.<br /></span><span tts:color="fuchsia">Ja !</span></p>
+			<p id="subtitle120" begin="10:14:22.280" end="10:14:27.800" tts:textAlign="center" style="s5">Ach, Brunetti !<br /><span tts:color="yellow">Guten Morgen, Vice-Questore.</span></p>
+			<p id="subtitle121" begin="10:14:28.080" end="10:14:34.200" tts:textAlign="left" style="s5">Eine sehr unerfreuliche Geschichte.<br />Ausgerechnet in der Milit&#x00e4;rakademie !</p>
+			<p id="subtitle122" begin="10:14:34.760" end="10:14:39.360" tts:textAlign="left" style="s5">Eine Eliteschule !<br /><span tts:color="yellow">W&#x00e4;re Ihnen eine Sonderschule lieber ?</span></p>
+			<p id="subtitle123" begin="10:14:39.880" end="10:14:42.880" tts:textAlign="center" style="s5">Sie wissen genau, was ich meine.</p>
+			<p id="subtitle124" begin="10:14:43.200" end="10:14:47.440" tts:textAlign="center" style="s5">Sie kennen den famili&#x00e4;ren<br />Hintergrund dieses Selbstm&#x00f6;rders.</p>
+			<p id="subtitle125" begin="10:14:48.000" end="10:14:50.920" tts:textAlign="center" style="s3">Dr. Moro ist Politiker.<br /><span tts:color="fuchsia">Er war es zumindest.</span></p>
+			<p id="subtitle126" begin="10:14:51.280" end="10:14:57.240" tts:textAlign="center" style="s5">Bringen Sie die Sache m&#x00f6;glichst<br />ger&#x00e4;uschlos bald zu einem Ende.</p>
+			<p id="subtitle127" begin="10:14:57.760" end="10:15:00.720" tts:textAlign="right" style="s5">Ich verlasse mich auf Sie.</p>
+			<p id="subtitle128" begin="10:15:01.280" end="10:15:06.280" tts:textAlign="center" style="s3">Es kommt darauf an.<br /><span tts:color="fuchsia">Was soll das nun wieder hei&#x00df;en ?</span></p>
+			<p id="subtitle129" begin="10:15:06.560" end="10:15:09.720" tts:textAlign="center" style="s3">Ich bezweifle, dass<br />es Selbstmord war.</p>
+			<p id="subtitle130" begin="10:15:10.480" end="10:15:15.280" tts:textAlign="left" style="s5">Nat&#x00fc;rlich war es Selbstmord. Leider.<br />Noch etwas, Brunetti:</p>
+			<p id="subtitle131" begin="10:15:15.760" end="10:15:21.240" tts:textAlign="center" style="s5">Mailand, Livorno und Neapel haben<br />eine Kriminalstatistik erstellt.</p>
+			<p id="subtitle132" begin="10:15:21.600" end="10:15:26.120" tts:textAlign="center" style="s5">F&#x00fc;rs Tourismus-Ministerium.<br />Die Fallzahlen sind r&#x00fc;ckl&#x00e4;ufig.</p>
+			<p id="subtitle133" begin="10:15:26.520" end="10:15:28.680" tts:textAlign="left" style="s3">Da freut sich der Minister.</p>
+			<p id="subtitle134" begin="10:15:29.000" end="10:15:33.640" tts:textAlign="center" style="s5">Auch wir m&#x00fc;ssen eine Statistik<br />vorlegen. Eine g&#x00fc;nstige nat&#x00fc;rlich.</p>
+			<p id="subtitle135" begin="10:15:34.040" end="10:15:37.040" tts:textAlign="center" style="s3">Ich verstehe.<br /><span tts:color="fuchsia">Deshalb bitte ich Sie:</span></p>
+			<p id="subtitle136" begin="10:15:37.320" end="10:15:44.360" tts:textAlign="left" style="s5">Gehen Sie die angeblich unnat&#x00fc;rlichen<br />Todesf&#x00e4;lle des Jahres noch mal<br />durch.</p>
+			<p id="subtitle137" begin="10:15:44.640" end="10:15:48.640" tts:textAlign="left" style="s5">Im Sinne des Ministeriums nat&#x00fc;rlich.</p>
+			<p id="subtitle138" begin="10:15:49.400" end="10:15:53.840" tts:textAlign="center" style="s3">Ich soll die Fakten<br />ein wenig korrigieren ?</p>
+			<p id="subtitle139" begin="10:15:54.600" end="10:15:58.320" tts:textAlign="center" style="s5">Es geht mir einzig um<br />die Bewertung, Brunetti.</p>
+			<p id="subtitle140" begin="10:15:58.640" end="10:16:01.600" tts:textAlign="center" style="s5">Fakten sind Fakten.<br />Aber was sagen sie uns ?</p>
+			<p id="subtitle141" begin="10:16:02.080" end="10:16:07.200" tts:textAlign="center" style="s3">Ich verstehe, was Sie meinen.<br /><span tts:color="fuchsia">Die Sache hat absoluten Vorrang.</span></p>
+			<p id="subtitle142" begin="10:16:07.480" end="10:16:10.920" tts:textAlign="center" style="s5">Ich brauche die Zahlen<br />vor meiner Abreise.</p>
+			<p id="subtitle143" begin="10:16:11.560" end="10:16:16.520" tts:textAlign="center" style="s3">Sie verreisen ?<br /><span tts:color="fuchsia">Ich bekam mein Codewort.</span></p>
+			<p id="subtitle144" begin="10:16:17.280" end="10:16:21.000" tts:textAlign="center" style="s5">Mehr darf ich nicht sagen.<br />Vertraulichkeitsstufe 1 !</p>
+			<p id="subtitle145" begin="10:16:27.840" end="10:16:33.680" tts:textAlign="left" style="s1">Das ist ein Irrtum. Bringen Sie<br />die Akten bitte in Brunettis B&#x00fc;ro.</p>
+			<p id="subtitle146" begin="10:16:34.000" end="10:16:36.000" tts:textAlign="center" style="s3">Was ist das ?</p>
+			<p id="subtitle147" begin="10:16:36.320" end="10:16:40.560" tts:textAlign="left" style="s1">Das sind die F&#x00e4;lle, die Sie<br />f&#x00fc;r Patta frisieren sollen.</p>
+			<p id="subtitle148" begin="10:16:41.080" end="10:16:46.240" tts:textAlign="center" style="s1"><span tts:color="yellow">Das kommt nicht in Frage.<br /></span>Klar sind Sie nicht begeistert.</p>
+			<p id="subtitle149" begin="10:16:46.560" end="10:16:50.960" tts:textAlign="left" style="s1">Und die Statistik ?<br /><span tts:color="yellow">Was hat das mit meinen F&#x00e4;llen zu tun?</span></p>
+			<p id="subtitle150" begin="10:16:51.200" end="10:16:54.200" tts:textAlign="left" style="s1">Eine sehr pragmatische Einstellung.</p>
+			<p id="subtitle151" begin="10:16:54.560" end="10:16:58.000" tts:textAlign="center" style="s3">Was hat es mit Pattas<br />Codewort auf sich ?</p>
+			<p id="subtitle152" begin="10:16:58.800" end="10:17:01.760" tts:textAlign="center" style="s1">Er wurde zu einer<br />Wehr&#x00fc;bung einberufen.</p>
+			<p id="subtitle153" begin="10:17:02.280" end="10:17:06.440" tts:textAlign="center" style="s1"><span tts:color="yellow">Ach, deshalb das Buch !<br /></span>Das Who-is-who des Milit&#x00e4;rs.</p>
+			<p id="subtitle154" begin="10:17:06.760" end="10:17:12.920" tts:textAlign="center" style="s1">Er tr&#x00e4;umt von einer Karriere als<br />Reservegeneral. Ach, &#x00fc;brigens ...</p>
+			<p id="subtitle155" begin="10:17:13.600" end="10:17:21.400" tts:textAlign="left" style="s1">Das ist das Einzige, was ich in der<br />Eile &#x00fc;ber Fernando Moro herausfand.</p>
+			<p id="subtitle156" begin="10:17:22.080" end="10:17:27.040" tts:textAlign="center" style="s1">Das war vor dem Jagdunfall.<br /><span tts:color="yellow">Was f&#x00fc;r ein Unfall ?</span></p>
+			<p id="subtitle157" begin="10:17:27.360" end="10:17:32.720" tts:textAlign="left" style="s1">Signora Moro wurde angeschossen.<br />Angeblich aus Versehen.</p>
+			<p id="subtitle158" begin="10:17:44.840" end="10:17:47.880" tts:textAlign="center" style="s7">Brunetti klingelt.</p>
+			<p id="subtitle159" begin="10:17:59.360" end="10:18:02.320" tts:textAlign="center" style="s1">Der Signor Brunetti.</p>
+			<p id="subtitle160" begin="10:18:07.520" end="10:18:14.360" tts:textAlign="right" style="s3">Dr. Moro, ich bedauere,<br />Sie st&#x00f6;ren zu m&#x00fc;ssen.</p>
+			<p id="subtitle161" begin="10:18:14.640" end="10:18:18.920" tts:textAlign="right" style="s3">Aber meine Fragen k&#x00f6;nnen<br />nur Sie beantworten.</p>
+			<p id="subtitle162" begin="10:18:19.640" end="10:18:23.040" tts:textAlign="right" style="s3">Man fand keinen<br />Abschiedsbrief Ihres Sohnes.</p>
+			<p id="subtitle163" begin="10:18:23.600" end="10:18:29.000" tts:textAlign="left" style="s3">Nichts, was seinen Tod erkl&#x00e4;ren kann.</p>
+			<p id="subtitle164" begin="10:18:29.720" end="10:18:34.840" tts:textAlign="center" style="s3">Hat Ihr Sohn in letzter Zeit etwas<br />Auff&#x00e4;lliges gesagt oder getan ?</p>
+			<p id="subtitle165" begin="10:18:35.160" end="10:18:39.160" tts:textAlign="center" style="s3">Etwas, was uns einen<br />Hinweis geben k&#x00f6;nnte ?</p>
+			<p id="subtitle166" begin="10:18:44.720" end="10:18:51.680" tts:textAlign="center" style="s3">Dr. Moro, es ist schwer f&#x00fc;r Sie.<br />Aber ich muss diese Fragen stellen.</p>
+			<p id="subtitle167" begin="10:18:52.040" end="10:18:57.440" tts:textAlign="left" style="s1">Sie haben anscheinend nicht die<br />geringste Vorstellung, wie das ist.</p>
+			<p id="subtitle168" begin="10:18:57.720" end="10:19:01.520" tts:textAlign="left" style="s1">Ich habe meinen Sohn verloren.</p>
+			<p id="subtitle169" begin="10:19:02.320" end="10:19:05.480" tts:textAlign="center" style="s1">Gehen Sie bitte !</p>
+			<p id="subtitle170" begin="10:19:07.920" end="10:19:11.680" tts:textAlign="right" style="s3">Sie haben Ihren Sohn verloren.<br />Ich w&#x00fc;sste gern, warum.</p>
+			<p id="subtitle171" begin="10:19:12.000" end="10:19:17.400" tts:textAlign="center" style="s1">Ich kann Ihnen nichts dazu sagen.<br /><span tts:color="yellow">Ihre Frau hatte einen Jagdunfall.</span></p>
+			<p id="subtitle172" begin="10:19:17.720" end="10:19:21.680" tts:textAlign="center" style="s1"><span tts:color="yellow">Wie ist das passiert ?<br /></span>Was hat das mit meinem Sohn zu tun ?</p>
+			<p id="subtitle173" begin="10:19:22.280" end="10:19:26.200" tts:textAlign="center" style="s1"><span tts:color="yellow">Das m&#x00f6;chte ich Sie fragen.<br /></span>Das kann ich nicht beantworten.</p>
+			<p id="subtitle174" begin="10:19:26.760" end="10:19:30.560" tts:textAlign="center" style="s3">Vielleicht ist Ihre Frau<br />bereit, mit mir zu reden.</p>
+			<p id="subtitle175" begin="10:19:31.080" end="10:19:35.680" tts:textAlign="center" style="s1">Sie ist nicht hier.<br />Wir haben uns getrennt.</p>
+			<p id="subtitle176" begin="10:20:01.240" end="10:20:04.920" tts:textAlign="center" style="s1">Ich wollte dich gerade anrufen.</p>
+			<p id="subtitle177" begin="10:20:08.120" end="10:20:11.080" tts:textAlign="right" style="s3">Was hast du herausgefunden ?</p>
+			<p id="subtitle178" begin="10:20:11.440" end="10:20:15.440" tts:textAlign="center" style="s1">Er starb an den<br />Folgen der Strangulation.</p>
+			<p id="subtitle179" begin="10:20:15.800" end="10:20:18.720" tts:textAlign="center" style="s1"><span tts:color="yellow">Ist das alles ?<br /></span>Wart&apos;s ab.</p>
+			<p id="subtitle180" begin="10:20:19.040" end="10:20:24.720" tts:textAlign="left" style="s1">Der K&#x00f6;rper hing frei in der Schlinge.<br />Der Aufh&#x00e4;ngepunkt lag am Nacken.</p>
+			<p id="subtitle181" begin="10:20:25.040" end="10:20:29.960" tts:textAlign="center" style="s1">Der Tod trat durch Unterbrechung<br />der Gehirn-Blutzufuhr ein.</p>
+			<p id="subtitle182" begin="10:20:30.360" end="10:20:33.320" tts:textAlign="center" style="s1">Wie bei den meisten Erh&#x00e4;ngten.</p>
+			<p id="subtitle183" begin="10:20:33.720" end="10:20:38.880" tts:textAlign="center" style="s1"><span tts:color="yellow">Ich muss wissen ...<br /></span>Ob er sich selbst erh&#x00e4;ngt hat.</p>
+			<p id="subtitle184" begin="10:20:40.600" end="10:20:45.120" tts:textAlign="center" style="s1">Jein ! Das ist in solchen<br />F&#x00e4;llen schwer zu sagen.</p>
+			<p id="subtitle185" begin="10:20:45.960" end="10:20:51.360" tts:textAlign="center" style="s1">Ohne lange Reden: Ich habe meine<br />Zweifel an der Selbstmord-Theorie.</p>
+			<p id="subtitle186" begin="10:20:51.920" end="10:20:55.640" tts:textAlign="center" style="s1"><span tts:color="yellow">Begr&#x00fc;ndete Zweifel ?<br /></span>Das musst du beurteilen.</p>
+			<p id="subtitle187" begin="10:20:56.000" end="10:21:00.080" tts:textAlign="center" style="s1">An den Oberarmen fand<br />ich frische Unterblutungen.</p>
+			<p id="subtitle188" begin="10:21:00.720" end="10:21:05.440" tts:textAlign="center" style="s1"><span tts:color="yellow">Er wurde also festgehalten.<br /></span>Das ist nicht auszuschlie&#x00df;en.</p>
+			<p id="subtitle189" begin="10:21:05.760" end="10:21:10.600" tts:textAlign="center" style="s1">Au&#x00df;erdem fanden wir an den<br />H&#x00e4;nden keine Fasern des Stranges.</p>
+			<p id="subtitle190" begin="10:21:10.920" end="10:21:16.040" tts:textAlign="right" style="s1">Das ist recht ungew&#x00f6;hnlich<br />f&#x00fc;r eine Selbstaufh&#x00e4;ngung.</p>
+			<p id="subtitle191" begin="10:21:27.760" end="10:21:31.400" tts:textAlign="center" style="s3">Es war kein Selbstmord.<br />Da bin ich mir sicher.</p>
+			<p id="subtitle192" begin="10:21:31.760" end="10:21:35.880" tts:textAlign="center" style="s3">Und sein Vater wei&#x00df; es.<br /><span tts:color="aqua">Warum redet er dann nicht mit dir ?</span></p>
+			<p id="subtitle193" begin="10:21:36.440" end="10:21:43.200" tts:textAlign="left" style="s3">Er hat seinen Sohn verloren. Aber<br />vielleicht gab&apos;s auch andere Gr&#x00fc;nde.</p>
+			<p id="subtitle194" begin="10:21:44.080" end="10:21:49.240" tts:textAlign="left" style="s4">Wie reagierte Signora Moro ?<br /><span tts:color="yellow">Ich habe noch nicht mit ihr geredet.</span></p>
+			<p id="subtitle195" begin="10:21:49.520" end="10:21:55.040" tts:textAlign="left" style="s3">Das Ehepaar lebt getrennt.<br /><span tts:color="aqua">M&#x00fc;tter kennen die Sorgen ihrer S&#x00f6;hne.</span></p>
+			<p id="subtitle196" begin="10:21:56.000" end="10:21:59.000" tts:textAlign="center" style="s1">Hast du Alberto angerufen ?<br /><span tts:color="aqua">Ja.</span></p>
+			<p id="subtitle197" begin="10:21:59.320" end="10:22:03.120" tts:textAlign="center" style="s1">Welchen Alberto ?<br />Mamas Freund bei der Zeitung.</p>
+			<p id="subtitle198" begin="10:22:03.400" end="10:22:08.000" tts:textAlign="left" style="s4">Du kannst jederzeit bei ihm anfangen.<br /><span tts:color="yellow">Wor&#x00fc;ber redet ihr ?</span></p>
+			<p id="subtitle199" begin="10:22:08.280" end="10:22:16.280" tts:textAlign="left" style="s1">Wir sollen uns um ein Berufspraktikum<br />k&#x00fc;mmern. Ich dachte an Journalismus.</p>
+			<p id="subtitle200" begin="10:22:16.560" end="10:22:20.640" tts:textAlign="left" style="s1"><span tts:color="yellow">Wo machen die anderen ihr Praktikum ?<br /></span>Bei ihren V&#x00e4;tern.</p>
+			<p id="subtitle201" begin="10:22:21.200" end="10:22:24.760" tts:textAlign="center" style="s3">Gute Idee. Wieso hast<br />du mich nicht gefragt ?</p>
+			<p id="subtitle202" begin="10:22:25.000" end="10:22:27.960" tts:textAlign="center" style="s1"><span tts:color="yellow">Oder habe ich&apos;s vergessen?<br /></span>Nein.</p>
+			<p id="subtitle203" begin="10:22:28.760" end="10:22:33.480" tts:textAlign="center" style="s1">Raffi dachte, er w&#x00e4;re dir l&#x00e4;stig.<br />Au&#x00df;erdem bist du kein Chef.</p>
+			<p id="subtitle204" begin="10:22:34.200" end="10:22:38.480" tts:textAlign="right" style="s1">Die V&#x00e4;ter seiner Freunde<br />sind alle F&#x00fc;hrungskr&#x00e4;fte.</p>
+			<p id="subtitle205" begin="10:22:38.760" end="10:22:41.760" tts:textAlign="center" style="s1"><span tts:color="yellow">Ach so ! Tja ...<br /></span>Nein, das stimmt nicht.</p>
+			<p id="subtitle206" begin="10:22:42.120" end="10:22:45.480" tts:textAlign="center" style="s1">Ich dachte einfach,<br />ich bin dir nur im Weg.</p>
+			<p id="subtitle207" begin="10:22:45.840" end="10:22:49.080" tts:textAlign="center" style="s1">Was kann ich bei einer<br />Mordermittlung schon tun ?</p>
+			<p id="subtitle208" begin="10:22:49.600" end="10:22:52.600" tts:textAlign="center" style="s3">Das h&#x00e4;ngt von dir ab.</p>
+			<p id="subtitle209" begin="10:22:52.920" end="10:22:57.720" tts:textAlign="center" style="s3">Ich w&#x00fc;rde mich freuen, wenn<br />du das Praktikum bei mir machst.</p>
+			<p id="subtitle210" begin="10:22:58.400" end="10:23:00.320" tts:textAlign="center" style="s1">Okay.</p>
+			<p id="subtitle211" begin="10:23:26.560" end="10:23:28.520" tts:textAlign="center" style="s1">Achtung !</p>
+			<p id="subtitle212" begin="10:23:32.240" end="10:23:34.200" tts:textAlign="center" style="s1">Belcredi, Meldung !</p>
+			<p id="subtitle213" begin="10:23:34.720" end="10:23:40.760" tts:textAlign="center" style="s1">Kadett Belcredi meldet: Stube 5,<br />belegt mit vier... Mit drei Mann !</p>
+			<p id="subtitle214" begin="10:23:50.280" end="10:23:53.200" tts:textAlign="center" style="s1">R&#x00fc;hrt euch ! Stubenkontrolle.</p>
+			<p id="subtitle215" begin="10:23:55.840" end="10:24:00.240" tts:textAlign="right" style="s1">Das h&#x00e4;ngt ja auf halb acht !<br />Wessen Bett ist das ?</p>
+			<p id="subtitle216" begin="10:24:00.840" end="10:24:05.160" tts:textAlign="center" style="s1">Meins.<br />Wie bitte ?</p>
+			<p id="subtitle217" begin="10:24:05.480" end="10:24:08.800" tts:textAlign="left" style="s1">Kadett Belcredi meldet,<br />es ist sein Bett !</p>
+			<p id="subtitle218" begin="10:24:12.880" end="10:24:14.840" tts:textAlign="center" style="s1">Noch mal !</p>
+			<p id="subtitle219" begin="10:24:15.200" end="10:24:18.160" tts:textAlign="center" style="s1">&#x00d6;ffnen Sie Ihren Spind !</p>
+			<p id="subtitle220" begin="10:24:41.160" end="10:24:44.640" tts:textAlign="center" style="s1">Was ist das ?</p>
+			<p id="subtitle221" begin="10:24:45.560" end="10:24:49.320" tts:textAlign="center" style="s1">Ich wei&#x00df; es nicht.<br />Das geh&#x00f6;rt mir nicht.</p>
+			<p id="subtitle222" begin="10:24:50.240" end="10:24:55.160" tts:textAlign="left" style="s1">Belcredi, Sie sind eine schwule Sau.</p>
+			<p id="subtitle223" begin="10:25:25.200" end="10:25:31.320" tts:textAlign="center" style="s1">H&#x00f6;r auf damit !<br />Suchst du Streit, Bella Credi ?</p>
+			<p id="subtitle224" begin="10:25:34.080" end="10:25:36.040" tts:textAlign="center" style="s1">Nein.</p>
+			<p id="subtitle225" begin="10:25:36.640" end="10:25:41.760" tts:textAlign="center" style="s1">Die Schwuchtel hat nicht mal Eier.<br />Aber er kann ja nichts daf&#x00fc;r.</p>
+			<p id="subtitle226" begin="10:25:42.480" end="10:25:45.840" tts:textAlign="center" style="s1">Das liegt in der Familie.</p>
+			<p id="subtitle227" begin="10:25:52.960" end="10:25:56.600" tts:textAlign="center" style="s6">Da vorne ist es, Commissario.</p>
+			<p id="subtitle228" begin="10:25:56.920" end="10:26:01.400" tts:textAlign="center" style="s3">Moros Frau h&#x00e4;tte ich in einem<br />besseren Viertel vermutet.</p>
+			<p id="subtitle229" begin="10:26:01.680" end="10:26:05.400" tts:textAlign="left" style="s6">Er zahlt wohl zu wenig Unterhalt.</p>
+			<p id="subtitle230" begin="10:26:27.120" end="10:26:30.120" tts:textAlign="center" style="s7">Brunetti l&#x00e4;utet.</p>
+			<p id="subtitle231" begin="10:26:35.600" end="10:26:38.560" tts:textAlign="center" style="s7">Er l&#x00e4;utet erneut.</p>
+			<p id="subtitle232" begin="10:26:42.440" end="10:26:46.280" tts:textAlign="center" style="s1"><span tts:color="yellow">Signora Moro ?<br /></span>Wer sind Sie ?</p>
+			<p id="subtitle233" begin="10:26:47.040" end="10:26:50.600" tts:textAlign="center" style="s3">Commissario Brunetti<br />und Sergente Vianello.</p>
+			<p id="subtitle234" begin="10:26:56.280" end="10:26:58.680" tts:textAlign="center" style="s1"><span tts:color="yellow">Signora ...<br /></span>Guten Tag.</p>
+			<p id="subtitle235" begin="10:27:16.360" end="10:27:19.320" tts:textAlign="center" style="s7">Vianello hustet.</p>
+			<p id="subtitle236" begin="10:27:20.160" end="10:27:25.600" tts:textAlign="center" style="s1">St&#x00f6;rt Sie der Rauch ?<br />Sie k&#x00f6;nnen das Fenster &#x00f6;ffnen.</p>
+			<p id="subtitle237" begin="10:27:26.320" end="10:27:29.280" tts:textAlign="left" style="s6">Nein, es geht schon.</p>
+			<p id="subtitle238" begin="10:27:31.680" end="10:27:34.680" tts:textAlign="center" style="s1">Was wollen Sie wissen ?</p>
+			<p id="subtitle239" begin="10:27:35.400" end="10:27:39.320" tts:textAlign="center" style="s3">Sie hatten vor 2 Jahren<br />in Siena einen Unfall.</p>
+			<p id="subtitle240" begin="10:27:39.600" end="10:27:42.560" tts:textAlign="center" style="s3">Die Sch&#x00fc;tzen wurden nie ermittelt.</p>
+			<p id="subtitle241" begin="10:27:42.840" end="10:27:48.040" tts:textAlign="center" style="s1">Ich war mit meinem Mann<br />bei Freunden eingeladen.</p>
+			<p id="subtitle242" begin="10:27:48.320" end="10:27:55.040" tts:textAlign="center" style="s1">Er kam aus Rom. Ich war vor ihm<br />da und ging im Wald spazieren.</p>
+			<p id="subtitle243" begin="10:27:56.280" end="10:27:59.960" tts:textAlign="center" style="s1"><span tts:color="yellow">Allein ?<br /></span>Es gab keinen Grund, Angst zu haben.</p>
+			<p id="subtitle244" begin="10:28:00.280" end="10:28:03.240" tts:textAlign="center" style="s1">Von der Jagd wusste ich nichts.</p>
+			<p id="subtitle245" begin="10:28:03.560" end="10:28:08.920" tts:textAlign="center" style="s1">Ich h&#x00f6;rte einen Knall, sp&#x00fc;rte<br />einen Schmerz in der H&#x00fc;fte und fiel.</p>
+			<p id="subtitle246" begin="10:28:09.240" end="10:28:14.360" tts:textAlign="center" style="s1">Dann war ich pl&#x00f6;tzlich<br />von Jagdhunden umringt.</p>
+			<p id="subtitle247" begin="10:28:17.160" end="10:28:19.120" tts:textAlign="right" style="s3">Was geschah dann ?</p>
+			<p id="subtitle248" begin="10:28:19.600" end="10:28:26.120" tts:textAlign="center" style="s1">Spazierg&#x00e4;nger brachten<br />mich in ein Krankenhaus.</p>
+			<p id="subtitle249" begin="10:28:26.400" end="10:28:31.040" tts:textAlign="center" style="s1">Sie dachten, die Hunde<br />h&#x00e4;tten mich angefallen.</p>
+			<p id="subtitle250" begin="10:28:31.320" end="10:28:35.880" tts:textAlign="center" style="s1">Dabei rettete ihr Bellen<br />mir vermutlich das Leben.</p>
+			<p id="subtitle251" begin="10:28:36.280" end="10:28:43.000" tts:textAlign="left" style="s6">Hat man Sie im Krankenhaus<br />befragt oder die Polizei gerufen ?</p>
+			<p id="subtitle252" begin="10:28:43.600" end="10:28:46.560" tts:textAlign="center" style="s1">Wozu ?<br /><span tts:color="yellow">F&#x00fc;r Sie war es also ein Unfall ?</span></p>
+			<p id="subtitle253" begin="10:28:46.880" end="10:28:50.400" tts:textAlign="center" style="s1">Jagdunf&#x00e4;lle gibt&apos;s in jeder Saison.</p>
+			<p id="subtitle254" begin="10:28:51.120" end="10:28:55.760" tts:textAlign="center" style="s1">Ich hatte damals keinen Grund,<br />etwas anderes anzunehmen.</p>
+			<p id="subtitle255" begin="10:28:56.080" end="10:28:58.600" tts:textAlign="center" style="s3">Und heute ?</p>
+			<p id="subtitle256" begin="10:29:04.440" end="10:29:07.960" tts:textAlign="center" style="s1">Heute denke ich<br />&#x00fc;ber andere Dinge nach.</p>
+			<p id="subtitle257" begin="10:29:17.720" end="10:29:26.400" tts:textAlign="center" style="s1">Ernesto hat sich nicht umgebracht.<br />Eine Mutter wei&#x00df; so etwas.</p>
+			<p id="subtitle258" begin="10:29:30.160" end="10:29:35.080" tts:textAlign="center" style="s1">Vermutlich sind Sie hier,<br />um das zu h&#x00f6;ren, Commissario.</p>
+			<p id="subtitle259" begin="10:29:35.880" end="10:29:40.160" tts:textAlign="center" style="s3">Seit wann leben Sie<br />von Ihrem Mann getrennt ?</p>
+			<p id="subtitle260" begin="10:29:40.480" end="10:29:46.120" tts:textAlign="right" style="s1">Seit fast zwei Jahren.<br />Seit dem Unfall.</p>
+			<p id="subtitle261" begin="10:29:52.800" end="10:29:56.320" tts:textAlign="left" style="s3">Als sie in den Rollstuhl<br />kam, verlie&#x00df; er sie.</p>
+			<p id="subtitle262" begin="10:29:56.680" end="10:30:01.960" tts:textAlign="left" style="s6">Aber sie schl&#x00e4;ft noch in seinem Hemd.<br /><span tts:color="yellow">Und wie erkl&#x00e4;ren Sie sich das ?</span></p>
+			<p id="subtitle263" begin="10:30:02.280" end="10:30:06.760" tts:textAlign="left" style="s6">In der Logik von Frauen<br />kenne ich mich nicht aus.</p>
+			<p id="subtitle264" begin="10:30:07.720" end="10:30:11.160" tts:textAlign="center" style="s1">Unser oberstes Gebot ist die Treue.</p>
+			<p id="subtitle265" begin="10:30:11.480" end="10:30:15.840" tts:textAlign="center" style="s1">Ausdruck dieser<br />Treue ist das Ehrenwort.</p>
+			<p id="subtitle266" begin="10:30:16.440" end="10:30:24.400" tts:textAlign="center" style="s1">Das Ehrenwort unter M&#x00e4;nnern. Es<br />gilt jetzt und f&#x00fc;r alle Zukunft.</p>
+			<p id="subtitle267" begin="10:30:24.680" end="10:30:32.280" tts:textAlign="center" style="s1">Es kann nie zur&#x00fc;ckgenommen werden.<br />Und was bedeutet unser Ehrenwort ?</p>
+			<p id="subtitle268" begin="10:30:34.520" end="10:30:36.480" tts:textAlign="center" style="s1">Filippi !</p>
+			<p id="subtitle269" begin="10:30:36.840" end="10:30:40.560" tts:textAlign="center" style="s1">Man kann sich immer auf<br />den anderen verlassen.</p>
+			<p id="subtitle270" begin="10:30:41.360" end="10:30:45.240" tts:textAlign="center" style="s1">Richtig. Wie garantieren wir das ?</p>
+			<p id="subtitle271" begin="10:30:52.680" end="10:30:54.680" tts:textAlign="center" style="s1">Ich h&#x00f6;re, Kadett.</p>
+			<p id="subtitle272" begin="10:30:55.560" end="10:30:57.800" tts:textAlign="right" style="s1">Indem wir Strapse tragen.</p>
+			<p id="subtitle273" begin="10:30:58.320" end="10:31:03.320" tts:textAlign="center" style="s1"><span tts:backgroundColor="white" tts:color="blue">Verhaltenes Gel&#x00e4;chter.<br /></span>Ruhe ! Kadett Caprese !</p>
+			<p id="subtitle274" begin="10:31:05.120" end="10:31:08.560" tts:textAlign="left" style="s1">Durch unbedingten Gehorsam.</p>
+			<p id="subtitle275" begin="10:31:11.960" end="10:31:16.400" tts:textAlign="center" style="s1">Wir beachten strikt die<br />Regeln unserer Gemeinschaft.</p>
+			<p id="subtitle276" begin="10:31:17.000" end="10:31:26.040" tts:textAlign="center" style="s1">Niemand darf sich au&#x00df;erhalb stellen.<br />Wer das tut, begeht Verrat.</p>
+			<p id="subtitle277" begin="10:31:30.120" end="10:31:35.160" tts:textAlign="center" style="s1">Dann ist die Stunde unserer<br />Gemeinschaft gekommen.</p>
+			<p id="subtitle278" begin="10:31:35.560" end="10:31:42.320" tts:textAlign="left" style="s1">Sie wird den Verr&#x00e4;ter isolieren.<br />Absondern, ausmerzen und ausscheiden !</p>
+			<p id="subtitle279" begin="10:31:43.120" end="10:31:47.120" tts:textAlign="center" style="s1">Wie einen gef&#x00e4;hrlichen<br />Krankheitserreger.</p>
+			<p id="subtitle280" begin="10:31:48.000" end="10:31:51.560" tts:textAlign="center" style="s1">Dann werden sich unsere<br />Reihen wieder schlie&#x00df;en.</p>
+			<p id="subtitle281" begin="10:32:02.760" end="10:32:06.720" tts:textAlign="center" style="s3">Oh, was hat ihr Freund<br />diesmal inszeniert ?</p>
+			<p id="subtitle282" begin="10:32:07.920" end="10:32:12.560" tts:textAlign="left" style="s1">Nichts. Das ist f&#x00fc;r Pattas Wehr&#x00fc;bung.<br /><span tts:color="yellow">Das ist auch eine Inszenierung.</span></p>
+			<p id="subtitle283" begin="10:32:12.880" end="10:32:15.840" tts:textAlign="left" style="s5">Brunetti, Sie sind ein Ignorant.</p>
+			<p id="subtitle284" begin="10:32:16.160" end="10:32:20.160" tts:textAlign="center" style="s5">Die &#x00dc;bung ist Teil eines<br />gro&#x00df;en Nato-Man&#x00f6;vers.</p>
+			<p id="subtitle285" begin="10:32:20.440" end="10:32:24.840" tts:textAlign="left" style="s5">Was ist mit dem Moro-Fall ?<br />K&#x00f6;nnen wir ihn abschlie&#x00df;en ?</p>
+			<p id="subtitle286" begin="10:32:25.160" end="10:32:29.760" tts:textAlign="left" style="s3">Die Mutter glaubt nicht an Selbstmord<br /><span tts:color="fuchsia">Das war zu erwarten.</span></p>
+			<p id="subtitle287" begin="10:32:30.120" end="10:32:36.320" tts:textAlign="left" style="s5">Sie sucht die Schuld bei anderen. Wir<br />m&#x00fc;ssen auf den Vater R&#x00fc;cksicht<br />nehmen</p>
+			<p id="subtitle288" begin="10:32:36.600" end="10:32:43.000" tts:textAlign="left" style="s5">Auf seine gesellschaftliche Stellung.<br />Lassen Sie die Familie in Ruhe.</p>
+			<p id="subtitle289" begin="10:32:43.360" end="10:32:47.400" tts:textAlign="right" style="s3">Ich werde den beiden keinen<br />unn&#x00f6;tigen Kummer bereiten.</p>
+			<p id="subtitle290" begin="10:32:47.720" end="10:32:53.440" tts:textAlign="left" style="s5">F&#x00fc;gen Sie der Statistik keinen<br />Mord hinzu, der keiner ist.</p>
+			<p id="subtitle291" begin="10:32:53.760" end="10:32:56.920" tts:textAlign="right" style="s3">Entschuldigung,<br />ich habe eine Bitte.</p>
+			<p id="subtitle292" begin="10:32:57.680" end="10:33:04.280" tts:textAlign="left" style="s3">Mein Sohn muss ein Praktikum machen.<br />Er w&#x00fc;rde es gern bei mir absolvieren.</p>
+			<p id="subtitle293" begin="10:33:05.080" end="10:33:08.080" tts:textAlign="left" style="s5">Er interessiert sich f&#x00fc;r die Polizei?<br /><span tts:color="yellow">Ja.</span></p>
+			<p id="subtitle294" begin="10:33:08.640" end="10:33:12.280" tts:textAlign="center" style="s5">Meiner leider nicht.<br />Schicken Sie ihn zu mir.</p>
+			<p id="subtitle295" begin="10:33:12.640" end="10:33:18.880" tts:textAlign="left" style="s5">Ich erkl&#x00e4;re ihm gern unseren Beruf.<br /><span tts:color="yellow">Vielen Dank.</span></p>
+			<p id="subtitle296" begin="10:33:25.320" end="10:33:30.000" tts:textAlign="center" style="s1"><span tts:color="yellow">Danke, dass du f&#x00fc;r mich Zeit hast.<br /></span>Ich muss in die Redaktion.</p>
+			<p id="subtitle297" begin="10:33:30.360" end="10:33:35.600" tts:textAlign="left" style="s1">Du siehst eine Verbindung zwischen<br />Moro und dem Tod seines Sohnes ?</p>
+			<p id="subtitle298" begin="10:33:35.880" end="10:33:39.960" tts:textAlign="center" style="s1"><span tts:color="yellow">K&#x00f6;nnte es eine geben ?<br /></span>Die Information wollte ich von dir.</p>
+			<p id="subtitle299" begin="10:33:40.280" end="10:33:46.120" tts:textAlign="left" style="s3">Moro war Abgeordneter, hat sich aber<br />nie die H&#x00e4;nde schmutzig gemacht.</p>
+			<p id="subtitle300" begin="10:33:46.440" end="10:33:50.760" tts:textAlign="center" style="s1">Er war einer der seltenen<br />Sauberm&#x00e4;nner in der Politik.</p>
+			<p id="subtitle301" begin="10:33:51.160" end="10:33:56.200" tts:textAlign="center" style="s1"><span tts:color="yellow">Er hielt&apos;s nicht lange in Rom aus.<br /></span>Seine Karriere endete abrupt.</p>
+			<p id="subtitle302" begin="10:33:56.880" end="10:34:00.120" tts:textAlign="center" style="s3">Das war, als seine<br />Frau den Unfall hatte.</p>
+			<p id="subtitle303" begin="10:34:00.480" end="10:34:04.560" tts:textAlign="center" style="s1">Deswegen gab es viele Ger&#x00fc;chte.<br />Zwei Kaffee bitte.</p>
+			<p id="subtitle304" begin="10:34:04.840" end="10:34:08.800" tts:textAlign="right" style="s1">Seine Frau wird angeschossen,<br />und Moro wirft hin.</p>
+			<p id="subtitle305" begin="10:34:09.080" end="10:34:14.040" tts:textAlign="center" style="s1"><span tts:color="yellow">Was war sein Aufgabengebiet ?<br /></span>Er war Verteidigungsexperte.</p>
+			<p id="subtitle306" begin="10:34:14.440" end="10:34:20.800" tts:textAlign="left" style="s1">Er leitete einen Ausschuss. Der pr&#x00fc;fte<br />die Auftragsvergabe des Ministeriums.</p>
+			<p id="subtitle307" begin="10:34:21.080" end="10:34:24.920" tts:textAlign="center" style="s1"><span tts:color="yellow">Was kam dabei heraus ?<br /></span>Nichts. Moro trat zur&#x00fc;ck.</p>
+			<p id="subtitle308" begin="10:34:25.160" end="10:34:30.600" tts:textAlign="left" style="s1">Der Ausschuss stellte die Arbeit ein.<br /><span tts:color="yellow">Warum trat er zur&#x00fc;ck ?</span></p>
+			<p id="subtitle309" begin="10:34:31.400" end="10:34:35.880" tts:textAlign="center" style="s1">Offiziell aus privaten Gr&#x00fc;nden.<br />Seine Frau sa&#x00df; im Rollstuhl.</p>
+			<p id="subtitle310" begin="10:34:36.440" end="10:34:41.520" tts:textAlign="left" style="s3">Er trennte sich doch sofort<br />nach dem Unfall von seiner Frau.</p>
+			<p id="subtitle311" begin="10:34:41.840" end="10:34:44.400" tts:textAlign="right" style="s1">Kein sch&#x00f6;ner Zug von ihm.</p>
+			<p id="subtitle312" begin="10:34:45.080" end="10:34:52.440" tts:textAlign="left" style="s1">Ich &#x00fc;berpr&#x00fc;fe mal, welche Firma am<br />meisten von den Auftr&#x00e4;gen profitierte.</p>
+			<p id="subtitle313" begin="10:34:54.360" end="10:34:58.480" tts:textAlign="center" style="s1">Setz deinen Arsch in<br />Bewegung, Belcredi !</p>
+			<p id="subtitle314" begin="10:35:00.520" end="10:35:03.520" tts:textAlign="center" style="s1">Hopp, hopp, hopp, hopp, hopp !</p>
+			<p id="subtitle315" begin="10:35:03.960" end="10:35:07.800" tts:textAlign="center" style="s1">Worauf wartest du ? Komm !</p>
+			<p id="subtitle316" begin="10:35:09.600" end="10:35:12.600" tts:textAlign="left" style="s1">Komm schon, Giuliano. Du schaffst es.</p>
+			<p id="subtitle317" begin="10:35:12.920" end="10:35:16.320" tts:textAlign="center" style="s1">Los ! Ich will nicht deinen<br />Arsch vor der Fresse haben !</p>
+			<p id="subtitle318" begin="10:35:16.800" end="10:35:20.480" tts:textAlign="center" style="s1">Streng dich an !<br />Beeil dich !</p>
+			<p id="subtitle319" begin="10:35:21.440" end="10:35:23.400" tts:textAlign="center" style="s1">Komm !</p>
+			<p id="subtitle320" begin="10:35:24.360" end="10:35:28.800" tts:textAlign="center" style="s1">Na los ! Beweg dich, du Kr&#x00fc;cke !</p>
+			<p id="subtitle321" begin="10:35:29.640" end="10:35:32.680" tts:textAlign="center" style="s1">Hopp, hopp, hopp !</p>
+			<p id="subtitle322" begin="10:35:34.880" end="10:35:39.960" tts:textAlign="center" style="s1">Na komm ! Los doch !</p>
+			<p id="subtitle323" begin="10:35:40.760" end="10:35:43.200" tts:textAlign="center" style="s1">Tempo, Belcredi !</p>
+			<p id="subtitle324" begin="10:35:44.080" end="10:35:47.080" tts:textAlign="center" style="s1">Na los ! Hoch da !</p>
+			<p id="subtitle325" begin="10:35:47.640" end="10:35:52.200" tts:textAlign="center" style="s1">Geht&apos;s noch, S&#x00fc;&#x00df;er ? Geht&apos;s noch ?<br />Das ist doch kein Kindergarten !</p>
+			<p id="subtitle326" begin="10:35:52.800" end="10:35:55.320" tts:textAlign="center" style="s1">Los !</p>
+			<p id="subtitle327" begin="10:35:59.120" end="10:36:02.320" tts:textAlign="center" style="s1">Schneller !<br />Gut, Caprese.</p>
+			<p id="subtitle328" begin="10:36:02.960" end="10:36:05.920" tts:textAlign="center" style="s1">Los mit dir !<br />Ich kann nicht mehr.</p>
+			<p id="subtitle329" begin="10:36:07.040" end="10:36:10.040" tts:textAlign="center" style="s1">Ruhig atmen ! Konzentrier dich !</p>
+			<p id="subtitle330" begin="10:36:15.440" end="10:36:19.960" tts:textAlign="center" style="s1">Du schaffst es.<br />Hast du Mitleid mit der Schwuchtel ?</p>
+			<p id="subtitle331" begin="10:36:24.200" end="10:36:26.200" tts:textAlign="center" style="s1">Zehn !</p>
+			<p id="subtitle332" begin="10:36:28.200" end="10:36:30.160" tts:textAlign="center" style="s1">Eins !</p>
+			<p id="subtitle333" begin="10:36:33.720" end="10:36:37.200" tts:textAlign="center" style="s1">Zwei ! Drei !</p>
+			<p id="subtitle334" begin="10:36:40.120" end="10:36:42.120" tts:textAlign="center" style="s1">Vier !</p>
+			<p id="subtitle335" begin="10:36:42.400" end="10:36:44.400" tts:textAlign="center" style="s1">Vier !</p>
+			<p id="subtitle336" begin="10:36:47.920" end="10:36:49.920" tts:textAlign="center" style="s1">Los !</p>
+			<p id="subtitle337" begin="10:37:06.160" end="10:37:09.120" tts:textAlign="center" style="s7">Die Trillerpfeife schrillt.</p>
+			<p id="subtitle338" begin="10:37:14.560" end="10:37:17.840" tts:textAlign="left" style="s1">Eins, zwei ! Eins, zwei ! Eins, zwei !</p>
+			<p id="subtitle339" begin="10:37:20.800" end="10:37:25.280" tts:textAlign="left" style="s1">Du schwuler Wichser wei&#x00df;t<br />hoffentlich, was kommt.</p>
+			<p id="subtitle340" begin="10:37:33.280" end="10:37:37.320" tts:textAlign="center" style="s1">Was findest du nur<br />an dem alten Schinken ?</p>
+			<p id="subtitle341" begin="10:37:37.640" end="10:37:42.200" tts:textAlign="center" style="s1">Aufregend ist nur der Preis,<br />den ich daf&#x00fc;r zahlen musste.</p>
+			<p id="subtitle342" begin="10:37:42.480" end="10:37:48.080" tts:textAlign="center" style="s1">Das Bild hat mit unserer<br />milit&#x00e4;rischen Tradition zu tun.</p>
+			<p id="subtitle343" begin="10:37:48.360" end="10:37:51.360" tts:textAlign="center" style="s1">Aber davon verstehst du nichts.</p>
+			<p id="subtitle344" begin="10:37:56.600" end="10:38:01.280" tts:textAlign="center" style="s1">Warum steht hier nicht:<br />Gestiftet von Marcello Filippi ?</p>
+			<p id="subtitle345" begin="10:38:02.040" end="10:38:04.000" tts:textAlign="center" style="s1">Bl&#x00f6;dmann.</p>
+			<p id="subtitle346" begin="10:38:09.480" end="10:38:13.480" tts:textAlign="left" style="s1">Dein Sohn macht mir wirklich Freude.</p>
+			<p id="subtitle347" begin="10:38:13.840" end="10:38:21.320" tts:textAlign="left" style="s1">Er hat den richtigen Begriff<br />von Treue, Ehre und Loyalit&#x00e4;t.</p>
+			<p id="subtitle348" begin="10:38:22.080" end="10:38:24.560" tts:textAlign="center" style="s1">Eins, zwei ! Eins, zwei !</p>
+			<p id="subtitle349" begin="10:38:25.080" end="10:38:28.240" tts:textAlign="center" style="s1">Du hast aus Enzo einen<br />richtigen Mann gemacht.</p>
+			<p id="subtitle350" begin="10:38:52.840" end="10:38:55.840" tts:textAlign="center" style="s1">Was wollt ihr ?</p>
+			<p id="subtitle351" begin="10:38:56.720" end="10:39:04.160" tts:textAlign="left" style="s1">Du bist eine Schande f&#x00fc;r die Akademie,<br />Belcredi. Eine Schande f&#x00fc;rs Milit&#x00e4;r.</p>
+			<p id="subtitle352" begin="10:39:07.640" end="10:39:09.920" tts:textAlign="center" style="s1">Lass mich in Ruhe !</p>
+			<p id="subtitle353" begin="10:39:10.560" end="10:39:12.560" tts:textAlign="center" style="s1">Mach ihn fertig !</p>
+			<p id="subtitle354" begin="10:39:22.240" end="10:39:25.920" tts:textAlign="center" style="s1">Du sollst ihn schlagen<br />und nicht streicheln !</p>
+			<p id="subtitle355" begin="10:39:28.240" end="10:39:31.280" tts:textAlign="center" style="s1">Enzo, es reicht !</p>
+			<p id="subtitle356" begin="10:39:33.240" end="10:39:36.200" tts:textAlign="right" style="s1">Enzo ! Es reicht !</p>
+			<p id="subtitle357" begin="10:39:37.120" end="10:39:39.120" tts:textAlign="right" style="s1">Es reicht.</p>
+			<p id="subtitle358" begin="10:39:39.440" end="10:39:45.600" tts:textAlign="left" style="s1">Du bist eine dumme kleine Schwuchtel,<br />Belcredi. Wie dein beschissener Vater.</p>
+			<p id="subtitle359" begin="10:39:46.440" end="10:39:48.400" tts:textAlign="center" style="s1">Komm !</p>
+			<p id="subtitle360" begin="10:40:09.600" end="10:40:13.760" tts:textAlign="center" style="s8"><span tts:backgroundColor="white">Brunetti klingelt.<br /></span><span tts:color="yellow">Ach, Dr. Moro !</span></p>
+			<p id="subtitle361" begin="10:40:14.560" end="10:40:19.000" tts:textAlign="center" style="s1"><span tts:color="yellow">Ich sprach mit Ihrer Frau.<br /></span>Ich wei&#x00df;, was sie sagte.</p>
+			<p id="subtitle362" begin="10:40:19.320" end="10:40:22.960" tts:textAlign="right" style="s3">Mich interessiert mehr,<br />was sie nicht sagte:</p>
+			<p id="subtitle363" begin="10:40:23.280" end="10:40:28.480" tts:textAlign="center" style="s1"><span tts:color="yellow">Was vor 2 Jahren wirklich geschah.<br /></span>Ich habe Ihnen nichts zu sagen.</p>
+			<p id="subtitle364" begin="10:40:28.800" end="10:40:35.200" tts:textAlign="center" style="s1"><span tts:color="yellow">Wieso vertrauen Sie mir nicht ?<br /></span>Ich w&#x00fc;nschte, ich k&#x00f6;nnte es.</p>
+			<p id="subtitle365" begin="10:40:35.440" end="10:40:37.440" tts:textAlign="center" style="s1">Aber ich kann nicht.</p>
+			<p id="subtitle366" begin="10:40:38.240" end="10:40:41.600" tts:textAlign="left" style="s1">Ich habe nichts gegen Sie pers&#x00f6;nlich.</p>
+			<p id="subtitle367" begin="10:40:42.360" end="10:40:47.840" tts:textAlign="center" style="s1">Aber Sie sind der Vertreter eines<br />korrupten und kriminellen Staates.</p>
+			<p id="subtitle368" begin="10:40:48.200" end="10:40:53.920" tts:textAlign="left" style="s1">Ich habe gelernt, keinem<br />seiner Repr&#x00e4;sentanten zu trauen.</p>
+			<p id="subtitle369" begin="10:41:13.040" end="10:41:16.840" tts:textAlign="left" style="s3">Was w&#x00fc;rdest du tun, wenn ich<br />mich von dir trennen w&#x00fc;rde ?</p>
+			<p id="subtitle370" begin="10:41:17.440" end="10:41:21.960" tts:textAlign="left" style="s3">Rein theoretisch.<br /><span tts:color="aqua">Ich w&#x00fc;rde deine Geliebte erschie&#x00df;en.</span></p>
+			<p id="subtitle371" begin="10:41:22.760" end="10:41:28.240" tts:textAlign="left" style="s4">Und dich auch.<br />Oder ich w&#x00fc;rde erst dich erschie&#x00df;en.</p>
+			<p id="subtitle372" begin="10:41:28.520" end="10:41:30.520" tts:textAlign="center" style="s4">Und dann die Blondine.</p>
+			<p id="subtitle373" begin="10:41:31.120" end="10:41:36.240" tts:textAlign="center" style="s3">Wieso sollte ich dich mit<br />einer Blondine betr&#x00fc;gen ?</p>
+			<p id="subtitle374" begin="10:41:36.560" end="10:41:39.920" tts:textAlign="center" style="s4">Du verrenkst dir doch<br />den Hals nach denen.</p>
+			<p id="subtitle375" begin="10:41:40.840" end="10:41:43.960" tts:textAlign="center" style="s3">Das stimmt gar nicht.<br />Sag mal im Ernst !</p>
+			<p id="subtitle376" begin="10:41:44.320" end="10:41:48.680" tts:textAlign="left" style="s3">W&#x00fc;rdest du in meinem Hemd schlafen,<br />obwohl ich dich verlie&#x00df; ?</p>
+			<p id="subtitle377" begin="10:41:49.320" end="10:41:53.920" tts:textAlign="center" style="s4">Ich w&#x00fc;rde alle deine Hemden<br />in feine Streifen schneiden.</p>
+			<p id="subtitle378" begin="10:41:54.760" end="10:42:00.320" tts:textAlign="left" style="s3">Signora Moro hat das Hemd ihres<br />Mannes auf ihrem Bett liegen.</p>
+			<p id="subtitle379" begin="10:42:01.120" end="10:42:07.120" tts:textAlign="left" style="s4">Vielleicht vermisst sie ihn noch.<br />Oder er kommt nachts heimlich zu ihr.</p>
+			<p id="subtitle380" begin="10:42:07.400" end="10:42:12.960" tts:textAlign="center" style="s3">Die Trennung ist also vorget&#x00e4;uscht.<br /><span tts:color="aqua">Wozu denn ?</span></p>
+			<p id="subtitle381" begin="10:42:13.640" end="10:42:18.320" tts:textAlign="center" style="s3">Damit die, die auf sie geschossen<br />haben, nicht wieder kommen.</p>
+			<p id="subtitle382" begin="10:42:18.680" end="10:42:21.840" tts:textAlign="center" style="s3">Er trennte sich zu<br />ihrem Schutz von ihr.</p>
+			<p id="subtitle383" begin="10:42:22.440" end="10:42:25.440" tts:textAlign="left" style="s1">Eins, zwei ! Eins, zwei ! Eins, zwei !</p>
+			<p id="subtitle384" begin="10:43:28.880" end="10:43:34.120" tts:textAlign="left" style="s4">Du hast Raffi &#x00fc;berredet, sein<br />Praktikum bei der Polizei zu machen.</p>
+			<p id="subtitle385" begin="10:43:34.400" end="10:43:37.440" tts:textAlign="center" style="s4">Ich finde das nicht richtig.<br /><span tts:color="yellow">Weshalb ?</span></p>
+			<p id="subtitle386" begin="10:43:37.760" end="10:43:41.600" tts:textAlign="center" style="s4">F&#x00fc;r das, was er dort zu sehen<br />bekommt, ist er zu jung.</p>
+			<p id="subtitle387" begin="10:43:42.240" end="10:43:45.600" tts:textAlign="center" style="s3">Was bek&#x00e4;me er denn in<br />Albertos Redaktion zu sehen ?</p>
+			<p id="subtitle388" begin="10:43:45.920" end="10:43:48.960" tts:textAlign="center" style="s3">An die heile Welt glaubt<br />er l&#x00e4;ngst nicht mehr.</p>
+			<p id="subtitle389" begin="10:43:49.600" end="10:43:52.600" tts:textAlign="center" style="s1"><span tts:color="aqua">Theoretisch.<br /></span>Guten Morgen.</p>
+			<p id="subtitle390" begin="10:43:52.920" end="10:43:55.840" tts:textAlign="center" style="s3">Fertig f&#x00fc;r<br />den 1. Arbeitstag ?</p>
+			<p id="subtitle391" begin="10:43:56.320" end="10:43:59.280" tts:textAlign="center" style="s1">Ja.<br /><span tts:backgroundColor="white" tts:color="blue">Brunettis Handy l&#x00e4;utet.</span></p>
+			<p id="subtitle392" begin="10:43:59.720" end="10:44:02.720" tts:textAlign="center" style="s3">Ja. - Was ?</p>
+			<p id="subtitle393" begin="10:44:05.200" end="10:44:08.280" tts:textAlign="center" style="s3">Schickt mir das Boot. Komm !<br /><span tts:color="aqua">Was Unangenehmes ?</span></p>
+			<p id="subtitle394" begin="10:44:08.840" end="10:44:11.800" tts:textAlign="center" style="s1"><span tts:color="yellow">Ein 2. Toter in der Akademie.<br /></span>Mord ?</p>
+			<p id="subtitle395" begin="10:44:12.120" end="10:44:16.040" tts:textAlign="left" style="s3">Vielleicht.<br /><span tts:color="aqua">Nimm ihn nicht zu einem Tatort mit !</span></p>
+			<p id="subtitle396" begin="10:44:16.400" end="10:44:19.360" tts:textAlign="right" style="s3">Keine Sorge. Er schafft das.</p>
+			<p id="subtitle397" begin="10:44:20.040" end="10:44:25.600" tts:textAlign="center" style="s1">Mein Fahrrad hat schon<br />lange keine St&#x00fc;tzr&#x00e4;der mehr.</p>
+			<p id="subtitle398" begin="10:44:40.480" end="10:44:44.200" tts:textAlign="right" style="s3">Passen Sie bitte auch<br />ein bisschen auf ihn auf.</p>
+			<p id="subtitle399" begin="10:44:44.560" end="10:44:48.920" tts:textAlign="left" style="s6">Keine Sorge. Raffi ist<br />nicht auf den Kopf gefallen.</p>
+			<p id="subtitle400" begin="10:44:49.320" end="10:44:52.320" tts:textAlign="center" style="s3">Eben deshalb muss man aufpassen.</p>
+			<p id="subtitle401" begin="10:45:16.040" end="10:45:20.560" tts:textAlign="left" style="s1">Er hat sich die Pulsadern<br />aufgeschnitten.</p>
+			<p id="subtitle402" begin="10:45:20.960" end="10:45:25.360" tts:textAlign="left" style="s1">Leider hat er es richtig<br />gemacht. L&#x00e4;ngs, nicht quer.</p>
+			<p id="subtitle403" begin="10:45:25.920" end="10:45:29.240" tts:textAlign="center" style="s3">Hat er es allein getan ?</p>
+			<p id="subtitle404" begin="10:45:29.560" end="10:45:34.560" tts:textAlign="left" style="s1">Wir m&#x00fc;ssen das toxikologische<br />Gutachten abwarten.</p>
+			<p id="subtitle405" begin="10:45:34.840" end="10:45:39.840" tts:textAlign="left" style="s1">Aber scheinbar hat er die ganzen<br />Schlaftabletten geschluckt.</p>
+			<p id="subtitle406" begin="10:45:40.120" end="10:45:44.160" tts:textAlign="left" style="s1">Er wollte wohl sichergehen,<br />dass er stirbt.</p>
+			<p id="subtitle407" begin="10:45:47.080" end="10:45:52.560" tts:textAlign="right" style="s1"><span tts:color="yellow">Wie hie&#x00df; der Junge ?<br /></span>Caprese. Kadett im 4.Jahr.</p>
+			<p id="subtitle408" begin="10:45:53.040" end="10:45:57.040" tts:textAlign="center" style="s1"><span tts:color="yellow">Wer hat ihn gefunden ?<br /></span>Kadett Belcredi.</p>
+			<p id="subtitle409" begin="10:45:57.400" end="10:46:03.040" tts:textAlign="center" style="s3">Wieder Belcredi ? Ich will ihn<br />und die anderen Kadetten sprechen.</p>
+			<p id="subtitle410" begin="10:46:05.960" end="10:46:10.720" tts:textAlign="center" style="s1">Ich leite es in die Wege. Obwohl<br />ich nicht wei&#x00df;, was das soll.</p>
+			<p id="subtitle411" begin="10:46:12.800" end="10:46:17.880" tts:textAlign="left" style="s1">Auch das ist eindeutig<br />wieder ein Selbstmord.</p>
+			<p id="subtitle412" begin="10:46:33.800" end="10:46:38.080" tts:textAlign="center" style="s1"><span tts:color="yellow">Gibt es einen Abschiedsbrief ?<br /></span>Hier nicht.</p>
+			<p id="subtitle413" begin="10:47:07.320" end="10:47:11.280" tts:textAlign="center" style="s1"><span tts:color="yellow">Geht&apos;s dir wieder gut ?<br /></span>Ja, es ist wieder besser.</p>
+			<p id="subtitle414" begin="10:47:11.600" end="10:47:15.680" tts:textAlign="center" style="s1"><span tts:color="yellow">Wo ist Vianello ?<br /></span>Er befragt die Kadetten.</p>
+			<p id="subtitle415" begin="10:47:15.960" end="10:47:20.040" tts:textAlign="center" style="s1">Es tut mir Leid wegen vorhin.<br /><span tts:color="yellow">Das kann vorkommen.</span></p>
+			<p id="subtitle416" begin="10:47:20.400" end="10:47:24.400" tts:textAlign="center" style="s1">Ich h&#x00e4;tte mein Praktikum im<br />Kindergarten machen sollen.</p>
+			<p id="subtitle417" begin="10:47:24.800" end="10:47:29.720" tts:textAlign="center" style="s3">Unsinn. Zum Gl&#x00fc;ck bist du nicht<br />so abgebr&#x00fc;ht wie der Arzt. Komm.</p>
+			<p id="subtitle418" begin="10:47:31.440" end="10:47:34.440" tts:textAlign="center" style="s6">Signor Filippi !</p>
+			<p id="subtitle419" begin="10:47:37.360" end="10:47:41.920" tts:textAlign="center" style="s1">Kadett Filippi !<br /><span tts:color="lime">Nicht so sch&#x00fc;chtern. Nur los.</span></p>
+			<p id="subtitle420" begin="10:47:46.240" end="10:47:50.200" tts:textAlign="center" style="s6">Sie teilten das Zimmer<br />mit Davide Caprese.</p>
+			<p id="subtitle421" begin="10:47:50.560" end="10:47:54.920" tts:textAlign="center" style="s1"><span tts:color="lime">Dann kannten Sie ihn gut.<br /></span>Er interessierte mich nicht.</p>
+			<p id="subtitle422" begin="10:47:55.480" end="10:48:00.600" tts:textAlign="center" style="s1"><span tts:color="lime">Ber&#x00fc;hrt Sie sein Selbstmord nicht ?<br /></span>Sollte er das ?</p>
+			<p id="subtitle423" begin="10:48:02.400" end="10:48:07.360" tts:textAlign="center" style="s3">Zwei Ihrer Stubenkameraden haben<br />offenbar Selbstmord begangen.</p>
+			<p id="subtitle424" begin="10:48:07.600" end="10:48:10.600" tts:textAlign="center" style="s3">L&#x00e4;sst Sie das v&#x00f6;llig unber&#x00fc;hrt ?</p>
+			<p id="subtitle425" begin="10:48:11.000" end="10:48:16.400" tts:textAlign="center" style="s1">Wir lernen hier, in jeder Situation<br />Selbstbeherrschung zu zeigen.</p>
+			<p id="subtitle426" begin="10:48:17.600" end="10:48:21.680" tts:textAlign="center" style="s1"><span tts:color="yellow">Warum beging Caprese Selbstmord ?<br /></span>Ich habe keine Ahnung.</p>
+			<p id="subtitle427" begin="10:48:22.000" end="10:48:26.800" tts:textAlign="center" style="s1">Er war wie immer. Hat er einen<br />Abschiedsbrief hinterlassen ?</p>
+			<p id="subtitle428" begin="10:48:27.640" end="10:48:33.320" tts:textAlign="left" style="s3">Wir haben keinen gefunden. Warum<br />fragen Sie ? Haben Sie das erwartet ?</p>
+			<p id="subtitle429" begin="10:48:33.640" end="10:48:38.120" tts:textAlign="center" style="s1">Es war nur so eine Idee.<br />War&apos;s das jetzt ?</p>
+			<p id="subtitle430" begin="10:48:49.320" end="10:48:54.280" tts:textAlign="left" style="s6">Er l&#x00fc;gt, wenn er den Mund aufmacht.<br /><span tts:color="yellow">Sogar wenn er ihn nicht aufmacht.</span></p>
+			<p id="subtitle431" begin="10:48:54.560" end="10:48:57.760" tts:textAlign="center" style="s3">Wo ist Belcredi ?<br /><span tts:color="lime">Weg.</span></p>
+			<p id="subtitle432" begin="10:48:58.120" end="10:49:01.400" tts:textAlign="center" style="s3">Weg ?<br /><span tts:color="lime">Weg.</span></p>
+			<p id="subtitle433" begin="10:49:01.920" end="10:49:05.920" tts:textAlign="right" style="s3">Wie weg ?<br /><span tts:color="lime">Er ist nicht zu finden.</span></p>
+			<p id="subtitle434" begin="10:49:10.400" end="10:49:15.360" tts:textAlign="left" style="s1">Kadett Belcredi hat um Urlaub gebeten.<br />Wegen einer Familienangelegenheit.</p>
+			<p id="subtitle435" begin="10:49:15.720" end="10:49:20.280" tts:textAlign="center" style="s3">Belcredi findet 2 tote Kameraden.<br />Und Sie geben ihm Urlaub ?</p>
+			<p id="subtitle436" begin="10:49:20.680" end="10:49:25.600" tts:textAlign="center" style="s1"><span tts:color="yellow">Bevor ich ihn befragen kann ?<br /></span>Das ist allein meine Entscheidung.</p>
+			<p id="subtitle437" begin="10:49:25.920" end="10:49:30.400" tts:textAlign="center" style="s3">Mag sein, Commandante. Aber Sie<br />verhalten sich unkooperativ.</p>
+			<p id="subtitle438" begin="10:49:30.720" end="10:49:34.440" tts:textAlign="center" style="s3">Das hinterl&#x00e4;sst einen<br />seltsamen Eindruck.</p>
+			<p id="subtitle439" begin="10:49:38.200" end="10:49:42.160" tts:textAlign="center" style="s1">Wollen Sie mir drohen ?<br /><span tts:color="yellow">Keineswegs.</span></p>
+			<p id="subtitle440" begin="10:49:42.520" end="10:49:47.440" tts:textAlign="left" style="s3">Geben Sie mir bitte die<br />Heimatadresse von Giuliano Belcredi.</p>
+			<p id="subtitle441" begin="10:49:48.360" end="10:49:54.680" tts:textAlign="left" style="s1">Ausgeschlossen. Die Privatadressen<br />der Kadetten sind streng vertraulich.</p>
+			<p id="subtitle442" begin="10:49:55.080" end="10:49:59.840" tts:textAlign="center" style="s1">Ich informiere Sie sofort,<br />wenn er sich zur&#x00fc;ckmeldet.</p>
+			<p id="subtitle443" begin="10:50:18.440" end="10:50:21.600" tts:textAlign="center" style="s1">Er ist weg.</p>
+			<p id="subtitle444" begin="10:50:32.120" end="10:50:34.800" tts:textAlign="center" style="s1">Verdammt !</p>
+			<p id="subtitle445" begin="10:50:39.560" end="10:50:45.360" tts:textAlign="center" style="s1">Brunetti wird langsam l&#x00e4;stig.<br />Ich lasse ihn zur&#x00fc;ckpfeifen.</p>
+			<p id="subtitle446" begin="10:50:46.160" end="10:50:52.120" tts:textAlign="center" style="s1">Ja, aber diskret. Noch mehr Wirbel<br />kann ich hier nicht gebrauchen.</p>
+			<p id="subtitle447" begin="10:50:52.520" end="10:50:56.760" tts:textAlign="center" style="s1">Und dein Sohn auch nicht.<br />Was soll das hei&#x00df;en ?</p>
+			<p id="subtitle448" begin="10:50:58.040" end="10:51:02.280" tts:textAlign="center" style="s1">Die toten Kadetten waren<br />Stubenkameraden deines Sohns.</p>
+			<p id="subtitle449" begin="10:51:02.560" end="10:51:06.640" tts:textAlign="center" style="s1">Und wenn schon.<br />Da bestanden Spannungen !</p>
+			<p id="subtitle450" begin="10:51:06.960" end="10:51:12.960" tts:textAlign="left" style="s1">Was willst du damit sagen ?<br />Nichts. Warum bist du misstrauisch ?</p>
+			<p id="subtitle451" begin="10:51:13.760" end="10:51:17.320" tts:textAlign="right" style="s1">Ich will nur &#x00c4;rger vermeiden.</p>
+			<p id="subtitle452" begin="10:51:20.880" end="10:51:26.160" tts:textAlign="center" style="s1">Der Minister hat dich nach Sardinien<br />in sein Ferienhaus eingeladen.</p>
+			<p id="subtitle453" begin="10:51:26.440" end="10:51:30.840" tts:textAlign="left" style="s1">Ich wei&#x00df; noch nicht,<br />ob ich die Einladung annehme.</p>
+			<p id="subtitle454" begin="10:51:31.160" end="10:51:36.480" tts:textAlign="center" style="s1">Nat&#x00fc;rlich nimmst du sie an ! Und du<br />legst ein gutes Wort f&#x00fc;r mich ein.</p>
+			<p id="subtitle455" begin="10:51:36.840" end="10:51:41.520" tts:textAlign="left" style="s1">Daf&#x00fc;r ist es noch zu fr&#x00fc;h.<br />In 2 oder 3 Jahren.</p>
+			<p id="subtitle456" begin="10:51:41.880" end="10:51:47.600" tts:textAlign="left" style="s1">Jetzt ! Ich will nicht in<br />dieser Akademie verrotten !</p>
+			<p id="subtitle457" begin="10:51:47.920" end="10:51:52.920" tts:textAlign="left" style="s1">Mein Gehalt reicht nicht mal, um den<br />Champagner deiner Nutten zu zahlen.</p>
+			<p id="subtitle458" begin="10:51:53.240" end="10:51:57.680" tts:textAlign="right" style="s1">Vergiss nie, was ich f&#x00fc;r<br />dich getan habe, Marcello.</p>
+			<p id="subtitle459" begin="10:52:06.920" end="10:52:12.840" tts:textAlign="left" style="s3">Toscano sagt, Belcredi hat regul&#x00e4;r<br />Urlaub wegen einer Familiensache.</p>
+			<p id="subtitle460" begin="10:52:13.200" end="10:52:17.840" tts:textAlign="left" style="s6">M&#x00f6;glich, dass er in den Scho&#x00df;<br />der Familie gefl&#x00fc;chtet ist.</p>
+			<p id="subtitle461" begin="10:52:18.200" end="10:52:22.720" tts:textAlign="center" style="s6">Er f&#x00fc;rchtet um sein Leben.<br /><span tts:color="yellow">Wir m&#x00fc;ssen ihn schnell finden.</span></p>
+			<p id="subtitle462" begin="10:52:23.080" end="10:52:27.080" tts:textAlign="center" style="s3">Wo ist mein Sohn ?<br /><span tts:color="lime">Er wollte mit Kadetten sprechen.</span></p>
+			<p id="subtitle463" begin="10:52:27.400" end="10:52:30.480" tts:textAlign="center" style="s3">Allein ?<br /><span tts:color="lime">Was kann er schon verderben ?</span></p>
+			<p id="subtitle464" begin="10:52:30.800" end="10:52:33.800" tts:textAlign="left" style="s3">Alles. Sind Sie verr&#x00fc;ckt geworden ?</p>
+			<p id="subtitle465" begin="10:52:34.080" end="10:52:38.400" tts:textAlign="center" style="s6">Er m&#x00f6;chte Ihnen den T&#x00e4;ter auf<br />einem Silbertablett pr&#x00e4;sentieren.</p>
+			<p id="subtitle466" begin="10:52:38.720" end="10:52:43.680" tts:textAlign="left" style="s6">Er sch&#x00e4;mt sich wegen seiner Schw&#x00e4;che.<br /><span tts:color="yellow">Ich will das nicht, Vianello.</span></p>
+			<p id="subtitle467" begin="10:52:45.760" end="10:52:50.720" tts:textAlign="left" style="s1">Auf eine Milit&#x00e4;rakademie kriegen mich<br />keine 10 Pferde. Die spinnen alle.</p>
+			<p id="subtitle468" begin="10:52:50.800" end="10:52:56.120" tts:textAlign="left" style="s3">Keine Sorge. Den Sohn eines kleinen<br />Polizisten nehmen die hier nicht.</p>
+			<p id="subtitle469" begin="10:52:56.440" end="10:53:01.120" tts:textAlign="center" style="s1">Belcredis Vater ist auch nur Bauer.<br /><span tts:color="yellow">Woher wei&#x00df;t du das ?</span></p>
+			<p id="subtitle470" begin="10:53:01.480" end="10:53:06.960" tts:textAlign="center" style="s1">Ich habe mit den j&#x00fc;ngeren Kadetten<br />gesprochen. Einige sind ganz nett.</p>
+			<p id="subtitle471" begin="10:53:07.320" end="10:53:12.800" tts:textAlign="left" style="s1">Was man mit denen hier macht, das ist<br />Gehirnw&#x00e4;sche. Das Gequatsche von Ehre.</p>
+			<p id="subtitle472" begin="10:53:13.120" end="10:53:17.880" tts:textAlign="center" style="s1"><span tts:color="yellow">Du hast &#x00fc;ber Belcredi gesprochen ?<br /></span>Erst fragte ich nach Filippi.</p>
+			<p id="subtitle473" begin="10:53:18.160" end="10:53:22.520" tts:textAlign="center" style="s1">Wir haben an der Schule auch<br />so ein arrogantes Arschloch.</p>
+			<p id="subtitle474" begin="10:53:22.840" end="10:53:25.840" tts:textAlign="center" style="s1">Der versucht jeden zu mobben.<br /><span tts:color="yellow">Ach ja ?</span></p>
+			<p id="subtitle475" begin="10:53:26.120" end="10:53:30.080" tts:textAlign="left" style="s1">Das sagte ich nur, um sie aufzutauen.<br /><span tts:color="lime">Keine schlechte Verh&#x00f6;rtechnik.</span></p>
+			<p id="subtitle476" begin="10:53:30.400" end="10:53:33.600" tts:textAlign="left" style="s1">Filippi piesackte erst Ernesto Moro.</p>
+			<p id="subtitle477" begin="10:53:33.920" end="10:53:38.040" tts:textAlign="center" style="s1">Dann zog er Belcredi mit<br />seinem schwulen Vater auf.</p>
+			<p id="subtitle478" begin="10:53:38.400" end="10:53:43.400" tts:textAlign="left" style="s1">Und dass sein Gro&#x00df;vater sich deswegen<br />sch&#x00e4;mt. Der war ein Kriegsheld.</p>
+			<p id="subtitle479" begin="10:53:43.720" end="10:53:46.440" tts:textAlign="center" style="s3">Gut gemacht, Raffi.</p>
+			<p id="subtitle480" begin="10:53:46.760" end="10:53:51.280" tts:textAlign="left" style="s6">Der Vice-Questore hat ein Who-is-who<br />des Milit&#x00e4;rs in seinem B&#x00fc;ro.</p>
+			<p id="subtitle481" begin="10:53:52.880" end="10:53:55.840" tts:textAlign="center" style="s1">Der Kaffee.</p>
+			<p id="subtitle482" begin="10:53:57.480" end="10:54:00.520" tts:textAlign="center" style="s1">Oh, das tut mir Leid.</p>
+			<p id="subtitle483" begin="10:54:00.800" end="10:54:04.800" tts:textAlign="center" style="s5">Passen Sie doch auf !<br />Sehen Sie nur, alles braun !</p>
+			<p id="subtitle484" begin="10:54:05.120" end="10:54:09.120" tts:textAlign="center" style="s1">Verzeihung. Ich bringe<br />das sofort in Ordnung.</p>
+			<p id="subtitle485" begin="10:54:29.080" end="10:54:33.080" tts:textAlign="center" style="s1">Hier ist Elettra.<br />Ich habe Ihren Kriegshelden.</p>
+			<p id="subtitle486" begin="10:54:33.400" end="10:54:39.440" tts:textAlign="center" style="s1">Admiral Gianbattista Belcredi.<br />Geboren 1919, gestorben 1998.</p>
+			<p id="subtitle487" begin="10:54:41.520" end="10:54:47.120" tts:textAlign="left" style="s1">Vater von Aurelio Belcredi aus Imola.<br />Der diente bei der Luftwaffe.</p>
+			<p id="subtitle488" begin="10:54:47.440" end="10:54:51.640" tts:textAlign="center" style="s1">Dahinter steht: &quot;u.e.&quot;.<br /><span tts:color="yellow">Danke, Signorina.</span></p>
+			<p id="subtitle489" begin="10:54:53.200" end="10:54:57.720" tts:textAlign="center" style="s3">Was hei&#x00df;t beim Milit&#x00e4;r &quot;u.e.&quot; ?<br /><span tts:color="lime">Unehrenhaft entlassen.</span></p>
+			<p id="subtitle490" begin="10:55:00.840" end="10:55:06.800" tts:textAlign="left" style="s3">Deine Mutter wird w&#x00fc;tend sein, wenn<br />sie merkt, dass ihr Laptop weg ist.</p>
+			<p id="subtitle491" begin="10:55:07.760" end="10:55:11.960" tts:textAlign="center" style="s1">Es ist nur geliehen. Ich kann<br />sowieso besser damit umgehen.</p>
+			<p id="subtitle492" begin="10:55:12.360" end="10:55:16.440" tts:textAlign="center" style="s6">Ich sollte auch mal einen<br />Computerkurs machen.</p>
+			<p id="subtitle493" begin="10:55:16.800" end="10:55:21.360" tts:textAlign="center" style="s1"><span tts:color="yellow">Was schreibst du die ganze Zeit ?<br /></span>Meinen Bericht f&#x00fc;r die Schule.</p>
+			<p id="subtitle494" begin="10:55:22.200" end="10:55:25.560" tts:textAlign="left" style="s1">Ich muss mein Praktikum dokumentieren.</p>
+			<p id="subtitle495" begin="10:55:26.360" end="10:55:31.280" tts:textAlign="left" style="s3">Du unterliegst der Schweigepflicht,<br />solange du bei der Polizei bist.</p>
+			<p id="subtitle496" begin="10:55:31.640" end="10:55:34.600" tts:textAlign="center" style="s1">Erkl&#x00e4;r das meiner Lehrerin.</p>
+			<p id="subtitle497" begin="10:55:40.400" end="10:55:45.400" tts:textAlign="center" style="s6">Nebenan gab es 1929 einen<br />ber&#x00fc;hmten Erbschafts-Prozess.</p>
+			<p id="subtitle498" begin="10:55:45.720" end="10:55:50.080" tts:textAlign="center" style="s6">Der Gutsherr wurde im<br />Schweinetrog ertr&#x00e4;nkt.</p>
+			<p id="subtitle499" begin="10:55:50.480" end="10:55:54.840" tts:textAlign="center" style="s6">Mit etwas Gl&#x00fc;ck bekomme ich<br />den Trog. Ohne den Gutsherrn.</p>
+			<p id="subtitle500" begin="10:55:55.200" end="10:55:59.200" tts:textAlign="center" style="s3">Ich gehe ins Haus,<br />Vianello beobachtet den Hof.</p>
+			<p id="subtitle501" begin="10:55:59.560" end="10:56:02.960" tts:textAlign="center" style="s1"><span tts:color="yellow">Raffi geht zum Hinterausgang.<br /></span>Zu Befehl.</p>
+			<p id="subtitle502" begin="10:56:06.360" end="10:56:10.560" tts:textAlign="center" style="s1"><span tts:color="yellow">Signor Belcredi ?<br /></span>Nein, ich bin Giovanni.</p>
+			<p id="subtitle503" begin="10:56:10.840" end="10:56:15.000" tts:textAlign="center" style="s1">Ich arbeite f&#x00fc;r ihn.<br />Besuch f&#x00fc;r dich, Aurelio.</p>
+			<p id="subtitle504" begin="10:56:18.280" end="10:56:22.440" tts:textAlign="center" style="s1">Was wollen Sie ?<br /><span tts:color="yellow">Commissario Brunetti aus Venedig.</span></p>
+			<p id="subtitle505" begin="10:56:22.840" end="10:56:26.680" tts:textAlign="center" style="s3">Ich muss Ihren Sohn<br />Giuliano sprechen.</p>
+			<p id="subtitle506" begin="10:56:27.480" end="10:56:32.440" tts:textAlign="center" style="s1">Sie haben den weiten Weg umsonst<br />gemacht. Er lebt in Venedig.</p>
+			<p id="subtitle507" begin="10:56:32.760" end="10:56:36.520" tts:textAlign="center" style="s1">Er ist Kadett in der<br />Akademie San Martino.</p>
+			<p id="subtitle508" begin="10:56:38.200" end="10:56:42.960" tts:textAlign="center" style="s3">In der Akademie gibt es zwei<br />ungekl&#x00e4;rte Todesf&#x00e4;lle.</p>
+			<p id="subtitle509" begin="10:56:43.480" end="10:56:47.560" tts:textAlign="right" style="s3">Ich muss ihn im Zuge der<br />Ermittlungen sprechen.</p>
+			<p id="subtitle510" begin="10:56:47.920" end="10:56:53.320" tts:textAlign="center" style="s1"><span tts:color="yellow">Es geht um seine Sicherheit.<br /></span>Folgen Sie mir bitte.</p>
+			<p id="subtitle511" begin="10:56:58.600" end="10:57:04.560" tts:textAlign="center" style="s1">Giuliano ! Hier ist ein<br />Commissario aus Venedig f&#x00fc;r dich.</p>
+			<p id="subtitle512" begin="10:57:06.960" end="10:57:11.560" tts:textAlign="center" style="s1">Guten Tag, Commissario.<br /><span tts:color="yellow">Ich m&#x00f6;chte ihn allein sprechen.</span></p>
+			<p id="subtitle513" begin="10:57:14.520" end="10:57:18.760" tts:textAlign="center" style="s1">Mein Vater kann alles h&#x00f6;ren.<br /><span tts:color="yellow">Wie Sie w&#x00fc;nschen.</span></p>
+			<p id="subtitle514" begin="10:57:20.680" end="10:57:23.680" tts:textAlign="center" style="s1">Bitte nehmen Sie Platz.<br /><span tts:color="yellow">Danke.</span></p>
+			<p id="subtitle515" begin="10:57:30.160" end="10:57:36.120" tts:textAlign="left" style="s1"><span tts:color="yellow">Sie haben Davide Caprese gefunden.<br /></span>Ja. Es war mit Sicherheit Selbstmord.</p>
+			<p id="subtitle516" begin="10:57:37.480" end="10:57:40.760" tts:textAlign="center" style="s3">Woher wissen Sie das ?</p>
+			<p id="subtitle517" begin="10:57:42.840" end="10:57:47.480" tts:textAlign="left" style="s3">Gibt es Fakten, die uns das<br />Verst&#x00e4;ndnis erleichtern w&#x00fc;rden ?</p>
+			<p id="subtitle518" begin="10:57:48.040" end="10:57:51.640" tts:textAlign="center" style="s3">Aha. Und Ernesto Moro ?</p>
+			<p id="subtitle519" begin="10:57:51.920" end="10:57:57.200" tts:textAlign="left" style="s3">Ich hatte Sie schon einmal gefragt.<br />Jetzt m&#x00f6;chte ich eine Antwort.</p>
+			<p id="subtitle520" begin="10:57:57.640" end="10:58:02.040" tts:textAlign="right" style="s1">Ernesto war stark. Ich glaube<br />nicht, dass er sterben wollte.</p>
+			<p id="subtitle521" begin="10:58:02.400" end="10:58:07.200" tts:textAlign="center" style="s1"><span tts:color="yellow">Sie mochten ihn.<br /></span>Er war mein bester Freund.</p>
+			<p id="subtitle522" begin="10:58:07.480" end="10:58:12.280" tts:textAlign="center" style="s3">Auf der Akademie haben Sie<br />aber nicht nur Freunde.</p>
+			<p id="subtitle523" begin="10:58:13.360" end="10:58:18.480" tts:textAlign="left" style="s3">War das Filippi ? Sind Sie deshalb<br />aus der Akademie verschwunden ?</p>
+			<p id="subtitle524" begin="10:58:20.200" end="10:58:24.680" tts:textAlign="center" style="s1">Nein, das war ein Sportunfall.<br /><span tts:color="yellow">Aha.</span></p>
+			<p id="subtitle525" begin="10:58:26.040" end="10:58:30.480" tts:textAlign="center" style="s1">K&#x00f6;nnen wir noch etwas f&#x00fc;r<br />Sie tun, Commissario ?</p>
+			<p id="subtitle526" begin="10:58:34.760" end="10:58:39.120" tts:textAlign="center" style="s3">Rufen Sie mich an, wenn<br />Sie etwas zu sagen haben.</p>
+			<p id="subtitle527" begin="10:58:50.880" end="10:58:55.000" tts:textAlign="center" style="s3">Was ist denn das ?<br /><span tts:color="lime">Der Schweinetrog f&#x00fc;r das Museum.</span></p>
+			<p id="subtitle528" begin="10:58:55.400" end="10:58:58.680" tts:textAlign="center" style="s6">Haben Sie den Jungen gefunden ?<br /><span tts:color="yellow">Ja.</span></p>
+			<p id="subtitle529" begin="10:58:59.040" end="10:59:03.120" tts:textAlign="center" style="s6">Kommt er nicht mit ?<br /><span tts:color="yellow">Nein. Hier ist er sicherer.</span></p>
+			<p id="subtitle530" begin="10:59:03.440" end="10:59:07.840" tts:textAlign="center" style="s1"><span tts:color="yellow">Fahren wir.<br /></span>Halt, wollt ihr ohne mich fahren ?</p>
+			<p id="subtitle531" begin="10:59:21.320" end="10:59:26.480" tts:textAlign="center" style="s1">Es wird Zeit, dass ich mit<br />dir &#x00fc;ber etwas spreche.</p>
+			<p id="subtitle532" begin="10:59:27.760" end="10:59:31.160" tts:textAlign="right" style="s1">Dar&#x00fc;ber, dass du schwul bist ?</p>
+			<p id="subtitle533" begin="10:59:35.880" end="10:59:40.320" tts:textAlign="center" style="s1">Ich habe immer geahnt,<br />dass du es wei&#x00df;t.</p>
+			<p id="subtitle534" begin="10:59:41.120" end="10:59:47.400" tts:textAlign="left" style="s1">Das war f&#x00fc;r mich nicht einfach. Schon<br />in der Grundschule wurde getuschelt.</p>
+			<p id="subtitle535" begin="10:59:47.760" end="10:59:51.680" tts:textAlign="center" style="s1">Und am Gymnasium gab<br />es einen Jungen...</p>
+			<p id="subtitle536" begin="10:59:51.960" end="10:59:57.080" tts:textAlign="left" style="s1">Beim Sportunterricht verlie&#x00df; er die<br />Umkleidekabine, wenn ich reinkam.</p>
+			<p id="subtitle537" begin="10:59:57.400" end="11:00:02.400" tts:textAlign="left" style="s1">Wei&#x00df;t du, was Kameraden in meinen<br />Spind in der Akademie getan haben ?</p>
+			<p id="subtitle538" begin="11:00:02.720" end="11:00:06.120" tts:textAlign="center" style="s1">Rosa Strapse !</p>
+			<p id="subtitle539" begin="11:00:06.480" end="11:00:09.880" tts:textAlign="center" style="s1">Es tut mir Leid, Giuliano.</p>
+			<p id="subtitle540" begin="11:00:13.480" end="11:00:18.280" tts:textAlign="center" style="s1">Wusste Gro&#x00df;vater Bescheid ?<br />Es wird ihm nicht entgangen sein.</p>
+			<p id="subtitle541" begin="11:00:18.600" end="11:00:25.120" tts:textAlign="left" style="s1">Aber er lie&#x00df; es sich nicht anmerken.<br />In seiner Welt gab es so etwas nicht.</p>
+			<p id="subtitle542" begin="11:00:25.400" end="11:00:31.400" tts:textAlign="center" style="s1">Er wollte einen richtigen Mann aus<br />mir machen. Also wurde ich Soldat.</p>
+			<p id="subtitle543" begin="11:00:31.760" end="11:00:35.480" tts:textAlign="center" style="s1">Er wollte Enkel, also heiratete ich.</p>
+			<p id="subtitle544" begin="11:00:35.920" end="11:00:39.920" tts:textAlign="center" style="s1">Und Mutter ?<br />Ich versuchte, ihr nicht wehzutun.</p>
+			<p id="subtitle545" begin="11:00:40.240" end="11:00:45.040" tts:textAlign="left" style="s1">Ich war diskret.<br />Nach Gro&#x00df;vaters Tod ist sie gegangen.</p>
+			<p id="subtitle546" begin="11:00:45.800" end="11:00:50.920" tts:textAlign="left" style="s1">Wenn du jetzt die gleiche Entscheidung<br />triffst, habe ich daf&#x00fc;r Verst&#x00e4;ndnis.</p>
+			<p id="subtitle547" begin="11:00:53.840" end="11:00:59.200" tts:textAlign="center" style="s1">Wei&#x00df;t du, was mir bei euch Schwulen<br />wirklich auf die Nerven geht ?</p>
+			<p id="subtitle548" begin="11:01:01.680" end="11:01:05.960" tts:textAlign="right" style="s1">Eure Vorliebe f&#x00fc;r Kitsch<br />und gro&#x00df;e Opern.</p>
+			<p id="subtitle549" begin="11:01:18.280" end="11:01:24.240" tts:textAlign="left" style="s1">Tu nie, was ich getan habe. Es ist<br />falsch, die Wahrheit zu verschweigen.</p>
+			<p id="subtitle550" begin="11:01:24.600" end="11:01:30.760" tts:textAlign="left" style="s1">Egal, ob aus falscher Loyalit&#x00e4;t oder<br />Feigheit oder um jemanden zu<br />sch&#x00fc;tzen.</p>
+			<p id="subtitle551" begin="11:01:31.640" end="11:01:34.560" tts:textAlign="center" style="s1">Schweigen ist t&#x00f6;dlich.</p>
+			<p id="subtitle552" begin="11:01:34.920" end="11:01:40.000" tts:textAlign="center" style="s1">Wie ein Verband, unter dem das<br />verletzte Gewebe langsam fault.</p>
+			<p id="subtitle553" begin="11:01:41.040" end="11:01:45.240" tts:textAlign="center" style="s6">F&#x00fc;r mich ist das eine<br />Sache unter den Kadetten.</p>
+			<p id="subtitle554" begin="11:01:45.560" end="11:01:50.800" tts:textAlign="left" style="s6">Gewalt gibt es heute &#x00fc;berall. Warum<br />nicht auch an einer Milit&#x00e4;rakademie ?</p>
+			<p id="subtitle555" begin="11:01:51.160" end="11:01:54.760" tts:textAlign="center" style="s3">Dahinter steckt mehr.<br /><span tts:color="lime">Ich sehe kein Motiv.</span></p>
+			<p id="subtitle556" begin="11:01:55.760" end="11:02:00.120" tts:textAlign="center" style="s3">Vielleicht geht es gar nicht<br />um die beiden Jungen.</p>
+			<p id="subtitle557" begin="11:02:02.320" end="11:02:06.760" tts:textAlign="center" style="s1">Was machen wir als N&#x00e4;chstes ?<br /><span tts:color="yellow">Wir fahren nach Hause.</span></p>
+			<p id="subtitle558" begin="11:02:07.000" end="11:02:11.560" tts:textAlign="center" style="s3">Sonst gibt deine Mutter eine<br />Vermisstenmeldung auf.</p>
+			<p id="subtitle559" begin="11:02:12.600" end="11:02:16.840" tts:textAlign="center" style="s1">Jetzt schon nach Hause ?<br /><span tts:color="lime">Ihr Sohn hat Blut geleckt.</span></p>
+			<p id="subtitle560" begin="11:02:31.800" end="11:02:36.600" tts:textAlign="left" style="s4">Raffi beginnt sein Praktikum bei der<br />Polizei mit einem Laptop-Diebstahl.</p>
+			<p id="subtitle561" begin="11:02:36.880" end="11:02:40.880" tts:textAlign="left" style="s1"><span tts:color="aqua">Findest du das in Ordnung ?<br /></span>Ich habe es geliehen. Es war wichtig.</p>
+			<p id="subtitle562" begin="11:02:41.200" end="11:02:45.160" tts:textAlign="center" style="s1"><span tts:color="aqua">Ich hatte auch Wichtiges zu tun.<br /></span>Das tut mir Leid.</p>
+			<p id="subtitle563" begin="11:02:45.480" end="11:02:47.680" tts:textAlign="center" style="s4">Das hoffe ich.</p>
+			<p id="subtitle564" begin="11:02:52.800" end="11:02:57.480" tts:textAlign="center" style="s4">Was war denn los ?<br /><span tts:color="yellow">Ein Kadett. Selbstmord.</span></p>
+			<p id="subtitle565" begin="11:02:57.800" end="11:03:02.480" tts:textAlign="left" style="s1">Er muss mit Ernesto Moros Tod in<br />Verbindung stehen. Und Vianello sagt:</p>
+			<p id="subtitle566" begin="11:03:02.840" end="11:03:07.960" tts:textAlign="left" style="s1">Moros Mutter wurde angeschossen, weil<br />sein Vater einen R&#x00fc;stungsdeal pr&#x00fc;fte.</p>
+			<p id="subtitle567" begin="11:03:08.320" end="11:03:12.480" tts:textAlign="right" style="s3">Wir wissen nur: Moro leitete<br />einen Untersuchungs-Ausschuss.</p>
+			<p id="subtitle568" begin="11:03:12.800" end="11:03:16.800" tts:textAlign="center" style="s3">Nach dem Unfall seiner Frau<br />schied er aus dem Parlament aus.</p>
+			<p id="subtitle569" begin="11:03:17.120" end="11:03:21.120" tts:textAlign="center" style="s1">Was macht so ein Ausschuss ?<br /><span tts:color="yellow">Der pr&#x00fc;ft, ob alles rechtm&#x00e4;&#x00df;ig ist.</span></p>
+			<p id="subtitle570" begin="11:03:21.480" end="11:03:25.920" tts:textAlign="left" style="s1"><span tts:color="yellow">In diesem Fall bei R&#x00fc;stungsauftr&#x00e4;gen.<br /></span>Was kam damals raus ?</p>
+			<p id="subtitle571" begin="11:03:26.200" end="11:03:30.480" tts:textAlign="center" style="s3">Nichts. Der Ausschuss<br />wurde vorher aufgel&#x00f6;st.</p>
+			<p id="subtitle572" begin="11:03:30.800" end="11:03:34.440" tts:textAlign="center" style="s1">Das ist doch komisch.<br /><span tts:color="aqua">Mich wundert es nicht.</span></p>
+			<p id="subtitle573" begin="11:03:34.720" end="11:03:39.120" tts:textAlign="left" style="s1">Darf ich noch mal dein Laptop haben ?<br /><span tts:color="aqua">Definitiv nicht.</span></p>
+			<p id="subtitle574" begin="11:03:39.600" end="11:03:44.520" tts:textAlign="left" style="s1">Es muss einen Bericht des Ausschusses<br />geben. In irgendeinem Archiv.</p>
+			<p id="subtitle575" begin="11:03:44.840" end="11:03:49.320" tts:textAlign="center" style="s1">Wenn ich im Internet recherchiere,<br />finde ich vielleicht etwas heraus.</p>
+			<p id="subtitle576" begin="11:03:49.600" end="11:03:54.160" tts:textAlign="center" style="s4">Gute Idee. Das kann deine<br />Signorina Elettra erledigen.</p>
+			<p id="subtitle577" begin="11:04:05.240" end="11:04:09.920" tts:textAlign="left" style="s1">Der Ausschuss wurde gegen Widerst&#x00e4;nde<br />eingesetzt. Auf Moros Betreiben.</p>
+			<p id="subtitle578" begin="11:04:10.240" end="11:04:14.880" tts:textAlign="center" style="s1">Es gab damals Korruptionsger&#x00fc;chte,<br />und Moro war ein scharfer Hund.</p>
+			<p id="subtitle579" begin="11:04:15.200" end="11:04:18.160" tts:textAlign="center" style="s3">Was hat er entdeckt ?</p>
+			<p id="subtitle580" begin="11:04:18.480" end="11:04:23.480" tts:textAlign="center" style="s1">Einige Unternehmen bekamen<br />ungew&#x00f6;hnlich viele R&#x00fc;stungsauftr&#x00e4;ge.</p>
+			<p id="subtitle581" begin="11:04:23.800" end="11:04:28.160" tts:textAlign="center" style="s1">Die besten bekam Filippi Impresa.<br /><span tts:color="yellow">Marcello Filippi ?</span></p>
+			<p id="subtitle582" begin="11:04:28.520" end="11:04:32.240" tts:textAlign="left" style="s1">Ja. Aber Filippi meldete Insolvenz an.</p>
+			<p id="subtitle583" begin="11:04:32.520" end="11:04:37.160" tts:textAlign="center" style="s1">Unmittelbar bevor der Ausschuss<br />die Ausschreibungen &#x00fc;berpr&#x00fc;fte.</p>
+			<p id="subtitle584" begin="11:04:37.520" end="11:04:42.760" tts:textAlign="center" style="s1">Moro trat zur&#x00fc;ck, der Ausschuss<br />wurde aufgel&#x00f6;st, Ende.</p>
+			<p id="subtitle585" begin="11:04:43.040" end="11:04:47.040" tts:textAlign="center" style="s1"><span tts:color="yellow">Wer hat die Auftr&#x00e4;ge vergeben ?<br /></span>Ein gewisser Toscano.</p>
+			<p id="subtitle586" begin="11:04:47.320" end="11:04:51.320" tts:textAlign="left" style="s1">Damals Staatssekret&#x00e4;r im<br />Verteidigungsministerium.</p>
+			<p id="subtitle587" begin="11:04:51.600" end="11:04:55.720" tts:textAlign="center" style="s1"><span tts:color="yellow">Toscano ?<br /></span>Er galt als k&#x00fc;nftiger Minister.</p>
+			<p id="subtitle588" begin="11:04:56.040" end="11:05:00.600" tts:textAlign="center" style="s1">Aber der Beginn der Untersuchung<br />war das Ende seiner Karriere.</p>
+			<p id="subtitle589" begin="11:05:00.920" end="11:05:05.240" tts:textAlign="right" style="s1">Er verlor kurz darauf seinen<br />Posten als Staatssekret&#x00e4;r.</p>
+			<p id="subtitle590" begin="11:05:05.560" end="11:05:09.600" tts:textAlign="left" style="s3">Moro beendete Toscanos Karriere.</p>
+			<p id="subtitle591" begin="11:05:14.600" end="11:05:18.400" tts:textAlign="center" style="s1">Jetzt mal auf die andere Seite.<br />Einfach hier unten.</p>
+			<p id="subtitle592" begin="11:05:18.720" end="11:05:22.880" tts:textAlign="center" style="s1">Das ist praktisch eingerichtet.<br /><span tts:color="yellow">Guten Morgen.</span></p>
+			<p id="subtitle593" begin="11:05:23.760" end="11:05:27.280" tts:textAlign="center" style="s1">Guten Morgen, Commissario.<br /><span tts:color="yellow">Gibt&apos;s was Neues ?</span></p>
+			<p id="subtitle594" begin="11:05:27.600" end="11:05:32.600" tts:textAlign="left" style="s1">Ja. Gehen Sie erst zu Patta. Er hatte<br />einen Anruf aus dem Ministerium.</p>
+			<p id="subtitle595" begin="11:05:34.800" end="11:05:40.040" tts:textAlign="left" style="s3">Raffi, das Archiv muss alte Akten<br />digitalisieren. Hilfst du Ihnen ?</p>
+			<p id="subtitle596" begin="11:05:40.360" end="11:05:44.440" tts:textAlign="center" style="s1">Mache ich. Danke, Signorina.<br />Viel Spa&#x00df;.</p>
+			<p id="subtitle597" begin="11:05:51.960" end="11:05:56.720" tts:textAlign="center" style="s3">Sie wollten mich sprechen.<br /><span tts:color="fuchsia">Ja. Finden Sie die Jacke zu eng ?</span></p>
+			<p id="subtitle598" begin="11:06:04.280" end="11:06:08.720" tts:textAlign="left" style="s3">Nicht sehr.<br /><span tts:color="fuchsia">Die &#x00dc;bung kann jeden Tag beginnen.</span></p>
+			<p id="subtitle599" begin="11:06:09.040" end="11:06:13.280" tts:textAlign="left" style="s5">Ich habe keine Zeit, eine neue<br />Uniform anfertigen zu lassen.</p>
+			<p id="subtitle600" begin="11:06:13.600" end="11:06:18.080" tts:textAlign="center" style="s3">Das ist nicht n&#x00f6;tig. Sie machen<br />darin eine gute Figur.</p>
+			<p id="subtitle601" begin="11:06:18.440" end="11:06:22.880" tts:textAlign="left" style="s5">Ich mache mir Sorgen wegen der<br />Ereignisse in der Akademie.</p>
+			<p id="subtitle602" begin="11:06:23.200" end="11:06:28.880" tts:textAlign="left" style="s5">Es macht einen schlechten Eindruck,<br />wenn sich Kadetten umbringen.</p>
+			<p id="subtitle603" begin="11:06:29.200" end="11:06:33.440" tts:textAlign="left" style="s5">Was ist da los ?<br /><span tts:color="yellow">Ich habe Vermutungen. Keine Beweise.</span></p>
+			<p id="subtitle604" begin="11:06:33.760" end="11:06:38.000" tts:textAlign="right" style="s3">Im ersten Fall sprechen<br />die Indizien f&#x00fc;r Mord.</p>
+			<p id="subtitle605" begin="11:06:38.320" end="11:06:42.280" tts:textAlign="center" style="s5">Das ist ganz und gar<br />nicht gut, Brunetti.</p>
+			<p id="subtitle606" begin="11:06:42.600" end="11:06:47.800" tts:textAlign="left" style="s5">Venedigs beste Familien schicken<br />ihre S&#x00f6;hne auf die Akademie.</p>
+			<p id="subtitle607" begin="11:06:48.120" end="11:06:53.680" tts:textAlign="center" style="s5">Die Aff&#x00e4;re schl&#x00e4;gt schon Wellen.<br /><span tts:color="yellow">Das tut mir Leid, Vice-Questore.</span></p>
+			<p id="subtitle608" begin="11:06:56.000" end="11:07:01.040" tts:textAlign="left" style="s5">Sind Sie sicher, dass sich Kadett<br />Moro nicht selbst get&#x00f6;tet hat ?</p>
+			<p id="subtitle609" begin="11:07:01.400" end="11:07:06.600" tts:textAlign="left" style="s5">Commandante Toscano m&#x00f6;chte die<br />Angelegenheit intern regeln.</p>
+			<p id="subtitle610" begin="11:07:08.000" end="11:07:12.920" tts:textAlign="left" style="s3">Das kann ich mir vorstellen.<br /><span tts:color="fuchsia">Tun Sie, was Sie f&#x00fc;r richtig halten.</span></p>
+			<p id="subtitle611" begin="11:07:13.280" end="11:07:17.560" tts:textAlign="center" style="s5">Aber kein Wort zur Presse !<br /><span tts:color="yellow">Selbstverst&#x00e4;ndlich.</span></p>
+			<p id="subtitle612" begin="11:07:17.720" end="11:07:22.200" tts:textAlign="center" style="s1">Ich habe eine Liste der<br />meistbeg&#x00fc;nstigten Firmen gefunden.</p>
+			<p id="subtitle613" begin="11:07:22.560" end="11:07:26.960" tts:textAlign="center" style="s1">An der Spitze stand Filippi Impresa.<br /><span tts:color="yellow">Das wei&#x00df; ich.</span></p>
+			<p id="subtitle614" begin="11:07:27.880" end="11:07:32.200" tts:textAlign="center" style="s1">Filippi Impresa ging Pleite.<br /><span tts:color="yellow">Das wei&#x00df; ich auch.</span></p>
+			<p id="subtitle615" begin="11:07:33.920" end="11:07:38.520" tts:textAlign="center" style="s1">Und wurde ersetzt durch die Firma...<br /><span tts:color="yellow">Das wei&#x00df; ich nicht.</span></p>
+			<p id="subtitle616" begin="11:07:39.320" end="11:07:44.680" tts:textAlign="center" style="s1">Edilan Forma. Gegr&#x00fc;ndet kurz nach<br />der Pleite von Filippi Impresa.</p>
+			<p id="subtitle617" begin="11:07:45.080" end="11:07:49.400" tts:textAlign="center" style="s1">Der Chef der neuen Firma<br />war nicht Marcello Filippi.</p>
+			<p id="subtitle618" begin="11:07:49.720" end="11:07:54.080" tts:textAlign="center" style="s1">Sondern ein gewisser Luitpoldi,<br />den niemand kennt.</p>
+			<p id="subtitle619" begin="11:07:54.480" end="11:07:59.720" tts:textAlign="left" style="s1">Raten Sie mal, wer im Ministerium<br />Edilan Forma den Auftrag verschaffte.</p>
+			<p id="subtitle620" begin="11:08:00.000" end="11:08:03.160" tts:textAlign="right" style="s3">Commandante Toscano.</p>
+			<p id="subtitle621" begin="11:08:10.600" end="11:08:16.000" tts:textAlign="left" style="s6">Dr. Moro war dabei, eine riesige<br />Korruptionsgeschichte aufzudecken.</p>
+			<p id="subtitle622" begin="11:08:16.360" end="11:08:20.640" tts:textAlign="left" style="s3">Ja. Toscano war an Filippis<br />Gewinnen beteiligt.</p>
+			<p id="subtitle623" begin="11:08:21.000" end="11:08:24.320" tts:textAlign="center" style="s6">Jetzt ist er der Dumme.<br /><span tts:color="yellow">Stimmt.</span></p>
+			<p id="subtitle624" begin="11:08:24.640" end="11:08:28.640" tts:textAlign="center" style="s3">Die Milit&#x00e4;rakademie ist eine<br />Sackgasse f&#x00fc;r seine Karriere.</p>
+			<p id="subtitle625" begin="11:08:28.960" end="11:08:32.720" tts:textAlign="center" style="s6">Und jetzt ?<br /><span tts:color="yellow">Wir befragen Filippi junior.</span></p>
+			<p id="subtitle626" begin="11:08:33.000" end="11:08:38.240" tts:textAlign="left" style="s6">Dieses Haus war mal der Unterschlupf<br />einer ber&#x00fc;chtigten Verbrecherbande.</p>
+			<p id="subtitle627" begin="11:08:38.520" end="11:08:43.560" tts:textAlign="left" style="s6">Einem Verr&#x00e4;ter schnitten sie die<br />Zunge mit einem Rasiermesser heraus.</p>
+			<p id="subtitle628" begin="11:08:43.800" end="11:08:48.440" tts:textAlign="left" style="s6">Wie gern h&#x00e4;tte ich dieses<br />Messer f&#x00fc;r meine Sammlung !</p>
+			<p id="subtitle629" begin="11:09:03.000" end="11:09:07.560" tts:textAlign="center" style="s3">Sie schliefen also in Ihrem<br />Bett, als Ernesto Moro starb.</p>
+			<p id="subtitle630" begin="11:09:07.960" end="11:09:11.680" tts:textAlign="center" style="s1">Das ist korrekt.<br /><span tts:color="yellow">Leider gibt es keine Zeugen.</span></p>
+			<p id="subtitle631" begin="11:09:12.040" end="11:09:16.160" tts:textAlign="left" style="s3">Caprese ist ebenfalls tot und<br />Belcredi ist verschwunden.</p>
+			<p id="subtitle632" begin="11:09:16.480" end="11:09:21.240" tts:textAlign="center" style="s1">Brauche ich ein Alibi ?<br /><span tts:color="yellow">Ich habe es nur festgestellt.</span></p>
+			<p id="subtitle633" begin="11:09:21.600" end="11:09:27.160" tts:textAlign="left" style="s1">Moro beging Selbstmord. Ich wei&#x00df;<br />nicht warum, aber so ist es nun mal.</p>
+			<p id="subtitle634" begin="11:09:28.160" end="11:09:33.120" tts:textAlign="left" style="s3">Nein. Er wurde festgehalten und<br />bekam den Strick um den Hals gelegt.</p>
+			<p id="subtitle635" begin="11:09:33.480" end="11:09:36.480" tts:textAlign="center" style="s1">K&#x00f6;nnen Sie das beweisen ?</p>
+			<p id="subtitle636" begin="11:09:36.800" end="11:09:41.040" tts:textAlign="center" style="s3">Moros Vater ermittelte gegen<br />Ihren Vater. Wussten Sie das ?</p>
+			<p id="subtitle637" begin="11:09:41.360" end="11:09:44.720" tts:textAlign="left" style="s1">Nein.<br /><span tts:color="lime">Was sagt Ihnen der Name Edilan Forma?</span></p>
+			<p id="subtitle638" begin="11:09:50.680" end="11:09:55.720" tts:textAlign="left" style="s1">Ich habe es mir &#x00fc;berlegt. Jetzt will<br />ich doch einen Anwalt anrufen.</p>
+			<p id="subtitle639" begin="11:10:25.720" end="11:10:30.640" tts:textAlign="left" style="s5">Brunetti ! Filippi ist auf dem<br />Weg hierher. Er ist sehr w&#x00fc;tend.</p>
+			<p id="subtitle640" begin="11:10:31.000" end="11:10:34.080" tts:textAlign="center" style="s3">Das ist verst&#x00e4;ndlich.</p>
+			<p id="subtitle641" begin="11:10:34.360" end="11:10:39.520" tts:textAlign="left" style="s5">Mussten Sie den Jungen verh&#x00f6;ren ?<br /><span tts:color="yellow">Es war nur eine normale Befragung.</span></p>
+			<p id="subtitle642" begin="11:10:39.840" end="11:10:44.760" tts:textAlign="left" style="s5">Glauben Sie, dass der junge Filippi<br />mit den Todesf&#x00e4;llen zu tun hat ?</p>
+			<p id="subtitle643" begin="11:10:45.120" end="11:10:49.320" tts:textAlign="left" style="s3">Das halte ich f&#x00fc;r m&#x00f6;glich.<br /><span tts:color="fuchsia">Wieso ? Die Jungen waren Kameraden.</span></p>
+			<p id="subtitle644" begin="11:10:49.600" end="11:10:52.760" tts:textAlign="center" style="s3">Die V&#x00e4;ter waren erbitterte Gegner.</p>
+			<p id="subtitle645" begin="11:10:53.080" end="11:10:58.200" tts:textAlign="center" style="s5">Sie glauben, die S&#x00f6;hne haben den<br />Konflikt ihrer V&#x00e4;ter ausgetragen ?</p>
+			<p id="subtitle646" begin="11:10:58.520" end="11:11:02.520" tts:textAlign="left" style="s5">Das ist absurd.<br /><span tts:color="yellow">Ein Dritter f&#x00fc;hrte vermutlich Regie.</span></p>
+			<p id="subtitle647" begin="11:11:03.360" end="11:11:07.600" tts:textAlign="right" style="s5">Sie bringen uns beide<br />in Teufels K&#x00fc;che.</p>
+			<p id="subtitle648" begin="11:11:07.960" end="11:11:12.720" tts:textAlign="center" style="s5">Wegen Ihnen lege ich mich<br />nicht mit dem Ministerium an.</p>
+			<p id="subtitle649" begin="11:11:16.880" end="11:11:21.120" tts:textAlign="left" style="s3">Vianello ! Wieso sind<br />Sie nicht bei Filippi ?</p>
+			<p id="subtitle650" begin="11:11:21.480" end="11:11:26.160" tts:textAlign="center" style="s6">Sein Vater und sein Anwalt sind<br />gekommen. Sie beraten gerade.</p>
+			<p id="subtitle651" begin="11:11:26.440" end="11:11:30.440" tts:textAlign="left" style="s3">Dann h&#x00f6;ren wir mal, was<br />sie uns zu sagen haben.</p>
+			<p id="subtitle652" begin="11:11:38.360" end="11:11:43.120" tts:textAlign="center" style="s1">Mein Mandant m&#x00f6;chte<br />eine Aussage machen.</p>
+			<p id="subtitle653" begin="11:11:43.480" end="11:11:48.080" tts:textAlign="center" style="s1">Sie wird dazu beitragen, den Tod<br />von Ernesto Moro aufzukl&#x00e4;ren.</p>
+			<p id="subtitle654" begin="11:11:48.440" end="11:11:52.480" tts:textAlign="center" style="s3">Das h&#x00f6;re ich gern.<br /><span tts:color="lime">Wir zeichnen die Aussage auf.</span></p>
+			<p id="subtitle655" begin="11:11:52.920" end="11:11:58.040" tts:textAlign="center" style="s6">Der Wortlaut wird Ihrem Klienten<br />sp&#x00e4;ter zur Unterschrift vorgelegt.</p>
+			<p id="subtitle656" begin="11:12:03.400" end="11:12:06.000" tts:textAlign="left" style="s1">Ich...</p>
+			<p id="subtitle657" begin="11:12:06.280" end="11:12:11.840" tts:textAlign="center" style="s1">Ich war in dieser Nacht mit<br />Ernesto zusammen im Waschraum.</p>
+			<p id="subtitle658" begin="11:12:12.360" end="11:12:16.840" tts:textAlign="center" style="s1"><span tts:color="yellow">Was haben Sie da gemacht ?<br /></span>Wir hatten...</p>
+			<p id="subtitle659" begin="11:12:19.280" end="11:12:23.600" tts:textAlign="left" style="s1">Wir haben uns... Wir haben<br />uns gegenseitig ber&#x00fc;hrt.</p>
+			<p id="subtitle660" begin="11:12:26.000" end="11:12:30.000" tts:textAlign="center" style="s3">Sprechen Sie von<br />sexuellen Handlungen ?</p>
+			<p id="subtitle661" begin="11:12:32.360" end="11:12:35.840" tts:textAlign="center" style="s1">Er wollte etwas Neues ausprobieren.</p>
+			<p id="subtitle662" begin="11:12:36.120" end="11:12:41.440" tts:textAlign="center" style="s1">Er sagte: Es ist besser, wenn<br />man dabei kaum Luft bekommt.</p>
+			<p id="subtitle663" begin="11:12:42.560" end="11:12:46.400" tts:textAlign="center" style="s1">Er lie&#x00df; sich nicht davon abbringen.<br /><span tts:color="yellow">Und dann ?</span></p>
+			<p id="subtitle664" begin="11:12:48.240" end="11:12:55.200" tts:textAlign="left" style="s1">Er zog sich eine Plastikt&#x00fc;te &#x00fc;ber den<br />Kopf und legte den Strick um den Hals.</p>
+			<p id="subtitle665" begin="11:12:55.600" end="11:12:59.960" tts:textAlign="left" style="s1">Das andere Ende befestigte<br />er an dem Rohr.</p>
+			<p id="subtitle666" begin="11:13:04.840" end="11:13:09.840" tts:textAlign="center" style="s1">Dann schob er langsam den Stuhl<br />weg. Das Seil zog sich zu.</p>
+			<p id="subtitle667" begin="11:13:10.120" end="11:13:14.640" tts:textAlign="center" style="s1">Er st&#x00f6;hnte.<br /><span tts:color="yellow">Was haben Sie getan ?</span></p>
+			<p id="subtitle668" begin="11:13:20.920" end="11:13:26.600" tts:textAlign="center" style="s1">Erst dachte ich, es macht ihm Spa&#x00df;.<br />Dann schlug er wild um sich.</p>
+			<p id="subtitle669" begin="11:13:26.920" end="11:13:32.080" tts:textAlign="center" style="s1">Ich merkte, dass es ernst<br />wurde und wollte ihm helfen.</p>
+			<p id="subtitle670" begin="11:13:32.440" end="11:13:35.880" tts:textAlign="center" style="s1">Aber es war schon zu sp&#x00e4;t.</p>
+			<p id="subtitle671" begin="11:13:43.440" end="11:13:46.760" tts:textAlign="left" style="s3">Wir haben keine Plastikt&#x00fc;te gefunden.</p>
+			<p id="subtitle672" begin="11:13:47.520" end="11:13:51.880" tts:textAlign="center" style="s1">Mein Mandant hat sie in einen<br />M&#x00fc;lleimer geworfen. Leider.</p>
+			<p id="subtitle673" begin="11:13:56.600" end="11:14:02.200" tts:textAlign="center" style="s1"><span tts:color="yellow">Warum erz&#x00e4;hlen Sie das erst jetzt ?<br /></span>Das liegt doch wohl auf der Hand.</p>
+			<p id="subtitle674" begin="11:14:02.920" end="11:14:07.760" tts:textAlign="center" style="s1">Mein Sohn hat sich gesch&#x00e4;mt.<br />Mein Mandant braucht jetzt Ruhe.</p>
+			<p id="subtitle675" begin="11:14:08.280" end="11:14:13.960" tts:textAlign="left" style="s1">Er steht Ihnen aber selbstverst&#x00e4;ndlich<br />f&#x00fc;r weitere Fragen zur Verf&#x00fc;gung.</p>
+			<p id="subtitle676" begin="11:14:20.080" end="11:14:23.360" tts:textAlign="center" style="s6">Danke, Herr Anwalt.</p>
+			<p id="subtitle677" begin="11:14:36.920" end="11:14:41.520" tts:textAlign="center" style="s1">Er starb beim Sex mit einer<br />Plastikt&#x00fc;te und einem Seil ?</p>
+			<p id="subtitle678" begin="11:14:42.400" end="11:14:46.000" tts:textAlign="center" style="s1">Das nennt man autoerotischen Unfall.</p>
+			<p id="subtitle679" begin="11:14:46.320" end="11:14:51.320" tts:textAlign="center" style="s1">Mangelnde Durchblutung des Gehirns<br />f&#x00fc;hrt zu erotischen Empfindungen.</p>
+			<p id="subtitle680" begin="11:14:51.640" end="11:14:56.120" tts:textAlign="center" style="s1">Das ist ja abgefahren !<br />Ich kann dich gerne mal w&#x00fc;rgen.</p>
+			<p id="subtitle681" begin="11:14:56.520" end="11:15:00.560" tts:textAlign="center" style="s1"><span tts:color="aqua">Jetzt mal langsam !<br /></span>Der Typ l&#x00fc;gt doch.</p>
+			<p id="subtitle682" begin="11:15:00.920" end="11:15:05.480" tts:textAlign="center" style="s1">Wieso l&#x00e4;sst du ihn laufen ?<br /><span tts:color="yellow">Es gibt keinen Beweis, dass er l&#x00fc;gt.</span></p>
+			<p id="subtitle683" begin="11:15:05.760" end="11:15:09.600" tts:textAlign="center" style="s3">Mit der Aussage hat<br />er mich ausgetrickst.</p>
+			<p id="subtitle684" begin="11:15:09.960" end="11:15:13.560" tts:textAlign="left" style="s4">Was sagst du Ernesto Moros Eltern ?<br /><span tts:color="yellow">Gar nichts.</span></p>
+			<p id="subtitle685" begin="11:15:13.840" end="11:15:18.920" tts:textAlign="left" style="s3">Soll ich ihnen sagen, dass ihr toter<br />Sohn angeblich homosexuell war ?</p>
+			<p id="subtitle686" begin="11:15:19.200" end="11:15:24.480" tts:textAlign="left" style="s3">Dass er f&#x00fc;r seinen Vater b&#x00fc;&#x00df;en muss ?<br /><span tts:color="aqua">Du wirst doch nicht einfach aufgeben.</span></p>
+			<p id="subtitle687" begin="11:15:26.440" end="11:15:30.760" tts:textAlign="center" style="s1">Sprich noch mal mit Dr. Moro.<br /><span tts:color="yellow">Wozu ?</span></p>
+			<p id="subtitle688" begin="11:15:31.760" end="11:15:35.040" tts:textAlign="left" style="s1">Vielleicht gibt es doch einen Bericht.</p>
+			<p id="subtitle689" begin="11:15:35.400" end="11:15:40.120" tts:textAlign="right" style="s1">Dann k&#x00f6;nnten wir beweisen,<br />was damals passiert ist.</p>
+			<p id="subtitle690" begin="11:16:41.200" end="11:16:45.280" tts:textAlign="center" style="s3">Dr. Moro ! Signora Moro !<br />So ein Zufall.</p>
+			<p id="subtitle691" begin="11:16:45.640" end="11:16:50.560" tts:textAlign="left" style="s3">Ich bin &#x00fc;berrascht, Sie zusammen<br />zu sehen. Das ist mein Sohn Raffi.</p>
+			<p id="subtitle692" begin="11:16:50.880" end="11:16:53.880" tts:textAlign="left" style="s1">Suchen Sie uns ?</p>
+			<p id="subtitle693" begin="11:16:54.320" end="11:16:59.160" tts:textAlign="center" style="s3">Ich will Sie &#x00fc;ber eine Aussage<br />zum Tod Ihres Sohns informieren.</p>
+			<p id="subtitle694" begin="11:16:59.560" end="11:17:05.560" tts:textAlign="left" style="s3">Der Kadett Filippi behauptet, ihr<br />Sohn sei bei einem Unfall gestorben.</p>
+			<p id="subtitle695" begin="11:17:05.920" end="11:17:09.600" tts:textAlign="center" style="s1">Filippi !<br /><span tts:color="yellow">Er sprach von peinlichen Umst&#x00e4;nden.</span></p>
+			<p id="subtitle696" begin="11:17:09.920" end="11:17:13.840" tts:textAlign="center" style="s3">Deshalb sollte es wie<br />Selbstmord aussehen.</p>
+			<p id="subtitle697" begin="11:17:14.280" end="11:17:17.200" tts:textAlign="right" style="s1">Was f&#x00fc;r Peinlichkeiten ?</p>
+			<p id="subtitle698" begin="11:17:17.560" end="11:17:21.920" tts:textAlign="center" style="s3">Laut Filippi starb Ihr Sohn<br />bei sexuellen Handlungen.</p>
+			<p id="subtitle699" begin="11:17:22.240" end="11:17:26.320" tts:textAlign="left" style="s1"><span tts:color="yellow">Selbststrangulierung zur Erh&#x00f6;hung...<br /></span>Das ist eine L&#x00fc;ge !</p>
+			<p id="subtitle700" begin="11:17:26.680" end="11:17:32.600" tts:textAlign="left" style="s3">Das glaube ich auch. Ich halte Enzo<br />Filippi f&#x00fc;r den M&#x00f6;rder Ihres Sohnes.</p>
+			<p id="subtitle701" begin="11:17:32.920" end="11:17:36.200" tts:textAlign="right" style="s1">Warum erz&#x00e4;hlen Sie uns das ?</p>
+			<p id="subtitle702" begin="11:17:36.560" end="11:17:40.760" tts:textAlign="right" style="s3">Vermutlich gab Commandante<br />Toscano Filippi den Auftrag.</p>
+			<p id="subtitle703" begin="11:17:41.120" end="11:17:46.040" tts:textAlign="left" style="s3">Ihr Sohn wurde Opfer eines Racheakts.<br />Aber ich kann es nicht beweisen.</p>
+			<p id="subtitle704" begin="11:17:46.360" end="11:17:50.520" tts:textAlign="center" style="s3">Dazu brauche ich den Bericht<br />Ihres Untersuchungsausschusses.</p>
+			<p id="subtitle705" begin="11:17:50.840" end="11:17:54.160" tts:textAlign="left" style="s1">Es gibt keinen Bericht mehr.</p>
+			<p id="subtitle706" begin="11:17:54.480" end="11:17:58.600" tts:textAlign="center" style="s1">Ich habe ihn vernichtet, nachdem<br />auf meine Frau geschossen wurde.</p>
+			<p id="subtitle707" begin="11:17:58.840" end="11:18:04.400" tts:textAlign="left" style="s1">Die schossen, und ich habe gehorcht.<br /><span tts:color="yellow">Sie wussten, es war kein Jagdunfall ?</span></p>
+			<p id="subtitle708" begin="11:18:04.760" end="11:18:09.400" tts:textAlign="center" style="s1">Ich bekam einen Anruf, noch bevor<br />meine Frau im Krankenhaus ankam.</p>
+			<p id="subtitle709" begin="11:18:09.680" end="11:18:14.080" tts:textAlign="right" style="s1">Die machten mir klar,<br />was sie von mir erwarteten.</p>
+			<p id="subtitle710" begin="11:18:14.400" end="11:18:18.600" tts:textAlign="right" style="s3">Etwas verstehe ich nicht.<br />Sie vernichten den Bericht.</p>
+			<p id="subtitle711" begin="11:18:18.920" end="11:18:22.960" tts:textAlign="center" style="s3">Den einzigen Beweis<br />f&#x00fc;r die Korruption.</p>
+			<p id="subtitle712" begin="11:18:23.280" end="11:18:28.000" tts:textAlign="left" style="s3">Zum Schutz Ihrer Frau trennen<br />Sie sich offiziell von Ihr.</p>
+			<p id="subtitle713" begin="11:18:28.320" end="11:18:33.320" tts:textAlign="center" style="s3">Aber Ihren Sohn liefern Sie in der<br />Akademie Toscano und Filippi aus ?</p>
+			<p id="subtitle714" begin="11:18:33.600" end="11:18:39.600" tts:textAlign="left" style="s1">Ernesto wusste von alldem nichts. Sein<br />gr&#x00f6;&#x00df;ter Wunsch war die<br />Milit&#x00e4;rlaufbahn</p>
+			<p id="subtitle715" begin="11:18:39.960" end="11:18:43.920" tts:textAlign="right" style="s1">Er h&#x00e4;tte mich f&#x00fc;r meine<br />Feigheit verachtet.</p>
+			<p id="subtitle716" begin="11:18:44.240" end="11:18:48.240" tts:textAlign="right" style="s1">Er h&#x00e4;tte gewollt, dass ich<br />den Bericht ver&#x00f6;ffentliche.</p>
+			<p id="subtitle717" begin="11:18:48.600" end="11:18:53.600" tts:textAlign="left" style="s1">Dann tun Sie es jetzt ! Seinetwegen.<br />Oder f&#x00fc;rchten Sie um Ihr Leben ?</p>
+			<p id="subtitle718" begin="11:18:53.920" end="11:18:58.920" tts:textAlign="left" style="s1">Ich glaube nicht, dass Sie<br />den Bericht vernichtet haben.</p>
+			<p id="subtitle719" begin="11:19:01.400" end="11:19:07.560" tts:textAlign="center" style="s1">Ihr Sohn ist Ihnen sehr &#x00e4;hnlich,<br />Commissario. Passen Sie auf ihn auf.</p>
+			<p id="subtitle720" begin="11:19:07.920" end="11:19:13.120" tts:textAlign="center" style="s1">Entschuldigen Sie uns. Wir wollen<br />uns von unserem Sohn verabschieden.</p>
+			<p id="subtitle721" begin="11:19:13.400" end="11:19:18.840" tts:textAlign="left" style="s1">Wir verlassen dieses Land.<br />Ich bekomme eine Professur in den USA.</p>
+			<p id="subtitle722" begin="11:19:22.240" end="11:19:25.200" tts:textAlign="left" style="s1">Das war&apos;s dann wohl.</p>
+			<p id="subtitle723" begin="11:19:25.480" end="11:19:31.880" tts:textAlign="left" style="s3">Wieso ? Der schluckt lange an dem<br />Brocken, den du ihm hingeworfen hast.</p>
+			<p id="subtitle724" begin="11:20:02.160" end="11:20:05.960" tts:textAlign="center" style="s1">Achtung !<br />Spiel dich nicht so auf, Filippi.</p>
+			<p id="subtitle725" begin="11:20:09.120" end="11:20:14.880" tts:textAlign="left" style="s1">Was machst du hier, Bella Credi ? Hier<br />ist kein Platz f&#x00fc;r feige Schwuchteln.</p>
+			<p id="subtitle726" begin="11:20:15.240" end="11:20:19.520" tts:textAlign="center" style="s1">Aber f&#x00fc;r M&#x00f6;rder wie dich.<br />Pass auf, was du sagst.</p>
+			<p id="subtitle727" begin="11:20:23.760" end="11:20:27.200" tts:textAlign="left" style="s1">Du bist der Feigling, Filippi.</p>
+			<p id="subtitle728" begin="11:20:27.680" end="11:20:32.480" tts:textAlign="center" style="s1">Du warst sogar zu feige,<br />es allein mit Ernesto aufzunehmen.</p>
+			<p id="subtitle729" begin="11:20:33.520" end="11:20:39.960" tts:textAlign="left" style="s1">Caprese musste ihn festhalten. Dann<br />legtest du ihm den Strick um den Hals.</p>
+			<p id="subtitle730" begin="11:20:58.200" end="11:21:03.000" tts:textAlign="center" style="s1">Er hat einen Abschiedsbrief<br />geschrieben. Du bist erledigt.</p>
+			<p id="subtitle731" begin="11:21:03.680" end="11:21:06.920" tts:textAlign="center" style="s1">Gib her !<br />Au !</p>
+			<p id="subtitle732" begin="11:21:18.960" end="11:21:24.600" tts:textAlign="center" style="s3">Sie versuchen wieder mal, Probleme<br />intern zu l&#x00f6;sen, Kadett Filippi.</p>
+			<p id="subtitle733" begin="11:21:26.440" end="11:21:29.800" tts:textAlign="center" style="s1">Was wollen Sie schon wieder hier ?</p>
+			<p id="subtitle734" begin="11:21:30.080" end="11:21:34.440" tts:textAlign="center" style="s3">Ich nehme Sie unter dem Verdacht<br />des Mordes an Ernesto Moro fest.</p>
+			<p id="subtitle735" begin="11:21:34.800" end="11:21:38.760" tts:textAlign="center" style="s1">Daf&#x00fc;r haben Sie nicht den<br />geringsten Beweis, Commissario.</p>
+			<p id="subtitle736" begin="11:21:39.080" end="11:21:43.320" tts:textAlign="right" style="s3">Ihr Kamerad hat mir das<br />Original des Briefes gegeben.</p>
+			<p id="subtitle737" begin="11:21:48.320" end="11:21:52.320" tts:textAlign="left" style="s6">Auf Handschellen k&#x00f6;nnen wir<br />wohl verzichten, oder ?</p>
+			<p id="subtitle738" begin="11:22:14.680" end="11:22:20.200" tts:textAlign="left" style="s3">Das war mutig von Ihnen. Warum sind<br />Sie nicht fr&#x00fc;her zu mir gekommen ?</p>
+			<p id="subtitle739" begin="11:22:20.720" end="11:22:27.000" tts:textAlign="left" style="s1">Das wollte ich. Ich nahm den Brief an<br />mich, damit ihn keiner vernichtet.</p>
+			<p id="subtitle740" begin="11:22:30.000" end="11:22:35.040" tts:textAlign="center" style="s1">Aber ich wollte nicht der<br />Verr&#x00e4;ter sein, verstehen Sie ?</p>
+			<p id="subtitle741" begin="11:22:35.480" end="11:22:40.520" tts:textAlign="center" style="s1"><span tts:color="yellow">Und warum jetzt ?<br /></span>Ich konnte nicht l&#x00e4;nger schweigen.</p>
+			<p id="subtitle742" begin="11:23:35.040" end="11:23:38.320" tts:textAlign="left" style="s3">Sind Sie zufrieden ?</p>
+			<p id="subtitle743" begin="11:23:38.600" end="11:23:44.280" tts:textAlign="left" style="s1">Der Fall ist gel&#x00f6;st. Nun k&#x00f6;nnen<br />alle zufrieden sein, nicht wahr ?</p>
+			<p id="subtitle744" begin="11:23:46.200" end="11:23:51.560" tts:textAlign="left" style="s3">Jemand hat den jungen Leuten perverse<br />Vorstellungen von Ehre eingeredet.</p>
+			<p id="subtitle745" begin="11:23:51.920" end="11:23:56.560" tts:textAlign="right" style="s3">Ich bin erst zufrieden, wenn<br />der hinter Gittern sitzt.</p>
+			<p id="subtitle746" begin="11:23:56.880" end="11:24:01.320" tts:textAlign="right" style="s3">Sie sind verantwortlich f&#x00fc;r<br />das, was hier passiert ist.</p>
+			<p id="subtitle747" begin="11:24:01.640" end="11:24:05.360" tts:textAlign="center" style="s1"><span tts:color="yellow">Ich wei&#x00df; es, Commandante.<br /></span>K&#x00f6;nnen Sie es auch beweisen ?</p>
+			<p id="subtitle748" begin="11:24:05.600" end="11:24:09.200" tts:textAlign="center" style="s3">Ich bin hartn&#x00e4;ckig, Commandante.</p>
+			<p id="subtitle749" begin="11:24:12.680" end="11:24:15.800" tts:textAlign="center" style="s3">Sehr hartn&#x00e4;ckig.</p>
+			<p id="subtitle750" begin="11:24:48.040" end="11:24:52.200" tts:textAlign="center" style="s1">Wie ist es gelaufen ?<br /><span tts:color="yellow">Er hat gestanden.</span></p>
+			<p id="subtitle751" begin="11:24:54.480" end="11:24:57.560" tts:textAlign="center" style="s1">Ja und ?</p>
+			<p id="subtitle752" begin="11:24:57.880" end="11:25:02.880" tts:textAlign="left" style="s3">Als er sah, dass er keine Chance<br />mehr hatte, ist er zusammengeklappt.</p>
+			<p id="subtitle753" begin="11:25:03.200" end="11:25:07.840" tts:textAlign="right" style="s1">Ich w&#x00e4;re gerne dabei gewesen.<br /><span tts:color="aqua">Sieh mal nach den Nudeln.</span></p>
+			<p id="subtitle754" begin="11:25:08.120" end="11:25:13.480" tts:textAlign="center" style="s1">Filippi tut mir irgendwie Leid.<br />Was ? Er t&#x00f6;tete einen Kameraden.</p>
+			<p id="subtitle755" begin="11:25:13.800" end="11:25:17.760" tts:textAlign="center" style="s1">Einen anderen trieb er in den Tod.<br /><span tts:color="aqua">Mir tut er auch Leid.</span></p>
+			<p id="subtitle756" begin="11:25:18.080" end="11:25:23.120" tts:textAlign="left" style="s4">Sie verdrehten ihm das Hirn und<br />missbrauchten ihn als lebende Waffe.</p>
+			<p id="subtitle757" begin="11:25:23.360" end="11:25:26.600" tts:textAlign="center" style="s3">Filippis Vater war nie Soldat.</p>
+			<p id="subtitle758" begin="11:25:26.960" end="11:25:30.920" tts:textAlign="left" style="s3">Aber gerade Filippi verinnerlichte<br />die Regeln des Systems perfekt.</p>
+			<p id="subtitle759" begin="11:25:31.240" end="11:25:36.800" tts:textAlign="left" style="s1">Genau deshalb. Er musste besser,<br />h&#x00e4;rter, loyaler sein als alle anderen.</p>
+			<p id="subtitle760" begin="11:25:37.120" end="11:25:41.280" tts:textAlign="center" style="s3">Genau.<br /><span tts:color="aqua">Was wird mit dem alten Filippi ?</span></p>
+			<p id="subtitle761" begin="11:25:41.560" end="11:25:47.560" tts:textAlign="left" style="s4">Und mit Toscano. Die beiden sind doch<br />verantwortlich. Kommen sie davon ?</p>
+			<p id="subtitle762" begin="11:26:18.800" end="11:26:23.800" tts:textAlign="center" style="s1">Damit knacken Sie jedes Passwort ?<br />Das Programm h&#x00e4;tte ich auch gern.</p>
+			<p id="subtitle763" begin="11:26:24.160" end="11:26:27.760" tts:textAlign="center" style="s1">Ganz einfach ist es nicht.<br />Guten Morgen, Commissario.</p>
+			<p id="subtitle764" begin="11:26:28.120" end="11:26:32.400" tts:textAlign="left" style="s3">Guten Morgen. Hoffentlich verraten<br />Sie meinem Sohn Ihre Tricks nicht.</p>
+			<p id="subtitle765" begin="11:26:32.720" end="11:26:37.440" tts:textAlign="center" style="s1">Nicht n&#x00f6;tig. Er ist &#x00e4;u&#x00df;erst begabt.<br /><span tts:color="yellow">Das wei&#x00df; ich.</span></p>
+			<p id="subtitle766" begin="11:26:37.760" end="11:26:41.520" tts:textAlign="center" style="s1">Ich will nur mein<br />Praktikum sinnvoll nutzen.</p>
+			<p id="subtitle767" begin="11:26:41.840" end="11:26:45.920" tts:textAlign="center" style="s3">Genau das bef&#x00fc;rchte ich.<br />Vice-Questore !</p>
+			<p id="subtitle768" begin="11:26:46.240" end="11:26:50.440" tts:textAlign="left" style="s3">Sind Sie nicht zu Ihrer<br />Reserve&#x00fc;bung gefahren ?</p>
+			<p id="subtitle769" begin="11:26:50.800" end="11:26:56.160" tts:textAlign="center" style="s5">Ein dummes Missverst&#x00e4;ndnis.<br />Es war nur ein Mobilisierungstest.</p>
+			<p id="subtitle770" begin="11:26:56.480" end="11:27:01.320" tts:textAlign="center" style="s5">Ganz &#x00fc;berfl&#x00fc;ssig. Man steht immer<br />bereit, wenn das Vaterland ruft.</p>
+			<p id="subtitle771" begin="11:27:01.680" end="11:27:07.000" tts:textAlign="center" style="s5">Ihr Fall hat die schlimmstm&#x00f6;gliche<br />Wendung genommen. Eine Trag&#x00f6;die.</p>
+			<p id="subtitle772" begin="11:27:07.360" end="11:27:12.840" tts:textAlign="center" style="s5">Hoffentlich kommt da nichts nach.<br /><span tts:color="yellow">Der Fall Moro ist abgeschlossen.</span></p>
+			<p id="subtitle773" begin="11:27:13.120" end="11:27:17.960" tts:textAlign="right" style="s5">Wenigstens war der zweite Tote<br />ein echter Selbstm&#x00f6;rder.</p>
+			<p id="subtitle774" begin="11:27:18.280" end="11:27:24.000" tts:textAlign="left" style="s5">&#x00dc;brigens, Brunetti... Die Statistik,<br />die Sie mir gegeben haben.</p>
+			<p id="subtitle775" begin="11:27:24.280" end="11:27:28.560" tts:textAlign="left" style="s5">Sind die Zahlen nicht ein<br />wenig zu stark begradigt ?</p>
+			<p id="subtitle776" begin="11:27:28.920" end="11:27:33.680" tts:textAlign="left" style="s3">Ich glaube nicht, dass der Minister<br />f&#x00fc;r Tourismus harte Fakten will.</p>
+			<p id="subtitle777" begin="11:27:34.000" end="11:27:38.160" tts:textAlign="left" style="s5">Da haben Sie wahrscheinlich<br />Recht. Gut, gut.</p>
+			<p id="subtitle778" begin="11:27:38.480" end="11:27:41.440" tts:textAlign="center" style="s5">Passen Sie doch auf !</p>
+			<p id="subtitle779" begin="11:27:46.160" end="11:27:50.640" tts:textAlign="center" style="s6">Das hat gerade ein Bote gebracht.<br />Nein, es ist f&#x00fc;r Raffi.</p>
+			<p id="subtitle780" begin="11:27:59.600" end="11:28:02.680" tts:textAlign="center" style="s1">Von Signora Moro.</p>
+			<p id="subtitle781" begin="11:28:03.920" end="11:28:06.920" tts:textAlign="center" style="s1">&quot;Lieber Raffi !&quot;</p>
+			<p id="subtitle782" begin="11:28:07.240" end="11:28:12.520" tts:textAlign="left" style="s1">&quot;Man wei&#x00df; nicht immer, wann der<br />richtige Moment ist, Mut zu zeigen.&quot;</p>
+			<p id="subtitle783" begin="11:28:12.840" end="11:28:17.640" tts:textAlign="center" style="s1">&quot;Wir haben ihn verpasst.<br />Viel Gl&#x00fc;ck, deine Isabella Moro.&quot;</p>
+			<p id="subtitle784" begin="11:28:21.240" end="11:28:24.720" tts:textAlign="left" style="s1">Das ist Dr. Moros Abschlussbericht.</p>
+			<p id="subtitle785" begin="11:28:25.000" end="11:28:30.400" tts:textAlign="center" style="s1">Da sind sogar die Konten drin, auf<br />die Toscanos Schmiergelder flossen.</p>
+			<p id="subtitle786" begin="11:28:34.960" end="11:28:40.000" tts:textAlign="left" style="s1">Was machst du jetzt mit dem Bericht ?<br /><span tts:color="yellow">Da f&#x00e4;llt mir sicher etwas ein.</span></p>
+			<p id="subtitle787" begin="11:28:46.760" end="11:28:51.760" tts:textAlign="center" style="s1">Toscano und der alte Filippi kommen<br />doch jetzt vor Gericht, oder ?</p>
+			<p id="subtitle788" begin="11:28:52.040" end="11:28:56.640" tts:textAlign="center" style="s6">Nat&#x00fc;rlich. Das gibt wochenlang<br />Schlagzeilen in allen Zeitungen.</p>
+			<p id="subtitle789" begin="11:28:56.960" end="11:29:01.360" tts:textAlign="left" style="s3">Und im Anschluss bekommen Sie<br />die CD-ROM f&#x00fc;r Ihre Sammlung.</p>
+			<p id="subtitle790" begin="11:29:01.680" end="11:29:06.920" tts:textAlign="left" style="s6">Die Sache mit dem Museum lasse ich<br />ruhen. Ich habe schon Albtr&#x00e4;ume.</p>
+			<p id="subtitle791" begin="11:29:07.200" end="11:29:13.280" tts:textAlign="left" style="s6">&quot;Blickst du zu lange in den Abgrund,<br />dann blickt er auch in dich hinein.&quot;</p>
+			<p id="subtitle792" begin="11:29:13.640" end="11:29:17.600" tts:textAlign="right" style="s6">Friedrich Nietzsche.<br />Bis morgen.</p>
+			<p id="subtitle793" begin="11:29:18.680" end="11:29:20.840" tts:textAlign="right" style="s1">Wahnsinn !</p>
+		</div>
+	</body>
+</tt>

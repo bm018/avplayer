@@ -1,0 +1,95 @@
+03.04.13 / Version 3.3.0
+
+    Neuer Versionsbranch nach Abschluss der Plugin-Architektur auf 3.3.x.
+
+	- Bearbeitete Tickets (https://pm.nettrek.de/versions/192)
+        Fehler #2906: Beim Sprung innerhalb eines Clips wird der Ton wieder angeschaltet
+        Wartung #2916: Pixel-Events in der Doku nachtragen
+
+    - Geänderte Dateien:
+        /addons/untertitel/js/AddonUntertitel.js
+        /base/flash/PluginFlash.swf
+        /base/js/com/netTrek/gundl/ardplayer/controller/IVWController.js
+        /base/js/com/netTrek/gundl/ardplayer/core/AbstractPlayerCtrl.js
+        /docs/ARD-Player-Technische Dokumentation-1.7.pdf
+        /js/addons.min.js
+        /js/base.min.js
+        /index.html
+
+03.05.13 / Version 3.3.1
+
+	- Bearbeitete Tickets (https://pm.nettrek.de/versions/192)
+        Fehler #2968: Flash, HTTP-Stream: Beim Wechsel nach Web-L werden erste 4 Sek. Ton abgespielt bevor er an die vorherige Stelle springt
+        Fehler #2969: Beim Wechsel von / nach L wird der Tonstatus nicht beibehalten
+        Fehler #3022: Steuerleiste springt bei mouse-over (Video)
+
+    - Geänderte Dateien:
+        /base/flash/osmf/ConvivaStarterPlugin.swf
+        /base/flash/osmf/IcecastPlugin.swf
+        /base/flash/osmf/SMILPlugin.swf
+        /base/flash/osmf/SMPTETTPlugin.swf
+        /base/flash/PluginFlash.swf
+        /base/js/com/netTrek/gundl/ardplayer/core/AbstractPlayerCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/core/FlashPluginCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/model/GlobalModel.js
+        /base/js/com/netTrek/gundl/ardplayer/views/ViewController.js
+        /js/base.min.js
+
+21.05.13 / Version 3.3.2
+
+	- Bearbeitete Tickets (https://pm.nettrek.de/versions/198)
+        Fehler #3047: Zurücksetzen der Bildeinstellungen im Overlay wird nicht übernommen
+        Fehler #3052: Audio-Image über Vorschaubild
+        Wartung #3022: Steuerleiste springt bei mouse-over (Video)
+        Wartung #3039: Parametermitgabe bei setSortierung greift nicht mehr
+        Wartung #3046: Menü Bildeinstellungen nach Toggle Vollbild per Doppelklick noch sichtbar
+        Wartung #3048: Fehlermeldung für HTML5-Livestream statt Flash-Livestream
+        Wartung #3050: Cookies werden nicht auf gleicher Seite übernommen
+        Wartung #3054: IE9 - Steuerleiste nach toggle Overlay weg
+        Wartung #3128: Player-Tastensteuerung kollidiert mit Seitenlauf
+        Wartung #3130: PluginDetections.json wird mehrmals bei Multiinstanzen gezogen
+
+    - Geänderte Dateien:
+        /base/flash/osmf/ConvivaStarterPlugin.swf
+        /base/flash/osmf/IcecastPlugin.swf
+        /base/flash/osmf/SMILPlugin.swf
+        /base/flash/osmf/SMPTETTPlugin.swf
+        /base/flash/PluginFlash.swf
+        /base/js/com/netTrek/gundl/ardplayer/business/GenerateFlashPluginCmd.js
+        /base/js/com/netTrek/gundl/ardplayer/business/InitPlayerCmd.js
+        /base/js/com/netTrek/gundl/ardplayer/controller/ErrorController.js
+        /base/js/com/netTrek/gundl/ardplayer/controller/KeyboardPlayerController.js
+        /base/js/com/netTrek/gundl/ardplayer/core/AbstractPlayerCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/core/FlashPluginCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/core/HtmlAudioCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/core/HtmlVideoCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/core/Player.js
+        /base/js/com/netTrek/gundl/ardplayer/core/WmpCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/model/vo/MediaCollection.js
+        /base/js/com/netTrek/gundl/ardplayer/model/GlobalModel.js
+        /base/js/com/netTrek/gundl/ardplayer/views/ViewController.js
+        /base/js/libs/shortcut.js
+        /js/base.min.js
+        /autoplay.html
+        /index.html
+        /index_ap.html
+        /index_ap.php
+        /index_config.php
+        /index_ebu.php
+        /index_relaunch.html
+        /index_relaunch.php
+        /index_stream_list.html
+        /index_stream_list.php
+
+04.06.13 / Version 3.3.3
+
+	- Bearbeitete Tickets (https://pm.nettrek.de/versions/205)
+        Fehler #3051: Großer Play-Pause-Button bei Plugin-Wechsel sichtbar
+        Fehler #3215: Multiinstanzfähigkeit bei Klick auf Viewport außer Kraft
+        Wartung #3053: IE 9 - Player startet nach Seiten-Reload stumm
+
+    - Geänderte Dateien:
+        /base/js/com/netTrek/gundl/ardplayer/core/FlashPluginCtrl.js
+        /base/js/com/netTrek/gundl/ardplayer/model/GlobalModel.js
+        /base/js/com/netTrek/gundl/ardplayer/views/ViewController.js
+        /js/base.min.js

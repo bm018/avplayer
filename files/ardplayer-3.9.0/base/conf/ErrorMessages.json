@@ -1,0 +1,45 @@
+{
+    "NO_PLAYER_DEFINED":"Es wurde kein Player definiert.",
+    "PLAYER_CTRL_GENERATION_WAS_NOT_SUCCESSFUL":"Player Control Generierung ist fehlgeschlagen.",
+
+    "MC_JSON_FILE_NOT_FOUND":"Es wurde keine MediaCollection-Json-Datei gefunden.",
+    "MC_JSON_FILE_WRONG_URI":"Die URI f&uuml;r die MediaCollection-Json-Datei ist falsch.",
+    "MC_UNKNOWN":"Dieser Clip kann auf Ihrem Betriebssystem nicht abgespielt werden.",
+    "MC_COULD_NOT_REGISTERED":"Die MediaCollection konnte nicht registriert werden, da sie unbekannt ist.",
+
+    "PC_JSON_FILE_NOT_FOUND":"Es wurde keine PlayerConfiguration-Json-Datei gefunden.",
+    "PC_JSON_FILE_WRONG_URI":"Die URI f&uuml;r die PlayerConfiguration-Json-Datei ist falsch.",
+    "PC_UNKNOWN":"Die PlayerConfiguration ist unbekannt.",
+    "PC_COULD_NOT_REGISTERED":"Die PlayerConfiguration konnte nicht registriert werden, da sie unbekannt ist.",
+
+    "MEDIA_CANVAS_NOT_REGISTERED":"Das MediaCanvas-Objekt konnte nicht registriert werden, da es unbekannt ist.",
+    "MEDIACANVAS_COULD_NOT_GENERATED":"MediaCanvas konnte nicht generiert werden.",
+
+    "NO_REQUIRED_PLUGINS_INSTALLED":"Ihr System verf&uuml;gt nicht &uuml;ber die ben&ouml;tigten Plug-ins",
+    "NO_PLUGIN_SUPPORTED":"Es werden keine Plug-ins unterst&uuml;tzt.",
+    "PLUGIN_ID_UNKNOWN":"Unbekannte Plug-in-ID.",
+    "PLUGIN_ID_UNSUPPORTED":"Die Plug-in-ID wird nicht unterst&uuml;tzt.",
+
+    "ERROR_DURING_EMBED_FLASH":"Fehler beim Einbetten des Flashfilms.",
+    "ERROR_FLASH_RSL":"Fehler beim Laden des Players: Bitte leeren Sie Ihren Browsercache und laden Sie die Seite neu.",
+    "ERROR_FLASH_PLUGINS":"Es konnten nicht alle Player-Komponenten geladen werden (32). Bitte leeren Sie den Browser-Cache und laden Sie die Seite neu. Weitere Informationen finden Sie in unserer Hilfe.",
+
+    "UNKOWN_TYPE_FOR_HTML":"Unbekannter Typ f&uuml;r die Generierung des HTML-Players.",
+
+    "IDENTIFIER_IS_UNDEFINED":"Identifier ist unbekannt.",
+    "ILLEGAL_ARGUMENTS":"Eines der Argumente ist fehlerhaft.",
+    "ERROR_LOADING_SUBTITLE_XML":"Ein Fehler beim Laden der Untertitel-XML ist aufgetreten.",
+    "REPRESENTATION_WIDTH_DETECTION_FAILED":"Ein Fehler bei der Ermittlung der Breite f&uuml;r die Repr&auml;sentation ist aufgetreten. M&ouml;gliche Ursache: Fehlerhafte Konfiguration.",
+    "REPRESENTATION_HEIGHT_DETECTION_FAILED":"Ein Fehler bei der Ermittlung der H&ouml;he f&uuml;r die Repr&auml;sentation ist aufgetreten. M&ouml;gliche Ursache: Fehlerhafte Konfiguration.",
+    "VIDEO_WIDTH_DETECTION_FAILED":"Ein Fehler bei der Ermittlung der Breite f&uuml;r das Video ist aufgetreten.",
+    "VIDEO_HEIGHT_DETECTION_FAILED":"Ein Fehler bei der Ermittlung der H&ouml;he f&uuml;r das Video ist aufgetreten.",
+    "MISCONF_MEDIA_COLL":"Das Audio/Video ist leider nicht abspielbar (mc).",
+    "NO_CTRL_DEFINED":"Es konnte kein Controller initialisiert werden.",
+    "IMG_SRC_IS_WRONG":"Bild kann nicht geladen werden.",
+    "ERROR_TITLE":"Da ging leider was schief ...",
+    "ERROR_PLAYBACK":"Dieses Video kann leider nicht abgespielt werden. Wir bitten um Ihr Verst&auml;ndnis.",
+    "ERROR_PLAYBACK_GEOBLOCK":"Dieses Video kann leider nicht abgespielt werden. Wichtig: Inhalte mit Geoblocking k&ouml;nnen nur von Deutschland aus abgerufen werden. Wir bitten um Ihr Verst&auml;ndnis.",
+    "ERROR_FOOTER_LINK":"",
+
+    "AddonUntertitel_ERROR_LOADING_SUBTITLE_XML":"Die Untertitel-Datei konnte nicht korrekt geladen werden."
+}

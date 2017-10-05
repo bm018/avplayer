@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <title>[ARD-Player]</title>
+
+    <!-- Basisklasse: Immer einbinden -->
+    <link rel="stylesheet" href="mandanten/ard/style/main.css" type="text/css"/>
+
+    <!-- Body-Setup: Helferklasse nur fuer Release-Ausspielung -->
+    <style>
+        html, body {
+            font-family: Verdana, Arial, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            padding-left: 4%;
+            padding-top: 2%;
+        }
+    </style>
+
+    <script type="text/javascript">
+        document.write("<meta http-equiv='X-UA-Compatible' content='IE=edge'/>");
+    </script>
+
+    <!-- ARD Player start -->
+    <!--Libs-->
+    <script src="base/js/libs/jquery-2.1.1.min.js"></script>
+    <script src="base/js/libs/jquery.tools-1.2.7.min.js"></script>
+    <script src="base/js/libs/jquery-ui-1.10.4.min.js"></script>
+    <script src="base/js/libs/swfobject.js"></script>
+    <script src="base/js/libs/mm.useractivity.js"></script>
+    <script src="base/js/libs/json2.js"></script>
+    <script src="base/js/libs/jquery.cookie.js"></script>
+    <script src="base/js/libs/shortcut.js"></script>
+    <script src="base/js/libs/bigscreen.min.js"></script>
+    <script src="base/js/libs/hls-0.7.11.light.min.js"></script>
+
+    <!-- Greensock -->
+    <script src="base/js/libs/TweenLite.min.js"></script>
+    <script src="base/js/libs/Draggable.min.js"></script>
+    <script src="base/js/libs/CSSPlugin.min.js"></script>
+
+    <!--Player-->
+    <script src="base/js/namespace.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/core/AbstractPlayerCtrl.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/core/AbstractCorePlugin.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/core/HtmlVideoCtrl.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/core/HtmlAudioCtrl.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/core/FlashPluginCtrl.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/core/Player.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/model/vo/PlayerConfiguration.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/model/vo/Media.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/model/vo/MediaCollection.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/model/vo/MediaStream.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/model/VideoSources.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/model/PlayerModel.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/controller/KeyboardPlayerController.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/utils/GUID.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/utils/QueryParser.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/utils/DateUtils.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/utils/Cookie.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/utils/Html5MEFactory.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/model/GlobalModel.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/views/ViewController.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/views/ResponsiveImage.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/views/TimelineSlider.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/controller/ErrorController.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/controller/PlayerPixelController.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/business/GetPlayerModelCmd.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/business/GenerateFlashPluginCmd.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/business/InitPlayerCmd.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/business/GetPlayerConfigByQueryCmd.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/business/GetPlayerConfigByJsonCmd.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/business/GetMediaCollectionByQueryCmd.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/business/GetMediaCollectionByJsonCmd.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/business/GenerateHTMLVideoCmd.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/business/GenerateHTMLAudioCmd.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/core/plugins.js"></script>
+    <script src="base/js/com/netTrek/gundl/ardplayer/core/script.js"></script>
+
+    <!-- Plugin Untertitel -->
+    <script src="addons/untertitel/js/AddonUntertitel.js"></script>
+    <script src="addons/untertitel/js/controller/SubtitleController.js"></script>
+    <link rel="stylesheet" href="addons/untertitel/css/AddonUntertitel.css" media="all"/>
+
+    <!-- Plugin Debug
+    <script src="addons/debug/js/AddonDebug.js"></script>
+    <link rel="stylesheet" href="addons/debug/css/AddonDebug.css" media="all"/>
+    -->
+
+    <!-- ARD Player END -->
+
+</head>
+<body>
+
+<script>
+    (function ($) {
+
+        $(window).ready(function () {
+
+            //var mc = new MediaCollection("video", true, 1);
+            var mc = new ardplayer.MediaCollection("video", true, ["auto", 0, 1, 2, 3]);
+
+            mc.setDVREnabled(true);
+
+            mc.setSortierung(1, 0);
+
+            mc.setDownloadClickFunction(function () {
+                alert("say hello Download");
+            });
+
+            mc.setPreviewImage("base/img/posterframe-m.jpg");
+            mc.setAudioImage("base/img/posterframe-m.jpg");
+
+            mc.addMedia(0);
+            mc.addMediaStream(0, "auto", "http://swrbw-lh.akamaihd.net/i/swrbw_live@196738/master.m3u8", "", "flashls");
+            mc.addMedia(1);
+            mc.addMediaStream(1, "auto", "", "http://swrbw-lh.akamaihd.net/i/swrbw_live@196738/master.m3u8", "flashls");
+
+            mc.setSubtitleUrl("test/untertiteldateien/alt/9405442b.xml", "");
+
+            var pc = new ardplayer.PlayerConfiguration();
+
+            pc.setBaseUrl("");
+
+            //schalter: size | ? | scale true false | rep
+            /*            pc.setRepresentation(0, 256, 144, false, true, "s");
+             pc.setRepresentation(1, 512, 288, false, false, "m");
+             pc.setRepresentation(2, 960, 540, true, true, "l");
+             pc.setRepresentation(3, 1280, 720, true, true, "xl");*/
+
+            pc.setAutoPlay(true);
+
+            pc.setShowOptions(true);
+            pc.setShowOptions_Plugins(true);
+            pc.setShowOptions_Quality(true);
+
+            // 2364
+            pc.setOnStatusChangeFunction(function (status) {
+                /*if (status == "play") {
+                 ardplayer.PlayerModel.getInstanceByPlayerID("player00").player._ctrl.pause();
+                 }*/
+
+            });
+
+            // 2364
+            pc.setOnErrorCallbackFunction(function (critical, message) {
+                //console.log("Error critical:" + (critical?"true":"false") + " msg: " + message);
+            });
+
+            //pc.setAutoSave(false);
+            //pc.setStartStopTime(10, 30);
+            pc.setForceControlBarVisible(false);
+
+            pc.setInitialPlayhead(0);
+
+            /*pc.setQoSEnabled(false);
+             pc.setQoSEndpoint("http://localhost/");
+             pc.setQoSMethod("POST"); //pc.setQoSMethod("GET");
+             pc.setQoSInterval(5);*/
+
+            pc.setSolaAnalyticsEnabled(false);
+            pc.setSolaAnalyticsConfig("conf/sola/sola.json");
+
+            //pc.setPixelConfig("conf/pixel/player_pixel_config_1.js");
+
+            pc.setShowEqualizer(true);
+
+            pc.setAddons(
+                    "AddonUntertitel"
+            );
+
+            //var p = new ardplayer.Player("programatischer-player00", "test/conf/pc_full.json", "test/conf/mc_video.json");
+            var p = new ardplayer.Player("player00", pc, mc);
+
+            $(p).bind(ardplayer.PlayerPixelController.INTERACTION_INITIAL_PLAY, function (event) {
+                //console.log("BINDING: " + PlayerPixelController.INTERACTION_INITIAL_PLAY);
+            });
+
+            $(p).bind(ardplayer.PlayerPixelController.SUPER_BACK_TO_LIVE, function (event) {
+                console.log(event);
+            });
+
+            $(p).bind(ardplayer.PlayerPixelController.SUPER_QUALITY_CHANGE, function (event) {
+                console.log(event);
+            });
+
+            $(p).bind(ardplayer.PlayerPixelController.SUPER_DVR_ACTIVE, function (event) {
+                console.log(event);
+            });
+
+            $(p).bind(ardplayer.PlayerPixelController.SUPER_INITIAL_PLAY, function (event) {
+                console.log(event);
+            });
+
+            $(p).bind(ardplayer.Player.EVENT_QUALITY_CHANGE, function (event) {
+                console.log(event);
+            });
+
+            $(p).bind(ardplayer.Player.EVENT_STATUS_CHANGE, function (event) {
+                console.log(event);
+            });
+
+            $(p).bind(ardplayer.Player.EVENT_PLUGIN_CHANGE, function (event) {
+                console.log(event);
+            });
+
+
+            //PlayerModel.getInstanceByPlayerID("-player00").player.controller.setVolume(80);
+            //PlayerModel.getInstanceByPlayerID("player00").player.seekTo(bitte zeitpunkt eintragen);
+            //PlayerModel.getInstanceByPlayerID("player00").player.seekToAndPlay(bitte zeitpunkt eintragen);
+            //console.log(PlayerModel.getInstanceByPlayerID("programatischer-player00").player.viewCtrl);
+            //PlayerModel.getInstanceByPlayerID("programatischer-player00").player.viewCtrl.setVolume(80);
+
+
+        });
+    })(ardplayer.jq);
+
+</script>
+
+
+<div style="width:512px; height: 288px">
+    <div id="player00"></div>
+</div>
+
+</body>
+</html>

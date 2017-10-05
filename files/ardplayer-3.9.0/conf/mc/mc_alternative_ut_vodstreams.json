@@ -1,0 +1,98 @@
+{
+  "_type": "video",
+  "_isLive": false,
+  "_defaultQuality": [
+    "auto",
+    1,
+    2,
+    3,
+    0
+  ],
+  "_previewImage": "http://www.ardmediathek.de/image/00/29/64/05/84/445341358/16x9/960",
+  "_subtitleOffset": 0,
+  "_mediaArray": [
+    {
+      "_plugin": 1,
+      "_mediaStreamArray": [
+        {
+          "_quality": "auto",
+          "_server": "",
+          "_cdn": "akamai",
+          "_stream": "http://hls.tagesschau.de/i/video/2015/0719/TV-20150719-1855-3701.,webs,websm,webm,webml,webl,webxl,.h264.mp4.csmil/master.m3u8"
+        },
+        {
+          "_quality": 0,
+          "_server": "",
+          "_cdn": "default",
+          "_stream": "http://media.tagesschau.de/video/2015/0719/TV-20150719-1855-3701.webs.h264.mp4"
+        },
+        {
+          "_quality": 1,
+          "_server": "",
+          "_cdn": "default",
+          "_stream": "http://media.tagesschau.de/video/2015/0719/TV-20150719-1855-3701.webm.h264.mp4"
+        },
+        {
+          "_quality": 2,
+          "_server": "",
+          "_cdn": "default",
+          "_stream": "http://media.tagesschau.de/video/2015/0719/TV-20150719-1855-3701.webml.h264.mp4"
+        },
+        {
+          "_quality": 3,
+          "_server": "",
+          "_cdn": "default",
+          "_stream": "http://media.tagesschau.de/video/2015/0719/TV-20150719-1855-3701.webl.h264.mp4"
+        }
+      ]
+    }
+  ],
+  "_alternativeMediaArray": [
+    {
+      "_type": ["untertitel"],
+      "_mediaArray": [
+        {
+          "_plugin": 1,
+          "_mediaStreamArray": [
+            {
+              "_quality": "auto",
+              "_server": "",
+              "_cdn": "akamai",
+              "_stream": "http://hls.tagesschau.de/i/video/2015/0719/TV-20150719-1855-3701.,webs,websm,webm,webml,webl,webxl,.h264.mp4.csmil/master.m3u8?1"
+            },
+            {
+              "_quality": 0,
+              "_server": "",
+              "_cdn": "default",
+              "_stream": "http://media.tagesschau.de/video/2015/0719/TV-20150719-1855-3701.webs.h264.mp4?2"
+            },
+            {
+              "_quality": 1,
+              "_server": "",
+              "_cdn": "default",
+              "_stream": "http://media.tagesschau.de/video/2015/0719/TV-20150719-1855-3701.webm.h264.mp4?3"
+            },
+            {
+              "_quality": 2,
+              "_server": "",
+              "_cdn": "default",
+              "_stream": "http://media.tagesschau.de/video/2015/0719/TV-20150719-1855-3701.webml.h264.mp4?4"
+            },
+            {
+              "_quality": 3,
+              "_server": "",
+              "_cdn": "default",
+              "_stream": "http://media.tagesschau.de/video/2015/0719/TV-20150719-1855-3701.webl.h264.mp4x?5"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_sortierArray": [
+    1
+  ],
+  "_duration": 1197,
+  "_dvrEnabled": false,
+  "_geoblocked": false
+}

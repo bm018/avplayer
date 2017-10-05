@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--© 2012 Institut für Rundfunktechnik GmbH. -->
+<!-- v1.1 -->
+<!-- This sample corresponds to the proposal for an ARD Online Distribution EBU-TT Profil in the version 1.1  -->
+<tt:tt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:tt="http://www.w3.org/ns/ttml" xmlns:ebuttm="urn:ebu:tt:metadata" ttp:timeBase="media" xml:lang="de" ttp:cellResolution="50 30">
+	<tt:head>
+		<tt:metadata>
+			<ebuttm:documentMetadata>
+				<ebuttm:documentEbuttVersion>v1.0</ebuttm:documentEbuttVersion>
+			</ebuttm:documentMetadata>
+		</tt:metadata>
+		<tt:styling>
+			<tt:style xml:id="defaultStyle" tts:fontFamily="Verdana, Arial" tts:fontSize="160%" tts:lineHeight="125%"/>
+			<tt:style xml:id="textRed" tts:color="#ff0000" tts:backgroundColor="#000000c2" tts:fontSize="160%"/>
+			<tt:style xml:id="textGreen" tts:color="#00ff00" tts:backgroundColor="#000000c2" tts:fontSize="160%"/>
+			<tt:style xml:id="textYellow" tts:color="#ffff00" tts:backgroundColor="#000000c2" tts:fontSize="160%"/>
+			<tt:style xml:id="textBlue" tts:color="#0000ff" tts:backgroundColor="#000000c2" tts:fontSize="160%"/>
+			<tt:style xml:id="textMagenta" tts:color="#ff00ff" tts:backgroundColor="#000000c2" tts:fontSize="160%"/>
+			<tt:style xml:id="textCyan" tts:color="#00ffff" tts:backgroundColor="#000000c2" tts:fontSize="160%"/>
+			<tt:style xml:id="textWhite" tts:color="#ffffff" tts:backgroundColor="#000000c2" tts:fontSize="160%"/>
+			<tt:style xml:id="textBlack" tts:color="#000000" tts:backgroundColor="#ffffffc2" tts:fontSize="160%"/>
+            <tt:style xml:id="textBlueOnYellow" tts:color="#0000ff" tts:backgroundColor="#ffff00c2" tts:fontSize="160%"/>
+            <tt:style xml:id="textBlueOnWhite" tts:color="#0000ff" tts:backgroundColor="#ffffff" tts:fontSize="160%"/>
+            <tt:style xml:id="textYellowOnWhite" tts:color="#ffffff" tts:backgroundColor="#ffff00c2" tts:fontSize="160%"/>
+
+
+			<tt:style xml:id="textCenter" tts:textAlign="center" />
+		</tt:styling>
+		<tt:layout>
+			<tt:region xml:id="bottom" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="after"/>
+		</tt:layout>
+	</tt:head>
+	<tt:body>
+		<tt:div style="defaultStyle">
+			<tt:p xml:id="subtitle1" region="bottom" begin="00:00:00.000" end="00:00:02.120" style="textCenter">
+				<tt:span style="textWhite">weiß auf schwarz</tt:span>
+			</tt:p>
+			<tt:p xml:id="subtitle2" region="bottom" begin="00:00:02.280" end="00:00:04.280" style="textCenter">
+				<tt:span style="textYellow">gelb auf schwarz</tt:span>
+			</tt:p>
+			<tt:p xml:id="subtitle3" region="bottom" begin="00:00:04.440" end="00:00:06.560" style="textCenter">
+				<tt:span style="textGreen">grün auf schwarz</tt:span>
+			</tt:p>
+			<tt:p xml:id="subtitle4" region="bottom" begin="00:00:06.720" end="00:00:08.840" style="textCenter">
+				<tt:span style="textCyan">cyan auf schwarz</tt:span>
+			</tt:p>
+			<tt:p xml:id="subtitle5" region="bottom" begin="00:00:09.000" end="00:00:11.040" style="textCenter">
+				<tt:span style="textMagenta">magenta auf schwarz</tt:span>
+			</tt:p>
+			<tt:p xml:id="subtitle6" region="bottom" begin="00:00:11.200" end="00:00:13.080" style="textCenter">
+				<tt:span style="textRed">rot auf schwarz</tt:span>
+			</tt:p>
+			<tt:p xml:id="subtitle7" region="bottom" begin="00:00:13.240" end="00:00:15.080" style="textCenter">
+				<tt:span style="textBlueOnYellow">blau auf gelb</tt:span>
+			</tt:p>
+			<tt:p xml:id="subtitle8" region="bottom" begin="00:00:15.240" end="00:00:17.200" style="textCenter">
+				<tt:span style="textBlack">schwarz auf weiß</tt:span>
+			</tt:p>
+			<tt:p xml:id="subtitle9" region="bottom" begin="00:00:17.360" end="00:00:20.240" style="textCenter">
+				<tt:span style="textWhite" >weiß auf schwarz</tt:span>
+				<tt:br/>
+				<tt:span style="textBlueOnYellow">und blau auf gelb</tt:span>
+			</tt:p>
+			<tt:p xml:id="subtitle10" region="bottom" begin="00:00:20.400" end="00:00:23.000" style="textCenter">
+				<tt:span style="textWhite">in einer Zeile ein </tt:span>
+				<tt:span style="textRed">rotes</tt:span>
+				<tt:span style="textWhite"> Wort</tt:span>
+			</tt:p>
+			<tt:p xml:id="subtitle11" region="bottom" begin="00:00:23.160" end="00:00:26.800" style="textCenter">
+				<tt:span style="textYellowOnWhite">Ein </tt:span>
+				<tt:span style="textBlue">blaues</tt:span>
+				<tt:span style="textYellowOnWhite"> Wort mit gelbem Hintergrund.</tt:span>
+			</tt:p>
+			<tt:p xml:id="subtitle12" region="bottom" begin="00:00:26.960" end="00:00:29.200" style="textCenter">
+				<tt:span style="textBlueOnWhite">Ein Wort auf weiß</tt:span>
+			</tt:p>
+			<tt:p xml:id="subtitle13" region="bottom" begin="00:00:29.360" end="00:00:31.360" style="textCenter">
+				<tt:span style="textWhite">weiß auf schwarz</tt:span>
+			</tt:p>
+			<tt:p xml:id="subtitle14" region="bottom" begin="00:00:31.520" end="00:00:33.600" style="textCenter">
+				<tt:span style="textWhite">weiß auf schwarz</tt:span>
+			</tt:p>
+			<tt:p xml:id="subtitle15" region="bottom" begin="00:00:33.760" end="00:00:35.800" style="textCenter">
+				<tt:span style="textWhite">weiß auf schwarz</tt:span>
+			</tt:p>
+			<tt:p xml:id="subtitle16" region="bottom" begin="00:00:35.960" end="00:00:37.880" style="textCenter">
+				<tt:span style="textYellow">gelb auf schwarz</tt:span>
+			</tt:p>
+			<tt:p xml:id="subtitle17" region="bottom" begin="00:00:38.040" end="00:00:40.040" style="textCenter">
+				<tt:span style="textYellow">gelb auf schwarz</tt:span>
+			</tt:p>
+			<tt:p xml:id="subtitle18" region="bottom" begin="00:00:40.200" end="00:00:42.440" style="textCenter">
+				<tt:span style="textYellow">gelb auf schwarz</tt:span>
+			</tt:p>
+		</tt:div>
+	</tt:body>
+</tt:tt>
