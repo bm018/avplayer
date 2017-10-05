@@ -55,7 +55,7 @@
     height: 0;
     border: 0.5em solid transparent; /* 8 */
     border-right: none;
-    border-left-color: #fff;
+    border-left-color: $colorControlsBtn;
     content: '';
     position: absolute;
     top: 50%;
@@ -74,7 +74,7 @@
       &:before, &:after {
         width: 40%;
         height: 100%;
-        background-color: #fff;
+        background-color: $colorControlsBtn;
         content: '';
         position: absolute;
         top: 0;
@@ -168,7 +168,7 @@
     a {
       width: 0.313em; /* 5 */
       height: 0.375em; /* 6 */
-      background-color: #fff;
+      background-color: $colorControlsBtn;
       display: block;
       position: relative;
       z-index: 1;
@@ -183,7 +183,7 @@
         height: 0;
         border: 0.5em solid transparent; /* 8 */
         border-left: none;
-        border-right-color: #fff;
+        border-right-color: $colorControlsBtn;
         z-index: 2;
         top: 50%;
         right: -0.25em;
@@ -196,7 +196,7 @@
     // "volume" icon by Nicolas Gallagher, http://nicolasgallagher.com/pure-css-gui-icons
     width: 0.313em; /* 5 */
     height: 0.313em; /* 5 */
-    border: 0.25em double #fff; /* 4 */
+    border: 0.25em double $colorControlsBtn; /* 4 */
     border-width: 0.25em 0.25em 0 0; /* 4 */
     left: 0.563em; /* 9 */
     top: -0.063em; /* 1 */
