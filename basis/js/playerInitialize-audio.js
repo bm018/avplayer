@@ -1,130 +1,126 @@
-define("playerInitialize-audio", [], function() {
-
-    var audioPlayersOutsideViewPort = [],
-        $window = $(window);
-
-    var loadScripts = function() {
+define("playerInitialize-audio", [], function () {
+    /** 
+     * Loads audio player script 
+     */
+    var loadScripts = function () {
         $.getScript("./src/dist/js/audio.min.js");
     };
 
-    var isInViewPort = function(elm) {
-        var $elm = $(elm),
-            elmTop = $elm.offset().top,
-            elmBottom = elmTop + $elm.outerHeight(),
-            viewPortTop = $window.scrollTop(),
-            viewPortBottom = viewPortTop + $window.height();
+    /**
+     * Array for collecting player placeholders
+     */
+    var queuedPlayers = [];
 
-        return elmBottom > viewPortTop && elmTop < viewPortBottom;
-    };
+    /**
+     * Iterates through all queued players and checks if visible
+     * Calls initialize method when visible
+     * and removes element from queuedPlayers array
+     */
+    var watchQueuedPlayers = function () {
+        var events = 'load orientationchange resize scroll touchmove focus';
+        var i = 0;
 
-    var playerInitialize = function(dom_element, options) {
-        this.$dom_element = $(dom_element);
-        this.options = options;
-
-        // When the page is called, check whether the element is in the visible range.
-        // If yes, initialize this, otherwise set scroll event and initialize this later
-
-        // Exception for audio in content tabs
-        // Here we must check whether the tab is active in which this audio is located
-        if (this.$dom_element.closest('.tab_content').length) {
-            isInViewPort(this.$dom_element && this.$dom_element.closest('li.active').length) ? this.initialize(this.$dom_element) : this.initOnScroll(this.$dom_element);
-        } else {
-            isInViewPort(this.$dom_element) ? this.initialize(this.$dom_element) : this.initOnScroll(this.$dom_element);
-        }
-    };
-
-    var playerScrollHandler = function() {
-        var eventName = 'resize scroll';
-
-        audioPlayersOutsideViewPort.forEach(function(view) {
-            if (isInViewPort(view.$dom_element)) {
-                view.initialize(view.$dom_element);
-
-                // Remove the audio player from the array after initialization
-                audioPlayersOutsideViewPort.splice(audioPlayersOutsideViewPort.indexOf(view),1);
+        $(window).on(events, _.debounce(function () {
+            i = queuedPlayers.length;
+            while (i--) {
+                if (queuedPlayers[i].isVisible()) {
+                    queuedPlayers[i].initialize();
+                    queuedPlayers.splice(i, 1);
+                }
             }
-        });
-
-        if (audioPlayersOutsideViewPort.length === 0) {
-            // Take out the handler if there are no more audio players outside of the visible range
-            $window.off(eventName, playerScrollHandler);
-        }
+        }, 333));
     };
 
-    var playerInitializeScrollHandler = function() {
-        var eventName = 'resize scroll',
-            initialized = false;
+    watchQueuedPlayers();
 
-        // Set the scroll event on window
-        // Make sure we attach event only once
-        if (!initialized) {
-            $window.on(eventName, playerScrollHandler);
-        }
+    var playerInitialize = function (dom_element, options) {
+        this.dom_element = dom_element;
+        this.$dom_element = $(dom_element);
+        this.options = {};
+        $.extend(this.options, options);
+
+        // queue all players
+        queuedPlayers.push(this);
     };
 
     playerInitialize.prototype = {
+        /** 
+         * Checks if element is visible 
+         */
+        isVisible: function () {
+            var elm = this.dom_element;
 
-        initOnScroll: function(elm) {
-            audioPlayersOutsideViewPort.push(this);
-            playerInitializeScrollHandler();
+            if (!!elm.offsetParent && !!(elm.offsetWidth || elm.offsetHeight || elm.getClientRects().length)) {
+                var bcRect = elm.getBoundingClientRect();
+                return (bcRect.left < window.innerWidth && bcRect.right >= 0 && bcRect.top < window.innerHeight && bcRect.bottom >= 0);
+            } else {
+                return false;
+            }
         },
 
-        initialize: function() {
-            var that = this.$dom_element[0],
-                $this = this,
-                mediaJsonData = this.options.media,
-                analyticsData = this.options.analytics,
-                mediaSrc = null,
-                audioBtn = '<a class="audio-btn" title="Audio abspielen" tabindex=0></a>',
-                eventName = (window.touch) ? 'touchstart' : 'click';
+        isInitialized: false,
 
+        /** 
+         * Creates initial play button (e.g. on picture),
+         * Generates unique ID,
+         * Gets Media JSON,
+         * Sets Event Listener for play button
+         * Calls createAudio() function
+         */
+        initialize: function () {
+            var that = this;
+            var uniqueId = +new Date() + Math.floor((Math.random() * (999 - 100) + 100));
+            var mediaJsonData = this.options.media;
+            var analyticsData = this.options.analytics;
+            var mediaSrc = '';
+            var $audioBtn = $('<a class="audio-btn" title="Audio abspielen" tabindex=0></a>');
+            var eventName = (window.touch) ? 'touchstart' : 'click';
 
             // Get audio src from media.json
-            // Call the function createAudio() on click/touch on the play button
-            $.getJSON(mediaJsonData, function(data) {
-                mediaSrc = data._mediaArray[0]._mediaStreamArray[0]._stream;
+            $.getJSON(mediaJsonData, function (data) {
+                mediaSrc = (data && data._mediaArray && data._mediaArray[0] && data._mediaArray[0]._mediaStreamArray && data._mediaArray[0]._mediaStreamArray[0] && data._mediaArray[0]._mediaStreamArray[0]._stream);
 
-                if (mediaSrc !== null) {
-                    $(that).append(audioBtn);
-                    // Set class for initialization on scroll
-                    $(that).addClass('hasMedia');
-                    $(that).find('.audio-btn').on(eventName, function() {
-                        $this.createAudio($(that), mediaSrc);
-                        $this.sendAnalyticsData(analyticsData);
+                if (mediaSrc) {
+                    that.$dom_element.addClass('isInitialized playerId-' + uniqueId);
+                    
+                    $audioBtn.on(eventName, function () {
+                        that.createAudio(mediaSrc);
+                        that.sendAnalyticsData(analyticsData);
                         return false;
-                    });
+                    }).appendTo(that.$dom_element);;
                 }
             });
         },
 
-        createAudio: function(elm, src) {
-            var audioElm = '<audio class="audio-element" controls>',
-                audioSrc = src,
-                $elm = $(elm);
+        /**
+         * Creates <audio> element and initializes audio player
+         */
+        createAudio: function (src) {
+            var $audioElm = $('<audio src="' + src + '" class="audio-element" controls>');
 
-            // Append audio element to player element
-            $elm.append($(audioElm));
-
-            // Set src for audio element
-            $elm.find('audio').attr('src', audioSrc);
-
-            // Initialize audioPlayer on audio element
-            $elm.find('audio').audioPlayer({
+            // Append audio element to player container
+            // and initialize audioPlayer on audio element
+            $audioElm.appendTo(this.$dom_element).audioPlayer({
                 classPrefix: 'audioplayer'
             });
 
-            // Start the audio
-            // If another audio is running, stop it
-            // Hide the play button because the audio is already running
-            if ($('.audioplayer-playing').length) {
-                $('.audioplayer-playing').find('.audioplayer-playpause a').click();
-            }
-            $elm.find('.audioplayer-playpause a').click();
+            this.isInitialized = true;
 
-            $elm.find('.audio-btn').hide();
+            // If another audio is running, stop it
+            $('.audioplayer-playing .audioplayer-playpause a').click();
+
+            // Start the audio
+            this.$dom_element.find('.audioplayer-playpause a').click();
+
+            // Hide the play button
+            this.$dom_element.find('.audio-btn').hide();
         },
 
-        sendAnalyticsData: function(data) {
+        /**
+         * Sends web analytics information via callAnalytics function
+         */
+        sendAnalyticsData: function (data) {
+            // TODO!
             if (window.callAnalytics) callAnalytics('pi', 'player', 'initialize ' + data.rbbhandle + ' ' + data.rbbtitle);
         }
     };
