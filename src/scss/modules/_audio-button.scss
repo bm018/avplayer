@@ -20,15 +20,57 @@
         speak: none;
         text-shadow: $playBtnShadow;
     }
+    .player.isInitialized & {
+        display: none;
+        .layoutaudioliste & {
+            display: block;
+        }
+    }
     .manualteaserpicture & {
         height: $playBtnSize;
         width: $playBtnSize;
     }
     .layoutaudio_ohne_bild & {
+        color: $audioListPlayBtnIdle;
         height: $noPictPlayBtnSize;
         width: $noPictPlayBtnSize;
+        left: $noPictContainerPadding;
+        top: $noPictContainerPadding;
+        transform: none;
+        &:hover,
+        &:focus,
+        &:active {
+            color: $audioListPlayBtnHover;
+        }
+        &::before {
+            content: 'W';
+            font-size: $noPictPlayBtnSize;
+            text-shadow: none;
+        }
     }
-    .layoutaudio_ohne_bild &::before {
-        font-size: $noPictPlayBtnSize;
+    .layoutaudioliste & {
+        color: $audioListPlayBtnIdle;
+        left: 0;
+        top: 0;
+        transform: none;
+        margin-top: $audioListMarginTop;
+        &:hover,
+        &:focus,
+        &:active {
+            color: $audioListPlayBtnHover;
+        }
+        &::before {
+            content: 'W';
+            font-size: $audioListPlayBtnSize;
+            text-shadow: none;
+        }
+    }
+    .layoutaudioliste.first & {
+        margin-top: $audioListFirstMarginTop;
+    }
+    .layoutaudioliste .audioplayer-playing & {
+        &::before {
+            content: 'V';
+        }
     }
 }
