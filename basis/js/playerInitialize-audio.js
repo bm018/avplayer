@@ -6,13 +6,15 @@ define("playerInitialize-audio", [], function () {
         $.getScript("./src/dist/js/audio.min.js");
     };
 
+    loadScripts();
+
     /**
      * Array for collecting player placeholders
      */
     var queuedPlayers = [];
 
     /**
-     * Iterates through all queued players and checks if visible
+     * Iterates through all queued players and checks if they are visible
      * Calls initialize method when visible
      * and removes element from queuedPlayers array
      */
@@ -33,13 +35,19 @@ define("playerInitialize-audio", [], function () {
 
     watchQueuedPlayers();
 
+    /**
+     * Is called for each player
+     * Collects all the player placeholders and pushes them to queuedPlayers array
+     * 
+     * @param { Object } dom_element 
+     * @param { String } options 
+     */
     var playerInitialize = function (dom_element, options) {
         this.dom_element = dom_element;
         this.$dom_element = $(dom_element);
         this.options = {};
         $.extend(this.options, options);
 
-        // queue all players
         queuedPlayers.push(this);
     };
 
@@ -74,18 +82,21 @@ define("playerInitialize-audio", [], function () {
             var analyticsData = this.options.analytics;
             var mediaSrc = '';
             var $audioBtn = $('<a class="audio-btn" title="Audio abspielen" tabindex=0></a>');
-            var eventName = (window.touch) ? 'touchstart' : 'click';
+
+            this.$dom_element.addClass('isLoading');
 
             // Get audio src from media.json
             $.getJSON(mediaJsonData, function (data) {
                 mediaSrc = (data && data._mediaArray && data._mediaArray[0] && data._mediaArray[0]._mediaStreamArray && data._mediaArray[0]._mediaStreamArray[0] && data._mediaArray[0]._mediaStreamArray[0]._stream);
 
                 if (mediaSrc) {
-                    that.$dom_element.addClass('isInitialized playerId-' + uniqueId);
-                    
-                    $audioBtn.on(eventName, function () {
-                        that.createAudio(mediaSrc);
-                        that.sendAnalyticsData(analyticsData);
+                    that.$dom_element.removeClass('isLoading').addClass('isReady playerId-' + uniqueId);
+
+                    $audioBtn.on('click', function () {
+                        if (!that.isInitialized) {
+                            that.createAudio(mediaSrc);
+                            that.sendAnalyticsData(analyticsData);
+                        }
                         return false;
                     }).appendTo(that.$dom_element);;
                 }
@@ -94,8 +105,11 @@ define("playerInitialize-audio", [], function () {
 
         /**
          * Creates <audio> element and initializes audio player
+         * 
+         * @param { String } src
          */
         createAudio: function (src) {
+            var that = this;
             var $audioElm = $('<audio src="' + src + '" class="audio-element" controls>');
 
             // Append audio element to player container
@@ -106,26 +120,59 @@ define("playerInitialize-audio", [], function () {
 
             this.isInitialized = true;
 
-            // If another audio is running, stop it
+            this.$dom_element.removeClass('isReady').addClass('isInitialized');
+
+            // start the audio
+            this.play();
+
+            // attach event handler on initial audio button
+            // to start / stop the player 
+            // primarily used for audio list player
+            this.$dom_element.find('.audio-btn').on('click', function () {
+                that.toggle();
+                return false;
+            });
+        },
+
+        /** 
+         * toggles play/pause
+         */
+        toggle: function () {
+            if (this.$dom_element.closest('.audioplayer-playing').length === 1) {
+                this.pauseAll();
+            } else {
+                this.play();
+            }
+        },
+
+        /**
+         * pause all running players
+         */
+        pauseAll: function () {
             $('.audioplayer-playing .audioplayer-playpause a').click();
+        },
 
-            // Start the audio
-            this.$dom_element.find('.audioplayer-playpause a').click();
-
-            // Hide the play button
-            this.$dom_element.find('.audio-btn').hide();
+        /**
+         * start player
+         * ensures all other players will be paused first
+         */
+        play: function () {
+            if (this.$dom_element.closest('.audioplayer-playing').length === 0) {
+                this.pauseAll();
+                this.$dom_element.find('.audioplayer-playpause a').click();
+            }
         },
 
         /**
          * Sends web analytics information via callAnalytics function
+         * TODO!
+         * 
+         * @param { Object } data
          */
         sendAnalyticsData: function (data) {
-            // TODO!
             if (window.callAnalytics) callAnalytics('pi', 'player', 'initialize ' + data.rbbhandle + ' ' + data.rbbtitle);
         }
     };
-
-    loadScripts();
 
     jsb.registerHandler('playerInitialize-audio', playerInitialize);
 
