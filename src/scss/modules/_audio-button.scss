@@ -21,9 +21,9 @@
         text-shadow: $playBtnShadow;
     }
     .player.isInitialized & {
-        display: none;
+        display: none !important;
         .layoutaudioliste & {
-            display: block;
+            display: block !important;
         }
     }
     .manualteaserpicture & {
