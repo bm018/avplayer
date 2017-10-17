@@ -42,7 +42,7 @@
 
   .audioplayer-playpause {
     &:hover, &:focus {
-      background-color: #222;
+      background-color: #585856;
     }
     a {
       display: block;
@@ -115,7 +115,7 @@
   }
 
   .audioplayer-time-current {
-    border-left: 1px solid #111;
+    border-left: 1px solid #585856;
     border-left-color: rgba(black, .25 );
     left: 2.5em; /* 40 */
   }
@@ -134,7 +134,7 @@
   // progress bar of loaded/played
   .audioplayer-bar {
     height: 0.875em; /* 14 */
-    background-color: #222;
+    background-color: #585856;
     cursor: pointer;
     z-index: 1;
     top: 50%;
@@ -153,7 +153,7 @@
     right: 4.375em; /* 70 */
   }
   .audioplayer-bar-loaded {
-    background-color: #333;
+    background-color: #000;
     z-index: 1;
   }
   .audioplayer-bar-played {
@@ -164,7 +164,7 @@
   .audioplayer-volume {
     width: 2.5em; /* 40 */
     height: 100%;
-    border-left: 1px solid #111;
+    border-left: 1px solid #585856;
     border-left-color: rgba( 0, 0, 0, .25 );
     text-align: left;
     text-indent: -9999px;
@@ -173,15 +173,16 @@
     top: 0;
     right: 0;
     .audioplayer-volume-button {
-    &:hover, &:focus {
+      &:hover, &:focus {
         background-color: #585856;
         a {
-        background-color: #eaeaea;
-        &::before {
-          border-right-color: #eaeaea;
-        }
-        &::after {
-          border-color: #eaeaea;
+          background-color: #eaeaea;
+          &::before {
+            border-right-color: #eaeaea;
+          }
+          &::after {
+            border-color: #eaeaea;
+          }
         }
       }
     }
@@ -253,7 +254,7 @@
     & > div {
       width: 40%;
       height: 80%;
-      background-color: #222;
+      background-color: #585856;
       cursor: pointer;
       position: relative;
       z-index: 1;
@@ -277,11 +278,6 @@
 
   &-volume-adjust div div {
     background: #e31818;
-  }
-
-  &-volume-adjust {
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
   }
   
   & *,
