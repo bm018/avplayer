@@ -78,7 +78,7 @@ define("playerInitialize-audio", [], function () {
         initialize: function () {
             var that = this;
             var uniqueId = +new Date() + Math.floor((Math.random() * (999 - 100) + 100));
-            var mediaJsonData = this.options.media;
+            var mediaJsonURL = this.options.media;
             var analyticsData = this.options.analytics;
             var mediaSrc = '';
             var $audioBtn = $('<a class="audio-btn" title="Audio abspielen" tabindex=0></a>');
@@ -86,18 +86,23 @@ define("playerInitialize-audio", [], function () {
             this.$dom_element.addClass('isLoading');
 
             // Get audio src from media.json
-            $.getJSON(mediaJsonData, function (data) {
+            $.getJSON(mediaJsonURL, function (data) {
                 mediaSrc = (data && data._mediaArray && data._mediaArray[0] && data._mediaArray[0]._mediaStreamArray && data._mediaArray[0]._mediaStreamArray[0] && data._mediaArray[0]._mediaStreamArray[0]._stream);
 
                 if (mediaSrc) {
                     that.$dom_element.removeClass('isLoading').addClass('isReady playerId-' + uniqueId);
 
-                    $audioBtn.on('click', function () {
-                        if (!that.isInitialized) {
-                            that.createAudio(mediaSrc);
-                            that.sendAnalyticsData(analyticsData);
+                    $audioBtn.on('click keypress', function (e) {
+                        if (e.type === 'click' || e.which === 13) {
+                            e.preventDefault();
+
+                            // ignore when player is already initialized
+                            if (!that.isInitialized) {
+                                that.createAudio(mediaSrc);
+                                that.sendAnalyticsData(analyticsData);
+                            }
+                            return false;
                         }
-                        return false;
                     }).appendTo(that.$dom_element);;
                 }
             });
@@ -128,9 +133,13 @@ define("playerInitialize-audio", [], function () {
             // attach event handler on initial audio button
             // to start / stop the player 
             // primarily used for audio list player
-            this.$dom_element.find('.audio-btn').on('click', function () {
-                that.toggle();
-                return false;
+            this.$dom_element.find('.audio-btn').on('click keypress', function (e) {
+                if (e.type === 'click' || e.which === 13) {
+                    e.preventDefault();
+
+                    that.toggle();
+                    return false;
+                }
             });
         },
 
