@@ -29,8 +29,8 @@
             return !!(audioElement.canPlayType && audioElement.canPlayType('audio/' + file.split('.').pop().toLowerCase() + ';').replace(/no/, ''));
         };
 
-    $.fn.audioPlayer = function (params) {
-        var params = $.extend({ classPrefix: 'audioplayer', strPlay: 'Play', strPause: 'Pause', strVolume: 'Volume' }, params),
+    $.fn.audioPlayer = function (_params) {
+        var params = $.extend({ classPrefix: 'audioplayer', strPlay: 'Play', strPause: 'Pause', strVolume: 'Volume' }, _params),
             cssClass = {},
             cssClassSub =
                 {
@@ -78,13 +78,13 @@
             }
             else if (canPlayType(audioFile)) isSupport = true;
 
-            var thePlayer = $('<div class="' + params.classPrefix + '">' + (isSupport ? $('<div>').append($this.eq(0).clone()).html() : '<embed src="' + audioFile + '" width="0" height="0" volume="100" autostart="' + isAutoPlay.toString() + '" loop="' + isLoop.toString() + '" />') + '<div class="' + cssClass.playPause + '" title="' + params.strPlay + '"><a href="#">' + params.strPlay + '</a></div></div>'),
+            var thePlayer = $('<div class="' + params.classPrefix + '">' + (isSupport ? $('<div>').append($this.eq(0).clone()).html() : '<embed src="' + audioFile + '" width="0" height="0" volume="100" autostart="' + isAutoPlay.toString() + '" loop="' + isLoop.toString() + '" />') + '<div tabindex="0" class="' + cssClass.playPause + '" title="' + params.strPlay + '"><a tabindex="-1" href="#">' + params.strPlay + '</a></div></div>'),
                 theAudio = isSupport ? thePlayer.find('audio') : thePlayer.find('embed');
             theAudio = theAudio.get(0);
 
             if (isSupport) {
                 thePlayer.find('audio').css({ 'width': 0, 'height': 0, 'visibility': 'hidden' });
-                thePlayer.append('<div class="' + cssClass.time + ' ' + cssClass.timeCurrent + '"></div><div class="' + cssClass.bar + '"><div class="' + cssClass.barLoaded + '"></div><div class="' + cssClass.barPlayed + '"></div></div><div class="' + cssClass.time + ' ' + cssClass.timeDuration + '"></div><div class="' + cssClass.volume + '"><div class="' + cssClass.volumeButton + '" title="' + params.strVolume + '"><a href="#">' + params.strVolume + '</a></div><div class="' + cssClass.volumeAdjust + '"><div><div></div></div></div></div>');
+                thePlayer.append('<div class="' + cssClass.time + ' ' + cssClass.timeCurrent + '"></div><div class="' + cssClass.bar + '"><div class="' + cssClass.barLoaded + '"></div><div class="' + cssClass.barPlayed + '"></div></div><div class="' + cssClass.time + ' ' + cssClass.timeDuration + '"></div><div class="' + cssClass.volume + '"><div tabindex="0" class="' + cssClass.volumeButton + '" title="' + params.strVolume + '"><a tabindex="-1" href="#">' + params.strVolume + '</a></div><div class="' + cssClass.volumeAdjust + '"><div><div></div></div></div></div>');
 
                 var theBar = thePlayer.find('.' + cssClass.bar),
                     barPlayed = thePlayer.find('.' + cssClass.barPlayed),
@@ -151,16 +151,18 @@
                         theBar.unbind(eMove);
                     });
 
-                volumeButton.on('click', function () {
-                    if (thePlayer.hasClass(cssClass.muted)) {
-                        thePlayer.removeClass(cssClass.muted);
-                        theAudio.volume = volumeDefault;
-                    } else {
-                        thePlayer.addClass(cssClass.muted);
-                        volumeDefault = theAudio.volume;
-                        theAudio.volume = 0;
+                volumeButton.on('click keypress', function (e) {
+                    if (e.type === 'click' || e.which === 13) {
+                        if (thePlayer.hasClass(cssClass.muted)) {
+                            thePlayer.removeClass(cssClass.muted);
+                            theAudio.volume = volumeDefault;
+                        } else {
+                            thePlayer.addClass(cssClass.muted);
+                            volumeDefault = theAudio.volume;
+                            theAudio.volume = 0;
+                        }
+                        return false;
                     }
-                    return false;
                 });
 
                 volumeAdjuster.on(eStart, function (e) {
@@ -175,24 +177,34 @@
 
             thePlayer.addClass(isAutoPlay ? cssClass.playing : cssClass.stopped);
 
-            thePlayer.find('.' + cssClass.playPause).on('click', function () {
-                var audioContainer = thePlayer.closest('.player.audio');
-                if (thePlayer.hasClass(cssClass.playing)) {
-                    $(this).attr('title', params.strPlay).find('a').html(params.strPlay);
-                    thePlayer.removeClass(cssClass.playing).addClass(cssClass.stopped);
-                    $(audioContainer).removeClass(cssClass.playing).addClass(cssClass.stopped);
+            thePlayer.find('.' + cssClass.playPause).on('click keypress', function (e) {
+                if (e.type === 'click' || e.which === 13) {
+                    var audioContainer = thePlayer.closest('.player.audio');
+                    if (thePlayer.hasClass(cssClass.playing)) {
+                        $(this).attr('title', params.strPlay).find('a').html(params.strPlay);
+                        thePlayer.removeClass(cssClass.playing).addClass(cssClass.stopped);
+                        $(audioContainer).removeClass(cssClass.playing).addClass(cssClass.stopped);
 
-                    isSupport ? theAudio.pause() : theAudio.Stop();
-                } else {
-                    // pause all running players
-                    $('.player.audio.audioplayer-playing .audioplayer-playpause a').click();
-                    $(this).attr('title', params.strPause).find('a').html(params.strPause);
-                    thePlayer.addClass(cssClass.playing).removeClass(cssClass.stopped);
-                    $(audioContainer).addClass(cssClass.playing).removeClass(cssClass.stopped);
+                        if (isSupport) {
+                            theAudio.pause();
+                        } else {
+                            theAudio.Stop();
+                        } 
+                    } else {
+                        // pause all running players
+                        $('.player.audio.audioplayer-playing .audioplayer-playpause a').click();
+                        $(this).attr('title', params.strPause).find('a').html(params.strPause);
+                        thePlayer.addClass(cssClass.playing).removeClass(cssClass.stopped);
+                        $(audioContainer).addClass(cssClass.playing).removeClass(cssClass.stopped);
 
-                    isSupport ? theAudio.play() : theAudio.Play();
+                        if (isSupport) {
+                            theAudio.play();
+                        } else {
+                            theAudio.Play();
+                        }
+                    }
+                    return false;
                 }
-                return false;
             });
 
             $this.replaceWith(thePlayer);
