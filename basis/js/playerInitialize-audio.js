@@ -36,8 +36,9 @@ define("playerInitialize-audio", [], function () {
     watchQueuedPlayers();
 
     /**
-     * Is called for each player
-     * Collects all the player placeholders and pushes them to queuedPlayers array
+     * function playerInitialize
+     * is called for each player
+     * It pushes each placeholder to queuedPlayers array
      * 
      * @param { Object } dom_element 
      * @param { String } options 
