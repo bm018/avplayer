@@ -30,7 +30,7 @@ define("playerInitialize-audio", [], function () {
                     queuedPlayers.splice(i, 1);
                 }
             }
-        }, 333));
+        }, 200));
     };
 
     watchQueuedPlayers();
