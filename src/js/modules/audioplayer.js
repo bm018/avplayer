@@ -30,7 +30,7 @@
         };
 
     $.fn.audioPlayer = function (_params) {
-        var params = $.extend({ classPrefix: 'audioplayer', strPlay: 'Play', strPause: 'Pause', strVolume: 'Volume' }, _params),
+        var params = $.extend({ classPrefix: 'audioplayer', strPlay: 'Play', strPause: 'Pause', strVolume: 'Volume', skipLength: 5 * 60 }, _params),
             cssClass = {},
             cssClassSub =
                 {
@@ -43,6 +43,8 @@
                     bar: 'bar',
                     barLoaded: 'bar-loaded',
                     barPlayed: 'bar-played',
+                    skipMinus: 'skip-minus skip-btn',
+                    skipPlus: 'skip-plus skip-btn',
                     volume: 'volume',
                     volumeButton: 'volume-button',
                     volumeAdjust: 'volume-adjust',
@@ -84,13 +86,14 @@
 
             if (isSupport) {
                 thePlayer.find('audio').css({ 'width': 0, 'height': 0, 'visibility': 'hidden' });
-                thePlayer.append('<div class="' + cssClass.time + ' ' + cssClass.timeCurrent + '"></div><div class="' + cssClass.bar + '"><div class="' + cssClass.barLoaded + '"></div><div class="' + cssClass.barPlayed + '"></div></div><div class="' + cssClass.time + ' ' + cssClass.timeDuration + '"></div><div class="' + cssClass.volume + '"><div tabindex="0" class="' + cssClass.volumeButton + '" title="' + params.strVolume + '"><a tabindex="-1" href="#">' + params.strVolume + '</a></div><div class="' + cssClass.volumeAdjust + '"><div><div></div></div></div></div>');
+                thePlayer.append('<div class="' + cssClass.time + ' ' + cssClass.timeCurrent + '"></div><div class="' + cssClass.bar + '"><div class="' + cssClass.barLoaded + '"></div><div class="' + cssClass.barPlayed + '"></div></div><div class="' + cssClass.time + ' ' + cssClass.timeDuration + '"></div><div tabindex="0" class="' + cssClass.skipMinus + '"></div><div tabindex="0" class="' + cssClass.skipPlus + '"></div><div class="' + cssClass.volume + '"><div tabindex="0" class="' + cssClass.volumeButton + '" title="' + params.strVolume + '"><a tabindex="-1" href="#">' + params.strVolume + '</a></div><div class="' + cssClass.volumeAdjust + '"><div><div></div></div></div></div>');
 
                 var theBar = thePlayer.find('.' + cssClass.bar),
                     barPlayed = thePlayer.find('.' + cssClass.barPlayed),
                     barLoaded = thePlayer.find('.' + cssClass.barLoaded),
                     timeCurrent = thePlayer.find('.' + cssClass.timeCurrent),
                     timeDuration = thePlayer.find('.' + cssClass.timeDuration),
+                    skipButtons = thePlayer.find('.skip-btn'),
                     volumeButton = thePlayer.find('.' + cssClass.volumeButton),
                     volumeAdjuster = thePlayer.find('.' + cssClass.volumeAdjust + ' > div'),
                     volumeDefault = 0,
@@ -150,6 +153,17 @@
                     .on(eCancel, function () {
                         theBar.unbind(eMove);
                     });
+
+                skipButtons.on('click keypress', function (e) {
+                    if (e.type === 'click' || e.which === 13) {
+                        var factor = e.target.className.match(/minus/i) ? -1 : 1;
+                        var skip = factor * params.skipLength;
+
+                        theAudio.currentTime += skip;
+                    }
+                }).on('mouseup', function () {
+                    $(this).blur();
+                });
 
                 volumeButton.on('click keypress', function (e) {
                     if (e.type === 'click' || e.which === 13) {

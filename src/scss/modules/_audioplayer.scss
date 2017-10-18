@@ -123,7 +123,7 @@
   .audioplayer-time-duration {
     border-right: 1px solid #868686;
     border-right-color: rgba(white, .1 );
-    right: 2.5em; /* 40 */
+    right: 7.5em; /* 40 */
   }
 
   .audioplayer-novolume .audioplayer-time-duration {
@@ -138,7 +138,7 @@
     cursor: pointer;
     z-index: 1;
     top: 50%;
-    right: 6.875em; /* 110 */
+    right: 11.875em; /* 110 */
     left: 6.875em; /* 110 */
     margin-top: -0.438em; /* 7 */
     div {
@@ -158,6 +158,23 @@
   }
   .audioplayer-bar-played {
     z-index: 2;
+  }
+
+  .skip-btn {
+    width: 2.5em;
+    height: 100%;
+    top: 0;
+    cursor: pointer;
+  }
+
+  .audioplayer-skip-plus {
+    right: 2.5em;
+    background: red;
+  }
+
+  .audioplayer-skip-minus {
+    right: 5em;
+    background: blue;
   }
 
   // volume button
