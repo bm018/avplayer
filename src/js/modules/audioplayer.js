@@ -177,6 +177,8 @@
                         }
                         return false;
                     }
+                }).on('mouseup', function () {
+                    $(this).blur();
                 });
 
                 volumeAdjuster.on(eStart, function (e) {
@@ -203,7 +205,7 @@
                             theAudio.pause();
                         } else {
                             theAudio.Stop();
-                        } 
+                        }
                     } else {
                         // pause all running players
                         $('.player.audio.audioplayer-playing .audioplayer-playpause a').click();
@@ -219,6 +221,8 @@
                     }
                     return false;
                 }
+            }).on('mouseup', function () {
+                $(this).blur();
             });
 
             $this.replaceWith(thePlayer);
