@@ -162,7 +162,7 @@
                         var skip = factor * 60 * params.skipMinutes;
 
                         theAudio.currentTime += skip;
-                        
+
                         return false;
                     }
                 }).on('mouseup', function () {
@@ -202,7 +202,7 @@
             thePlayer.find('.' + cssClass.playPause).on('click keypress', function (e) {
                 if (e.type === 'click' || e.which === 13 || e.which === 32) {
                     e.preventDefault();
-                    
+
                     var audioContainer = thePlayer.closest('.player.audio');
                     if (thePlayer.hasClass(cssClass.playing)) {
                         $(this).attr('title', params.strPlay);
