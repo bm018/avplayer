@@ -1,6 +1,6 @@
 .audioplayer {
   bottom: 0;
-  height: $audioPlayerSize; /* 30 */
+  height: $audioPlayerSize;
   color: $audioPlayerColor;
   z-index: 1;
   background: $audioPlayerBgColor;
@@ -22,7 +22,7 @@
 
   // play/pause button
   &-playpause {
-    width: $audioPlayerSize; /* 30 */
+    width: $audioPlayerSize;
     height: 100%;
     text-align: left;
     text-indent: -9999px;
@@ -51,7 +51,7 @@
   .audioplayer-time {
     width: 3.75em; /* 45 */
     height: 100%;
-    line-height: 2.5em; /* 30 */
+    line-height: 2.5em;
     text-align: center;
     z-index: 2;
     top: 0;
@@ -59,7 +59,7 @@
 
   .audioplayer-time-current {
     border-left: 1px solid $audioPlayerBorderColor;
-    left: $audioPlayerSize; /* 30 */
+    left: $audioPlayerSize;
   }
 
   .audioplayer-time-duration {
@@ -90,6 +90,7 @@
       top: 0;
     }
   }
+  // ? ToDo
   .audioplayer-novolume .audioplayer-bar {
     right: 4.375em; /* 70 */
   }
@@ -130,7 +131,7 @@
 
   // volume button
   .audioplayer-volume {
-    width: $audioPlayerSize; /* 30 */
+    width: $audioPlayerSize;
     height: 100%;
     border-left: 1px solid $audioPlayerBorderColor;
     cursor: pointer;
