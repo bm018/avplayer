@@ -90,10 +90,7 @@
       top: 0;
     }
   }
-  // ? ToDo
-  .audioplayer-novolume .audioplayer-bar {
-    right: 4.375em; /* 70 */
-  }
+
   .audioplayer-bar-loaded {
     background-color: #000;
     z-index: 1;
@@ -195,9 +192,6 @@
       bottom: 0;
       left: 0;
     }
-  }
-  .audioplayer-novolume .audioplayer-volume {
-    display: none;
   }
 
   &-bar-played {
