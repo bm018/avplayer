@@ -1,21 +1,28 @@
 .audioplayer {
   bottom: 0;
-  height: 2.5em; /* 30 */
+  height: $audioPlayerSize; /* 30 */
   color: $audioPlayerColor;
   z-index: 1;
   background: $audioPlayerBgColor;
   position: absolute;
   width: 100%;
-  font-size: 12px;
+  font-size: $audioPlayerFontSize;
 
-  // player elements: play/pause and volume buttons, played/duration timers, progress bar of loaded/played
+  // player elements:
+  // play/pause and volume buttons,
+  // played/duration timers,
+  // progress bar of loaded/played
   & > div {
     position: absolute;
   }
 
+  & div[role="button"] {
+    background-size: auto $audioPlayerSize*4;
+  }
+
   // play/pause button
   &-playpause {
-    width: 2.5em; /* 30 */
+    width: $audioPlayerSize; /* 30 */
     height: 100%;
     text-align: left;
     text-indent: -9999px;
@@ -24,28 +31,27 @@
     top: 0;
     left: 0;
     background: url(/basis/grafik/spr-play.svg) no-repeat;
-    background-size: auto 120px;
-    background-position: center -43px;
+    background-position: center 0;
   }
 
   .audioplayer-playpause {
     &:hover, &:focus {
       background-color: $audioPlayerColor;
-      background-position: center -68px;
+      background-position: center -1*$audioPlayerSize;
     }
     .audioplayer-playing & {
-      background-position: center -43px;
+      background-position: center -2*$audioPlayerSize;
       &:hover, &:focus {
-        background-position: center -68px;
+        background-position: center -3*$audioPlayerSize;
       }
     }
   }
 
   // timers
   .audioplayer-time {
-    width: 4.375em; /* 70 */
+    width: 3.75em; /* 45 */
     height: 100%;
-    line-height: 2.375em; /* 38 */
+    line-height: 2.5em; /* 30 */
     text-align: center;
     z-index: 2;
     top: 0;
@@ -53,12 +59,12 @@
 
   .audioplayer-time-current {
     border-left: 1px solid $audioPlayerBorderColor;
-    left: 2.5em; /* 40 */
+    left: $audioPlayerSize; /* 30 */
   }
 
   .audioplayer-time-duration {
     border-right: 1px solid $audioPlayerBorderColor;
-    right: 7.5em; /* 40 */
+    right: 7.5em; /* 90 */
   }
 
   .audioplayer-novolume .audioplayer-time-duration {
@@ -68,14 +74,14 @@
 
   // progress bar of loaded/played
   .audioplayer-bar {
-    height: 0.875em; /* 14 */
+    height: 1em; /* 12 */
     background-color: $audioPlayerColor;
     cursor: pointer;
     z-index: 1;
     top: 50%;
-    right: 11.875em; /* 110 */
-    left: 6.875em; /* 110 */
-    margin-top: -0.438em; /* 7 */
+    right: 11.25em; /* 135 */
+    left: 6.25em; /* 75 */
+    margin-top: -0.5em; /* 6 */
     div {
       width: 0;
       height: 100%;
@@ -96,36 +102,35 @@
   }
 
   .skip-btn {
-    width: 2.5em;
+    width: $audioPlayerSize;
     height: 100%;
     top: 0;
     cursor: pointer;
     background: url(/basis/grafik/spr-ffwd.svg) no-repeat;
-    background-size: 1.5em auto;
-    background-position: center .4em;
+    background-position: center 0;
   }
 
   .audioplayer-skip-fwd {
-    right: 2.5em;
+    right: $audioPlayerSize;
     border-left: 1px solid $audioPlayerBorderColor;
     &:focus, &:hover {
       background-color: $audioPlayerColor;
-      background-position: center -1.6em;
+      background-position: center -1*$audioPlayerSize;
     }
   }
 
   .audioplayer-skip-bwd {
     right: 5em;
-    background-position: center -3.6em;
+    background-position: center -2*$audioPlayerSize;
     &:focus, &:hover {
       background-color: $audioPlayerColor;
-      background-position: center -5.6em;
+      background-position: center -3*$audioPlayerSize;
     }
   }
 
   // volume button
   .audioplayer-volume {
-    width: 2.5em; /* 40 */
+    width: $audioPlayerSize; /* 30 */
     height: 100%;
     border-left: 1px solid $audioPlayerBorderColor;
     cursor: pointer;
@@ -138,17 +143,23 @@
     width: 100%;
     height: 100%;
     background: url(/basis/grafik/spr-speaker.svg) no-repeat;
-    background-size: 1.5em auto;
-    background-position: center .6em;
+    background-position: center 0;
     &:hover, &:focus {
       background-color: $audioPlayerColor;
-      background-position: center -1.55em;
+      background-position: center -1*$audioPlayerSize;
+    }
+  }
+
+  &.audioplayer-muted .audioplayer-volume-button {
+    background-position: center -2*$audioPlayerSize;
+    &:hover, &:focus {
+      background-position: center -3*$audioPlayerSize;
     }
   }
 
   // volume dropdown
   .audioplayer-volume-adjust {
-    height: 6.25em; /* 100 */
+    height: 6.25em; /* 75 */
     cursor: default;
     position: absolute;
     left: 0;
