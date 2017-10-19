@@ -30,7 +30,7 @@
         };
 
     $.fn.audioPlayer = function (_params) {
-        var params = $.extend({ classPrefix: 'audioplayer', strPlay: 'Play', strPause: 'Pause', strVolume: 'Volume', skipLength: 5 * 60 }, _params),
+        var params = $.extend({ classPrefix: 'audioplayer', strPlay: 'Abspielen', strPause: 'Pause', strVolume: 'Lautst&auml;rke', strSkipBwd: 'Minuten zur&uuml;ckspringen', strSkipFwd: 'Minuten vorspringen', skipMinutes: 5 }, _params),
             cssClass = {},
             cssClassSub =
                 {
@@ -43,8 +43,8 @@
                     bar: 'bar',
                     barLoaded: 'bar-loaded',
                     barPlayed: 'bar-played',
-                    skipMinus: 'skip-minus skip-btn',
-                    skipPlus: 'skip-plus skip-btn',
+                    skipBwd: 'skip-bwd skip-btn',
+                    skipFwd: 'skip-fwd skip-btn',
                     volume: 'volume',
                     volumeButton: 'volume-button',
                     volumeAdjust: 'volume-adjust',
@@ -80,13 +80,13 @@
             }
             else if (canPlayType(audioFile)) isSupport = true;
 
-            var thePlayer = $('<div class="' + params.classPrefix + '">' + (isSupport ? $('<div>').append($this.eq(0).clone()).html() : '<embed src="' + audioFile + '" width="0" height="0" volume="100" autostart="' + isAutoPlay.toString() + '" loop="' + isLoop.toString() + '" />') + '<div tabindex="0" class="' + cssClass.playPause + '" title="' + params.strPlay + '"><a tabindex="-1" href="#">' + params.strPlay + '</a></div></div>'),
+            var thePlayer = $('<div class="' + params.classPrefix + '">' + (isSupport ? $('<div>').append($this.eq(0).clone()).html() : '<embed src="' + audioFile + '" width="0" height="0" volume="100" autostart="' + isAutoPlay.toString() + '" loop="' + isLoop.toString() + '" />') + '<div role="button" tabindex="0" class="' + cssClass.playPause + '" title="' + params.strPlay + '"></div></div>'),
                 theAudio = isSupport ? thePlayer.find('audio') : thePlayer.find('embed');
             theAudio = theAudio.get(0);
 
             if (isSupport) {
                 thePlayer.find('audio').css({ 'width': 0, 'height': 0, 'visibility': 'hidden' });
-                thePlayer.append('<div class="' + cssClass.time + ' ' + cssClass.timeCurrent + '"></div><div class="' + cssClass.bar + '"><div class="' + cssClass.barLoaded + '"></div><div class="' + cssClass.barPlayed + '"></div></div><div class="' + cssClass.time + ' ' + cssClass.timeDuration + '"></div><div tabindex="0" class="' + cssClass.skipMinus + '"></div><div tabindex="0" class="' + cssClass.skipPlus + '"></div><div class="' + cssClass.volume + '"><div tabindex="0" class="' + cssClass.volumeButton + '" title="' + params.strVolume + '"><a tabindex="-1" href="#">' + params.strVolume + '</a></div><div class="' + cssClass.volumeAdjust + '"><div><div></div></div></div></div>');
+                thePlayer.append('<div class="' + cssClass.time + ' ' + cssClass.timeCurrent + '"></div><div class="' + cssClass.bar + '"><div class="' + cssClass.barLoaded + '"></div><div class="' + cssClass.barPlayed + '"></div></div><div class="' + cssClass.time + ' ' + cssClass.timeDuration + '"></div><div role="button" tabindex="0" class="' + cssClass.skipBwd + '" title="' + params.skipMinutes + ' ' + params.strSkipBwd + '"></div><div role="button" tabindex="0" class="' + cssClass.skipFwd + '" title="' + params.skipMinutes + ' ' + params.strSkipFwd + '"></div><div class="' + cssClass.volume + '"><div role="button" tabindex="0" class="' + cssClass.volumeButton + '" title="' + params.strVolume + '"></div><div class="' + cssClass.volumeAdjust + '"><div><div></div></div></div></div>');
 
                 var theBar = thePlayer.find('.' + cssClass.bar),
                     barPlayed = thePlayer.find('.' + cssClass.barPlayed),
@@ -155,18 +155,24 @@
                     });
 
                 skipButtons.on('click keypress', function (e) {
-                    if (e.type === 'click' || e.which === 13) {
+                    if (e.type === 'click' || e.which === 13 || e.which === 32) {
+                        e.preventDefault();
+
                         var factor = e.target.className.match(/minus/i) ? -1 : 1;
-                        var skip = factor * params.skipLength;
+                        var skip = factor * 60 * params.skipMinutes;
 
                         theAudio.currentTime += skip;
+                        
+                        return false;
                     }
                 }).on('mouseup', function () {
                     $(this).blur();
                 });
 
                 volumeButton.on('click keypress', function (e) {
-                    if (e.type === 'click' || e.which === 13) {
+                    if (e.type === 'click' || e.which === 13 || e.which === 32) {
+                        e.preventDefault();
+
                         if (thePlayer.hasClass(cssClass.muted)) {
                             thePlayer.removeClass(cssClass.muted);
                             theAudio.volume = volumeDefault;
@@ -194,10 +200,12 @@
             thePlayer.addClass(isAutoPlay ? cssClass.playing : cssClass.stopped);
 
             thePlayer.find('.' + cssClass.playPause).on('click keypress', function (e) {
-                if (e.type === 'click' || e.which === 13) {
+                if (e.type === 'click' || e.which === 13 || e.which === 32) {
+                    e.preventDefault();
+                    
                     var audioContainer = thePlayer.closest('.player.audio');
                     if (thePlayer.hasClass(cssClass.playing)) {
-                        $(this).attr('title', params.strPlay).find('a').html(params.strPlay);
+                        $(this).attr('title', params.strPlay);
                         thePlayer.removeClass(cssClass.playing).addClass(cssClass.stopped);
                         $(audioContainer).removeClass(cssClass.playing).addClass(cssClass.stopped);
 
@@ -208,8 +216,8 @@
                         }
                     } else {
                         // pause all running players
-                        $('.player.audio.audioplayer-playing .audioplayer-playpause a').click();
-                        $(this).attr('title', params.strPause).find('a').html(params.strPause);
+                        $('.player.audio.audioplayer-playing .audioplayer-playpause').click();
+                        $(this).attr('title', params.strPause);
                         thePlayer.addClass(cssClass.playing).removeClass(cssClass.stopped);
                         $(audioContainer).addClass(cssClass.playing).removeClass(cssClass.stopped);
 

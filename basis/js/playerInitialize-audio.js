@@ -82,7 +82,7 @@ define("playerInitialize-audio", [], function () {
             var mediaJsonURL = this.options.media;
             var analyticsData = this.options.analytics;
             var mediaSrc = '';
-            var $audioBtn = $('<a class="audio-btn" title="Audio abspielen" tabindex=0></a>');
+            var $audioBtn = $('<div role="button" tabindex="0" class="audio-btn" title="Audio abspielen"></a>');
 
             this.$dom_element.addClass('isLoading');
 
@@ -94,7 +94,7 @@ define("playerInitialize-audio", [], function () {
                     that.$dom_element.removeClass('isLoading').addClass('isReady playerId-' + uniqueId);
 
                     $audioBtn.on('click keypress', function (e) {
-                        if (e.type === 'click' || e.which === 13) {
+                        if (e.type === 'click' || e.which === 13 || e.which === 32) {
                             e.preventDefault();
 
                             // ignore when player is already initialized
@@ -135,9 +135,8 @@ define("playerInitialize-audio", [], function () {
             // to start / stop the player 
             // primarily used for audio list player
             this.$dom_element.find('.audio-btn').on('click keypress', function (e) {
-                if (e.type === 'click' || e.which === 13) {
+                if (e.type === 'click' || e.which === 13 || e.which === 32) {
                     e.preventDefault();
-
                     that.toggle();
                     return false;
                 }
@@ -159,7 +158,7 @@ define("playerInitialize-audio", [], function () {
          * pause all running players
          */
         pauseAll: function () {
-            $('.audioplayer-playing .audioplayer-playpause a').click();
+            $('.audioplayer-playing .audioplayer-playpause').click();
         },
 
         /**
@@ -169,7 +168,7 @@ define("playerInitialize-audio", [], function () {
         play: function () {
             if (this.$dom_element.closest('.audioplayer-playing').length === 0) {
                 this.pauseAll();
-                this.$dom_element.find('.audioplayer-playpause a').click();
+                this.$dom_element.find('.audioplayer-playpause').click();
             }
         },
 
