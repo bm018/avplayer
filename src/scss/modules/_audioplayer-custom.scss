@@ -3,6 +3,39 @@
         .audioplayer-bar {
             display: none;
         }
+
+        .audioplayer-time-duration {
+            border-right: 1px solid $audioPlayerBorderColor;
+            right: 7.5em; /* 90 */
+        }
+
+        .skip-btn {
+            width: $audioPlayerSize;
+            height: 100%;
+            top: 0;
+            cursor: pointer;
+            background-image: url(/basis/grafik/spr-ffwd.svg);
+            background-repeat: no-repeat;
+            background-position: center 0;
+        }
+
+        .audioplayer-skip-fwd {
+            right: $audioPlayerSize;
+            border-left: 1px solid $audioPlayerBorderColor;
+            &:focus, &:hover {
+                background-color: $audioPlayerColor;
+                background-position: center -1*$audioPlayerSize;
+            }
+        }
+
+        .audioplayer-skip-bwd {
+            right: 5em;
+            background-position: center -2*$audioPlayerSize;
+            &:focus, &:hover {
+                background-color: $audioPlayerColor;
+                background-position: center -3*$audioPlayerSize;
+            }
+        }
     }
     .layoutaudioliste & {
         height: 0;

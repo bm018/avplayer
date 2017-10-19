@@ -37,15 +37,22 @@
 
     .layoutaudio_ohne_bild & {
         background: $noPictBackground;
-        height: #{$noPictPlayBtnSize + $noPictContainerPadding * 2};
+        font-size: $audioPlayerFontSize;
+        height: $noPictPlayBtnSize;
         margin: $noPictMarginTop 0 0;
         position: relative;
+    }
+
+    .manualteaser.layoutstandard &.manualteaserpicture {
+        .audioplayer {
+            font-size: 9px;
+        }
     }
 
     .layoutaudioliste & {
         height: 0;
         transition: all .3s ease;
-        
+
         &.audioplayer-playing {
             height: #{$audioListPlayerHeight + $audioListContainerPadding};
         }
