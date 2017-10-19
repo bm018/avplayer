@@ -146,18 +146,6 @@
     }
   }
 
-  &:not(.audioplayer-muted) .audioplayer-volume-button a:after {
-    // "volume" icon by Nicolas Gallagher, http://nicolasgallagher.com/pure-css-gui-icons
-    width: 0.313em; /* 5 */
-    height: 0.313em; /* 5 */
-    border: 0.25em double $colorControlsBtn; /* 4 */
-    border-width: 0.25em 0.25em 0 0; /* 4 */
-    left: 0.563em; /* 9 */
-    top: -0.063em; /* 1 */
-    border-radius: 0 0.938em 0 0; /* 15 */
-    transform: rotate( 45deg );
-  }
-
   // volume dropdown
   .audioplayer-volume-adjust {
     height: 6.25em; /* 100 */
@@ -207,7 +195,7 @@
   &-volume-adjust div div {
     background: $audioPlayerAccentColor;
   }
-  
+
   & *,
   & *:before,
   & *:after {
