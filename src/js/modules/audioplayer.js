@@ -158,7 +158,7 @@
                     if (e.type === 'click' || e.which === 13 || e.which === 32) {
                         e.preventDefault();
 
-                        var factor = e.target.className.match(/minus/i) ? -1 : 1;
+                        var factor = e.target.className.match(/bwd/i) ? -1 : 1;
                         var skip = factor * 60 * params.skipMinutes;
 
                         theAudio.currentTime += skip;
