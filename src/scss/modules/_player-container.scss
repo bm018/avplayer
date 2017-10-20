@@ -58,6 +58,13 @@
         }
     }
 }
+// hide slider gallery controls on change on the audioplayer
+.slider.gallery.audioplayer-manipulated {
+    .controls {
+        position: relative;
+        z-index: -1;
+    }
+}
 
 @keyframes spinner {
     to {transform: rotate(360deg);}

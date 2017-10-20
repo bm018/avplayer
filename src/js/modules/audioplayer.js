@@ -190,10 +190,19 @@
                 volumeAdjuster.on(eStart, function (e) {
                     adjustVolume(e);
                     volumeAdjuster.on(eMove, function (e) { adjustVolume(e); });
-                })
-                    .on(eCancel, function () {
-                        volumeAdjuster.unbind(eMove);
-                    });
+                }).on(eCancel, function () {
+                    volumeAdjuster.unbind(eMove);
+                });
+
+                thePlayer.on('mouseover', function () {
+                    if (thePlayer.closest('.slider.gallery').length) {
+                        thePlayer.closest('.slider.gallery').addClass('audioplayer-manipulated');
+                    }
+                }).on('mouseout', function () {
+                    if (thePlayer.closest('.slider.gallery').length) {
+                        thePlayer.closest('.slider.gallery').removeClass('audioplayer-manipulated');
+                    }
+                });
             }
             else thePlayer.addClass(cssClass.mini);
 
