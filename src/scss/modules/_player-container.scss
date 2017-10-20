@@ -43,12 +43,6 @@
         position: relative;
     }
 
-    .manualteaser.layoutstandard &.manualteaserpicture {
-        .audioplayer {
-            font-size: 9px;
-        }
-    }
-
     .layoutaudioliste & {
         height: 0;
         transition: all .3s ease;
@@ -58,6 +52,21 @@
         }
     }
 }
+
+// hide duration for manualteaser layoutstandard when audioplayer has class audioplayer-noseek
+.manualteaser.layoutstandard {
+    .manualteaserpicture.audioplayer-noseek {
+        .audioplayer-time-duration {
+            display: none;
+        }
+        .audioplayer-novolume {
+            .audioplayer-time-duration {
+                display: block;
+            }
+        }
+    }
+}
+
 // hide slider gallery controls on change on the audioplayer
 .slider.gallery.audioplayer-manipulated {
     .controls {
