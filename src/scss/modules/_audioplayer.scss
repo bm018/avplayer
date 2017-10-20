@@ -68,7 +68,7 @@
     }
 
 
-    .audioplayer-novolume .audioplayer-time-duration {
+    &.audioplayer-novolume .audioplayer-time-duration {
         border-right: 0;
         right: 0;
     }
@@ -90,6 +90,10 @@
             left: 0;
             top: 0;
         }
+    }
+
+    &.audioplayer-novolume .audioplayer-bar {
+        right: 4.375em; /* 70 */
     }
 
     .audioplayer-bar-loaded {
@@ -167,6 +171,10 @@
             bottom: 0;
             left: 0;
         }
+    }
+
+    &.audioplayer-novolume .audioplayer-volume {
+        display: none;
     }
 
     &-bar-played {
