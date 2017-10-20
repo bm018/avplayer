@@ -217,9 +217,13 @@
                     if (isFocused) {
                         switch (e.which) {
                             case 37:
+                                // TODO im Slider
+                                e.stopPropagation();
                                 theAudio.currentTime -= params.skipSeconds;
                                 break;
                             case 39:
+                                // TODO im Slider
+                                e.stopPropagation();
                                 theAudio.currentTime += params.skipSeconds;
                                 break;
                             default:
