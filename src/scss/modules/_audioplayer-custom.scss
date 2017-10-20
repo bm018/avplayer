@@ -37,6 +37,18 @@
             }
         }
     }
+    .audioplayer-noseek &.audioplayer-novolume {
+        .audioplayer-time-duration {
+            display: block;
+            right: 5em;
+        }
+        .audioplayer-skip-bwd {
+            right: 2.5em;
+        }
+        .audioplayer-skip-fwd {
+            right: 0;
+        }
+    }
     .layoutaudioliste & {
         height: 0;
         transition: all .3s ease;
