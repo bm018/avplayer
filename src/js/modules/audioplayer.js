@@ -30,13 +30,14 @@
         };
 
     $.fn.audioPlayer = function (_params) {
-        var params = $.extend({ classPrefix: 'audioplayer', strPlay: 'Abspielen', strPause: 'Pause', strVolume: 'Lautst&auml;rke', strSkipBwd: 'Minuten zur&uuml;ckspringen', strSkipFwd: 'Minuten vorspringen', skipMinutes: 5 }, _params),
+        var params = $.extend({ classPrefix: 'audioplayer', strPlay: 'Abspielen', strPause: 'Pause', strVolume: 'Lautst&auml;rke', strSkipBwd: 'Minuten zur&uuml;ckspringen', strSkipFwd: 'Minuten vorspringen', skipMinutes: 5, skipSeconds: 5 }, _params),
             cssClass = {},
             cssClassSub =
                 {
                     playPause: 'playpause',
                     playing: 'playing',
                     stopped: 'stopped',
+                    focused: 'focused',
                     time: 'time',
                     timeCurrent: 'time-current',
                     timeDuration: 'time-duration',
@@ -97,6 +98,7 @@
                     volumeButton = thePlayer.find('.' + cssClass.volumeButton),
                     volumeAdjuster = thePlayer.find('.' + cssClass.volumeAdjust + ' > div'),
                     volumeDefault = 0,
+                    isFocused = false,
 
                     adjustCurrentTime = function (e) {
                         theRealEvent = isTouch ? e.originalEvent.touches[0] : e;
@@ -149,10 +151,9 @@
                 theBar.on(eStart, function (e) {
                     adjustCurrentTime(e);
                     theBar.on(eMove, function (e) { adjustCurrentTime(e); });
-                })
-                    .on(eCancel, function () {
-                        theBar.unbind(eMove);
-                    });
+                }).on(eCancel, function () {
+                    theBar.unbind(eMove);
+                });
 
                 skipButtons.on('click keypress', function (e) {
                     if (e.type === 'click' || e.which === 13 || e.which === 32) {
@@ -201,6 +202,33 @@
                 }).on('mouseout', function () {
                     if (thePlayer.closest('.slider.gallery').length) {
                         thePlayer.closest('.slider.gallery').removeClass('audioplayer-manipulated');
+                    }
+                });
+
+                thePlayer.on('focusin', function () {
+                    thePlayer.addClass(cssClass.focused);
+                    isFocused = true;
+                }).on('focusout', function () {
+                    thePlayer.removeClass(cssClass.focused);
+                    isFocused = false;
+                });
+
+                thePlayer.on('keydown', function (e) {
+                    if (isFocused) {
+                        switch (e.which) {
+                            case 37:
+                                // TODO im Slider
+                                e.stopPropagation();
+                                theAudio.currentTime -= params.skipSeconds;
+                                break;
+                            case 39:
+                                // TODO im Slider
+                                e.stopPropagation();
+                                theAudio.currentTime += params.skipSeconds;
+                                break;
+                            default:
+                                break;
+                        }
                     }
                 });
             }
