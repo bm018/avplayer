@@ -99,7 +99,7 @@ define("playerInitialize-audio", [], function () {
 
                             // ignore when player is already initialized
                             if (!that.isInitialized) {
-                                that.createAudio(mediaSrc);
+                                that.createAudio(mediaSrc, !!(e.which === 13 || e.which === 32));
                                 that.sendAnalyticsData(analyticsData);
                             }
                             return false;
@@ -113,8 +113,9 @@ define("playerInitialize-audio", [], function () {
          * Creates <audio> element and initializes audio player
          * 
          * @param { String } src
+         * @param { Boolean } isKeyboardControl
          */
-        createAudio: function (src) {
+        createAudio: function (src, isKeyboardControl) {
             var that = this;
             var $audioElm = $('<audio src="' + src + '" class="audio-element" controls>');
 
@@ -130,6 +131,9 @@ define("playerInitialize-audio", [], function () {
 
             // start the audio
             this.play();
+
+            // if player is initialized via keyboard control, set focus to play/pause button
+            if (isKeyboardControl) this.$dom_element.find('.audioplayer-playpause').focus();
 
             // attach event handler on initial audio button
             // to start / stop the player 
