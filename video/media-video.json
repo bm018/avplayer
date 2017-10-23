@@ -1,0 +1,40 @@
+{ 
+    "_sortierArray":[1], 
+    "_defaultQuality":["auto", 1, 2, 0, 3], 
+    "rbbtitle":"Die Rentner-Gang aus Moabit (1/2)", 
+    "rbbhandle":"/content/rbb/ref/av/tva_referenzclips/video_mit_caption_20160109", 
+    "_type":"video", 
+    "_isLive":false, 
+    "_dvrEnabled":false, 
+    "_geoblocked":false, 
+    "_duration":1746, 
+    "_previewImage":"/content/dam/rbb/ref/tvsendungen/10058211320.jpg.jpg/rendition=cq5dam.web.1280.1280.jpeg/size=470x264.jpg", 
+    "_subtitleUrl":"/content/rbb/ref/av/tva_referenzclips/video_mit_caption_20160109.subtitle.xml", 
+    "_webvttUrl":"/content/rbb/ref/av/tva_referenzclips/video_mit_caption_20160109.subtitle.vtt", 
+    "_mediaArray":[{ 
+        "_plugin": 1, 
+        "_mediaStreamArray": [
+            { 
+                "_stream": "https://rbbmediaadp-vh.akamaihd.net/i/content/3b50d17f-0b0d-4673-adfe-0938242e38cf_,0a2fa605-b5e8-4fd7-8ac9-bcf62557f37b,57054252-2d44-4998-8431-bdf78bab120c,efa668ba-604e-4d15-bc98-523cf9518c3c,45a9589f-4e61-4fc4-959d-6cc3a283d42f,322a3f18-6c80-4198-bcf2-32a0c67471e8,.mp4.csmil/master.m3u8", 
+                "_termid": "5.2.13.12.1", 
+                "_server": "", 
+                "_quality": "auto" 
+            }, { 
+                "_stream": "https://rbbmediapmdp-a.akamaihd.net/content/3b50d17f-0b0d-4673-adfe-0938242e38cf_0a2fa605-b5e8-4fd7-8ac9-bcf62557f37b.mp4", 
+                "_termid": "1.2.3.9.1", 
+                "_server": "", 
+                "_quality": 1 
+            }, { 
+                "_stream": "https://rbbmediapmdp-a.akamaihd.net/content/3b50d17f-0b0d-4673-adfe-0938242e38cf_322a3f18-6c80-4198-bcf2-32a0c67471e8.mp4", 
+                "_termid": "1.2.3.12.2", 
+                "_server": "", 
+                "_quality": 2 
+            }, { 
+                "_stream": "https://rbbmediapmdp-a.akamaihd.net/content/3b50d17f-0b0d-4673-adfe-0938242e38cf_57054252-2d44-4998-8431-bdf78bab120c.mp4", 
+                "_termid": "1.2.3.6.1", 
+                "_server": "", 
+                "_quality": 0 
+            }
+        ] 
+    }] 
+}

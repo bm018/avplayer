@@ -1,0 +1,26 @@
+{
+    "_representationArray": [
+        {
+            "_representationClass": "m"
+        }
+    ],
+    "_initialVolume": 1,
+    "_startTime": 0,
+    "_endTime": 0,
+    "_autosave": true,
+    "_autoplay": false,
+    "_baseUrl": "/basis/ardplayer-3.9.0/",
+    "_baseAssetUrl": "/basis/ardplayer-3.9.0/base/",
+    "_errorMessagesConfig": "",
+    "_showOptions": true,
+    "_showOptions_Plugins": true,
+    "_showOptions_Quality": true,
+    "_showColorSettings": true,
+    "_showEqualizer": false,
+    "_rememberCurrentTime": false,
+    "_forceControlBarVisible": false,
+    "_showSubtitelAtStart": false,
+    "_addons": [
+        "AddonUntertitel_ebu_tt"
+    ]
+}
