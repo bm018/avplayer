@@ -3,7 +3,7 @@ define("playerInitialize-audio", [], function () {
      * Loads audio player script 
      */
     var loadScripts = function () {
-        $.getScript("./src/dist/js/audio.min.js");
+        $('<script src="/src/dist/js/audio.min.js"></script>').appendTo('head');
     };
 
     loadScripts();
@@ -94,31 +94,38 @@ define("playerInitialize-audio", [], function () {
             var mediaJsonURL = this.options.media;
             var analyticsData = this.options.analytics;
             var mediaSrc = '';
-            var $audioBtn = $('<div role="button" tabindex="0" class="audio-btn" title="Audio abspielen"></a>');
+            var $audioBtn = $('<div role="button" tabindex="0" class="audio-btn" title="Audio abspielen"></div>');
 
             this.$dom_element.addClass('isLoading');
 
             // Get audio src from media.json
-            $.getJSON(mediaJsonURL, function (data) {
-                mediaSrc = (data && data._mediaArray && data._mediaArray[0] && data._mediaArray[0]._mediaStreamArray && data._mediaArray[0]._mediaStreamArray[0] && data._mediaArray[0]._mediaStreamArray[0]._stream);
+            $.getJSON(mediaJsonURL)
+                .done(function (data) {
+                    mediaSrc = (data && data._mediaArray && data._mediaArray[0] && data._mediaArray[0]._mediaStreamArray && data._mediaArray[0]._mediaStreamArray[0] && data._mediaArray[0]._mediaStreamArray[0]._stream);
 
-                if (mediaSrc) {
-                    that.$dom_element.removeClass('isLoading').addClass('isReady playerId-' + uniqueId);
+                    if (mediaSrc) {
+                        that.$dom_element.removeClass('isLoading').addClass('isReady playerId-' + uniqueId);
 
-                    $audioBtn.on('click keypress', function (e) {
-                        if (e.type === 'click' || e.which === 13 || e.which === 32) {
-                            e.preventDefault();
+                        $audioBtn.on('click keypress', function (e) {
+                            if (e.type === 'click' || e.which === 13 || e.which === 32) {
+                                e.preventDefault();
 
-                            // ignore when player is already initialized
-                            if (!that.isInitialized) {
-                                that.createAudio(mediaSrc, !!(e.which === 13 || e.which === 32));
-                                that.sendAnalyticsData(analyticsData);
+                                // ignore when player is already initialized
+                                if (!that.isInitialized) {
+                                    that.createAudio(mediaSrc, !!(e.which === 13 || e.which === 32));
+                                    that.sendAnalyticsData(analyticsData);
+                                    $(this).blur();
+                                }
+                                return false;
                             }
-                            return false;
-                        }
-                    }).appendTo(that.$dom_element);;
-                }
-            });
+                        }).appendTo(that.$dom_element);;
+                    } else {
+                        that.showErr(1, 'Referenz zur Audio-Datei nicht gefunden.');
+                    }
+                })
+                .fail(function (jqxhr, textStatus, error) {
+                    that.showErr(1, 'Fehler beim Abruf der Medien-Informationen.', textStatus + ' ' + error);
+                });
         },
 
         /**
@@ -154,9 +161,24 @@ define("playerInitialize-audio", [], function () {
                 if (e.type === 'click' || e.which === 13 || e.which === 32) {
                     e.preventDefault();
                     that.toggle();
+
+                    if (e.type === 'click') $(this).blur();
                     return false;
                 }
             });
+        },
+
+        /**
+         * Zeigt Information über Fehler an
+         * 
+         * @param { Integer } level
+         * @param { String } msg
+         * @param { String } consoleMsg
+         */
+        showErr: function (level, msg, consoleMsg) {
+            this.$dom_element.removeClass('isLoading isReady isInitialized').addClass('error');
+            this.$dom_element.append('<div class="audioplayer-error">' + msg + '</div>');
+            if (consoleMsg) console.warn(consoleMsg);
         },
 
         /** 
@@ -174,7 +196,19 @@ define("playerInitialize-audio", [], function () {
          * pause all running players
          */
         pauseAll: function () {
+            // stop running audio players
             $('.audioplayer-playing .audioplayer-playpause').click();
+
+            // check if any video players existing
+            var videoPlayers = window.ardplayer && ardplayer.PlayerModel && ardplayer.PlayerModel.players;
+
+            if (videoPlayers && videoPlayers.length > 0) {
+                var i = videoPlayers.length;
+
+                while (i--) {
+                    ardplayer.PlayerModel.players[i].pause();
+                }
+            }
         },
 
         /**
