@@ -56,7 +56,8 @@
     };
 
     // Populate ARD Player Namespace
-    global.ardplayer.jq = $.noConflict();
+    // global.ardplayer.jq = $.noConflict();
+    global.ardplayer.jq = jQuery;
     global.ardplayer.console = _localDev ? global.console : filteredConsole();
 
 })(typeof window === 'undefined' ? this : window);
