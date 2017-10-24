@@ -36,6 +36,18 @@ define("playerInitialize-audio", [], function () {
     watchQueuedPlayers();
 
     /**
+     * Subscribes to Gallery::INDEX_CHANGED event 
+     * to set running players on pause
+     * when using the gallery slider
+     */
+    jsb.on('Gallery::INDEX_CHANGED', function (e) {
+        if (e.gallery_id) {
+            // find running players in gallery and stop
+            $('#' + e.gallery_id + ' .audioplayer-playing .audioplayer-playpause').click();
+        };
+    });
+
+    /**
      * function playerInitialize
      * is called for each player
      * It pushes each placeholder to queuedPlayers array
