@@ -1,0 +1,55 @@
+.ardplayer-s .ardplayer-viewport .sprungmarken {
+	display: none;
+}
+
+.ardplayer-viewport .sprungmarken {
+	top: 0px;
+	position: absolute;
+	height: 0px;
+
+    left: 20px;
+    right: 20px;
+}
+.ardplayer-viewport .sprungmarken .sprungmarke {
+    background: #c70d15;
+    width: 7px;
+
+	position: absolute;
+	cursor: pointer;
+
+	height: 16px;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.ardplayer-viewport .sprungmarken .sprungmarke.mobile {
+    width: 14px;
+}
+
+.ardplayer-viewport .sprungmarken .sprungmarke.fadeout {
+    height: 8px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.ardplayer-viewport .sprungmarken .arrow {
+	background: url("../../../base/img/mouseover.svg");
+	position: absolute;
+	height: 11px;
+	width: 14px;
+	bottom: 16px;
+	margin-left: 0px;
+	z-index: 900;
+}
+
+.ardplayer-viewport .sprungmarken .popup {
+	cursor: default;
+	position: absolute;
+	bottom: 27px;
+	z-index: 900;
+	background-color: #213462;
+}

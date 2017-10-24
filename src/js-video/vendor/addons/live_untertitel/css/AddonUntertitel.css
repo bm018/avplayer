@@ -1,0 +1,30 @@
+.ardplayer-viewport .ardplayer-player-untertitel {
+    background: url(../../../base/img/player_controls.png) no-repeat -600px -200px;
+    cursor: pointer;
+    float: left;
+    height: 46px;
+    width: 46px;
+    border-right: 1px solid #284e7e;
+    display: block;
+}
+
+.ardplayer-viewport .ardplayer-player-untertitel.hover {
+    background-position: -700px -200px;
+}
+
+.ardplayer-viewport .ardplayer-player-untertitel-selected {
+    background-position: -700px -200px;
+}
+
+/* Blendet die UT und den UT-Button für die kleinen Repräsentationen aus*/
+.ardplayer-xxs .ardplayer-viewport .ardplayer-untertitel,
+.ardplayer-xs .ardplayer-viewport .ardplayer-untertitel,
+.ardplayer-s .ardplayer-viewport .ardplayer-untertitel{
+    display: none;
+}
+
+.ardplayer-xxs .ardplayer-viewport .ardplayer-player-untertitel,
+.ardplayer-xs .ardplayer-viewport .ardplayer-player-untertitel,
+.ardplayer-s .ardplayer-viewport .ardplayer-player-untertitel {
+    display: none;
+}

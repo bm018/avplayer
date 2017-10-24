@@ -1,0 +1,51 @@
+.ardplayer-untertitel-ebu {
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 9;
+
+	/* CSS3 Mausereignisse fuer UT deaktivieren */
+	pointer-events : none;
+}
+
+
+
+
+
+/*
+css für den UT-Tag (Anzeige)
+*/
+
+/*  von grafik gewünscht: ein leichtes padding um die einzelnen spans und ein margin, damit es keine überlappungen gibt */
+/*  10.6.2014 <br>-lineheight auf 150% gesetzt, da sich UT überlagern ard-redmine #29432
+/*  achtung: browser-spezifisch kann es zu einem spalt bei einem 2-zeiligen UT kommen */
+
+/*  Schriftart Thesis wird aus dem jeweiligen System der ARD-CMSs gezogen - Alternative ist immer Verdana*/
+.ardplayer-untertitel-ebu{
+    font-family: Thesis, verdana, sans-serif;
+    padding-top: 5% !important;
+    padding-bottom: 3% !important;
+}
+
+.ardplayer-untertitel-ebu span{
+    padding: 0.2%;
+}
+
+.ardplayer-untertitel-ebu p{
+    line-height: normal;
+}
+
+.ardplayer-untertitel-ebu br {
+    line-height: 150%;
+}
+
+/* von grafik gewünscht: Überschreiben des generischen schriftwertes */
+/*
+.ardplayer-untertitel > p{
+    font-size: 10% !important;
+}
+ */
+
+
+
+
