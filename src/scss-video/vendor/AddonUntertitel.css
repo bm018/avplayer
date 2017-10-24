@@ -1,0 +1,48 @@
+.ardplayer-viewport .ardplayer-player-untertitel {
+    background: url(../../../base/img/player_controls.png) no-repeat -600px -200px;
+    cursor: pointer;
+    float: left;
+    height: 46px;
+    width: 46px;
+    border-right: 1px solid #284e7e;
+    display: block;
+}
+
+.ardplayer-viewport .ardplayer-player-untertitel.hover {
+    background-position: -700px -200px;
+}
+
+.ardplayer-viewport .ardplayer-player-untertitel-selected {
+    background-position: -700px -200px;
+}
+
+.ardplayer-untertitel {
+    /*bottom: 0; */
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 9;
+
+	/* CSS3 Mausereignisse fuer UT deaktivieren */
+	pointer-events : none;
+}
+
+.ardplayer-untertitel .ardplayer-inhalt {
+    z-index: 10;
+    width: 100%;
+    line-height: 1.2em;
+    /*min-height: 3em;*/
+    padding: 2% 0 !important;
+    left: 0;
+    bottom: 0px;
+    position: absolute;
+}
+
+.ardplayer-untertitel .ardplayer-hintergrund {
+    z-index: 8;
+    width: 100%;
+    opacity: .8;
+    left: 0;
+    bottom: 0px;
+    position: absolute;
+}

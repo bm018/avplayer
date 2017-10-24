@@ -1,7 +1,9 @@
 .audio-btn {
-    border-radius: 50%;
-    color: $playBtnIdle;
+    background: url('/basis/grafik/spr-initbtn.svg') no-repeat;
+    background-size: $playBtnSize*2 auto;
+    background-position: $playBtnSize*-1 0;
     cursor: pointer;
+    filter: drop-shadow(0px 0px 5px black);
     left: 50%;
     position: absolute;
     top: 50%;
@@ -12,13 +14,7 @@
     &:active {
         outline: none;
         text-decoration: none;
-        color: $playBtnHover;
-    }
-    &::before {
-        content: '<';
-        font: normal $playBtnSize/1 'Icon-Font';
-        speak: none;
-        text-shadow: $playBtnShadow;
+        background-position: $playBtnSize*-1 $playBtnSize*-1;
     }
     .player.isInitialized & {
         display: none !important;
@@ -31,7 +27,9 @@
         width: $playBtnSize;
     }
     .layoutaudio_ohne_bild & {
-        color: $audioListPlayBtnIdle;
+        background: url('/basis/grafik/spr-play.svg') left top no-repeat;
+        background-size: auto $noPictPlayBtnSize*4;
+        filter: none;
         height: $noPictPlayBtnSize;
         width: $noPictPlayBtnSize;
         left: $noPictContainerPadding;
@@ -40,37 +38,36 @@
         &:hover,
         &:focus,
         &:active {
-            color: $audioListPlayBtnHover;
-        }
-        &::before {
-            content: 'W';
-            font-size: $noPictPlayBtnSize;
-            text-shadow: none;
+            background-color: $noPictPlayBtnHover;
+            background-position: 0 $noPictPlayBtnSize*-1;
         }
     }
     .layoutaudioliste & {
-        color: $audioListPlayBtnIdle;
+        background: url('/basis/grafik/spr-play.svg') left top no-repeat;
+        background-size: auto $noPictPlayBtnSize*4;
+        filter: none;
+        height: $noPictPlayBtnSize;
         left: 0;
+        margin-top: $audioListMarginTop;
         top: 0;
         transform: none;
-        margin-top: $audioListMarginTop;
+        width: $noPictPlayBtnSize;
         &:hover,
         &:focus,
         &:active {
-            color: $audioListPlayBtnHover;
-        }
-        &::before {
-            content: 'W';
-            font-size: $audioListPlayBtnSize;
-            text-shadow: none;
+            background-color: $noPictPlayBtnHover;
+            background-position: 0 $noPictPlayBtnSize*-1;
         }
     }
     .layoutaudioliste.first & {
         margin-top: $audioListFirstMarginTop;
     }
     .layoutaudioliste .audioplayer-playing & {
-        &::before {
-            content: 'V';
+        background-position: 0 $noPictPlayBtnSize*-2;
+        &:hover,
+        &:focus,
+        &:active {
+            background-position: 0 $noPictPlayBtnSize*-3;
         }
     }
 }

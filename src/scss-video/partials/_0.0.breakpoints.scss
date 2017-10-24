@@ -1,0 +1,20 @@
+// ----- Breakpoints ----- //
+/* media-queries helpers */
+@mixin breakpoint($point) {
+  // Desktop
+  @if $point == lg {
+    @media (min-width: 1200px) { @content; }
+  }
+  // Tablet landscape
+  @else if $point == md {
+    @media (max-width: 1199px) { @content; }
+  }
+  // Tablet portrait
+  @else if $point == sm {
+    @media (max-width: 991px) { @content; }
+  }
+  // Phone
+  @else if $point == xs {
+    @media (max-width: 767px) { @content; }
+  }
+}

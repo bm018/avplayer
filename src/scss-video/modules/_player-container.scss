@@ -1,0 +1,13 @@
+.player.video {
+    .ardplayer {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    &.isInitialized {
+        & > img {
+            visibility: hidden;
+        }
+    }
+}

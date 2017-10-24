@@ -1,4 +1,4 @@
-.player {
+.player.audio {
     &.isLoading::before {
         content: '';
         box-sizing: border-box;
