@@ -139,9 +139,9 @@
         height: 6.25em; /* 75 */
         cursor: default;
         position: absolute;
-        left: 0;
-        right: -1px;
+        left: -1px;
         top: -9999px;
+        width: calc(100% + 1px); /* because of border */
         background: $audioPlayerBgColor;
     }
 
