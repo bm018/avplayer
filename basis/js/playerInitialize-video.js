@@ -35,6 +35,35 @@ define("playerInitialize-video", [], function () {
 
     watchQueuedPlayers();
 
+    var pauseVideoPlayers = function (players) {
+        var allVideoPlayers = window.ardplayer && ardplayer.PlayerModel && ardplayer.PlayerModel.players;
+        if ($.isArray(allVideoPlayers) && allVideoPlayers.length > 0) {
+            var i = allVideoPlayers.length;
+
+            // iterate over all video players and check if one of them is contained by gallery
+            while (i--) {
+                if ($.isArray(players) && players.length > 0) {
+                    // if attribute players is defined, only stop players mentioned in players array
+                    if ($.inArray('' + ardplayer.PlayerModel.players[i]._id, players) > -1) {
+                        ardplayer.PlayerModel.players[i].pause();
+                    }
+                } else {
+                    // otherwise stop all players
+                    ardplayer.PlayerModel.players[i].pause();
+                }
+            }
+        }
+    };
+
+    /**
+     * Subscribes to Player::AUDIO_STARTED event
+     * to set running players on pause
+     * when audio is started
+     */
+    jsb.on('Player::AUDIO_STARTED', function () {
+        pauseVideoPlayers();
+    });
+
     /**
      * Subscribes to Gallery::INDEX_CHANGED event 
      * to set running players on pause
@@ -49,19 +78,7 @@ define("playerInitialize-video", [], function () {
                 playerIDsInGallery.push('' + $(this).attr('id'));
             });
 
-            if (playerIDsInGallery.length > 0) {
-                var allVideoPlayers = window.ardplayer && ardplayer.PlayerModel && ardplayer.PlayerModel.players;
-                if (allVideoPlayers && allVideoPlayers.length > 0) {
-                    var i = allVideoPlayers.length;
-
-                    // iterate over all video players and check if one of them is contained by gallery
-                    while (i--) {
-                        if ($.inArray('' + ardplayer.PlayerModel.players[i]._id, playerIDsInGallery) > -1) {
-                            ardplayer.PlayerModel.players[i].pause();
-                        }
-                    }
-                }
-            };
+            pauseVideoPlayers(playerIDsInGallery);
         };
     });
 
@@ -133,11 +150,11 @@ define("playerInitialize-video", [], function () {
          * @param { Boolean } isKeyboardControl
          */
         createVideo: function (src, isKeyboardControl) {
-            var that = this;
-            var uniqueId = +new Date() + Math.floor((Math.random() * (999 - 100) + 100));
-            var $videoElm = $('<div id="' + uniqueId + '" />');
+            this.uniqueId = +new Date() + Math.floor((Math.random() * (999 - 100) + 100));
+            this.isInitialized = true;            
 
-            this.isInitialized = true;
+            var that = this;
+            var $videoElm = $('<div id="' + this.uniqueId + '" />');
 
             // Append video element to player container
             // and initialize videoPlayer on video element
@@ -145,7 +162,7 @@ define("playerInitialize-video", [], function () {
 
             // instantiate player
             if (window.ardplayer) {
-                var p = new ardplayer.Player(uniqueId, this.options.config, this.options.media);
+                var p = new ardplayer.Player(this.uniqueId, this.options.config, this.options.media);
             }
 
             // bind events
@@ -162,8 +179,13 @@ define("playerInitialize-video", [], function () {
         bindEvents: function (player) {
             var that = this;
 
-            $(player).bind(ardplayer.Player.EVENT_PLAY_STREAM, function (event) {
+            $(player).bind(ardplayer.Player.EVENT_PLAY_STREAM, function (e) {
                 that.setState('playing');
+
+                jsb.fireEvent('Player::VIDEO_STARTED', {
+                    playerId: that.uniqueId,
+                    originalEvent: e
+                });
             });
 
             $(player).bind(ardplayer.Player.EVENT_PAUSE_STREAM, function (event) {

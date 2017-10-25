@@ -36,6 +36,22 @@ define("playerInitialize-audio", [], function () {
     watchQueuedPlayers();
 
     /**
+     * pause all running audio players
+     */
+    var pauseAllAudioPlayers = function () {
+        $('.audioplayer-playing .audioplayer-playpause').click();
+    };
+
+    /**
+     * Subscribes to Player::VIDEO_STARTED event
+     * to set running players on pause
+     * when video is started
+     */
+    jsb.on('Player::VIDEO_STARTED', function () {
+        pauseAllAudioPlayers();
+    });
+
+    /**
      * Subscribes to Gallery::INDEX_CHANGED event 
      * to set running players on pause
      * when using the gallery slider
@@ -90,11 +106,12 @@ define("playerInitialize-audio", [], function () {
          */
         initialize: function () {
             var that = this;
-            var uniqueId = +new Date() + Math.floor((Math.random() * (999 - 100) + 100));
             var mediaJsonURL = this.options.media;
             var analyticsData = this.options.analytics;
             var mediaSrc = '';
             var $audioBtn = $('<div role="button" tabindex="0" class="audio-btn" title="Audio abspielen"></div>');
+
+            this.uniqueId = +new Date() + Math.floor((Math.random() * (999 - 100) + 100));            
 
             this.$dom_element.addClass('isLoading');
 
@@ -104,7 +121,7 @@ define("playerInitialize-audio", [], function () {
                     mediaSrc = (data && data._mediaArray && data._mediaArray[0] && data._mediaArray[0]._mediaStreamArray && data._mediaArray[0]._mediaStreamArray[0] && data._mediaArray[0]._mediaStreamArray[0]._stream);
 
                     if (mediaSrc) {
-                        that.$dom_element.removeClass('isLoading').addClass('isReady playerId-' + uniqueId);
+                        that.$dom_element.removeClass('isLoading').addClass('isReady playerId-' + that.uniqueId);
 
                         $audioBtn.on('click keypress', function (e) {
                             if (e.type === 'click' || e.which === 13 || e.which === 32) {
@@ -166,6 +183,23 @@ define("playerInitialize-audio", [], function () {
                     return false;
                 }
             });
+
+            // subscribe to play event
+            // and fire jsb event to pause video players
+            this.$dom_element.find('audio').on('play', function (e) {
+                jsb.fireEvent('Player::AUDIO_STARTED', {
+                    playerId: that.uniqueId,
+                    originalEvent: e
+                });
+            });
+
+            // subscribe to AUDIO_STARTED event
+            // and stop player (if it's not the one that triggered the event)
+            jsb.on('Player::AUDIO_STARTED', function (e) {
+                if (e.playerId !== that.uniqueId) {
+                    that.pause();
+                }
+            });
         },
 
         /**
@@ -186,28 +220,15 @@ define("playerInitialize-audio", [], function () {
          */
         toggle: function () {
             if (this.$dom_element.closest('.audioplayer-playing').length === 1) {
-                this.pauseAll();
+                this.pause();
             } else {
                 this.play();
             }
         },
 
-        /**
-         * pause all running players
-         */
-        pauseAll: function () {
-            // stop running audio players
-            $('.audioplayer-playing .audioplayer-playpause').click();
-
-            // check if any video players existing
-            var videoPlayers = window.ardplayer && ardplayer.PlayerModel && ardplayer.PlayerModel.players;
-
-            if (videoPlayers && videoPlayers.length > 0) {
-                var i = videoPlayers.length;
-
-                while (i--) {
-                    ardplayer.PlayerModel.players[i].pause();
-                }
+        pause: function () {
+            if (this.$dom_element.closest('.audioplayer-playing').length === 1) {
+                this.$dom_element.find('.audioplayer-playpause').click();
             }
         },
 
@@ -217,7 +238,6 @@ define("playerInitialize-audio", [], function () {
          */
         play: function () {
             if (this.$dom_element.closest('.audioplayer-playing').length === 0) {
-                this.pauseAll();
                 this.$dom_element.find('.audioplayer-playpause').click();
             }
         },
