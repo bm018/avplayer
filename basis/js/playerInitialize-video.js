@@ -46,7 +46,7 @@ define("playerInitialize-video", [], function () {
         if (e.gallery_id) {
             // collect all video player ids in gallery that fired the event
             $('#' + e.gallery_id + ' .ardplayer').each(function () {
-                playerIDsInGallery.push("" + $(this).attr('id'));
+                playerIDsInGallery.push('' + $(this).attr('id'));
             });
 
             if (playerIDsInGallery.length > 0) {
@@ -56,7 +56,7 @@ define("playerInitialize-video", [], function () {
 
                     // iterate over all video players and check if one of them is contained by gallery
                     while (i--) {
-                        if ($.inArray("" + ardplayer.PlayerModel.players[i]._id, playerIDsInGallery) > -1) {
+                        if ($.inArray('' + ardplayer.PlayerModel.players[i]._id, playerIDsInGallery) > -1) {
                             ardplayer.PlayerModel.players[i].pause();
                         }
                     }
