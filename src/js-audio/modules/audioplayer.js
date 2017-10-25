@@ -30,7 +30,7 @@
         };
 
     $.fn.audioPlayer = function (_params) {
-        var params = $.extend({ classPrefix: 'audioplayer', strPlay: 'Abspielen', strPause: 'Pause', strVolume: 'Lautst&auml;rke', strSkipBwd: 'Minuten zur&uuml;ckspringen', strSkipFwd: 'Minuten vorspringen', skipMinutes: 5, skipSeconds: 5 }, _params),
+        var params = $.extend({ classPrefix: 'audioplayer', strPlay: 'Abspielen', strPause: 'Pause', strVolume: 'Lautst&auml;rke', strSkipBwd: 'Minuten zur&uuml;ckspringen', strSkipFwd: 'Minuten vorspringen', skipMinutes: 5, skipSeconds: 5, stepVolume: 0.1 }, _params),
             cssClass = {},
             cssClassSub =
                 {
@@ -107,7 +107,7 @@
 
                     adjustVolume = function (e) {
                         theRealEvent = isTouch ? e.originalEvent.touches[0] : e;
-                        theAudio.volume = Math.abs((theRealEvent.pageY - (volumeAdjuster.offset().top + volumeAdjuster.height())) / volumeAdjuster.height());
+                        theAudio.volume = Math.min(Math.abs((theRealEvent.pageY - (volumeAdjuster.offset().top + volumeAdjuster.height())) / volumeAdjuster.height()), 1);
                     },
 
                     updateLoadBar = function () {
@@ -217,14 +217,30 @@
                     if (isFocused) {
                         switch (e.which) {
                             case 37:
+                                // Pfeil nach links
                                 // TODO im Slider
                                 e.stopPropagation();
+                                e.preventDefault();
                                 theAudio.currentTime -= params.skipSeconds;
                                 break;
+                            case 38:
+                                // Pfeil nach oben
+                                e.stopPropagation();
+                                e.preventDefault();
+                                theAudio.volume = (theAudio.volume + params.stepVolume < 1) ? theAudio.volume + params.stepVolume : 1;
+                                break;
                             case 39:
+                                // Pfeil nach rechts
                                 // TODO im Slider
                                 e.stopPropagation();
+                                e.preventDefault();
                                 theAudio.currentTime += params.skipSeconds;
+                                break;
+                            case 40:
+                                // Pfeil nach unten
+                                e.stopPropagation();
+                                e.preventDefault();
+                                theAudio.volume = (theAudio.volume - params.stepVolume > 0) ? theAudio.volume - params.stepVolume : 0;
                                 break;
                             default:
                                 break;
