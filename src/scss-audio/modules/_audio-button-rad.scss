@@ -1,0 +1,11 @@
+.audio-btn {
+    background-image: url('/basis/grafik/spr-play-rad.svg');
+    background-size: cover;
+    cursor: pointer;
+    height: $playBtnSize;
+    left: 50%;
+    position: absolute;
+    top:50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: $playBtnSize;
+}

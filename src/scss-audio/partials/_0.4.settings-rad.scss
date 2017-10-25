@@ -1,0 +1,9 @@
+// Variables specific to radioeins
+$playBtnSize: 30px;
+
+$playBtnColorBright: #ff8300;
+$playBtnColorDark: #e27400;
+
+$audioPlayerAccentColor: $playBtnColorBright;
+
+$playBtnGradient: linear-gradient(to bottom, $playBtnColorBright 0%, $playBtnColorDark 100%);

@@ -1,0 +1,42 @@
+// ToDo check if possible
+.manualteaser .playerdownload {
+    overflow: visible;
+    text-align: right;
+}
+
+#center a.download {
+    display: inline-block;
+    float: none;
+}
+
+.player.audio {
+    &.isInitialized {
+        .audio-btn {
+            display: none;
+        }
+    }
+    &.noposter {
+        height: 40px;
+        border-radius: 4px;
+        background: $playBtnColorBright;
+        background: $playBtnGradient;
+        overflow: visible;
+        &.isInitialized {
+            background: none;
+        }
+    }
+}
+
+// hide duration for manualteaser layoutstandard when audioplayer has class audioplayer-noseek
+.manualteaser.layoutstandard {
+    .manualteaserpicture.audioplayer-noseek {
+        .audioplayer-time-duration {
+            display: none;
+        }
+        .audioplayer-novolume {
+            .audioplayer-time-duration {
+                display: block;
+            }
+        }
+    }
+}
