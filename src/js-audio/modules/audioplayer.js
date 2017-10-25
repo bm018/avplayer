@@ -268,8 +268,6 @@
                             theAudio.Stop();
                         }
                     } else {
-                        // pause all running players
-                        $('.player.audio.audioplayer-playing .audioplayer-playpause').click();
                         $(this).attr('title', params.strPause);
                         thePlayer.addClass(cssClass.playing).removeClass(cssClass.stopped);
                         $(audioContainer).addClass(cssClass.playing).removeClass(cssClass.stopped);
