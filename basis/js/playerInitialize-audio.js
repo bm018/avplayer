@@ -249,7 +249,7 @@ define("playerInitialize-audio", [], function () {
          * @param { Object } data
          */
         sendAnalyticsData: function (data) {
-            if (window.callAnalytics) callAnalytics('pi', 'player', 'initialize ' + data.rbbhandle + ' ' + data.rbbtitle);
+            // if (window.callAnalytics) callAnalytics('pi', 'player', 'initialize ' + data.rbbhandle + ' ' + data.rbbtitle);
         }
     };
 

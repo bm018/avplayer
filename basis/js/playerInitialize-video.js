@@ -35,12 +35,19 @@ define("playerInitialize-video", [], function () {
 
     watchQueuedPlayers();
 
+    /**
+     * Pauses all video players mentioned by IDs in players array.
+     * If no array is provided, all video players are paused.
+     * 
+     * @param { Array } players 
+     */
     var pauseVideoPlayers = function (players) {
+        // get all currently instantiated video players
         var allVideoPlayers = window.ardplayer && ardplayer.PlayerModel && ardplayer.PlayerModel.players;
         if ($.isArray(allVideoPlayers) && allVideoPlayers.length > 0) {
             var i = allVideoPlayers.length;
 
-            // iterate over all video players and check if one of them is contained by gallery
+            // iterate through all video players
             while (i--) {
                 if ($.isArray(players) && players.length > 0) {
                     // if attribute players is defined, only stop players mentioned in players array
@@ -135,8 +142,7 @@ define("playerInitialize-video", [], function () {
                     // ignore when player is already initialized
                     if (!that.isInitialized) {
                         that.createVideo();
-                        // TODO!
-                        // that.sendAnalyticsData(analyticsData);
+                        that.sendAnalyticsData(analyticsData);
                     }
                     return false;
                 }
@@ -146,10 +152,9 @@ define("playerInitialize-video", [], function () {
         /**
          * Creates <div> element and initializes video player
          * 
-         * @param { String } src
          * @param { Boolean } isKeyboardControl
          */
-        createVideo: function (src, isKeyboardControl) {
+        createVideo: function () {
             this.uniqueId = +new Date() + Math.floor((Math.random() * (999 - 100) + 100));
             this.isInitialized = true;            
 
@@ -163,12 +168,9 @@ define("playerInitialize-video", [], function () {
             // instantiate player
             if (window.ardplayer) {
                 var p = new ardplayer.Player(this.uniqueId, this.options.config, this.options.media);
+                this.bindEvents(p);
+                this.$dom_element.removeClass('isReady').addClass('isInitialized');
             }
-
-            // bind events
-            this.bindEvents(p);
-
-            this.$dom_element.removeClass('isReady').addClass('isInitialized');
         },
 
         /**
@@ -219,7 +221,7 @@ define("playerInitialize-video", [], function () {
          * @param { Object } data
          */
         sendAnalyticsData: function (data) {
-            if (window.callAnalytics) callAnalytics('pi', 'player', 'initialize ' + data.rbbhandle + ' ' + data.rbbtitle);
+            // if (window.callAnalytics) callAnalytics('pi', 'player', 'initialize ' + data.rbbhandle + ' ' + data.rbbtitle);
         }
     };
 
