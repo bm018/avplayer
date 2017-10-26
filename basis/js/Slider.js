@@ -163,18 +163,16 @@ define("Slider", [], function() {
             {
 
                 this.dom_element.on('keyup', function(e){
-                    switch (e.keyCode)
-                    {
-                        case 37:
-                            if(!document.activeElement.classList.contains('audioplayer-playpause')) {
-                                that.scrollLeft();
-                            }
-                        break;
-                        case 39:
-                            if(!document.activeElement.classList.contains('audioplayer-playpause')) {
-                                that.scrollRight();
-                            }
-                        break;
+                    if(document.activeElement.classList.contains('slider')) {
+                        switch (e.keyCode)
+                        {
+                            case 37:
+                                    that.scrollLeft();
+                            break;
+                            case 39:
+                                    that.scrollRight();
+                            break;
+                        }
                     }
                 });
 
