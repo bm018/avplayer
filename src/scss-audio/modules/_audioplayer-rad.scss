@@ -5,6 +5,10 @@
             background-position: center -3*$audioPlayerSize;
         }
     }
+    .audioplayer-bar {
+        height: .5em; /* 6px */
+        margin-top: -.25em;
+    }
     .audioplayer-skip-fwd {
         background-position: center -1*$audioPlayerSize;
     }
@@ -16,6 +20,9 @@
     }
     &.audioplayer-muted .audioplayer-volume-button {
         background-position: center -3*$audioPlayerSize;
+        .audioplayer-volume-adjust div div:after {
+            top: -4px;
+        }
     }
     & div[role="button"]:hover,
     & div[role="button"]:focus {
