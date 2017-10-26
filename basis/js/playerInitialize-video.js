@@ -14,11 +14,10 @@ define("playerInitialize-video", [], function () {
     var queuedPlayers = [];
 
     /**
-     * Iterates through all queued players and checks if they are visible
-     * Calls initialize method when visible
-     * and removes element from queuedPlayers array
+     * Iterates through array containing player placeholders and checks if they are visible.
+     * Calls initialize method when visible and removes element from array.
      */
-    var watchQueuedPlayers = function () {
+    var watchPlayers = function (queuedPlayers) {
         var events = 'load orientationchange resize scroll touchmove focus';
         var i = 0;
 
@@ -33,7 +32,7 @@ define("playerInitialize-video", [], function () {
         }, 200));
     };
 
-    watchQueuedPlayers();
+    watchPlayers(queuedPlayers);
 
     /**
      * Pauses all video players mentioned by IDs in players array.
@@ -156,7 +155,7 @@ define("playerInitialize-video", [], function () {
          */
         createVideo: function () {
             this.uniqueId = +new Date() + Math.floor((Math.random() * (999 - 100) + 100));
-            this.isInitialized = true;            
+            this.isInitialized = true;
 
             var that = this;
             var $videoElm = $('<div id="' + this.uniqueId + '" />');

@@ -14,11 +14,10 @@ define("playerInitialize-audio", [], function () {
     var queuedPlayers = [];
 
     /**
-     * Iterates through all queued players and checks if they are visible
-     * Calls initialize method when visible
-     * and removes element from queuedPlayers array
+     * Iterates through array containing player placeholders and checks if they are visible.
+     * Calls initialize method when visible and removes element from array.
      */
-    var watchQueuedPlayers = function () {
+    var watchPlayers = function (queuedPlayers) {
         var events = 'load orientationchange resize scroll touchmove focus';
         var i = 0;
 
@@ -33,7 +32,7 @@ define("playerInitialize-audio", [], function () {
         }, 200));
     };
 
-    watchQueuedPlayers();
+    watchPlayers(queuedPlayers);
 
     /**
      * pause all running audio players
@@ -111,7 +110,7 @@ define("playerInitialize-audio", [], function () {
             var mediaSrc = '';
             var $audioBtn = $('<div role="button" tabindex="0" class="audio-btn" title="Audio abspielen"></div>');
 
-            this.uniqueId = +new Date() + Math.floor((Math.random() * (999 - 100) + 100));            
+            this.uniqueId = +new Date() + Math.floor((Math.random() * (999 - 100) + 100));
 
             this.$dom_element.addClass('isLoading');
 
