@@ -85,7 +85,7 @@ define("playerInitialize-video", [], function () {
                 playerIDsInGallery.push('' + $(this).attr('id'));
             });
 
-            pauseVideoPlayers(playerIDsInGallery);
+            if (playerIDsInGallery.length > 0) pauseVideoPlayers(playerIDsInGallery);
         };
     });
 
