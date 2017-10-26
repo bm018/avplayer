@@ -1,4 +1,4 @@
-define("playerInitialize-audio", [], function () {
+define('playerInitialize-audio', [], function () {
     /** 
      * Loads audio player script 
      */

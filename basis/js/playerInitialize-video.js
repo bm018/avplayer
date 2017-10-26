@@ -1,4 +1,4 @@
-define("playerInitialize-video", [], function () {
+define('playerInitialize-video', [], function () {
     /** 
      * Loads video player script 
      */
