@@ -166,10 +166,14 @@ define("Slider", [], function() {
                     switch (e.keyCode)
                     {
                         case 37:
-                            that.scrollLeft();
+                            if(!document.activeElement.classList.contains('audioplayer-playpause')) {
+                                that.scrollLeft();
+                            }
                         break;
                         case 39:
-                            that.scrollRight();
+                            if(!document.activeElement.classList.contains('audioplayer-playpause')) {
+                                that.scrollRight();
+                            }
                         break;
                     }
                 });
