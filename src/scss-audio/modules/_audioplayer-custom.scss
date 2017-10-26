@@ -32,7 +32,7 @@
             right: $audioPlayerSize;
             border-left: 1px solid $audioPlayerBorderColor;
             &:focus, &:hover {
-                background-color: $audioPlayerColor;
+                background-color: $audioPlayerBgColorHover;
                 background-position: center -1*$audioPlayerSize;
             }
         }
@@ -41,7 +41,7 @@
             right: 5em;
             background-position: center -2*$audioPlayerSize;
             &:focus, &:hover {
-                background-color: $audioPlayerColor;
+                background-color: $audioPlayerBgColorHover;
                 background-position: center -3*$audioPlayerSize;
             }
         }

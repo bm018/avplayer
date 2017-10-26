@@ -1,7 +1,10 @@
 // Variables global for audioplayer
 $audioPlayerColor: #585856;
 $audioPlayerAccentColor: #e31818;
+$audioPlayerBgBar: $audioPlayerColor;
+$audioPlayerBgLoaded: #000;
 $audioPlayerBgColor: #d5d5d5;
+$audioPlayerBgColorHover: $audioPlayerColor;
 $audioPlayerBorderColor: #868686;
 
 $audioPlayerFontSize: 12px;

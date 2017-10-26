@@ -37,7 +37,7 @@
 
     .audioplayer-playpause {
         &:hover, &:focus {
-            background-color: $audioPlayerColor;
+            background-color: $audioPlayerBgColorHover;
             background-position: center -1*$audioPlayerSize;
         }
         .audioplayer-playing & {
@@ -76,7 +76,7 @@
     // progress bar of loaded/played
     .audioplayer-bar {
         height: 1em; /* 12 */
-        background-color: $audioPlayerColor;
+        background-color: $audioPlayerBgBar;
         cursor: pointer;
         z-index: 1;
         top: 50%;
@@ -97,7 +97,7 @@
     }
 
     .audioplayer-bar-loaded {
-        background-color: #000;
+        background-color: $audioPlayerBgLoaded;
         z-index: 1;
     }
     .audioplayer-bar-played {
@@ -122,7 +122,7 @@
         background-repeat: no-repeat;
         background-position: center 0;
         &:hover, &:focus {
-            background-color: $audioPlayerColor;
+            background-color: $audioPlayerBgColorHover;
             background-position: center -1*$audioPlayerSize;
         }
     }

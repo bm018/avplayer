@@ -15,14 +15,14 @@
             display: none;
         }
     }
-    &.noposter {
+    .playerdownload & {
         height: 40px;
         border-radius: 4px;
-        background: $playBtnColorBright;
-        background: $playBtnGradient;
+        background: $audioPlayerBgColor;
         overflow: visible;
-        &.isInitialized {
-            background: none;
+        .audioplayer {
+            top: 50%;
+            transform: translateY(-50%);
         }
     }
 }
