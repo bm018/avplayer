@@ -219,26 +219,22 @@
                             case 37:
                                 // Pfeil nach links
                                 // TODO im Slider
-                                e.stopPropagation();
                                 e.preventDefault();
                                 theAudio.currentTime -= params.skipSeconds;
                                 break;
                             case 38:
                                 // Pfeil nach oben
-                                e.stopPropagation();
                                 e.preventDefault();
                                 theAudio.volume = (theAudio.volume + params.stepVolume < 1) ? theAudio.volume + params.stepVolume : 1;
                                 break;
                             case 39:
                                 // Pfeil nach rechts
                                 // TODO im Slider
-                                e.stopPropagation();
                                 e.preventDefault();
                                 theAudio.currentTime += params.skipSeconds;
                                 break;
                             case 40:
                                 // Pfeil nach unten
-                                e.stopPropagation();
                                 e.preventDefault();
                                 theAudio.volume = (theAudio.volume - params.stepVolume > 0) ? theAudio.volume - params.stepVolume : 0;
                                 break;

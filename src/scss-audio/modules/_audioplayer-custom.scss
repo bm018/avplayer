@@ -1,5 +1,14 @@
 .audioplayer {
+    .audioplayer-skip-bwd,
+    .audioplayer-skip-fwd {
+        display: none;
+    }
     .audioplayer-noseek & {
+        .audioplayer-skip-bwd,
+        .audioplayer-skip-fwd {
+            display: block;
+        }
+
         .audioplayer-bar {
             display: none;
         }
@@ -36,17 +45,18 @@
                 background-position: center -3*$audioPlayerSize;
             }
         }
-    }
-    .audioplayer-noseek &.audioplayer-novolume {
-        .audioplayer-time-duration {
-            display: block;
-            right: 5em;
-        }
-        .audioplayer-skip-bwd {
-            right: 2.5em;
-        }
-        .audioplayer-skip-fwd {
-            right: 0;
+
+        &.audioplayer-novolume {
+            .audioplayer-time-duration {
+                display: block;
+                right: 5em;
+            }
+            .audioplayer-skip-bwd {
+                right: 2.5em;
+            }
+            .audioplayer-skip-fwd {
+                right: 0;
+            }
         }
     }
     .layoutaudioliste & {
