@@ -35,6 +35,18 @@
         }
     }
 
+    .audioplayer-error {
+        background: #ff9b9b;
+        font-weight: bold;
+        left: 50%;
+        padding: .5em;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 75%;
+    }
+
     .layoutaudio_ohne_bild & {
         background: $noPictBackground;
         font-size: $audioPlayerFontSize;
