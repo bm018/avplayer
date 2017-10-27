@@ -1,7 +1,8 @@
 .audio-btn {
-    background: url('/basis/grafik/spr-initbtn.svg') no-repeat;
+    background-image: url('/basis/grafik/spr-initbtn.svg');
     background-size: $playBtnSize*2 auto;
-    background-position: $playBtnSize*-1 0;
+    background-position: -$playBtnSize 0;
+    background-repeat:  no-repeat;
     cursor: pointer;
     filter: drop-shadow(0px 0px 5px black);
     left: 50%;
@@ -14,7 +15,7 @@
     &:active {
         outline: none;
         text-decoration: none;
-        background-position: $playBtnSize*-1 $playBtnSize*-1;
+        background-position: -#{$playBtnSize} -#{$playBtnSize};
     }
     .player.isInitialized & {
         display: none !important;
@@ -39,12 +40,13 @@
         &:focus,
         &:active {
             background-color: $noPictPlayBtnHover;
-            background-position: 0 $noPictPlayBtnSize*-1;
+            background-position: 0 -#{$noPictPlayBtnSize};
         }
     }
     .layoutaudioliste & {
-        background: url('/basis/grafik/spr-play.svg') left top no-repeat;
+        background-image: url('/basis/grafik/spr-play.svg');
         background-size: auto $noPictPlayBtnSize*4;
+        background-position: left top;
         filter: none;
         height: $noPictPlayBtnSize;
         left: 0;
@@ -52,22 +54,16 @@
         top: 0;
         transform: none;
         width: $noPictPlayBtnSize;
-        &:hover,
-        &:focus,
-        &:active {
-            background-color: $noPictPlayBtnHover;
-            background-position: 0 $noPictPlayBtnSize*-1;
-        }
     }
     .layoutaudioliste.first & {
         margin-top: $audioListFirstMarginTop;
     }
     .layoutaudioliste .audioplayer-playing & {
-        background-position: 0 $noPictPlayBtnSize*-2;
+        background-position: 0 -#{$noPictPlayBtnSize*2};
         &:hover,
         &:focus,
         &:active {
-            background-position: 0 $noPictPlayBtnSize*-3;
+            background-position: 0 -#{$noPictPlayBtnSize*3};
         }
     }
 }

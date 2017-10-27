@@ -1,3 +1,70 @@
+.player.audio {
+    &.isLoading::before {
+        content: '';
+        box-sizing: border-box;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: $spinnerSize;
+        height: $spinnerSize;
+        margin-top: #{($spinnerSize / -2)};
+        margin-left: #{($spinnerSize / -2)};
+        border-radius: 50%;
+        border: 2.5px solid $spinnerLight;
+        border-top-color: $spinnerDark;
+        animation: spinner .6s linear infinite;
+        box-shadow: $playBtnShadow, inset $playBtnShadow;
+        .layoutaudio_ohne_bild &,
+        .layoutaudioliste & {
+            width: #{($spinnerSize * 0.5)};
+            height: #{($spinnerSize * 0.5)};
+            border-width: 2px;
+            border-color: $spinnerDark;
+            border-top-color: $spinnerLight;
+            box-shadow: none;
+            margin-top: #{($spinnerSize / -4)};
+            margin-left: #{($spinnerSize / -4)};
+        }
+        .layoutaudioliste & {
+            left: 0;
+            top: 0;
+            margin: #{$audioListMarginTop + 4px} 4px 0;
+        }
+        .layoutaudioliste.first & {
+            margin: #{$audioListFirstMarginTop + 4px} 4px 0;
+        }
+    }
+
+    .layoutaudio_ohne_bild & {
+        background: $noPictBackground;
+        font-size: $audioPlayerFontSize;
+        height: $noPictPlayBtnSize;
+        margin: $noPictMarginTop 0 0;
+        position: relative;
+    }
+
+    .layoutaudioliste & {
+        height: 0;
+        transition: all .3s ease;
+
+        &.audioplayer-playing {
+            height: #{$audioListPlayerHeight + $audioListContainerPadding};
+        }
+    }
+}
+
+.manualteaser.layoutstandard {
+    &.layoutaudioliste {
+        padding-left: calc(#{$noPictPlayBtnSize} + 7px);
+        position: relative;
+
+        .ico_download {
+            left: calc(-#{$noPictPlayBtnSize} - 7px);
+            position: relative;
+        }
+    }
+}
+
 // hide duration for manualteaser layoutstandard when audioplayer has class audioplayer-noseek
 .manualteaser.layoutstandard {
     .manualteaserpicture.audioplayer-noseek {
@@ -10,4 +77,16 @@
             }
         }
     }
+}
+
+// hide slider gallery controls on change on the audioplayer
+.slider.gallery.audioplayer-manipulated {
+    .controls {
+        position: relative;
+        z-index: -1;
+    }
+}
+
+@keyframes spinner {
+    to {transform: rotate(360deg);}
 }
