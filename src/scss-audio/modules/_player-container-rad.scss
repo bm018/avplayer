@@ -1,4 +1,3 @@
-// ToDo check if possible
 .manualteaser .playerdownload {
     overflow: visible;
     text-align: right;
@@ -23,20 +22,6 @@
         .audioplayer {
             top: 50%;
             transform: translateY(-50%);
-        }
-    }
-}
-
-// hide duration for manualteaser layoutstandard when audioplayer has class audioplayer-noseek
-.manualteaser.layoutstandard {
-    .manualteaserpicture.audioplayer-noseek {
-        .audioplayer-time-duration {
-            display: none;
-        }
-        .audioplayer-novolume {
-            .audioplayer-time-duration {
-                display: block;
-            }
         }
     }
 }
