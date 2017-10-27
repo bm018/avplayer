@@ -1,0 +1,32 @@
+.audio-btn {
+    .layoutaudioliste & {
+        background-image: url('/basis/grafik/spr-play-frz.svg');
+        background-size: auto 11.5em;
+        background-position: center -5px;
+        &:hover,
+        &:focus,
+        &:active {
+            background-position: center -46px;
+        }
+    }
+
+    .layoutaudioliste .audioplayer-playing & {
+        background-position: center -86px;
+        &:hover,
+        &:focus,
+        &:active {
+            background-position: center bottom;
+        }
+    }
+
+    .layoutjustify_2_4 .layoutaudioliste &,
+    .layoutjustify_2_4 .layoutaudioliste.manualteaser.count1 &,
+    .layoutjustify_2_4 .layoutaudioliste.manualteaser.count2 & {
+        margin-top: $audioListFirstMarginTop*2;
+    }
+
+    .layoutaudioliste &,
+    .layoutjustify_2_4 .tab_content .layoutaudioliste & {
+        margin-top: $audioListFirstMarginTop;
+    }
+}

@@ -48,11 +48,26 @@
 .manualteaser {
     &.layoutaudioliste {
         box-sizing: border-box;
+        padding-bottom: 5px;
         padding-left: calc(#{$noPictPlayBtnSize} + 7px);
         position: relative;
 
         .ico.ico_download {
             margin-left: 0;
+        }
+    }
+}
+
+// hide duration for manualteaser layoutstandard when audioplayer has class audioplayer-noseek
+.manualteaser.layoutstandard {
+    .manualteaserpicture.audioplayer-noseek {
+        .audioplayer-time-duration {
+            display: none;
+        }
+        .audioplayer-novolume {
+            .audioplayer-time-duration {
+                display: block;
+            }
         }
     }
 }

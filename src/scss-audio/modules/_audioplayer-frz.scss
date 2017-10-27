@@ -1,0 +1,26 @@
+.audioplayer {
+    box-shadow: $audioPlayerBoxShadowOut;
+    .audioplayer-playpause {
+        display: none;
+    }
+    .audioplayer-time-current {
+        left: 0;
+    }
+    .audioplayer-bar {
+        left: 3.75em;
+    }
+    .audioplayer-volume-button {
+        background-image: url(/basis/grafik/spr-speaker-frz.svg);
+    }
+    .audioplayer-volume-adjust > div {
+        background-color: $audioPlayerBgColor;
+    }
+    .layoutaudioliste & {
+        bottom: 5px;
+        left: 2px;
+        width: calc(100% - 4px);
+    }
+    .audioplayer-noseek & div.skip-btn {
+        background-image: url(/basis/grafik/spr-ffwd-frz.svg);
+    }
+}
