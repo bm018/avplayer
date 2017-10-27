@@ -1,0 +1,32 @@
+{
+    "_sortierArray": [
+        1
+    ],
+    "_defaultQuality": [
+        "auto",
+        1,
+        2,
+        0,
+        3
+    ],
+    "rbbtitle": "Audio 01 - redaktioneller Titel des Medienobjekts",
+    "rbbhandle": "/content/rbb/rbb/av/audio01",
+    "_type": "audio",
+    "_isLive": true,
+    "_dvrEnabled": false,
+    "_geoblocked": false,
+    "_duration": -1,
+    "_audioImage": "/content/dam/rbb/ref/tvsendungen/10721828415.jpg.jpg/rendition=cq5dam.web.1280.1280.jpeg/size=470x264.jpg",
+    "_mediaArray": [
+        {
+            "_plugin": 1,
+            "_mediaStreamArray": [
+                {
+                    "_stream": "https://rbb-fritz-live.sslcast.addradio.de/rbb/fritz/live/mp3/128/stream.mp3",
+                    "_termid": "3.1.9.5.1",
+                    "_server": ""
+                }
+            ]
+        }
+    ]
+}
