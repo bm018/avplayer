@@ -30,7 +30,19 @@
         };
 
     $.fn.audioPlayer = function (_params) {
-        var params = $.extend({ classPrefix: 'audioplayer', strPlay: 'Abspielen', strPause: 'Pause', strVolume: 'Lautst&auml;rke', strSkipBwd: 'Minuten zur&uuml;ckspringen', strSkipFwd: 'Minuten vorspringen', skipMinutes: 5, skipSeconds: 5, stepVolume: 0.1 }, _params),
+        var params = $.extend({
+            classPrefix: 'audioplayer',
+            strPlay: 'Abspielen',
+            strPause: 'Pause',
+            strVolume: 'Lautstärke',
+            strStepTimeBwd: 'Minuten zurückspringen',
+            strStepTimeFwd: 'Minuten vorspringen',
+            strStepTimeBwdLive: 'Sekunden zurückspringen',
+            strStepTimeFwdLive: 'Sekunden vorspringen',
+            stepTime: 300,
+            stepTimeLive: 5,
+            stepVolume: 0.1
+        }, _params),
             cssClass = {},
             cssClassSub =
                 {
@@ -83,11 +95,12 @@
 
             var thePlayer = $('<div class="' + params.classPrefix + '">' + (isSupport ? $('<div>').append($this.eq(0).clone()).html() : '<embed src="' + audioFile + '" width="0" height="0" volume="100" autostart="' + isAutoPlay.toString() + '" loop="' + isLoop.toString() + '" />') + '<div role="button" tabindex="0" class="' + cssClass.playPause + '" title="' + params.strPlay + '"></div></div>'),
                 theAudio = isSupport ? thePlayer.find('audio') : thePlayer.find('embed');
+
             theAudio = theAudio.get(0);
 
             if (isSupport) {
                 thePlayer.find('audio').css({ 'width': 0, 'height': 0, 'visibility': 'hidden' });
-                thePlayer.append('<div class="' + cssClass.time + ' ' + cssClass.timeCurrent + '"></div><div class="' + cssClass.bar + '"><div class="' + cssClass.barLoaded + '"></div><div class="' + cssClass.barPlayed + '"></div></div><div class="' + cssClass.time + ' ' + cssClass.timeDuration + '"></div><div role="button" tabindex="0" class="' + cssClass.skipBwd + '" title="' + params.skipMinutes + ' ' + params.strSkipBwd + '"></div><div role="button" tabindex="0" class="' + cssClass.skipFwd + '" title="' + params.skipMinutes + ' ' + params.strSkipFwd + '"></div><div class="' + cssClass.volume + '"><div role="button" tabindex="0" class="' + cssClass.volumeButton + '" title="' + params.strVolume + '"></div><div class="' + cssClass.volumeAdjust + '"><div><div></div></div></div></div>');
+                thePlayer.append('<div class="' + cssClass.time + ' ' + cssClass.timeCurrent + '"></div><div class="' + cssClass.bar + '"><div class="' + cssClass.barLoaded + '"></div><div class="' + cssClass.barPlayed + '"></div></div><div class="' + cssClass.time + ' ' + cssClass.timeDuration + '"></div><div role="button" tabindex="0" class="' + cssClass.skipBwd + '" title="' + Math.floor(params.stepTime / 60) + ' ' + params.strStepTimeBwd + '"></div><div role="button" tabindex="0" class="' + cssClass.skipFwd + '" title="' + Math.floor(params.stepTime / 60) + ' ' + params.strStepTimeFwd + '"></div><div class="' + cssClass.volume + '"><div role="button" tabindex="0" class="' + cssClass.volumeButton + '" title="' + params.strVolume + '"></div><div class="' + cssClass.volumeAdjust + '"><div><div></div></div></div></div>');
 
                 var theBar = thePlayer.find('.' + cssClass.bar),
                     barPlayed = thePlayer.find('.' + cssClass.barPlayed),
@@ -99,6 +112,21 @@
                     volumeAdjuster = thePlayer.find('.' + cssClass.volumeAdjust + ' > div'),
                     volumeDefault = 0,
                     isFocused = false,
+                    isLivestream = false,
+                    countTimeStep = false,
+
+                    reloadAudio = function () {
+                        var bufferedSrc = theAudio.src;
+
+                        theAudio.pause();
+                        theAudio.src = '';
+                        theAudio.src = bufferedSrc;
+                        theAudio.play();
+
+                        thePlayer.removeClass(function (index, className) {
+                            return (className.match(/(^|\s)ls-\S+/g) || []).join(' ');
+                        });
+                    },
 
                     adjustCurrentTime = function (e) {
                         theRealEvent = isTouch ? e.originalEvent.touches[0] : e;
@@ -116,6 +144,49 @@
                             barLoaded.width((theAudio.buffered.end(0) / theAudio.duration) * 100 + '%');
                             if (Math.floor(theAudio.buffered.end(0)) >= Math.floor(theAudio.duration)) clearInterval(interval);
                         }, 100);
+                    },
+
+                    stepForwards = function () {
+                        if (isLivestream) {
+                            if (countTimeStep < 0) {
+                                theAudio.currentTime += params.stepTimeLive;
+                                countTimeStep = countTimeStep + 1;
+                            } else if (countTimeStep === 0) {
+                                // reload audio to reach current time
+                                reloadAudio();
+                                countTimeStep = false;
+                            }
+                        } else {
+                            theAudio.currentTime += params.stepTime;
+                        }
+                    },
+
+                    stepBackwards = function () {
+                        if (isLivestream) {
+                            if (theAudio.currentTime - params.stepTimeLive >= 0) {
+                                theAudio.currentTime -= params.stepTimeLive;
+                                if (countTimeStep === false) {
+                                    countTimeStep = -1;
+                                } else {
+                                    countTimeStep = countTimeStep - 1;
+                                }
+                            }
+                        } else {
+                            theAudio.currentTime -= params.stepTime;
+                        }
+                    },
+
+                    switchToLivestreamMode = function () {
+                        thePlayer.addClass('isLivestream');
+
+                        // change tooltips on skip buttons
+                        skipButtons.each(function () {
+                            if ($(this).hasClass(cssClass.skipBwd)) {
+                                $(this).attr('title', params.stepTimeLive + ' ' + params.strStepTimeBwdLive);
+                            } else {
+                                $(this).attr('title', params.stepTimeLive + ' ' + params.strStepTimeFwdLive);
+                            }
+                        });
                     };
 
                 var volumeTestDefault = theAudio.volume, volumeTestValue = theAudio.volume = 0.111;
@@ -127,14 +198,30 @@
 
                 theAudio.addEventListener('loadeddata', function () {
                     updateLoadBar();
-                    timeDuration.html($.isNumeric(theAudio.duration) ? secondsToTime(theAudio.duration) : '&hellip;');
+
+                    if (theAudio.duration === Infinity && !isLivestream) {
+                        // if live audio is loaded, switch player to livestream mode
+                        isLivestream = true;
+                        switchToLivestreamMode();
+                    }
+
+                    timeDuration.html($.isNumeric(theAudio.duration) ? secondsToTime(theAudio.duration) : 'Live');
                     volumeAdjuster.find('div').height(theAudio.volume * 100 + '%');
                     volumeDefault = theAudio.volume;
                 });
 
                 theAudio.addEventListener('timeupdate', function () {
                     timeCurrent.html(secondsToTime(theAudio.currentTime));
-                    barPlayed.width((theAudio.currentTime / theAudio.duration) * 100 + '%');
+
+                    if (isLivestream) {
+                        if (theAudio.buffered.length > 0 && theAudio.currentTime - params.stepTimeLive > theAudio.buffered.start(theAudio.buffered.length - 1)) {
+                            thePlayer.addClass('ls-canStepBwd');
+                        } else {
+                            thePlayer.removeClass('ls-canStepBwd');
+                        }
+                    } else {
+                        barPlayed.width((theAudio.currentTime / theAudio.duration) * 100 + '%');
+                    }
                 });
 
                 theAudio.addEventListener('volumechange', function () {
@@ -148,6 +235,15 @@
                     thePlayer.closest('.player.audio').removeClass(cssClass.playing).addClass(cssClass.stopped);
                 });
 
+                theAudio.addEventListener('seeked', function () {
+                    if (countTimeStep < 0) {
+                        thePlayer.removeClass('ls-willReload').addClass('ls-canStepFwd');
+                    }
+                    if (countTimeStep === 0) {
+                        thePlayer.removeClass('ls-canStepFwd').addClass('ls-willReload');
+                    }
+                });
+
                 theBar.on(eStart, function (e) {
                     adjustCurrentTime(e);
                     theBar.on(eMove, function (e) { adjustCurrentTime(e); });
@@ -159,10 +255,11 @@
                     if (e.type === 'click' || e.which === 13 || e.which === 32) {
                         e.preventDefault();
 
-                        var factor = e.target.className.match(/bwd/i) ? -1 : 1;
-                        var skip = factor * 60 * params.skipMinutes;
-
-                        theAudio.currentTime += skip;
+                        if ($(this).hasClass(cssClass.skipBwd)) {
+                            stepBackwards();
+                        } else {
+                            stepForwards();
+                        }
 
                         return false;
                     }
@@ -195,13 +292,33 @@
                     volumeAdjuster.unbind(eMove);
                 });
 
-                thePlayer.on('mouseover', function () {
-                    if (thePlayer.closest('.slider.gallery').length) {
-                        thePlayer.closest('.slider.gallery').addClass('audioplayer-manipulated');
-                    }
-                }).on('mouseout', function () {
-                    if (thePlayer.closest('.slider.gallery').length) {
-                        thePlayer.closest('.slider.gallery').removeClass('audioplayer-manipulated');
+                thePlayer.on('keydown', function (e) {
+                    if (isFocused) {
+                        switch (e.which) {
+                            case 37:
+                                // Pfeil nach links
+                                e.preventDefault();
+                                stepBackwards();
+                                break;
+                            case 38:
+                                // Pfeil nach oben
+                                e.preventDefault();
+                                theAudio.volume = (theAudio.volume + params.stepVolume < 1) ? theAudio.volume + params.stepVolume : 1;
+                                break;
+                            case 39:
+                                // Pfeil nach rechts
+                                // TODO im Slider
+                                e.preventDefault();
+                                stepForwards();
+                                break;
+                            case 40:
+                                // Pfeil nach unten
+                                e.preventDefault();
+                                theAudio.volume = (theAudio.volume - params.stepVolume > 0) ? theAudio.volume - params.stepVolume : 0;
+                                break;
+                            default:
+                                break;
+                        }
                     }
                 });
 
@@ -213,34 +330,13 @@
                     isFocused = false;
                 });
 
-                thePlayer.on('keydown', function (e) {
-                    if (isFocused) {
-                        switch (e.which) {
-                            case 37:
-                                // Pfeil nach links
-                                // TODO im Slider
-                                e.preventDefault();
-                                theAudio.currentTime -= params.skipSeconds;
-                                break;
-                            case 38:
-                                // Pfeil nach oben
-                                e.preventDefault();
-                                theAudio.volume = (theAudio.volume + params.stepVolume < 1) ? theAudio.volume + params.stepVolume : 1;
-                                break;
-                            case 39:
-                                // Pfeil nach rechts
-                                // TODO im Slider
-                                e.preventDefault();
-                                theAudio.currentTime += params.skipSeconds;
-                                break;
-                            case 40:
-                                // Pfeil nach unten
-                                e.preventDefault();
-                                theAudio.volume = (theAudio.volume - params.stepVolume > 0) ? theAudio.volume - params.stepVolume : 0;
-                                break;
-                            default:
-                                break;
-                        }
+                thePlayer.on('mouseover', function () {
+                    if (thePlayer.closest('.slider.gallery').length) {
+                        thePlayer.closest('.slider.gallery').addClass('audioplayer-manipulated');
+                    }
+                }).on('mouseout', function () {
+                    if (thePlayer.closest('.slider.gallery').length) {
+                        thePlayer.closest('.slider.gallery').removeClass('audioplayer-manipulated');
                     }
                 });
             }

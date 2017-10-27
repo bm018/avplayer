@@ -3,7 +3,7 @@
     .audioplayer-skip-fwd {
         display: none;
     }
-    .audioplayer-noseek & {
+    .audioplayer-noseek &, &.isLivestream {
         .audioplayer-skip-bwd,
         .audioplayer-skip-fwd {
             display: block;
@@ -56,6 +56,38 @@
             }
             .audioplayer-skip-fwd {
                 right: 0;
+            }
+        }
+    }
+    &.isLivestream {
+        .audioplayer-skip-bwd,
+        .audioplayer-skip-fwd {
+            opacity: .5;
+            cursor: not-allowed;
+        }
+        &.ls-canStep {
+            &Bwd {
+                .audioplayer-skip-bwd {
+                    opacity: 1;
+                    cursor: pointer;
+                }
+            }
+            &Fwd {
+                .audioplayer-skip-fwd {
+                    opacity: 1;
+                    cursor: pointer;
+                }
+            }
+        }
+        &.ls-willReload {
+            .audioplayer-skip-fwd {
+                background-position: center -4*$audioPlayerSize;
+                cursor: pointer;
+                opacity: 1;
+                &:focus, &:hover {
+                    background-color: $audioPlayerBgColorHover;
+                    background-position: center -5*$audioPlayerSize;
+                }
             }
         }
     }

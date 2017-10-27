@@ -17,8 +17,12 @@
         position: absolute;
     }
 
-    & div[role="button"] {
+    .audioplayer-playpause, .audioplayer-volume-button {
         background-size: auto $audioPlayerSize*4;
+    }
+
+    .skip-btn {
+        background-size: auto $audioPlayerSize*6;
     }
 
     // play/pause button
