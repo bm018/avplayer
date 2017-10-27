@@ -18,18 +18,23 @@ define('playerInitialize-video', [], function () {
      * Calls initialize method when visible and removes element from array.
      */
     var watchPlayers = function (queuedPlayers) {
-        var events = 'load orientationchange resize scroll touchmove focus';
-        var i = 0;
+        var events = 'unload load orientationchange resize scroll touchmove blur focus';
 
         $(window).on(events, _.debounce(function () {
-            i = queuedPlayers.length;
+            checkVisibility(queuedPlayers);
+        }, 200));
+
+        checkVisibility(queuedPlayers);
+
+        function checkVisibility(queuedPlayers) {
+            var i = queuedPlayers.length;
             while (i--) {
                 if (queuedPlayers[i].isVisible()) {
                     queuedPlayers[i].initialize();
                     queuedPlayers.splice(i, 1);
                 }
             }
-        }, 200));
+        }
     };
 
     watchPlayers(queuedPlayers);
