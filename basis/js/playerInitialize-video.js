@@ -24,7 +24,9 @@ define('playerInitialize-video', [], function () {
             checkVisibility(queuedPlayers);
         }, 200));
 
-        checkVisibility(queuedPlayers);
+        setTimeout(function () {
+            checkVisibility(queuedPlayers);
+        }, 200);
 
         function checkVisibility(queuedPlayers) {
             var i = queuedPlayers.length;
