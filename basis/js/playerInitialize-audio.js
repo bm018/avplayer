@@ -18,7 +18,7 @@ define('playerInitialize-audio', [], function () {
      * Calls initialize method when visible and removes element from array.
      */
     var watchPlayers = function (queuedPlayers) {
-        var events = 'load orientationchange resize scroll touchmove focus';
+        var events = 'unload load orientationchange resize scroll touchmove focus';
         var i = 0;
 
         $(window).on(events, _.debounce(function () {
