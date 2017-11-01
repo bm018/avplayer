@@ -37,10 +37,10 @@
             strVolume: 'Lautstärke',
             strStepTimeBwd: 'Minuten zurückspringen',
             strStepTimeFwd: 'Minuten vorspringen',
-            strStepTimeBwdLive: 'Sekunden zurückspringen',
-            strStepTimeFwdLive: 'Sekunden vorspringen',
-            stepTime: 300,
-            stepTimeLive: 5,
+            stepTime: {
+                default: 300,
+                small: 5
+            },
             stepVolume: 0.1
         }, _params),
             cssClass = {},
@@ -100,7 +100,7 @@
 
             if (isSupport) {
                 thePlayer.find('audio').css({ 'width': 0, 'height': 0, 'visibility': 'hidden' });
-                thePlayer.append('<div class="' + cssClass.time + ' ' + cssClass.timeCurrent + '"></div><div class="' + cssClass.bar + '"><div class="' + cssClass.barLoaded + '"></div><div class="' + cssClass.barPlayed + '"></div></div><div class="' + cssClass.time + ' ' + cssClass.timeDuration + '"></div><div role="button" tabindex="0" class="' + cssClass.skipBwd + '" title="' + Math.floor(params.stepTime / 60) + ' ' + params.strStepTimeBwd + '"></div><div role="button" tabindex="0" class="' + cssClass.skipFwd + '" title="' + Math.floor(params.stepTime / 60) + ' ' + params.strStepTimeFwd + '"></div><div class="' + cssClass.volume + '"><div role="button" tabindex="0" class="' + cssClass.volumeButton + '" title="' + params.strVolume + '"></div><div class="' + cssClass.volumeAdjust + '"><div><div></div></div></div></div>');
+                thePlayer.append('<div class="' + cssClass.time + ' ' + cssClass.timeCurrent + '"></div><div class="' + cssClass.bar + '"><div class="' + cssClass.barLoaded + '"></div><div class="' + cssClass.barPlayed + '"></div></div><div class="' + cssClass.time + ' ' + cssClass.timeDuration + '"></div><div role="button" tabindex="0" class="' + cssClass.skipBwd + '" title="' + Math.floor(params.stepTime.default / 60) + ' ' + params.strStepTimeBwd + '"></div><div role="button" tabindex="0" class="' + cssClass.skipFwd + '" title="' + Math.floor(params.stepTime.default / 60) + ' ' + params.strStepTimeFwd + '"></div><div class="' + cssClass.volume + '"><div role="button" tabindex="0" class="' + cssClass.volumeButton + '" title="' + params.strVolume + '"></div><div class="' + cssClass.volumeAdjust + '"><div><div></div></div></div></div>');
 
                 var theBar = thePlayer.find('.' + cssClass.bar),
                     barPlayed = thePlayer.find('.' + cssClass.barPlayed),
@@ -113,20 +113,6 @@
                     volumeDefault = 0,
                     isFocused = false,
                     isLivestream = false,
-                    countTimeStep = false,
-
-                    reloadAudio = function () {
-                        var bufferedSrc = theAudio.src;
-
-                        theAudio.pause();
-                        theAudio.src = '';
-                        theAudio.src = bufferedSrc;
-                        theAudio.play();
-
-                        thePlayer.removeClass(function (index, className) {
-                            return (className.match(/(^|\s)ls-\S+/g) || []).join(' ');
-                        });
-                    },
 
                     adjustCurrentTime = function (e) {
                         theRealEvent = isTouch ? e.originalEvent.touches[0] : e;
@@ -146,47 +132,22 @@
                         }, 100);
                     },
 
-                    stepForwards = function () {
-                        if (isLivestream) {
-                            if (countTimeStep < 0) {
-                                theAudio.currentTime += params.stepTimeLive;
-                                countTimeStep = countTimeStep + 1;
-                            } else if (countTimeStep === 0) {
-                                // reload audio to reach current time
-                                reloadAudio();
-                                countTimeStep = false;
-                            }
-                        } else {
-                            theAudio.currentTime += params.stepTime;
+                    stepForwards = function (size) {
+                        var step = params.stepTime[(size || 'default')];
+                        if (!isLivestream || theAudio.currentTime + step < theAudio.buffered.end(theAudio.buffered.length - 1)) {
+                            theAudio.currentTime += step;
                         }
                     },
 
-                    stepBackwards = function () {
-                        if (isLivestream) {
-                            if (theAudio.currentTime - params.stepTimeLive >= 0) {
-                                theAudio.currentTime -= params.stepTimeLive;
-                                if (countTimeStep === false) {
-                                    countTimeStep = -1;
-                                } else {
-                                    countTimeStep = countTimeStep - 1;
-                                }
-                            }
-                        } else {
-                            theAudio.currentTime -= params.stepTime;
+                    stepBackwards = function (size) {
+                        var step = params.stepTime[(size || 'default')];
+                        if (theAudio.currentTime - step > 0) {
+                            theAudio.currentTime -= step;
                         }
                     },
 
                     switchToLivestreamMode = function () {
                         thePlayer.addClass('isLivestream');
-
-                        // change tooltips on skip buttons
-                        skipButtons.each(function () {
-                            if ($(this).hasClass(cssClass.skipBwd)) {
-                                $(this).attr('title', params.stepTimeLive + ' ' + params.strStepTimeBwdLive);
-                            } else {
-                                $(this).attr('title', params.stepTimeLive + ' ' + params.strStepTimeFwdLive);
-                            }
-                        });
                     };
 
                 var volumeTestDefault = theAudio.volume, volumeTestValue = theAudio.volume = 0.111;
@@ -213,13 +174,7 @@
                 theAudio.addEventListener('timeupdate', function () {
                     timeCurrent.html(secondsToTime(theAudio.currentTime));
 
-                    if (isLivestream) {
-                        if (theAudio.buffered.length > 0 && theAudio.currentTime - params.stepTimeLive > theAudio.buffered.start(theAudio.buffered.length - 1)) {
-                            thePlayer.addClass('ls-canStepBwd');
-                        } else {
-                            thePlayer.removeClass('ls-canStepBwd');
-                        }
-                    } else {
+                    if (!isLivestream) {
                         barPlayed.width((theAudio.currentTime / theAudio.duration) * 100 + '%');
                     }
                 });
@@ -233,15 +188,6 @@
                 theAudio.addEventListener('ended', function () {
                     thePlayer.removeClass(cssClass.playing).addClass(cssClass.stopped);
                     thePlayer.closest('.player.audio').removeClass(cssClass.playing).addClass(cssClass.stopped);
-                });
-
-                theAudio.addEventListener('seeked', function () {
-                    if (countTimeStep < 0) {
-                        thePlayer.removeClass('ls-willReload').addClass('ls-canStepFwd');
-                    }
-                    if (countTimeStep === 0) {
-                        thePlayer.removeClass('ls-canStepFwd').addClass('ls-willReload');
-                    }
                 });
 
                 theBar.on(eStart, function (e) {
@@ -298,7 +244,7 @@
                             case 37:
                                 // Pfeil nach links
                                 e.preventDefault();
-                                stepBackwards();
+                                stepBackwards('small');
                                 break;
                             case 38:
                                 // Pfeil nach oben
@@ -309,7 +255,7 @@
                                 // Pfeil nach rechts
                                 // TODO im Slider
                                 e.preventDefault();
-                                stepForwards();
+                                stepForwards('small');
                                 break;
                             case 40:
                                 // Pfeil nach unten
@@ -344,6 +290,7 @@
 
             thePlayer.addClass(isAutoPlay ? cssClass.playing : cssClass.stopped);
 
+            // Play button bindings
             thePlayer.find('.' + cssClass.playPause).on('click keypress', function (e) {
                 if (e.type === 'click' || e.which === 13 || e.which === 32) {
                     e.preventDefault();
