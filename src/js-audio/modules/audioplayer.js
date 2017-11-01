@@ -134,6 +134,7 @@
 
                     stepForwards = function (size) {
                         var step = params.stepTime[(size || 'default')];
+                        // when audio is live stream: check if target time is below buffer end time to avoid silence
                         if (!isLivestream || theAudio.currentTime + step < theAudio.buffered.end(theAudio.buffered.length - 1)) {
                             theAudio.currentTime += step;
                         }
@@ -277,13 +278,9 @@
                 });
 
                 thePlayer.on('mouseover', function () {
-                    if (thePlayer.closest('.slider.gallery').length) {
-                        thePlayer.closest('.slider.gallery').addClass('audioplayer-manipulated');
-                    }
+                    thePlayer.closest('.slider.gallery').addClass('audioplayer-manipulated');
                 }).on('mouseout', function () {
-                    if (thePlayer.closest('.slider.gallery').length) {
-                        thePlayer.closest('.slider.gallery').removeClass('audioplayer-manipulated');
-                    }
+                    thePlayer.closest('.slider.gallery').removeClass('audioplayer-manipulated');
                 });
             }
             else thePlayer.addClass(cssClass.mini);
