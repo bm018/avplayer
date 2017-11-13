@@ -8,16 +8,16 @@
         .audioplayer-skip-fwd {
             display: block;
         }
-
         .audioplayer-bar {
             display: none;
         }
-
         .audioplayer-time-duration {
             border-right: 1px solid $audioPlayerBorderColor;
-            right: 7.5em; /* 90 */
+            right: 7.5em;
+            @at-root .layoutstandard & {
+                display: none;
+            }
         }
-
         .skip-btn {
             width: $audioPlayerSize;
             height: 100%;
@@ -26,26 +26,27 @@
             background-image: url(/basis/grafik/spr-ffwd.svg);
             background-repeat: no-repeat;
             background-position: center 0;
+            &:focus,
+            &:hover {
+                background-color: $audioPlayerBgColorHover;
+            }
         }
-
         .audioplayer-skip-fwd {
             right: $audioPlayerSize;
             border-left: 1px solid $audioPlayerBorderColor;
-            &:focus, &:hover {
-                background-color: $audioPlayerBgColorHover;
+            &:focus,
+            &:hover {
                 background-position: center -1*$audioPlayerSize;
             }
         }
-
         .audioplayer-skip-bwd {
             right: 5em;
             background-position: center -2*$audioPlayerSize;
-            &:focus, &:hover {
-                background-color: $audioPlayerBgColorHover;
+            &:focus,
+            &:hover {
                 background-position: center -3*$audioPlayerSize;
             }
         }
-
         &.audioplayer-novolume {
             .audioplayer-time-duration {
                 display: block;
@@ -72,6 +73,16 @@
         height: 0;
         transition: all .3s ease;
         opacity: 0;
+        .audioplayer-playpause {
+            display: none;
+        }
+        .audioplayer-time-current {
+            border-left: 0;
+            left: 0;
+        }
+        .audioplayer-bar {
+            left: 3.75em;
+        }
     }
     .layoutaudioliste &.audioplayer-playing {
         opacity: 1;

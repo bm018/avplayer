@@ -1,30 +1,32 @@
 // Variables global for audioplayer
-$audioPlayerColor: #585856;
+$audioPlayerTextColor: #585856;
 $audioPlayerAccentColor: #e31818;
-$audioPlayerBgBar: $audioPlayerColor;
+$audioPlayerBgBar: #585856;
 $audioPlayerBgLoaded: #000;
 $audioPlayerBgColor: #d5d5d5;
-$audioPlayerBgColorHover: $audioPlayerColor;
+$audioPlayerBgColorHover: #585856;
 $audioPlayerBorderColor: #868686;
-
 $audioPlayerFontSize: 12px;
 $audioPlayerSize: 2.5em; /* 30 */
 
 $playBtnSize: 80px;
 $playBtnShadow: 0 0 10px rgba(0, 0, 0, .66);
+
+$spinnerSize: 40px;
+$spinnerWidth: 2.5px;
+$spinnerLight: #ddd;
+$spinnerDark: #585856;
+
 $noPictPlayBtnSize: $audioPlayerSize;
 $noPictPlayBtnHover: #585856;
 $noPictContainerPadding: 1px;
 $noPictBackground: #eee;
 $noPictMarginTop: 1em;
+
 $audioListPlayerHeight: 32px;
 $audioListContainerPadding: 8px;
 $audioListPlayBtnSize: 30px;
 $audioListPlayBtnIdle: #585856;
 $audioListPlayBtnHover: #000;
-$audioListMarginTop: 34px;
-$audioListFirstMarginTop: 15px;
-$colorControlsBtn: #585856;
-$spinnerSize: 40px;
-$spinnerLight: #ddd;
-$spinnerDark: #585856;
+$audioListMarginTop: 32px;
+$audioListFirstMarginTop: 13px;

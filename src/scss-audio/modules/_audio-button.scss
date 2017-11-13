@@ -1,8 +1,7 @@
 .audio-btn {
-    background-image: url('/basis/grafik/spr-initbtn.svg');
-    background-size: $playBtnSize*2 auto;
-    background-position: -$playBtnSize 0;
-    background-repeat:  no-repeat;
+    background: url('/basis/grafik/spr-initbtn.svg') no-repeat;
+    background-size: auto 2*$playBtnSize;
+    background-position: -1*$playBtnSize 0;
     cursor: pointer;
     filter: drop-shadow(0px 0px 5px black);
     left: 50%;
@@ -13,9 +12,9 @@
     &:hover,
     &:focus,
     &:active {
+        background-position: -1*$playBtnSize -1*$playBtnSize;        
         outline: none;
         text-decoration: none;
-        background-position: -#{$playBtnSize} -#{$playBtnSize};
     }
     .player.isInitialized & {
         display: none !important;
@@ -27,43 +26,39 @@
         height: $playBtnSize;
         width: $playBtnSize;
     }
+    .layoutaudioliste &,
     .layoutaudio_ohne_bild & {
         background: url('/basis/grafik/spr-play.svg') left top no-repeat;
-        background-size: auto $noPictPlayBtnSize*4;
+        background-size: auto 4*$noPictPlayBtnSize;
+        background-color: $audioPlayerBgColor;                
         filter: none;
         height: $noPictPlayBtnSize;
-        width: $noPictPlayBtnSize;
-        left: $noPictContainerPadding;
         top: 0;
         transform: none;
+        width: $noPictPlayBtnSize;
         &:hover,
         &:focus,
         &:active {
             background-color: $noPictPlayBtnHover;
-            background-position: 0 -#{$noPictPlayBtnSize};
+            background-position: 0 -1*$noPictPlayBtnSize;
         }
     }
     .layoutaudioliste & {
-        background-image: url('/basis/grafik/spr-play.svg');
-        background-size: auto $noPictPlayBtnSize*4;
-        background-position: left top;
-        filter: none;
-        height: $noPictPlayBtnSize;
         left: 0;
         margin-top: $audioListMarginTop;
-        top: 0;
-        transform: none;
-        width: $noPictPlayBtnSize;
     }
     .layoutaudioliste.first & {
         margin-top: $audioListFirstMarginTop;
     }
     .layoutaudioliste .audioplayer-playing & {
-        background-position: 0 -#{$noPictPlayBtnSize*2};
+        background-position: 0 -2*$noPictPlayBtnSize;
         &:hover,
         &:focus,
         &:active {
-            background-position: 0 -#{$noPictPlayBtnSize*3};
+            background-position: 0 -3*$noPictPlayBtnSize;
         }
+    }
+    .layoutaudio_ohne_bild & {
+        left: $noPictContainerPadding;
     }
 }

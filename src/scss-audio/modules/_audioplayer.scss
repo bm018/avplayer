@@ -2,7 +2,7 @@
     bottom: 0;
     left: 0;
     height: $audioPlayerSize;
-    color: $audioPlayerColor;
+    color: $audioPlayerTextColor;
     z-index: 1;
     background: $audioPlayerBgColor;
     position: absolute;
@@ -101,10 +101,6 @@
         right: 3.75em; /* 45 */
     }
 
-    .audioplayer-bar-loaded {
-        background-color: $audioPlayerBgLoaded;
-        z-index: 1;
-    }
     .audioplayer-bar-played {
         z-index: 2;
     }
@@ -163,7 +159,7 @@
         & > div {
             width: 40%;
             height: 80%;
-            background-color: $audioPlayerColor;
+            background-color: $audioPlayerBgBar;
             cursor: pointer;
             position: relative;
             z-index: 1;
