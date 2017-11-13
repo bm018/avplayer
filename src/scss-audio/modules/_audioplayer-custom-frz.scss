@@ -1,0 +1,11 @@
+.audioplayer {
+    &-playpause {
+        background-image: url(/basis/grafik/spr-play-frz.svg);
+    }
+    .audioplayer-volume-button {
+        background-image: url(/basis/grafik/spr-speaker-frz.svg);
+    }
+    .noseek & div.skip-btn {
+        background-image: url(/basis/grafik/spr-ffwd-frz.svg);
+    }
+}
