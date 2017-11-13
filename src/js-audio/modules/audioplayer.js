@@ -278,9 +278,9 @@
                 });
 
                 thePlayer.on('mouseover', function () {
-                    thePlayer.closest('.slider.gallery').addClass('audioplayer-manipulated');
+                    thePlayer.closest('.slider.gallery').addClass('audioplayer-mouseover');
                 }).on('mouseout', function () {
-                    thePlayer.closest('.slider.gallery').removeClass('audioplayer-manipulated');
+                    thePlayer.closest('.slider.gallery').removeClass('audioplayer-mouseover');
                 });
             }
             else thePlayer.addClass(cssClass.mini);
