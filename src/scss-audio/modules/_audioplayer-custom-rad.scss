@@ -28,7 +28,7 @@
     & div[role="button"]:focus {
         background-color: transparent;
     }
-    .audioplayer-noseek & {
+    .noseek & {
         .audioplayer-skip-fwd {
             background-position: center -1*$audioPlayerSize;
         }
