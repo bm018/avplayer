@@ -96,6 +96,15 @@ define('playerInitialize-video', [], function () {
     });
 
     /**
+     * check if players should be instantiated immediately
+     * to avoid double click on initialize and play button
+     */
+    var instantiateImmediately = (function () {
+        var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+        return isIOS;
+    })();
+
+    /**
      * function playerInitialize
      * is called for each player
      * It pushes each placeholder to queuedPlayers array
@@ -135,11 +144,18 @@ define('playerInitialize-video', [], function () {
          * Calls createVideo() function
          */
         initialize: function () {
-            var that = this;
-            var analyticsData = this.options.analytics;
-            var $videoBtn = $('<div role="button" tabindex="0" class="video-btn" title="Video abspielen"></div>');
-
             this.$dom_element.addClass('isReady');
+
+            if (instantiateImmediately) {
+                this.createVideo();
+            } else {
+                this.createInitializeButton();
+            }
+        },
+
+        createInitializeButton: function () {
+            var that = this;
+            var $videoBtn = $('<div role="button" tabindex="0" class="video-btn" title="Video abspielen"></div>');
 
             $videoBtn.on('click keypress', function (e) {
                 if (e.type === 'click' || e.which === 13 || e.which === 32) {
@@ -147,6 +163,7 @@ define('playerInitialize-video', [], function () {
 
                     // ignore when player is already initialized
                     if (!that.isInitialized) {
+                        var analyticsData = this.options.analytics;
                         that.createVideo();
                         that.sendAnalyticsData(analyticsData);
                     }

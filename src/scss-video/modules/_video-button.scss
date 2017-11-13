@@ -1,7 +1,9 @@
+.ardplayer .ardplayer-viewport .ardplayer-postercontrol,
 .video-btn {
     background: url('/basis/grafik/spr-initbtn.svg') no-repeat;
-    background-size: $playBtnSize*2 auto;
+    background-size: auto 2*$playBtnSize;
     background-position: 0 0;
+    bottom: auto;    
     cursor: pointer;
     filter: drop-shadow(0px 0px 5px black);
     left: 50%;
@@ -9,18 +11,19 @@
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: 10;
+    height: $playBtnSize;
+    width: $playBtnSize;
+}
+
+.video-btn {
     &:hover,
     &:focus,
     &:active {
         outline: none;
         text-decoration: none;
-        background-position: 0 $playBtnSize*-1;
+        background-position: 0 -1*$playBtnSize;
     }
     .player.isInitialized & {
         display: none !important;
-    }
-    .manualteaserpicture & {
-        height: $playBtnSize;
-        width: $playBtnSize;
     }
 }
