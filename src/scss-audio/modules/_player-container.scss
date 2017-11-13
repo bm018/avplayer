@@ -7,46 +7,32 @@
         left: 50%;
         width: $spinnerSize;
         height: $spinnerSize;
-        margin-top: #{($spinnerSize / -2)};
-        margin-left: #{($spinnerSize / -2)};
+        margin-top: -0.5*$spinnerSize;
+        margin-left: -0.5*$spinnerSize;
         border-radius: 50%;
-        border: 2.5px solid $spinnerLight;
+        border: $spinnerWidth solid $spinnerLight;
         border-top-color: $spinnerDark;
         animation: spinner .6s linear infinite;
         box-shadow: $playBtnShadow, inset $playBtnShadow;
         .layoutaudio_ohne_bild &,
         .layoutaudioliste & {
-            width: #{($spinnerSize * 0.5)};
-            height: #{($spinnerSize * 0.5)};
-            border-width: 2px;
+            width: 0.5*$spinnerSize;
+            height: 0.5*$spinnerSize;
             border-color: $spinnerDark;
             border-top-color: $spinnerLight;
             box-shadow: none;
-            margin-top: #{($spinnerSize / -4)};
-            margin-left: #{($spinnerSize / -4)};
+            margin-top: 0.25*$spinnerSize;
+            margin-left: 0.25*$spinnerSize;
         }
         .layoutaudioliste & {
             left: 0;
+            margin-top: $audioListMarginTop;
             top: 0;
-            margin: #{$audioListMarginTop + 4px} 4px 0;
         }
         .layoutaudioliste.first & {
-            margin: #{$audioListFirstMarginTop + 4px} 4px 0;
+            margin-top: $audioListFirstMarginTop;
         }
     }
-
-    .audioplayer-error {
-        background: #ff9b9b;
-        font-weight: bold;
-        left: 50%;
-        padding: .5em;
-        position: absolute;
-        text-align: center;
-        top: 50%;
-        transform: translate(-50%,-50%);
-        width: 75%;
-    }
-
     .layoutaudio_ohne_bild & {
         background: $noPictBackground;
         font-size: $audioPlayerFontSize;
@@ -54,51 +40,17 @@
         margin: $noPictMarginTop 0 0;
         position: relative;
     }
-
     .layoutaudioliste & {
         height: 0;
         transition: all .3s ease;
-
         &.audioplayer-playing {
             height: #{$audioListPlayerHeight + $audioListContainerPadding};
         }
     }
 }
 
-.manualteaser.layoutstandard {
-    &.layoutaudioliste {
-        padding-left: calc(#{$noPictPlayBtnSize} + 7px);
-        position: relative;
-
-        .ico_download {
-            left: calc(-#{$noPictPlayBtnSize} - 7px);
-            position: relative;
-        }
-    }
-}
-
-// hide duration for manualteaser layoutstandard when audioplayer has class audioplayer-noseek
-.manualteaser.layoutstandard {
-    .manualteaserpicture.audioplayer-noseek {
-        .audioplayer-time-duration {
-            display: none;
-        }
-        .audioplayer-novolume {
-            .audioplayer-time-duration {
-                display: block;
-            }
-        }
-    }
-}
-
-// hide slider gallery controls on change on the audioplayer
-.slider.gallery.audioplayer-manipulated {
-    .controls {
-        position: relative;
-        z-index: -1;
-    }
-}
-
 @keyframes spinner {
-    to {transform: rotate(360deg);}
+    to {
+        transform: rotate(360deg);
+    }
 }
