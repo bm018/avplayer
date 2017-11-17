@@ -65,6 +65,21 @@ gulp.task('build-audio', function() {
 
 // --------------------------------- VIDEO --------------------------------- //
 
+// build styles pages video player
+gulp.task('styles-video-pages', function(){
+    gulp.src('scss-video/pages/**/*.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer('last 3 version', 'android 4'))
+        .pipe(gulp.dest('./dist/css/pages/'))
+        .pipe(minifycss())
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(gulp.dest('./dist/css/pages/'));
+});
+
+gulp.task('watch-styles-video-pages', function() {
+    gulp.watch('scss-video/pages/_contentheader-premium.scss',['styles-video-pages']);
+});
+
 // build styles video player
 // does not work currently because relative paths in main.css are not rewritten!
 gulp.task('styles-video', function() {
@@ -175,7 +190,7 @@ gulp.task('watch-video', function() {
 
 // build task for styles & scripts video player
 gulp.task('build-video', function() {
-    gulp.start('styles-video', 'scripts-video');
+    gulp.start('styles-video', 'scripts-video', 'styles-video-pages');
 });
 
 // --------------------------------- VIDEO END --------------------------------- //

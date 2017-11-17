@@ -23,7 +23,7 @@
         text-decoration: none;
         background-position: 0 -1*$playBtnSize;
     }
-    .player.isInitialized & {
+    .player.isInitialized:not(.premium_content) & {
         display: none !important;
     }
 }

@@ -166,11 +166,9 @@ define('playerInitialize-video', [], function () {
                         // var analyticsData = this.options.analytics;
                         that.createVideo();
 
-                        // add expanded class on pages with premium slider
-                        $('#contentheader').length ? $('#contentheader').addClass('expanded') : false;
-
                         // that.sendAnalyticsData(analyticsData);
                     }
+
                     return false;
                 }
             }).appendTo(this.$dom_element);
@@ -193,19 +191,20 @@ define('playerInitialize-video', [], function () {
             // and initialize videoPlayer on video element
             $videoElm.appendTo(this.$dom_element);
 
-            // Create close button for video container on the pages with premium slider
-            $videoCloseBtn.prependTo($videoElm);
-            $videoCloseBtn.on('click', function(){
-                // $videoElm.pause();
-                $('#contentheader').length ? $('#contentheader').removeClass('expanded') : false;
-            });
-
             // instantiate player
             if (window.ardplayer) {
                 var p = new ardplayer.Player(this.uniqueId, this.options.config, this.options.media);
                 this.bindEvents(p);
                 this.$dom_element.removeClass('isReady').addClass('isInitialized');
             }
+
+            // Create close button for video container on the pages with premium slider
+            $videoCloseBtn.prependTo($videoElm);
+            $videoCloseBtn.on('click', function(){
+                that.setState('paused');
+                $('#contentheader').length ? $('#contentheader').removeClass('expanded') : false;
+            });
+
         },
 
         /**
@@ -246,6 +245,9 @@ define('playerInitialize-video', [], function () {
                 });
 
                 this.$dom_element.addClass('state-' + state);
+
+                // add expanded class on pages with premium slider
+                $('#contentheader').length ? $('#contentheader').addClass('expanded') : false;
             }
         },
 

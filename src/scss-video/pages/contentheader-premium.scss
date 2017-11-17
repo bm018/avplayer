@@ -1,0 +1,243 @@
+@import "../partials/0.0.breakpoints";
+@import "../partials/0.1.settings";
+
+#contentheader {
+  border-top: 25px solid #fff;
+  margin-bottom: 15px;
+  @include breakpoint(xs) {
+    margin-bottom: 0;
+  }
+  &.premium {
+    border-top-width: 10px;
+    background-color: #fff;
+    height: 50vw;
+    max-height: 500px;
+    transition: height 0.3s ease-out, max-height 0.3s ease-out;
+    @include breakpoint(xs) {
+      height: 315px;
+      max-height: unset;
+    }
+    & + #main {
+      padding-top: 10px;
+    }
+    &.expanded {
+      height: 645px;
+      max-height: 645px;
+      @include breakpoint(sm) {
+        max-height: 510px;
+      }
+      @include breakpoint(xs) {
+        max-height: 315px;
+      }
+      .ardplayer-video {
+        opacity: 1;
+      }
+      .player {
+        &.premium_content {
+          position: relative;
+          &:before {
+            background-color: rgba(black, .75);
+          }
+        }
+      }
+      .video-btn, .ardplayer-postercontrol {
+        display: none;
+      }
+      .skip, .textbox {
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+        @include breakpoint(xs) {
+          opacity: 1;
+          visibility: visible;
+          z-index: 1;
+          .description {
+            opacity: 0;
+            visibility: hidden;
+          }
+        }
+      }
+    }
+    &:not(.expanded) {
+      .isInitialized.state-paused {
+        .ardplayer-video {
+          opacity: 0;
+        }
+      }
+      .isInitialized:not(.state-playing) {
+        .player_close_btn {
+          opacity: 0;
+        }
+      }
+    }
+    .epg_flyoutwrapper {
+      @include breakpoint(xs) {
+        display: none;
+      }
+    }
+    .ardplayer {
+      background-color: transparent;
+    }
+    .header_slider {
+      position: relative;
+      .skip {
+        top: 18%;
+        &.back {
+          display: none !important;
+        }
+      }
+      .wrapper_slider {
+        width: 100%;
+      }
+      .scrollcontent > li, .wrapper_slider {
+        max-width: unset;
+      }
+      li {
+        margin-top: 0;
+        min-height: 800px;
+        & > img {
+          width: 1920px;
+          height: auto;
+          margin: 0 auto;
+        }
+      }
+      .manualteaser, .teaserbox {
+        white-space: normal;
+        width: 100%;
+      }
+      .premium_content {
+        position: relative;
+        @include breakpoint(xs) {
+          height: auto;
+        }
+        &:before {
+          content: '';
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: transparent;
+          transition: background-color 1s;
+        }
+        & > img, .ardplayer-posterimage {
+          width: 100%;
+          height: auto;
+          margin: 0 auto;
+          visibility: visible;
+        }
+        .video-btn, .ardplayer-postercontrol {
+          top: 16%;
+          @include breakpoint(md) {
+            top: 35%;
+          }
+          @include breakpoint(xs) {
+            top: 50%;
+          }
+        }
+      }
+      .scrollcontent > li {
+        overflow: hidden;
+        position: relative;
+        float: left;
+        display: inline;
+        width: 100%;
+      }
+      .ardplayer-video {
+        left: 50%;
+        max-height: 565px;
+        max-width: 1005px;
+        transform: translateX(-50%);
+        @include breakpoint(md) {
+          // max-height: unset;
+        }
+      }
+      .textbox {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        @include breakpoint(md) {
+          position: static;
+        }
+        .description {
+          top: 0;
+          left: 0;
+          color: #fff;
+          font-family: 'InterstateBlackCond';
+          line-height: 0.93;
+          letter-spacing: -.02em;
+          padding: 4% 0 0;
+          text-transform: uppercase;
+          transform: rotate(-4deg);
+          transform-origin: 0 0;
+          width: 50%;
+          z-index: 1;
+          text-shadow: 0 0 1px rgba(0, 0, 0, .33);
+          position: relative;
+          @include breakpoint(md) {
+            position: absolute;
+          }
+          @include breakpoint(xs) {
+            position: absolute;
+          }
+          a {
+            color: #fff;
+            text-decoration: none;
+          }
+          &.size1 {
+            font-size: 55px;
+          }
+          &.size2 {
+            font-size: 3.8vw;
+            @include breakpoint(md) {
+              font-size: 6.8vw;
+            }
+          }
+          &.size3 {
+            font-size: 110px;
+          }
+        }
+        .proginfo {
+          background: url('/basis/grafik/rbb-keil.svg') left top no-repeat;
+          background-size: cover;
+          color: #fff;
+          float: left;
+          font: normal 20px/1.1 'InterstateBlackCond';
+          width: 240px;
+          text-transform: uppercase;
+          position: relative;
+          top: -35px;
+          padding: 50px 30px 25px 20px;
+          @include breakpoint(md) {
+            position: absolute;
+            top: 20%;
+          }
+          @include breakpoint(sm) {
+            top: 10%;
+          }
+          @include breakpoint(xs) {
+            position: static;
+            margin-top: -6px;
+            padding: 30px 30px 25px 20px;
+          }
+          &.isEmpty {
+            display: none;
+            @include breakpoint(xs) {
+              height: 50px;
+              .date, .title {
+                display: none;
+              }
+            }
+          }
+          .title {
+            font-size: 0.8em;
+            padding: 0.3em 0 0;
+            a {
+              color: currentColor;
+            }
+          }
+        }
+      }
+    }
+  }
+}
