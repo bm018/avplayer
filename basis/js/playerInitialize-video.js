@@ -163,9 +163,13 @@ define('playerInitialize-video', [], function () {
 
                     // ignore when player is already initialized
                     if (!that.isInitialized) {
-                        var analyticsData = this.options.analytics;
+                        // var analyticsData = this.options.analytics;
                         that.createVideo();
-                        that.sendAnalyticsData(analyticsData);
+
+                        // add expanded class on pages with premium slider
+                        $('#contentheader').length ? $('#contentheader').addClass('expanded') : false;
+
+                        // that.sendAnalyticsData(analyticsData);
                     }
                     return false;
                 }
@@ -183,10 +187,18 @@ define('playerInitialize-video', [], function () {
 
             var that = this;
             var $videoElm = $('<div id="' + this.uniqueId + '" />');
+            var $videoCloseBtn = $('<a href="javascript:void(0);" class="player_close_btn" title="Wiedergabe beenden">Wiedergabe beenden</a>');
 
             // Append video element to player container
             // and initialize videoPlayer on video element
             $videoElm.appendTo(this.$dom_element);
+
+            // Create close button for video container on the pages with premium slider
+            $videoCloseBtn.prependTo($videoElm);
+            $videoCloseBtn.on('click', function(){
+                // $videoElm.pause();
+                $('#contentheader').length ? $('#contentheader').removeClass('expanded') : false;
+            });
 
             // instantiate player
             if (window.ardplayer) {
