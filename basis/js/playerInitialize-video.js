@@ -169,6 +169,9 @@ define('playerInitialize-video', [], function () {
                         // that.sendAnalyticsData(analyticsData);
                     }
 
+                    // add expanded class on pages with premium slider
+                    $('#contentheader').length ? $('#contentheader').addClass('expanded') : false;
+
                     return false;
                 }
             }).appendTo(this.$dom_element);
@@ -201,7 +204,7 @@ define('playerInitialize-video', [], function () {
             // Create close button for video container on the pages with premium slider
             $videoCloseBtn.prependTo($videoElm);
             $videoCloseBtn.on('click', function(){
-                that.setState('paused');
+                p.pause();
                 $('#contentheader').length ? $('#contentheader').removeClass('expanded') : false;
             });
 
@@ -217,6 +220,8 @@ define('playerInitialize-video', [], function () {
 
             $(player).bind(ardplayer.Player.EVENT_PLAY_STREAM, function (e) {
                 that.setState('playing');
+
+                $('#contentheader').length ? $('#contentheader').addClass('expanded') : false;
 
                 jsb.fireEvent('Player::VIDEO_STARTED', {
                     playerId: that.uniqueId,
@@ -246,8 +251,6 @@ define('playerInitialize-video', [], function () {
 
                 this.$dom_element.addClass('state-' + state);
 
-                // add expanded class on pages with premium slider
-                $('#contentheader').length ? $('#contentheader').addClass('expanded') : false;
             }
         },
 
