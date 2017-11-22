@@ -14,7 +14,7 @@
     max-height: 500px;
     transition: height 0.3s ease-out, max-height 0.3s ease-out;
     @include breakpoint(xs) {
-      height: 315px;
+      height: auto;
       max-height: unset;
     }
     & + #main {
@@ -70,6 +70,9 @@
         }
       }
     }
+    .state-paused .ardplayer-posterframe {
+      display: none;
+    }
     .epg_flyoutwrapper {
       @include breakpoint(xs) {
         display: none;
@@ -80,6 +83,9 @@
     }
     .header_slider {
       position: relative;
+      @include breakpoint(xs) {
+        max-height: 85vw;
+      }
       .skip {
         top: 18%;
         &.back {
@@ -89,17 +95,29 @@
       .wrapper_slider {
         width: 100%;
       }
-      .scrollcontent > li, .wrapper_slider {
+      .scrollcontent {
         max-width: unset;
+        @include breakpoint(xs) {
+          height: auto;
+          min-height: auto;
+        }
       }
       li {
         margin-top: 0;
         min-height: 800px;
+        max-width: unset;
+        @include breakpoint(xs) {
+          height: auto;
+          min-height: auto;
+        }
         & > img {
           width: 1920px;
           height: auto;
           margin: 0 auto;
         }
+      }
+      .wrapper_slider {
+        max-width: unset;
       }
       .manualteaser, .teaserbox {
         white-space: normal;
@@ -156,7 +174,7 @@
         position: absolute;
         top: 0;
         width: 100%;
-        @include breakpoint(md) {
+        @include breakpoint(xs) {
           position: static;
         }
         .description {
@@ -174,9 +192,6 @@
           z-index: 1;
           text-shadow: 0 0 1px rgba(0, 0, 0, .33);
           position: relative;
-          @include breakpoint(md) {
-            position: absolute;
-          }
           @include breakpoint(xs) {
             position: absolute;
           }
@@ -186,6 +201,12 @@
           }
           &.size1 {
             font-size: 55px;
+            @include breakpoint(md) {
+              font-size: 5vw;
+            }
+            @include breakpoint(xs) {
+              font-size: 7vw;
+            }
           }
           &.size2 {
             font-size: 3.8vw;
@@ -194,7 +215,10 @@
             }
           }
           &.size3 {
-            font-size: 110px;
+            font-size: 5.7vw;
+            @include breakpoint(md) {
+              font-size: 7vw;
+            }
           }
         }
         .proginfo {
@@ -208,13 +232,6 @@
           position: relative;
           top: -35px;
           padding: 50px 30px 25px 20px;
-          @include breakpoint(md) {
-            position: absolute;
-            top: 20%;
-          }
-          @include breakpoint(sm) {
-            top: 10%;
-          }
           @include breakpoint(xs) {
             position: static;
             margin-top: -6px;
