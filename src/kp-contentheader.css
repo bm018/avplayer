@@ -1,5 +1,5 @@
 @media screen and (min-width:1005px) {
-  #contentheader.premium .header_slider .video_container {
+  /* #contentheader.premium .header_slider .video_container {
     position: absolute;
     left: 50%;
     width: 100%;
@@ -7,7 +7,7 @@
     max-width: 1005px;
     max-height: 565px;
     margin-left: -502px;
-  }
+  } */
 
   #contentheader #contentnav .placeholder {
     display: none;
@@ -26,7 +26,7 @@
   }*/
 }
 @media screen and (max-width:1004px) {
-  #contentheader.premium .header_slider .video_container {
+  /* #contentheader.premium .header_slider .video_container {
     position: absolute;
     right: 0;
     left: 0;
@@ -35,7 +35,7 @@
     max-width: 1005px;
     max-height: 565px;
     margin-left: 0;
-  }
+  } */
 
 /*  .premium .header_slider .textbox .description.size3 {
     font-size: 110px;
@@ -429,9 +429,9 @@
     height: 510px;
   }*/
 
-  .page_margins #contentheader.premium > .header_slider > .skip {
+  /* .page_margins #contentheader.premium > .header_slider > .skip {
     top: 130px;
-  }
+  } */
 
   #main > .teaserbox.layoutpremium {
     margin: 0 -15px;
@@ -672,9 +672,9 @@
     height: auto;
   }*/
 
-  .page_margins #contentheader.premium > .header_slider > .skip {
+  /* .page_margins #contentheader.premium > .header_slider > .skip {
     top: 110px;
-  }
+  } */
 
   #main .content_navi_slider .skip {
     left: -5px;
