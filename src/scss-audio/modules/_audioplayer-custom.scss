@@ -69,10 +69,12 @@
             }
         }
     }
+    .audiolist &,
     .layoutaudioliste & {
         height: 0;
         transition: all .3s ease;
         opacity: 0;
+        overflow-y: hidden;
         .audioplayer-playpause {
             display: none;
         }
@@ -84,8 +86,10 @@
             left: 3.75em;
         }
     }
+    .audiolist &.audioplayer-playing,
     .layoutaudioliste &.audioplayer-playing {
-        opacity: 1;
         height: $audioListPlayerHeight;
+        opacity: 1;
+        overflow-y: visible;
     }
 }
