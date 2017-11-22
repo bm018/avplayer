@@ -1,6 +1,6 @@
 define('playerInitialize-video', [], function () {
-    /** 
-     * Loads video player script 
+    /**
+     * Loads video player script
      */
     var loadScripts = function () {
         $('<script src="/src/dist/js/video.min.js"></script>').appendTo('head');
@@ -44,8 +44,8 @@ define('playerInitialize-video', [], function () {
     /**
      * Pauses all video players mentioned by IDs in players array.
      * If no array is provided, all video players are paused.
-     * 
-     * @param { Array } players 
+     *
+     * @param { Array } players
      */
     var pauseVideoPlayers = function (players) {
         // get all currently instantiated video players
@@ -78,7 +78,7 @@ define('playerInitialize-video', [], function () {
     });
 
     /**
-     * Subscribes to Gallery::INDEX_CHANGED event 
+     * Subscribes to Gallery::INDEX_CHANGED event
      * to set running players on pause
      * when using the gallery slider
      */
@@ -96,25 +96,17 @@ define('playerInitialize-video', [], function () {
     });
 
     /**
-     * check if players should be instantiated immediately
-     * to avoid double click on initialize and play button
-     */
-    var instantiateImmediately = (function () {
-        var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-        return isIOS;
-    })();
-
-    /**
      * function playerInitialize
      * is called for each player
      * It pushes each placeholder to queuedPlayers array
-     * 
-     * @param { Object } dom_element 
-     * @param { String } options 
+     *
+     * @param { Object } dom_element
+     * @param { String } options
      */
     var playerInitialize = function (dom_element, options) {
         this.dom_element = dom_element;
         this.$dom_element = $(dom_element);
+        this.player = {};
         this.options = {};
         $.extend(this.options, options);
 
@@ -122,8 +114,8 @@ define('playerInitialize-video', [], function () {
     };
 
     playerInitialize.prototype = {
-        /** 
-         * Checks if element is visible 
+        /**
+         * Checks if element is visible
          */
         isVisible: function () {
             var elm = this.dom_element;
@@ -138,27 +130,22 @@ define('playerInitialize-video', [], function () {
 
         isInitialized: false,
 
-        /** 
+        /**
          * Creates initial play button (e.g. on picture),
          * Sets Event Listener for play button
          * Calls createVideo() function
          */
         initialize: function () {
             this.$dom_element.addClass('isReady');
-
-            if (instantiateImmediately) {
-                this.createVideo();
-            } else {
-                this.createInitializeButton();
-            }
+            this.createInitializeButton();
         },
 
         createInitializeButton: function () {
             var that = this;
             var $videoBtn = $('<div role="button" tabindex="0" class="video-btn" title="Video abspielen"></div>');
 
-            $videoBtn.on('click keypress', function (e) {
-                if (e.type === 'click' || e.which === 13 || e.which === 32) {
+            $videoBtn.on('click touchstart keypress', function (e) {
+                if (e.type === 'click' || e.type === 'touchstart' || e.which === 13 || e.which === 32) {
                     e.preventDefault();
 
                     // ignore when player is already initialized
@@ -167,6 +154,8 @@ define('playerInitialize-video', [], function () {
                         that.createVideo();
 
                         // that.sendAnalyticsData(analyticsData);
+                    } else {
+                        that.player.play();
                     }
 
                     // add expanded class on pages with premium slider
@@ -179,7 +168,7 @@ define('playerInitialize-video', [], function () {
 
         /**
          * Creates <div> element and initializes video player
-         * 
+         *
          * @param { Boolean } isKeyboardControl
          */
         createVideo: function () {
@@ -196,15 +185,15 @@ define('playerInitialize-video', [], function () {
 
             // instantiate player
             if (window.ardplayer) {
-                var p = new ardplayer.Player(this.uniqueId, this.options.config, this.options.media);
-                this.bindEvents(p);
+                this.player = new ardplayer.Player(this.uniqueId, this.options.config, this.options.media);
+                this.bindEvents(this.player);
                 this.$dom_element.removeClass('isReady').addClass('isInitialized');
             }
 
             // Create close button for video container on the pages with premium slider
             $videoCloseBtn.prependTo($videoElm);
-            $videoCloseBtn.on('click', function(){
-                p.pause();
+            $videoCloseBtn.on('click touchstart', function(){
+                that.player.pause();
                 $('#contentheader').length ? $('#contentheader').removeClass('expanded') : false;
             });
 
@@ -212,7 +201,7 @@ define('playerInitialize-video', [], function () {
 
         /**
          * Binds various events on player object
-         * 
+         *
          * @param { Object } player
          */
         bindEvents: function (player) {
@@ -236,11 +225,15 @@ define('playerInitialize-video', [], function () {
             $(player).bind(ardplayer.Player.EVENT_STOP_STREAM, function (event) {
                 that.setState('stopped');
             });
+
+            $(player).bind(ardplayer.Player.EVENT_READY, function (event) {
+                that.$dom_element.find('.ardplayer-postercontrol').click();
+            });
         },
 
         /**
          * Exposes current player state via css class on DOM object
-         * 
+         *
          * @param { String } state
          */
         setState: function (state) {
@@ -257,7 +250,7 @@ define('playerInitialize-video', [], function () {
         /**
          * Sends web analytics information via callAnalytics function
          * TODO!
-         * 
+         *
          * @param { Object } data
          */
         sendAnalyticsData: function (data) {
