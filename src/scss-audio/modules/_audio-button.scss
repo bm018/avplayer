@@ -12,25 +12,26 @@
     &:hover,
     &:focus,
     &:active {
-        background-position: -1*$playBtnSize -1*$playBtnSize;        
+        background-position: -1*$playBtnSize -1*$playBtnSize;
         outline: none;
         text-decoration: none;
     }
     .player.isInitialized & {
-        display: none !important;
+        display: none;
         .layoutaudioliste & {
-            display: block !important;
+            display: block;
         }
     }
     .manualteaserpicture & {
         height: $playBtnSize;
         width: $playBtnSize;
     }
+    .audiolist &,
     .layoutaudioliste &,
     .layoutaudio_ohne_bild & {
         background: url('/basis/grafik/spr-play.svg') left top no-repeat;
         background-size: auto 4*$noPictPlayBtnSize;
-        background-color: $audioPlayerBgColor;                
+        background-color: $audioPlayerBgColor;
         filter: none;
         height: $noPictPlayBtnSize;
         top: 0;

@@ -8,4 +8,9 @@
     .noseek & div.skip-btn {
         background-image: url(/basis/grafik/spr-ffwd-frz.svg);
     }
+    .audiolist & {
+        .audioplayer-playpause {
+            display: none;
+        }
+    }
 }

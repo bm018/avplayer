@@ -10,3 +10,47 @@
         }
     }
 }
+
+.playlist_tables {
+    .table_container {
+        .tr_audio {
+            left: 12%;
+            top: -40px;
+            width: 100%;
+            @media (max-width: 680px) {
+                height: auto;
+                line-height: 0;
+                left: 0;
+                position: relative;
+                top: 0;
+                td {
+                    width: 100%;
+                }
+            }
+            .audioplayer {
+                left: -$audioListPlayerHeight;
+                margin-top: 2px;
+                margin-left: -2px;
+                top: 35px;
+                width: calc(43% + #{$audioListPlayerHeight});
+                z-index: 20;
+                @media (max-width: 680px) {
+                    bottom: 0;
+                    left: 0;
+                    top: auto;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .audio {
+        position: absolute;
+        width: 100%;
+        @media (max-width: 680px) {
+            position: relative;
+            &.isInitialized.audioplayer-playing {
+                height: $audioListPlayerHeight;
+            }
+        }
+    }
+}
