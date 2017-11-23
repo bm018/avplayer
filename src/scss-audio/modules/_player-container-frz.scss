@@ -115,9 +115,6 @@
         position: absolute;
         @include breakpoint(xs) {
             position: relative;
-            &.isInitialized.audioplayer-playing {
-                height: $audioListPlayerHeight;
-            }
         }
     }
 }
