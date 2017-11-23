@@ -6,11 +6,7 @@
         background-image: url('/basis/grafik/spr-speaker-frz.svg');
         background-size: auto 11.5em;
         background-position: center -5px;
-        left: -2em;
-        @media (max-width: 680px) {
-            left: 10px;
-            top: -$audioListPlayerHeight;
-        }
+
         &:hover,
         &:focus,
         &:active {
@@ -28,6 +24,13 @@
         }
         &:hover {
             background-position: center -9em;
+        }
+    }
+    .tr_audio & {
+        left: -2em;
+        @media (max-width: 680px) {
+            left: 10px;
+            top: -$audioListPlayerHeight;
         }
     }
     .layoutjustify_2_4 .layoutaudioliste &,
