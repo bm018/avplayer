@@ -1,3 +1,11 @@
+.audiolist .player.audio {
+    &.isLoading {
+        &:before {
+            box-shadow: none;
+        }
+    }
+}
+
 .manualteaser {
     &.layoutaudioliste {
         box-sizing: border-box;
@@ -8,6 +16,22 @@
         .ico.ico_download {
             margin-left: 0;
         }
+        .player.audio.isLoading {
+            &:before {
+                height: 28px;
+                left: 0;
+                margin-top: 15px;
+                top: 0;
+                width: 28px;
+            }
+        }
+        & ~ .manualteaser, &.count1, &.count2 {
+            .player.audio.isLoading {
+                &:before {
+                    margin-top: 28px;
+                }
+            }
+        }
     }
 }
 
@@ -17,7 +41,7 @@
             left: 12%;
             top: -40px;
             width: 100%;
-            @media (max-width: 680px) {
+            @include breakpoint(xs) {
                 height: auto;
                 line-height: 0;
                 left: 0;
@@ -27,26 +51,69 @@
                     width: 100%;
                 }
             }
+            .player.audio {
+                font-size: $audioPlayerBtnFontSize;
+                height: $audioListPlayerHeight;
+                left: -2em;
+                width: 3em;
+                transition: width .3s ease .1s, overflow .3s ease 1s;
+                overflow: hidden;
+                @include breakpoint(xs) {
+                    height: 0;
+                    left: 0;
+                    overflow: visible;
+                    transition: height .3s ease .1s;
+                    width: 100%;
+                }
+                &.isLoading {
+                    &:before {
+                        margin-left: -16px;
+                        @include breakpoint(xs) {
+                            left: 15px;
+                            margin-left: 0;
+                            top: -25px;
+                        }
+                    }
+                }
+                &.audioplayer-playing {
+                    width: calc(2em + 43%);
+                    overflow: visible;
+                    @include breakpoint(xs) {
+                        height: $audioListPlayerHeight;
+                        width: 100%;
+                    }
+                    .audioplayer {
+                        overflow: visible;
+                        transition: all .3s ease .1s, width .3s ease .3s, overflow .3s ease 1s;
+                        width: calc(100% - 2em);
+                        @include breakpoint(xs) {
+                            transition: all .3s ease .1s;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
             .audioplayer {
-                left: -$audioListPlayerHeight;
-                margin-top: 2px;
-                margin-left: -2px;
-                top: 35px;
-                width: calc(43% + #{$audioListPlayerHeight});
+                height: 100%;
+                left: 2em;
+                margin-left: 5px;
+                top: 0;
+                overflow: hidden;
+                width: 100%;
                 z-index: 20;
-                @media (max-width: 680px) {
+                @include breakpoint(xs) {
+                    height: $audioListPlayerHeight;
                     bottom: 0;
                     left: 0;
                     top: auto;
-                    width: 100%;
+                    transition: none;
                 }
             }
         }
     }
     .audio {
         position: absolute;
-        width: 100%;
-        @media (max-width: 680px) {
+        @include breakpoint(xs) {
             position: relative;
             &.isInitialized.audioplayer-playing {
                 height: $audioListPlayerHeight;

@@ -1,36 +1,43 @@
 .audio-btn {
-    background-image: url('/basis/grafik/spr-initbtn-frz.svg');
-    filter: none;
     .audiolist & {
         background-color: transparent;
-        background-image: url('/basis/grafik/spr-speaker-frz.svg');
+        background-image: url('/basis/grafik/spr-play-frz.svg');
         background-size: auto 11.5em;
-        background-position: center -5px;
-
+        background-position: center -0.2em;
         &:hover,
         &:focus,
         &:active {
             background-color: transparent;
-            background-position: center -3.3em;
+            background-position: center -3.1em;
         }
     }
+
+    .audiolist.player.isLoading & {
+        display: none;
+    }
+
     .audiolist.isInitialized & {
         display: block;
     }
     .audiolist.audioplayer-playing & {
         & {
-            background-image: url('/basis/grafik/spr-play-frz.svg');
-            background-position: center -6em;
+            background-position: center -5.9em;
         }
-        &:hover {
-            background-position: center -9em;
+        &:hover,
+        &:focus,
+        &:active {
+            background-position: center -8.8em;
         }
     }
     .tr_audio & {
-        left: -2em;
-        @media (max-width: 680px) {
-            left: 10px;
-            top: -$audioListPlayerHeight;
+        background-color: white;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 30;
+        @include breakpoint(xs) {
+            left: 15px;
+            top: -25px;
         }
     }
     .layoutjustify_2_4 .layoutaudioliste &,
