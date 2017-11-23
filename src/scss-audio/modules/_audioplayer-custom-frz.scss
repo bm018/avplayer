@@ -7,6 +7,18 @@
     }
     .noseek & div.skip-btn {
         background-image: url(/basis/grafik/spr-ffwd-frz.svg);
+        &.audioplayer-skip-bwd {
+            background-position: center -5.1em;
+            &:hover {
+                background-position: center -7.5em;
+            }
+        }
+        &.audioplayer-skip-fwd {
+            background-position: center -0.4em;
+            &:hover {
+                background-position: center -2.8em;
+            }
+        }
     }
     .audiolist & {
         .audioplayer-playpause {
