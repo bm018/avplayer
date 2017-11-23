@@ -17,6 +17,9 @@
             @at-root .layoutstandard & {
                 display: none;
             }
+            @at-root .layouttopteaser & {
+                display: block;
+            }
         }
         .skip-btn {
             width: $audioPlayerSize;
