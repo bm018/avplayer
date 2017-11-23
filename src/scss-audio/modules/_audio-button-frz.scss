@@ -12,10 +12,6 @@
         }
     }
 
-    .audiolist.player.isLoading & {
-        display: none;
-    }
-
     .audiolist.isInitialized & {
         display: block;
     }

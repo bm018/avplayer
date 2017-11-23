@@ -21,11 +21,15 @@
             border-color: $spinnerDark;
             border-top-color: $spinnerLight;
             box-shadow: none;
+            left: 0;
             margin-top: 0.25*$spinnerSize;
             margin-left: 0.25*$spinnerSize;
         }
+        .layoutaudio_ohne_bild & {
+            margin-top: -#{0.5*$spinnerSize/2};
+            top: 50%;
+        }
         .layoutaudioliste & {
-            left: 0;
             margin-top: $audioListMarginTop;
             top: 0;
         }

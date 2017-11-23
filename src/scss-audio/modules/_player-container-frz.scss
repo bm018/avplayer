@@ -1,4 +1,7 @@
 .audiolist.player.audio {
+    &.isLoading:before {
+        box-shadow: none;
+    }
     &.noseek {
         .audioplayer .audioplayer-time-duration {
             display: block;
@@ -25,11 +28,10 @@
                 width: 28px;
             }
         }
-        & ~ .manualteaser, &.count1, &.count2 {
-            .player.audio.isLoading {
-                &:before {
-                    margin-top: 28px;
-                }
+        @at-root .teaserbox > .manualteaser ~ .manualteaser,
+        &.first.layoutaudioliste, &.first + .layoutaudioliste {
+            .player.audio.isLoading:before {
+                margin-top: 28px;
             }
         }
     }

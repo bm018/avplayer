@@ -1,6 +1,12 @@
-.manualteaser .playerdownload {
-    overflow: visible;
-    text-align: right;
+.manualteaser {
+    .audio.isLoading:before {
+        box-shadow: none;
+        margin-top: -#{$spinnerSize/2};
+    }
+    .playerdownload {
+        overflow: visible;
+        text-align: right;
+    }
 }
 
 #center a.download {
