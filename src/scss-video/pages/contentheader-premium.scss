@@ -128,7 +128,7 @@
         @include breakpoint(xs) {
           height: auto;
         }
-        &:before {
+        &:not(.isLoading):before {
           content: '';
           height: 100%;
           width: 100%;
@@ -144,7 +144,10 @@
           margin: 0 auto;
           visibility: visible;
         }
-        .video-btn, .ardplayer-postercontrol {
+        .video-btn,
+        .ardplayer-postercontrol,
+        &.isLoading:before {
+          box-shadow: none;
           top: 16%;
           @include breakpoint(md) {
             top: 35%;
