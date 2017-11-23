@@ -1,7 +1,7 @@
-.audiolist .player.audio {
-    &.isLoading {
-        &:before {
-            box-shadow: none;
+.audiolist.player.audio {
+    &.noseek {
+        .audioplayer .audioplayer-time-duration {
+            display: block;
         }
     }
 }
@@ -37,6 +37,12 @@
 
 .playlist_tables {
     .table_container {
+        .audio {
+            position: absolute;
+            @include breakpoint(xs) {
+                position: relative;
+            }
+        }
         .tr_audio {
             left: 12%;
             top: -40px;
@@ -55,9 +61,9 @@
                 font-size: $audioPlayerBtnFontSize;
                 height: $audioListPlayerHeight;
                 left: -2em;
-                width: 3em;
-                transition: width .3s ease .1s;
                 overflow: hidden;
+                transition: width .3s ease .1s;
+                width: 3em;
                 @include breakpoint(xs) {
                     height: 0;
                     left: 0;
@@ -76,9 +82,9 @@
                     }
                 }
                 &.audioplayer-playing {
-                    width: calc(2em + 43%);
                     overflow: visible;
                     transition: overflow .3s ease .3s;
+                    width: calc(2em + 43%);
                     @include breakpoint(xs) {
                         height: $audioListPlayerHeight;
                         width: 100%;
@@ -93,25 +99,19 @@
                 height: 100%;
                 left: 2em;
                 margin-left: 5px;
-                top: 0;
                 overflow: hidden;
+                top: 0;
                 width: calc(100% - 2em);
                 z-index: 20;
                 @include breakpoint(xs) {
-                    height: $audioListPlayerHeight;
                     bottom: 0;
+                    height: $audioListPlayerHeight;
                     left: 0;
                     top: auto;
                     transition: none;
                     width: 100%;
                 }
             }
-        }
-    }
-    .audio {
-        position: absolute;
-        @include breakpoint(xs) {
-            position: relative;
         }
     }
 }
