@@ -31,4 +31,8 @@
             transform: rotate(45deg);
         }
     }
+
+    @at-root .stage-fullscreen & {
+        display: none;
+    }
 }

@@ -173,6 +173,12 @@
           // max-height: unset;
         }
       }
+      .stage-fullscreen {
+        .ardplayer-video {
+          max-height: unset;
+          max-width: unset;
+        }
+      }
       .textbox {
         position: absolute;
         top: 0;
