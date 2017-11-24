@@ -230,6 +230,10 @@ define('playerInitialize-video', [], function () {
             $(player).bind(ardplayer.Player.EVENT_READY, function (event) {
                 that.$dom_element.find('.ardplayer-postercontrol').click();
             });
+
+            $(player).bind(ardplayer.Player.TOGGLE_FULLSCREEN, function (event) {
+               that.$dom_element.toggleClass('stage-fullscreen');
+            });
         },
 
         /**
