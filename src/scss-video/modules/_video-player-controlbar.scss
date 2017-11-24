@@ -1,0 +1,25 @@
+.ardplayer.ardplayer-video {
+    .ardplayer-viewport {
+        .ardplayer-controlbar {
+            .ardplayer-controlbar-slider {
+                .ardplayer-controlbar-slider-bg-watched {
+                    background-color: $playerAccentColor;
+                }
+                .dvr-left,
+                .dvr-middle,
+                .dvr-right {
+                    background-color: $playerAccentColor;
+                }
+                .dvr-left {
+                    background-image: url('/basis/grafik/dvr_left.svg');
+                }
+                .dvr-middle {
+                    background-image: url('/basis/grafik/dvr_middle.svg');
+                }
+                .dvr-right {
+                    background-image: url('/basis/grafik/dvr_right.svg');
+                }
+            }
+        }
+    }
+}
