@@ -1,13 +1,34 @@
 .player_close_btn {
-  cursor: pointer;
-  position: absolute;
-  left: 0;
-  top: 0;
-  margin: 10px;
-  width: 30px;
-  height: 30px;
-  z-index: 99;
-  background: rgba($playerDarkColor, .9);
-  overflow: hidden;
-  text-indent: -9999px;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    z-index: 99;
+    background: rgba($playerDarkColor, .9);
+    overflow: hidden;
+    text-indent: -9999px;
+    &:before, &:after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 80%;
+        background: white;
+        top: 10%;
+        display: block;
+        left: 47%;
+        transform: rotate(0deg);
+        transition: all .3s ease-in-out .1s;
+    }
+
+    @at-root .expanded & {
+        &:before {
+            transform: rotate(-45deg);
+        }
+        &:after {
+            transform: rotate(45deg);
+        }
+    }
 }

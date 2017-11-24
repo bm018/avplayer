@@ -191,12 +191,13 @@ define('playerInitialize-video', [], function () {
             }
 
             // Create close button for video container on the pages with premium slider
-            $videoCloseBtn.prependTo($videoElm);
-            $videoCloseBtn.on('click touchstart', function(){
-                that.player.pause();
-                $('#contentheader').length ? $('#contentheader').removeClass('expanded') : false;
-            });
-
+            if ( $('.premium').length ) {
+                $videoCloseBtn.prependTo($videoElm);
+                $videoCloseBtn.on('click touchstart', function() {
+                    that.player.pause();
+                    $('#contentheader').length ? $('#contentheader').removeClass('expanded') : false;
+                });
+            }
         },
 
         /**
