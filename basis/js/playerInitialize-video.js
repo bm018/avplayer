@@ -65,18 +65,18 @@ define('playerInitialize-video', [], function () {
         var allPlayers = getAllVideoPlayers();
         var i = allPlayers.length;
 
-            // iterate through all video players
-            while (i--) {
-                if ($.isArray(players) && players.length > 0) {
-                    // if attribute players is defined, only stop players mentioned in players array
-                    if ($.inArray('' + ardplayer.PlayerModel.players[i]._id, players) > -1) {
-                        ardplayer.PlayerModel.players[i].pause();
-                    }
-                } else {
-                    // otherwise stop all players
+        // iterate through all video players
+        while (i--) {
+            if ($.isArray(players) && players.length > 0) {
+                // if attribute players is defined, only stop players mentioned in players array
+                if ($.inArray('' + ardplayer.PlayerModel.players[i]._id, players) > -1) {
                     ardplayer.PlayerModel.players[i].pause();
                 }
+            } else {
+                // otherwise stop all players
+                ardplayer.PlayerModel.players[i].pause();
             }
+        }
     };
 
     /**
@@ -169,8 +169,26 @@ define('playerInitialize-video', [], function () {
                         that.player.play();
                     }
 
-                    // add expanded class on pages with premium slider
-                    $('#contentheader').length ? $('#contentheader').addClass('expanded') : false;
+                    return false;
+                }
+            }).appendTo(this.$dom_element);
+        },
+
+        /**
+         * Creates close button
+         * to stop playback 
+         * and remove expanded layout on premium stage
+         */
+        createCloseButton: function () {
+            var that = this;
+            var $videoCloseBtn = $('<div role="button" tabindex="0" class="video-close-btn" title="Wiedergabe beenden"></div>');
+
+            $videoCloseBtn.on('click touchstart keypress', function (e) {
+                if (e.type === 'click' || e.type === 'touchstart' || e.which === 13 || e.which === 32) {
+                    e.preventDefault();
+
+                    that.player.pause();
+                    that.$dom_element.closest('#contentheader').removeClass('expanded');
 
                     return false;
                 }
@@ -188,7 +206,6 @@ define('playerInitialize-video', [], function () {
 
             var that = this;
             var $videoElm = $('<div id="' + this.uniqueId + '" />');
-            var $videoCloseBtn = $('<a href="javascript:void(0);" class="player_close_btn" title="Wiedergabe beenden">Wiedergabe beenden</a>');
 
             // Append video element to player container
             // and initialize videoPlayer on video element
@@ -199,15 +216,7 @@ define('playerInitialize-video', [], function () {
                 this.player = new ardplayer.Player(this.uniqueId, this.options.config, this.options.media);
                 this.bindEvents(this.player);
                 this.$dom_element.removeClass('isReady').addClass('isInitialized');
-            }
-
-            // Create close button for video container on the pages with premium slider
-            if ( $('.premium').length ) {
-                $videoCloseBtn.prependTo($videoElm);
-                $videoCloseBtn.on('click touchstart', function() {
-                    that.player.pause();
-                    $('#contentheader').length ? $('#contentheader').removeClass('expanded') : false;
-                });
+                this.createCloseButton();
             }
         },
 
@@ -222,12 +231,16 @@ define('playerInitialize-video', [], function () {
             $(player).bind(ardplayer.Player.EVENT_PLAY_STREAM, function (e) {
                 that.setState('playing');
 
-                $('#contentheader').length ? $('#contentheader').addClass('expanded') : false;
-
                 jsb.fireEvent('Player::VIDEO_STARTED', {
                     playerId: that.uniqueId,
                     originalEvent: e
                 });
+
+                that.$dom_element.closest('#contentheader').addClass('expanded');
+            });
+
+            $(player).bind(ardplayer.Player.EVENT_INIT, function (e) {
+                that.$dom_element.closest('#contentheader').addClass('expanded');
             });
 
             $(player).bind(ardplayer.Player.EVENT_PAUSE_STREAM, function (event) {
@@ -243,7 +256,7 @@ define('playerInitialize-video', [], function () {
             });
 
             $(player).bind(ardplayer.Player.TOGGLE_FULLSCREEN, function (event) {
-               that.$dom_element.toggleClass('stage-fullscreen');
+                that.$dom_element.toggleClass('stage-fullscreen');
             });
         },
 
