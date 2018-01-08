@@ -24,6 +24,7 @@ define('playerInitialize-audio', [], function () {
             checkVisibility(queuedPlayers);
         }, 200));
 
+        // run checkVisibility once without any triggering events
         setTimeout(function () {
             checkVisibility(queuedPlayers);
         }, 200);
@@ -72,7 +73,7 @@ define('playerInitialize-audio', [], function () {
     /**
      * function playerInitialize
      * is called for each player
-     * It pushes each placeholder to queuedPlayers array
+     * adds each placeholder to queuedPlayers array
      * 
      * @param { Object } dom_element 
      * @param { String } options 
@@ -209,7 +210,7 @@ define('playerInitialize-audio', [], function () {
         },
 
         /**
-         * Zeigt Information über Fehler an
+         * displays error information
          * 
          * @param { Integer } level
          * @param { String } msg
