@@ -24,6 +24,7 @@ define('playerInitialize-video', [], function () {
             checkVisibility(queuedPlayers);
         }, 200));
 
+        // run checkVisibility once without any triggering events
         setTimeout(function () {
             checkVisibility(queuedPlayers);
         }, 200);
@@ -42,16 +43,27 @@ define('playerInitialize-video', [], function () {
     watchPlayers(queuedPlayers);
 
     /**
+     * get all currently instantiated video players
+     */
+    var getAllVideoPlayers = function () {
+        var allVideoPlayers = window.ardplayer && ardplayer.PlayerModel && ardplayer.PlayerModel.players;
+
+        if ($.isArray(allVideoPlayers)) {
+            return allVideoPlayers;
+        } else {
+            return false;
+        }
+    };
+
+    /**
      * Pauses all video players mentioned by IDs in players array.
      * If no array is provided, all video players are paused.
      *
      * @param { Array } players
      */
     var pauseVideoPlayers = function (players) {
-        // get all currently instantiated video players
-        var allVideoPlayers = window.ardplayer && ardplayer.PlayerModel && ardplayer.PlayerModel.players;
-        if ($.isArray(allVideoPlayers) && allVideoPlayers.length > 0) {
-            var i = allVideoPlayers.length;
+        var allPlayers = getAllVideoPlayers();
+        var i = allPlayers.length;
 
             // iterate through all video players
             while (i--) {
@@ -65,7 +77,6 @@ define('playerInitialize-video', [], function () {
                     ardplayer.PlayerModel.players[i].pause();
                 }
             }
-        }
     };
 
     /**
