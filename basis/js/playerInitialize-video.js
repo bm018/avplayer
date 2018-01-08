@@ -16,6 +16,8 @@ define('playerInitialize-video', [], function () {
     /**
      * Iterates through array containing player placeholders and checks if they are visible.
      * Calls initialize method when visible and removes element from array.
+     * 
+     * @param { Array } queuedPlayers
      */
     var watchPlayers = function (queuedPlayers) {
         var events = 'unload load orientationchange resize scroll touchmove blur focus';
@@ -44,6 +46,8 @@ define('playerInitialize-video', [], function () {
 
     /**
      * get all currently instantiated video players
+     * 
+     * @return { Array } player objects from ardplayer.PlayerModel
      */
     var getAllVideoPlayers = function () {
         var allVideoPlayers = window.ardplayer && ardplayer.PlayerModel && ardplayer.PlayerModel.players;
@@ -127,6 +131,8 @@ define('playerInitialize-video', [], function () {
     playerInitialize.prototype = {
         /**
          * Checks if element is visible
+         * 
+         * @return { Boolean }
          */
         isVisible: function () {
             var elm = this.dom_element;
@@ -142,15 +148,17 @@ define('playerInitialize-video', [], function () {
         isInitialized: false,
 
         /**
-         * Creates initial play button (e.g. on picture),
-         * Sets Event Listener for play button
-         * Calls createVideo() function
+         * initialize function
          */
         initialize: function () {
             this.$dom_element.addClass('isReady');
             this.createInitializeButton();
         },
 
+        /**
+         * creates initial play button
+         * sets event listener on button and calls createVideo function when clicked
+         */
         createInitializeButton: function () {
             var that = this;
             var $videoBtn = $('<div role="button" tabindex="0" class="video-btn" title="Video abspielen"></div>');
@@ -175,8 +183,7 @@ define('playerInitialize-video', [], function () {
         },
 
         /**
-         * Creates close button
-         * to stop playback 
+         * Creates close button to stop playback 
          * and remove expanded layout on premium stage
          */
         createCloseButton: function () {
@@ -196,9 +203,7 @@ define('playerInitialize-video', [], function () {
         },
 
         /**
-         * Creates <div> element and initializes video player
-         *
-         * @param { Boolean } isKeyboardControl
+         * Creates <div> container and initializes video player
          */
         createVideo: function () {
             this.uniqueId = +new Date() + Math.floor((Math.random() * (999 - 100) + 100));
@@ -261,7 +266,7 @@ define('playerInitialize-video', [], function () {
         },
 
         /**
-         * Exposes current player state via css class on DOM object
+         * Exposes current player state via class name on DOM object
          *
          * @param { String } state
          */
