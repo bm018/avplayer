@@ -254,7 +254,7 @@
     max-height: 310px;
     border: 1px solid #dcdcdc;
     border-top: 0 none;
-    background: transparent url("../grafik/bg_topnav_shadow.png") no-repeat scroll center bottom;
+    background: transparent url("//rbb-online.de/basis/grafik/bg_topnav_shadow.png") no-repeat scroll center bottom;
     -webkit-overflow-scrolling: touch;
   }
 
@@ -356,7 +356,7 @@
     width: 24px;
     height: 11px;
     margin-left: -12px;
-    background: transparent url("../grafik/bg_contentnav_after.png") no-repeat scroll 0 0;
+    background: transparent url("//rbb-online.de/basis/grafik/bg_contentnav_after.png") no-repeat scroll 0 0;
     content: "";
   }
 
@@ -388,7 +388,7 @@
     left: 0;
     height: 32px;
     border: 0 none;
-    background: transparent url("../grafik/bg_nav_level1_full.png") no-repeat scroll center 0;
+    background: transparent url("//rbb-online.de/basis/grafik/bg_nav_level1_full.png") no-repeat scroll center 0;
     content: "";
   }
 
@@ -1167,7 +1167,7 @@
   height: 67px;
   border: 0 none;
   text-indent: -9999px;
-  background: transparent url("../grafik/spr_arrows.png") no-repeat scroll 0 0;
+  background: transparent url("//rbb-online.de/basis/grafik/spr_arrows.png") no-repeat scroll 0 0;
   cursor: pointer;
 }
 
@@ -1324,7 +1324,7 @@
   height: 14px;
   border: 1px solid #909090;
   text-indent: -9999px;
-  background: transparent url("../grafik/spr_flags.png") no-repeat scroll 0 0;
+  background: transparent url("//rbb-online.de/basis/grafik/spr_flags.png") no-repeat scroll 0 0;
 }
 
 #contentnav .toggle_language:focus {
