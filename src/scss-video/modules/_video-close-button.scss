@@ -1,4 +1,5 @@
-.player_close_btn {
+.video-close-btn {
+    display: none;
     cursor: pointer;
     position: absolute;
     left: 0;
@@ -9,7 +10,6 @@
     z-index: 99;
     background: rgba($playerDarkColor, .9);
     overflow: hidden;
-    text-indent: -9999px;
     &:before, &:after {
         border-radius: 20%;
         content: '';
@@ -20,20 +20,12 @@
         top: 10%;
         display: block;
         left: 47%;
-        transform: rotate(0deg);
         transition: all .3s ease-in-out .1s;
     }
-
-    @at-root .expanded & {
-        &:before {
-            transform: rotate(-45deg);
-        }
-        &:after {
-            transform: rotate(45deg);
-        }
+    &:before {
+        transform: rotate(-45deg);
     }
-
-    @at-root .stage-fullscreen & {
-        display: none;
+    &:after {
+        transform: rotate(45deg);
     }
 }

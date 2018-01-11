@@ -43,6 +43,9 @@
       .video-btn, .ardplayer-postercontrol {
         display: none;
       }
+      .video-close-btn {
+        display: block;
+      }
       .skip, .textbox {
         opacity: 0;
         visibility: hidden;
@@ -65,7 +68,7 @@
         }
       }
       .isInitialized:not(.state-playing) {
-        .player_close_btn {
+        .video-close-btn {
           opacity: 0;
         }
       }
@@ -177,6 +180,9 @@
         .ardplayer-video {
           max-height: unset;
           max-width: unset;
+        }
+        .video-close-btn {
+          display: none;
         }
       }
       .textbox {
