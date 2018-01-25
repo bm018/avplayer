@@ -198,12 +198,11 @@ gulp.task('build-video', function() {
 
 //
 gulp.task('build-production-urls', function() {
-    gulp.src(['./dist/css/*.css', './dist/css/pages/*.css']).
+    gulp.src(['./dist/css/vendor/*.css']).
       pipe(urlAdjuster({
-        prepend: '/basis/avplayer/files/ardplayer-3.9.0/base/',
-        append: '?version=1',
+        replace:  ['../../../base/','/basis/avplayer/files/ardplayer-3.9.0/base/']
       }))
-      .pipe(gulp.dest('./dist/production/css/'));
+      .pipe(gulp.dest('./dist/production/css/vendor/'));
 });
 //
 
