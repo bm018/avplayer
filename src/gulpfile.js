@@ -11,6 +11,7 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     jshint = require('gulp-jshint'),
     uglify = require('gulp-uglify');
+    urlAdjuster = require('gulp-css-url-adjuster');
 
 // --------------------------------- AUDIO --------------------------------- //
 
@@ -194,6 +195,17 @@ gulp.task('build-video', function() {
 });
 
 // --------------------------------- VIDEO END --------------------------------- //
+
+//
+gulp.task('build-production-urls', function() {
+    gulp.src(['./dist/css/*.css', './dist/css/pages/*.css']).
+      pipe(urlAdjuster({
+        prepend: '/basis/avplayer/files/ardplayer-3.9.0/base/',
+        append: '?version=1',
+      }))
+      .pipe(gulp.dest('./dist/production/css/'));
+});
+//
 
 // --------------------------------- GENERAL --------------------------------- //
 
