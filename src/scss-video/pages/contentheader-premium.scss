@@ -24,16 +24,17 @@
       height: 645px;
       max-height: 645px;
       @include breakpoint(sm) {
-        max-height: 510px;
+        max-height: calc(56vw + 80px); // set the height dynamically depending on video format and the streemline on the top
       }
       @include breakpoint(xs) {
-        max-height: 315px;
+        height: auto;
+        max-height: calc(56vw + 110px); // set the height dynamically depending on video format and the red textbox on the bottom
       }
       .ardplayer-video {
         opacity: 1;
       }
       .player {
-        &.premium_content {
+        &.premium_content:not(.isLoading) {
           position: relative;
           &:before {
             background-color: rgba(black, .75);
@@ -45,6 +46,17 @@
       }
       .video-close-btn {
         display: block;
+        left: 5px;
+        @include breakpoint(md) {
+          left: 20px;
+        }
+        @include breakpoint(sm) {
+          left: 10px;
+        }
+        @include breakpoint(xs) {
+          left: -10px;
+          top: -10px;
+        }
       }
       .skip, .textbox {
         opacity: 0;
@@ -151,7 +163,7 @@
         .ardplayer-postercontrol,
         &.isLoading:before {
           box-shadow: none;
-          top: 16%;
+          top: 20%;
           @include breakpoint(md) {
             top: 35%;
           }
