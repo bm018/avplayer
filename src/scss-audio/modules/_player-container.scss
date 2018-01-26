@@ -1,4 +1,5 @@
 .player.audio {
+    position: relative;
     &.isLoading::before {
         content: '';
         box-sizing: border-box;
@@ -42,11 +43,11 @@
         font-size: $audioPlayerFontSize;
         height: $noPictPlayBtnSize;
         margin: $noPictMarginTop 0 0;
-        position: relative;
     }
     .layoutaudioliste & {
         height: 0;
         transition: all .3s ease;
+        position: static;
         &.audioplayer-playing {
             height: #{$audioListPlayerHeight + $audioListContainerPadding};
         }
