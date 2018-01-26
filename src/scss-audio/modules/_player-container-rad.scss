@@ -9,6 +9,13 @@
     }
 }
 
+.manualteaserpicture.player.audio {
+    img,
+    .pictsrc {
+        display: none;
+    }
+}
+
 #center a.download {
     display: inline-block;
     float: none;
