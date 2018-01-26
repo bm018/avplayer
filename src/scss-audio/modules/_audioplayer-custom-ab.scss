@@ -1,0 +1,14 @@
+.audioplayer {
+  &-bar {
+    &-loaded {
+      background-color: $audioPlayerBgLoaded;
+    }
+  }
+
+  .audioplayer-playpause,
+  .audioplayer-volume-button {
+    &:hover, &:focus {
+      background-color: $audioPlayerAccentColor;
+    }
+  }
+}
