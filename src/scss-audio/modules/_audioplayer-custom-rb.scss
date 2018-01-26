@@ -1,0 +1,23 @@
+.audioplayer {
+  height: 100%;
+  width: 100%;
+
+  .audioplayer-playpause {
+    background-position: center -1*$audioPlayerSize;
+    height: $audioPlayerSize;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    .audioplayer-playing & {
+      background-position: center -3*$audioPlayerSize;
+    }
+  }
+  .audioplayer-time,
+  .audioplayer-bar,
+  .audioplayer-skip-bwd,
+  .audioplayer-skip-fwd,
+  .audioplayer-volume {
+    display: none;
+  }
+}

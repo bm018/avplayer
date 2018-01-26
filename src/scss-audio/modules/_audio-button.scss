@@ -22,7 +22,7 @@
             display: block;
         }
     }
-    .manualteaserpicture & {
+    .manualteaserpicture:not(.chartsplayer) & {
         height: $playBtnSize;
         width: $playBtnSize;
     }

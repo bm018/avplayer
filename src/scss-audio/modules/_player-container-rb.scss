@@ -1,0 +1,13 @@
+.layoutcharts_top3_teaser {
+  .charts_table {
+    .cover_title {
+      position: relative;
+
+      .manualteaserpicture {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
