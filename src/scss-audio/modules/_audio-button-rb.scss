@@ -1,4 +1,8 @@
 .audio-btn {
-  height: $playBtnSize;
-  width: $playBtnSize;
+  .layoutcharts_top3_teaser & {
+    background-size: auto $playBtnSizeSmall*2;
+    background-position: -$playBtnSizeSmall 0;
+    height: $playBtnSizeSmall;
+    width: $playBtnSizeSmall;
+  }
 }
