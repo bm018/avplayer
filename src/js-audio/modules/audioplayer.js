@@ -113,6 +113,7 @@
                     volumeDefault = 0,
                     isFocused = false,
                     isLivestream = false,
+                    livestreamIsPaused = false,
 
                     adjustCurrentTime = function (e) {
                         theRealEvent = isTouch ? e.originalEvent.touches[0] : e;
@@ -148,7 +149,16 @@
                     },
 
                     switchToLivestreamMode = function () {
+                        isLivestream = true;
                         thePlayer.addClass('isLivestream');
+                    },
+                    
+                    reloadAudio = function () {
+                        var bufferedSrc = theAudio.src;
+
+                        theAudio.src = '';
+                        theAudio.src = bufferedSrc;
+                        theAudio.play();
                     };
 
                 var volumeTestDefault = theAudio.volume, volumeTestValue = theAudio.volume = 0.111;
@@ -163,13 +173,25 @@
 
                     if (theAudio.duration === Infinity && !isLivestream) {
                         // if live audio is loaded, switch player to livestream mode
-                        isLivestream = true;
                         switchToLivestreamMode();
                     }
 
                     timeDuration.html($.isNumeric(theAudio.duration) ? secondsToTime(theAudio.duration) : 'Live');
                     volumeAdjuster.find('div').height(theAudio.volume * 100 + '%');
                     volumeDefault = theAudio.volume;
+                });
+
+                theAudio.addEventListener('pause', function () {
+                    if (isLivestream) {
+                        livestreamIsPaused = true;
+                    }
+                });
+
+                theAudio.addEventListener('play', function () {
+                    if (isLivestream && livestreamIsPaused) {
+                        reloadAudio();
+                        livestreamIsPaused = false;
+                    }
                 });
 
                 theAudio.addEventListener('timeupdate', function () {
