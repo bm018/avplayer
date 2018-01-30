@@ -28,7 +28,8 @@
     }
     .audiolist &,
     .layoutaudioliste &,
-    .layoutaudio_ohne_bild & {
+    .layoutaudio_ohne_bild &,
+    .player-livestream & {
         background: url('/basis/grafik/spr-play.svg') left top no-repeat;
         background-size: auto 4*$noPictPlayBtnSize;
         background-color: $audioPlayerBgColor;
@@ -59,7 +60,8 @@
             background-position: 0 -3*$noPictPlayBtnSize;
         }
     }
-    .layoutaudio_ohne_bild & {
+    .layoutaudio_ohne_bild &,
+    .player-livestream & {
         left: $noPictContainerPadding;
     }
 }

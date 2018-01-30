@@ -38,7 +38,8 @@
             margin-top: $audioListFirstMarginTop;
         }
     }
-    .layoutaudio_ohne_bild & {
+    .layoutaudio_ohne_bild &,
+    &.player-livestream {
         background: $noPictBackground;
         font-size: $audioPlayerFontSize;
         height: $noPictPlayBtnSize;
