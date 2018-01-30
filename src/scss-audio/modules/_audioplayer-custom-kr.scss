@@ -1,0 +1,8 @@
+.audioplayer {
+  .audioplayer-playpause,
+  .audioplayer-volume-button {
+    &:hover, &:focus {
+      background-color: $audioPlayerAccentColor;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.audioplayer {
+  .audioplayer-playpause,
+  .audioplayer-volume-button {
+    &:hover, &:focus {
+      .winter & {
+        background-color: $audioPlayerAccentColorWinter;
+      }
+      .fruehling & {
+        background-color: $audioPlayerAccentColorSpring;
+      }
+      .sommer & {
+        background-color: $audioPlayerAccentColorSummer;
+      }
+      .herbst & {
+        background-color: $audioPlayerAccentColorAutumn;
+      }
+    }
+  }
+
+  &-bar-played,
+  &-volume-adjust div div {
+      .winter & {
+        background-color: $audioPlayerAccentColorWinter;
+      }
+      .fruehling & {
+        background-color: $audioPlayerAccentColorSpring;
+      }
+      .sommer & {
+        background-color: $audioPlayerAccentColorSummer;
+      }
+      .herbst & {
+        background-color: $audioPlayerAccentColorAutumn;
+      }
+  }
+
+}
