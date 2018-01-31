@@ -414,7 +414,6 @@ handle: /content/rbb/kul/livestream/index
 params: {} -->
 <div class="player audio jsb_ jsb_playerInitialize-audio player-livestream" data-jsb='{"media":"/livestream-kul.jsn","analytics":{"rbbtitle":"Livestream Kulturradio","rbbhandle":"/content/rbb/rbb/av/livestreams/livestream-kulturradio","ATIxtn2":"26","chapter":["- - Video + Audio - -","AV"],"isTrailer":false,"duration":0,"termids":["3.1.9.5.1"]}}'></div>
 
-
  <div id="lsplayer"></div><!--
 end module /modules_rbb/basis/livestream/player.jsp
  --></article><!-- end container '/content/rbb/kul/livestream/vorlagen/container/uebersicht/content/livestream' --><!--
@@ -508,7 +507,12 @@ end SSI /content/rbb/kul/vorlagen/compressor.htm/SSI=true/module=jsCombined.html
  -->
 
 <script src="https://kul-t1.w3.rbb-online.de/livestream/vorlagen/layout/_jcr_content/properties/property.js" type="text/javascript"></script>
-
+<script>
+	jsb.on('Player::IS_READY', function (e) {
+		console.log('player is ready');
+		$('.player .audio-btn').click();
+	});
+	</script>
 
 <!-- Print -->
 

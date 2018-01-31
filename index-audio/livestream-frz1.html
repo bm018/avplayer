@@ -1058,6 +1058,14 @@ params: {module=jsCombined, SSI=true} -->
 <script src="https://frz-t1.w3.rbb-online.de/basis/js/ClickTracker.js" type="text/javascript"></script>
 <script src="https://frz-t1.w3.rbb-online.de/basis/js/jquery.socialshareprivacy.min.js" type="text/javascript"></script>
 
+
+<script>
+jsb.on('Player::IS_READY', function (e) {
+	console.log('player is ready');
+	$('.player .audio-btn').click();
+});
+</script>
+
 <!--
 end module /modules_rbb/basis/jsCombined.jsp
  --><!--
