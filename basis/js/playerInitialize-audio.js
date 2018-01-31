@@ -105,11 +105,12 @@ define('playerInitialize-audio', [], function () {
         isInitialized: false,
 
         /** 
-         * Creates initial play button (e.g. on picture),
-         * Generates unique ID,
-         * Gets Media JSON,
-         * Sets Event Listener for play button
-         * Calls createAudio() function
+         * creates initial play button,
+         * generates unique ID,
+         * gets media JSON,
+         * sets event listener for play button,
+         * calls createAudio() function,
+         * triggers click on initial play button when player is embedded in page layout "layoutlivestream"
          */
         initialize: function () {
             var that = this;
@@ -142,7 +143,11 @@ define('playerInitialize-audio', [], function () {
                                 }
                                 return false;
                             }
-                        }).appendTo(that.$dom_element);;
+                        }).appendTo(that.$dom_element);
+
+                        jsb.fireEvent('Player::IS_READY', {
+                            playerId: that.uniqueId
+                        });
                     } else {
                         that.showErr(1, 'Referenz zur Audio-Datei nicht gefunden.');
                     }
