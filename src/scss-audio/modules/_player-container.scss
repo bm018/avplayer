@@ -16,6 +16,7 @@
         animation: spinner .6s linear infinite;
         box-shadow: $playBtnShadow, inset $playBtnShadow;
         .layoutaudio_ohne_bild &,
+        .layoutaudio_download_ohne_bild &,
         .layoutaudioliste & {
             width: 0.5*$spinnerSize;
             height: 0.5*$spinnerSize;
@@ -26,7 +27,8 @@
             margin-top: 0.25*$spinnerSize;
             margin-left: 0.25*$spinnerSize;
         }
-        .layoutaudio_ohne_bild & {
+        .layoutaudio_ohne_bild &,
+        .layoutaudio_download_ohne_bild & {
             margin-top: -#{0.5*$spinnerSize/2};
             top: 50%;
         }
@@ -39,6 +41,7 @@
         }
     }
     .layoutaudio_ohne_bild &,
+    .layoutaudio_download_ohne_bild &,
     &.player-livestream {
         background: $noPictBackground;
         font-size: $audioPlayerFontSize;

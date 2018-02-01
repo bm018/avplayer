@@ -29,6 +29,7 @@
     .audiolist &,
     .layoutaudioliste &,
     .layoutaudio_ohne_bild &,
+    .layoutaudio_download_ohne_bild &,
     .layoutlivestream & {
         background: url('/basis/grafik/spr-play.svg') left top no-repeat;
         background-size: auto 4*$noPictPlayBtnSize;
@@ -61,6 +62,7 @@
         }
     }
     .layoutaudio_ohne_bild &,
+    .layoutaudio_download_ohne_bild &,
     .layoutlivestream & {
         left: $noPictContainerPadding;
     }
